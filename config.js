@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = {
-  url: 'https://ensia96.github.io',
+  url: 'https://ensia96.github.io/',
   pathPrefix: '/',
   title: '춤추는 망고나라',
   subtitle: '슈퍼개발자 춤추는 망고에요! ( ㅇ_<)~*',

@@ -3,10 +3,11 @@
 <url> <loc>https://ensia96.github.io/tags</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ensia96.github.io/categories</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ensia96.github.io/posts/gatsby</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://ensia96.github.io/posts/web,network</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ensia96.github.io/posts/git_jandi</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ensia96.github.io/posts/python_infinity</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ensia96.github.io/posts/python_alphabet</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://ensia96.github.io/posts/web,network</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://ensia96.github.io/posts/word_wide_web</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ensia96.github.io/pages/about/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ensia96.github.io/tag/git</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ensia96.github.io/tag/howto</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>

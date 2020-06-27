@@ -3,14 +3,16 @@
 <url> <loc>https://ensia96.github.io/tags</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ensia96.github.io/categories</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ensia96.github.io/posts/language/python/python_absolute</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://ensia96.github.io/posts/language/python/python_infinity</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ensia96.github.io/posts/language/python/python_alphabet</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://ensia96.github.io/posts/language/python/python_infinity</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ensia96.github.io/posts/dev/web/web,network</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ensia96.github.io/posts/dev/web/world_wide_web</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ensia96.github.io/posts/dev/web/http</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ensia96.github.io/posts/dev/web/html</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://ensia96.github.io/posts/dev/think/how_i_dev</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://ensia96.github.io/posts/dev/web/req_res</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ensia96.github.io/posts/dev/web/css</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://ensia96.github.io/posts/dev/web/web_browser</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://ensia96.github.io/posts/dev/think/how_i_dev</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ensia96.github.io/posts/dev/git/git_jandi</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ensia96.github.io/pages/about/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ensia96.github.io/tag/development</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
@@ -20,6 +22,7 @@
 <url> <loc>https://ensia96.github.io/tag/web/page/1</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ensia96.github.io/category/develop</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ensia96.github.io/category/develop/page/1</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://ensia96.github.io/category/develop/page/2</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ensia96.github.io/category/language</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ensia96.github.io/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ensia96.github.io/page/1</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>

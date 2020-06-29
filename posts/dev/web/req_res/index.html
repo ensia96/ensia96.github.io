@@ -140,59 +140,57 @@ Authorization : 인증과 관련된 내용</code></pre></div>
 Content-Length : 바디 데이터 크기
 Set-Cookie : 쿠키 설정</code></pre></div>
 <p><br><br><br></p>
-<h2 id="body-의-구성" style="position:relative;"><a href="#body-%EC%9D%98-%EA%B5%AC%EC%84%B1" aria-label="body 의 구성 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Body 의 구성</h2>
+<h2 id="body-의-type" style="position:relative;"><a href="#body-%EC%9D%98-type" aria-label="body 의 type permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Body 의 Type!</h2>
 <h3 id="--request-2" style="position:relative;"><a href="#--request-2" aria-label="  request 2 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>- Request</h3>
-<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">- Form 형태
-    : URLEncoded 방식 / 쿼리 문자열 (Query String)
-      &gt; application/x-www-form-urlencoded
-
-      예를 들면,
-        주소값 맨 뒤에 &#39;?aa=sdf&amp;bb=efe&#39; 와 같이
-        쿼리 구분자인 ? 의 뒤에, 키=값 의 형태로 내용이 제공됨!
-
-- JSON 형태
-    : 키와 값으로 이루어진 객체
-      &gt; application/json
-
-      예를 들면,
-        {
-          &quot;과일&quot;:&quot;망고&quot;,
-          &quot;개수&quot;:5
-        }
-
-- Multi-Part 형태
-    : 이진파일을 전송할 때, 하나의 메세지 바디에 파트를 나눠서 작성
-      &gt; 파일 업로드와 같은 통신에 사용
-      &gt; 파트 구분자로 boundary 를 사용
-      &gt; multipart/form-data: boundary=frontier</code></pre></div>
+<p>Form</p>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">: URLEncoded 방식 / 쿼리 문자열 (Query String)
+  &gt; application/x-www-form-urlencoded</code></pre></div>
+<blockquote>
+</blockquote>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">    주소값 맨 뒤에 &#39;?aa=sdf&amp;bb=efe&#39; 와 같이
+    쿼리 구분자인 ? 의 뒤에, 키=값 의 형태로 내용이 제공됨!</code></pre></div>
+<p>JSON</p>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">: 키와 값으로 이루어진 객체
+  &gt; application/json</code></pre></div>
+<blockquote>
+</blockquote>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">    {
+      &quot;과일&quot;:&quot;망고&quot;,
+      &quot;개수&quot;:5
+    }</code></pre></div>
+<p>Multi-Part</p>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">: 이진파일을 전송할 때, 하나의 메세지 바디에 파트를 나눠서 작성
+  &gt; 파일 업로드와 같은 통신에 사용
+  &gt; 파트 구분자로 boundary 를 사용
+  &gt; multipart/form-data: boundary=frontier</code></pre></div>
 <h3 id="--response-2" style="position:relative;"><a href="#--response-2" aria-label="  response 2 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>- Response</h3>
-<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">- HTML 형태
-    : HTML 문서 형태
-      &gt; 응답의 내용이 HTML 문서로 제공되어야 할 때
-
-      예를 들면,
-        &lt;!DOCTYPE html&gt;
-        &lt;HEAD&gt;
-          &lt;title&gt;예시&lt;/title&gt;
-        &lt;/HEAD&gt;
-        &lt;BODY&gt;
-          &lt;h1&gt;예시입니다!&lt;/h1&gt;
-          &lt;p&gt;예시라구요!&lt;/p&gt;
-        &lt;/BODY&gt;
-
-- JSON 형태
-    : 키와 값으로 이루어진 객체
-      &gt; application/json
-
-      예를 들면,
-        {
-          &quot;과일&quot;:&quot;망고&quot;,
-          &quot;개수&quot;:5
-        }
-
-- Octet Stream 형태
-    : 패킷, 청크 단위로 쪼개어진 이진파일
-      &gt; 스트리밍이나 다운로드와 같은 통신에 사용</code></pre></div>
+<p>HTML</p>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">: HTML 문서 형태
+  &gt; 응답의 내용이 HTML 문서로 제공되어야 할 때</code></pre></div>
+<blockquote>
+</blockquote>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">  예를 들면,
+    &lt;!DOCTYPE html&gt;
+    &lt;HEAD&gt;
+      &lt;title&gt;예시&lt;/title&gt;
+    &lt;/HEAD&gt;
+    &lt;BODY&gt;
+      &lt;h1&gt;예시입니다!&lt;/h1&gt;
+      &lt;p&gt;예시라구요!&lt;/p&gt;
+    &lt;/BODY&gt;</code></pre></div>
+<p>JSON</p>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">: 키와 값으로 이루어진 객체
+  &gt; application/json</code></pre></div>
+<blockquote>
+</blockquote>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">  예를 들면,
+    {
+      &quot;과일&quot;:&quot;망고&quot;,
+      &quot;개수&quot;:5
+    }</code></pre></div>
+<p>Octet Stream</p>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">: 패킷, 청크 단위로 쪼개어진 이진파일
+  &gt; 스트리밍이나 다운로드와 같은 통신에 사용</code></pre></div>
 <p><br><br><br></p>
 <h1 id="위의-설명들을-참고해서-내용을-보세요" style="position:relative;"><a href="#%EC%9C%84%EC%9D%98-%EC%84%A4%EB%AA%85%EB%93%A4%EC%9D%84-%EC%B0%B8%EA%B3%A0%ED%95%B4%EC%84%9C-%EB%82%B4%EC%9A%A9%EC%9D%84-%EB%B3%B4%EC%84%B8%EC%9A%94" aria-label="위의 설명들을 참고해서 내용을 보세요 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>위의 설명들을 참고해서 내용을 보세요!</h1>
 <p><br><br></p>
@@ -234,7 +232,5 @@ Date: Mon, 20 Aug 2018 07:59:05 GMT
 &lt;p&gt;&lt;b&gt;404.&lt;/b&gt; &lt;ins&gt;That’s an error.&lt;/ins&gt;
 &lt;p&gt;The requested URL &lt;code&gt;/payment-sync&lt;/code&gt; was not found on this server.  &lt;ins&gt;That’s all we know.&lt;/ins&gt;</code></pre></div>
 <p><br><br><br></p>
-<h2 id="실제로" style="position:relative;"><a href="#%EC%8B%A4%EC%A0%9C%EB%A1%9C" aria-label="실제로 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>실제로,</h2>
-<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">저런 모양의 정보를 주고받는 것이
-
-저희가 하고있는 통신이에요!</code></pre></div></div></div></div><div class="Post-module--post__footer--3WzWU"><div><p class="Meta-module--meta__date--29eD7">Published <!-- -->28 Jun 2020</p></div><div class="Tags-module--tags--1L_ct"><ul class="Tags-module--tags__list--91FqN"><li class="Tags-module--tags__list-item--1M30P"><a class="Tags-module--tags__list-item-link--3SL_8" href="/tag/web/">web</a></li></ul></div><div class="Author-module--author--2Yefr"><p></p></div></div><div class="Post-module--post__comments--25y6I"></div></div></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/posts/dev/web/req_res";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"app":["/app-e2f68b147af451fca148.js"],"component---cache-caches-gatsby-plugin-offline-app-shell-js":["/component---cache-caches-gatsby-plugin-offline-app-shell-js-b3d32bc20641419cfed7.js"],"component---src-templates-categories-list-template-js":["/component---src-templates-categories-list-template-js-967707f4eaa2834fb569.js"],"component---src-templates-category-template-js":["/component---src-templates-category-template-js-8474791473fbf3a13e03.js"],"component---src-templates-index-template-js":["/component---src-templates-index-template-js-9753eff4982488768c03.js"],"component---src-templates-not-found-template-js":["/component---src-templates-not-found-template-js-66658bad0afc0e6521e4.js"],"component---src-templates-page-template-js":["/component---src-templates-page-template-js-84aab64be1492b406024.js"],"component---src-templates-post-template-js":["/component---src-templates-post-template-js-c397e2c16eada95ae8fd.js"],"component---src-templates-tag-template-js":["/component---src-templates-tag-template-js-c41f10e33e7ace0b019a.js"],"component---src-templates-tags-list-template-js":["/component---src-templates-tags-list-template-js-70c7a277c225fe5b2fed.js"]};/*]]>*/</script><script src="/component---src-templates-post-template-js-c397e2c16eada95ae8fd.js" async=""></script><script src="/643651a62fb35a9bb4f20061cb1f214a352d7976-e1c811e67e06b8931249.js" async=""></script><script src="/cd95ea5cbd2c605f26db819f07999610c9ff4310-dac1bc5831b9f59ca308.js" async=""></script><script src="/styles-0dd9b16d06f2e4f550cc.js" async=""></script><script src="/app-e2f68b147af451fca148.js" async=""></script><script src="/532a2f07-05d0124221769214927b.js" async=""></script><script src="/framework-7656862d80676d58607a.js" async=""></script><script src="/webpack-runtime-5e6d8f468ed21880cabe.js" async=""></script></body></html>
+<h2 id="저희가-하고있는-통신은" style="position:relative;"><a href="#%EC%A0%80%ED%9D%AC%EA%B0%80-%ED%95%98%EA%B3%A0%EC%9E%88%EB%8A%94-%ED%86%B5%EC%8B%A0%EC%9D%80" aria-label="저희가 하고있는 통신은 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>저희가 하고있는 통신은,</h2>
+<h2 id="저런-모양의-정보를-주고받는-행위에요" style="position:relative;"><a href="#%EC%A0%80%EB%9F%B0-%EB%AA%A8%EC%96%91%EC%9D%98-%EC%A0%95%EB%B3%B4%EB%A5%BC-%EC%A3%BC%EA%B3%A0%EB%B0%9B%EB%8A%94-%ED%96%89%EC%9C%84%EC%97%90%EC%9A%94" aria-label="저런 모양의 정보를 주고받는 행위에요 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>저런 모양의 정보를 주고받는 행위에요!</h2></div></div></div><div class="Post-module--post__footer--3WzWU"><div><p class="Meta-module--meta__date--29eD7">Published <!-- -->28 Jun 2020</p></div><div class="Tags-module--tags--1L_ct"><ul class="Tags-module--tags__list--91FqN"><li class="Tags-module--tags__list-item--1M30P"><a class="Tags-module--tags__list-item-link--3SL_8" href="/tag/web/">web</a></li></ul></div><div class="Author-module--author--2Yefr"><p></p></div></div><div class="Post-module--post__comments--25y6I"></div></div></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/posts/dev/web/req_res";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"app":["/app-e2f68b147af451fca148.js"],"component---cache-caches-gatsby-plugin-offline-app-shell-js":["/component---cache-caches-gatsby-plugin-offline-app-shell-js-b3d32bc20641419cfed7.js"],"component---src-templates-categories-list-template-js":["/component---src-templates-categories-list-template-js-967707f4eaa2834fb569.js"],"component---src-templates-category-template-js":["/component---src-templates-category-template-js-8474791473fbf3a13e03.js"],"component---src-templates-index-template-js":["/component---src-templates-index-template-js-9753eff4982488768c03.js"],"component---src-templates-not-found-template-js":["/component---src-templates-not-found-template-js-66658bad0afc0e6521e4.js"],"component---src-templates-page-template-js":["/component---src-templates-page-template-js-84aab64be1492b406024.js"],"component---src-templates-post-template-js":["/component---src-templates-post-template-js-c397e2c16eada95ae8fd.js"],"component---src-templates-tag-template-js":["/component---src-templates-tag-template-js-c41f10e33e7ace0b019a.js"],"component---src-templates-tags-list-template-js":["/component---src-templates-tags-list-template-js-70c7a277c225fe5b2fed.js"]};/*]]>*/</script><script src="/component---src-templates-post-template-js-c397e2c16eada95ae8fd.js" async=""></script><script src="/643651a62fb35a9bb4f20061cb1f214a352d7976-e1c811e67e06b8931249.js" async=""></script><script src="/cd95ea5cbd2c605f26db819f07999610c9ff4310-dac1bc5831b9f59ca308.js" async=""></script><script src="/styles-0dd9b16d06f2e4f550cc.js" async=""></script><script src="/app-e2f68b147af451fca148.js" async=""></script><script src="/532a2f07-05d0124221769214927b.js" async=""></script><script src="/framework-7656862d80676d58607a.js" async=""></script><script src="/webpack-runtime-5e6d8f468ed21880cabe.js" async=""></script></body></html>

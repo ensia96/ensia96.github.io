@@ -97,7 +97,7 @@ author:
   avatar           : "/assets/images/bio-photo.jpg"
   bio              : "지금까지 이런 망고는 없었다. 이것은 개발자인가 춤추는망고인가"
   location         : "Seoul, Korea"
-  email            :
+  email            : "ensia96@gmail.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"

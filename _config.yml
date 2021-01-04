@@ -94,7 +94,7 @@ analytics:
 # Site Author
 author:
   name             : "춤추는 망고"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/bio.png"
   bio              : "컴퓨터처럼 생각, 사람 냄새나게 코딩"
   location         : "Seoul, South Korea"
   email            : "ensia96@gmail.com"

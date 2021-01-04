@@ -277,6 +277,7 @@ defaults:
         overlay_image: /assets/images/header.jpg
         overlay_filter: 0.5
         show_overlay_excerpt: false
+      show_date: true
       layout: single
       author_profile: true
       read_time: true

@@ -274,7 +274,7 @@ defaults:
       type: posts
     values:
       header:
-        overlay_image: /assets/images/header.jpg
+        overlay_image: /assets/images/header.png
         overlay_filter: 0.5
         show_overlay_excerpt: false
       show_date: true

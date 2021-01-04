@@ -94,14 +94,14 @@ analytics:
 # Site Author
 author:
   name             : "최호준 (춤추는 망고)"
-  avatar           : "/assets/images/bio-photo.jpg"
+  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "지금까지 이런 망고는 없었다. 이것은 개발자인가 춤추는망고인가"
-  location         : "Seoul, Korea"
-  email            : "ensia96@gmail.com"
+  location         : "Seoul, South Korea"
+  email            :
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-       url: "mailto:ensia96@gmail.com"
+      # url: "mailto:your.name@email.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
@@ -110,10 +110,10 @@ author:
       # url: "https://twitter.com/"
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
-       url: "https://www.facebook.com/profile.php?id=100005786230677"
+      # url: "https://facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-       url: "https://github.com/ensia96"
+      # url: "https://github.com/"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"

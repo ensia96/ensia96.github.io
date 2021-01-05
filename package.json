@@ -46,6 +46,7 @@
     "react-typography": "*",
     "smooth-scroll": "*",
     "smoothscroll-polyfill": "*",
+    "styled-components": "*",
     "typeface-catamaran": "*",
     "typeface-merriweather": "*",
     "typeface-montserrat": "*",

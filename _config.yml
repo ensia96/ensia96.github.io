@@ -20,7 +20,7 @@ title                    : "춤추는 블로그"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "춤추는 블로그"
-description              : "컴퓨터처럼 생각, 사람 냄새나게 코딩"
+description              : "저수준의 사고, 고수준의 코드"
 url                      : "https://ensia96.github.io"
 baseurl                  : ""
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -85,9 +85,9 @@ social:
 
 # Analytics
 analytics:
-  provider               : false # false (default), "google", "google-universal", "google-gtag", "custom"
+  provider               : "google" # false (default), "google", "google-universal", "google-gtag", "custom"
   google:
-    tracking_id          :
+    tracking_id          : "G-806QP720RD"
     anonymize_ip         : # true, false (default)
 
 

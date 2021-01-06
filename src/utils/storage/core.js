@@ -1,8 +1,6 @@
-function isEmpty(storage) {
-  return !storage || storage === {}
-}
+const isEmpty = storage => !storage || storage === {}
 
-export function getValueFrom(storage, key) {
+export const getValueFrom = (storage, key) => {
   if (isEmpty(storage)) {
     return
   }
@@ -14,7 +12,7 @@ export function getValueFrom(storage, key) {
   return JSON.parse(rawData)
 }
 
-export function setValueTo(storage, key, data) {
+export const setValueTo = (storage, key, data) => {
   if (isEmpty(storage)) {
     return
   }

@@ -1,9 +1,9 @@
 import SmoothScroll from 'smooth-scroll/dist/smooth-scroll.min'
-import smoothscroll from 'smoothscroll-polyfill';
+import smoothscroll from 'smoothscroll-polyfill'
 
 let scroll
 
-export function init() {
+export const init = () => {
   smoothscroll.polyfill()
   scroll = new SmoothScroll('a[href*="#"]', {
     speed: 500,
@@ -12,7 +12,7 @@ export function init() {
   return scroll
 }
 
-export function destroy() {
+export const destroy = () => {
   if (!scroll) throw Error('Not founded SmoothScroll instance')
 
   scroll.destroy()
@@ -21,7 +21,7 @@ export function destroy() {
   return scroll
 }
 
-export function go(dest) {
+export const go = dest => {
   if (!scroll) throw Error('Not founded SmoothScroll instance')
 
   scroll.animateScroll(dest)

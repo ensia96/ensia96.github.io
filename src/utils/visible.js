@@ -8,24 +8,22 @@ const INTERSECTION_OBSERVER_THRESHOLD = 0.8
 
 let observer
 
-function observeCallback(entries) {
-  return entries
+const observeCallback = entries =>
+  entries
     .filter(({ isIntersecting }) => isIntersecting)
     .forEach(({ target }) => Dom.addClass(target, VISIBLE_RECOGNIZE_CLASS))
-}
 
-function observerTargeting() {
-  return Dom.getElements(`.${TARGET_CLASS}`).forEach(el => observer.observe(el))
-}
+const observerTargeting = () =>
+  Dom.getElements(`.${TARGET_CLASS}`).forEach(el => observer.observe(el))
 
-function disconnect() {
+const disconnect = () => {
   if (!observer) {
     throw Error('Not found IntersectionObserver instance')
   }
   return Promise.resolve(observer.disconnect())
 }
 
-export function init() {
+export const init = () => {
   observer = new IntersectionObserver(observeCallback, {
     root: Dom.getElement(ROOT_ID),
     rootMargin: INTERSECTION_OBSERVER_ROOT_MARGIN,
@@ -35,10 +33,6 @@ export function init() {
   return observerTargeting()
 }
 
-export function destroy() {
-  return disconnect().then(() => (observer = null))
-}
+export const destroy = () => disconnect().then(() => (observer = null))
 
-export function refreshObserver() {
-  return disconnect().then(observerTargeting)
-}
+export const refreshObserver = () => disconnect().then(observerTargeting)

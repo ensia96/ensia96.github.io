@@ -16,14 +16,19 @@ import * as EventManager from '../utils/event-manager'
 
 const BASE_LINE = 80
 
-function getDistance(currentPos) {
-  return Dom.getDocumentHeight() - currentPos
-}
-
-export default ({ data, location }) => {
-  const { siteMetadata } = data.site
-  const { countOfInitialPost } = siteMetadata.configs
-  const posts = data.allMarkdownRemark.edges
+export default ({
+  data: {
+    site: {
+      siteMetadata: {
+        configs: { countOfInitialPost },
+        title,
+        keywords,
+      },
+    },
+    allMarkdownRemark: { edges: posts },
+  },
+  location,
+}) => {
   const categories = useMemo(
     () => _.uniq(posts.map(({ node }) => node.frontmatter.category)),
     []
@@ -33,8 +38,9 @@ export default ({ data, location }) => {
 
   useIntersectionObserver()
   useScrollEvent(() => {
-    const currentPos = window.scrollY + window.innerHeight
-    const isTriggerPos = () => getDistance(currentPos) < BASE_LINE
+    const isTriggerPos = () =>
+      Dom.getDocumentHeight() - (window.scrollY + window.innerHeight) <
+      BASE_LINE
     const doesNeedMore = () =>
       posts.length > countRef.current * countOfInitialPost
 
@@ -45,8 +51,8 @@ export default ({ data, location }) => {
   })
 
   return (
-    <Layout location={location} title={siteMetadata.title}>
-      <Head title={HOME_TITLE} keywords={siteMetadata.keywords} />
+    <Layout location={location} title={title}>
+      <Head title={HOME_TITLE} keywords={keywords} />
       <Bio />
       <Category
         categories={categories}

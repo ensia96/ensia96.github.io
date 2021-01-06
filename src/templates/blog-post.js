@@ -18,28 +18,40 @@ import * as ScrollManager from '../utils/scroll'
 import '../styles/code.scss'
 import 'katex/dist/katex.min.css'
 
-export default ({ data, pageContext, location }) => {
+export default ({
+  data: {
+    markdownRemark: post,
+    markdownRemark: {
+      html,
+      frontmatter: { title: postTitle, date },
+    },
+    site: {
+      siteMetadata: {
+        title,
+        comment: { disqusShortName, utterances },
+        siteUrl,
+        author,
+        sponsor: { buyMeACoffeeId },
+      },
+    },
+  },
+  pageContext,
+  pageContext: { slug },
+  location,
+}) => {
   useEffect(() => {
     ScrollManager.init()
-    return () => ScrollManager.destroy()
+    //return () => ScrollManager.destroy()
   }, [])
-
-  const post = data.markdownRemark
-  const metaData = data.site.siteMetadata
-  const { title, comment, siteUrl, author, sponsor } = metaData
-  const { disqusShortName, utterances } = comment
-  const { title: postTitle, date } = post.frontmatter
 
   return (
     <Layout location={location} title={title}>
       <Head title={postTitle} description={post.excerpt} />
       <PostTitle title={postTitle} />
       <PostDate date={date} />
-      <PostContainer html={post.html} />
+      <PostContainer html={html} />
       <SocialShare title={postTitle} author={author} />
-      {!!sponsor.buyMeACoffeeId && (
-        <SponsorButton sponsorId={sponsor.buyMeACoffeeId} />
-      )}
+      {!!buyMeACoffeeId && <SponsorButton sponsorId={buyMeACoffeeId} />}
       <Elements.Hr />
       <Bio />
       <PostNavigator pageContext={pageContext} />
@@ -48,7 +60,7 @@ export default ({ data, pageContext, location }) => {
           post={post}
           shortName={disqusShortName}
           siteUrl={siteUrl}
-          slug={pageContext.slug}
+          slug={slug}
         />
       )}
       {!!utterances && <Utterances repo={utterances} />}

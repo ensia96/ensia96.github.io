@@ -1,14 +1,14 @@
-export function toFit(
+export const toFit = (
   cb,
   { dismissCondition = () => false, triggerCondition = () => true }
-) {
+) => {
   if (!cb) {
     throw Error('Invalid required arguments')
   }
 
   let tick = false
 
-  return function() {
+  return () => {
     if (tick) {
       return
     }

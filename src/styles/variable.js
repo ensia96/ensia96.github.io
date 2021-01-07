@@ -25,21 +25,18 @@ const style = {
       inlineDimmedColor: '#ece5f1;',
       inlineTextColor: '#4b2043;',
     },
+    category: {
+      categoryBorderColor: '#ecf0f2;',
+      categoryHighlightBorderColor: '#909da1;',
+      categoryBackgroundColor: '#f4f7f8;',
+      categoryTextColor: '#666;',
+      categoryHighlightTextColor: '#636c6e;',
+      categoryItemColor: '#fff;',
+    },
   },
 }
 
 const dummy = `
-/**
- * @light theme
- */
-// category
-$light-category-border-color: #ecf0f2;
-$light-category-highlight-border-color: #909da1;
-$light-category-background-color: #f4f7f8;
-$light-category-text-color: #666;
-$light-category-highlight-text-color: #636c6e;
-$light-category-item-color: #fff;
-
 /**
  * @dark theme
  */

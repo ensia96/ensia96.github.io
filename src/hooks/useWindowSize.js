@@ -1,10 +1,13 @@
-import { useState, useLayoutEffect } from 'react'
+import { useState, useEffect } from 'react'
 
-export default defaultValue => {
-  const [windowSize, setWindowSize] = useState({ innerWidth: defaultValue })
+export default () => {
+  const [windowSize, setWindowSize] = useState({})
 
-  useLayoutEffect(() => {
-    setWindowSize({ innerWidth: window.innerWidth })
+  const resize = () => setWindowSize({ width: window.innerWidth })
+
+  useEffect(() => {
+    window.addEventListener('resize', resize)
+    return () => window.removeEventListener('resize', resize)
   }, [])
 
   return windowSize

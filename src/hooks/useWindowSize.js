@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 
 export default () => {
-  const [windowSize, setWindowSize] = useState({})
+  const [windowSize, setWindowSize] = useState({ width: window.innerWidth })
 
   const resize = () => setWindowSize({ width: window.innerWidth })
 

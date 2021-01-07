@@ -1,10 +1,11 @@
-const style = {}
+const style = {
+  app: {
+    themeGradient: 'linear-gradient(72deg, #291e95, #cc007a);',
+    topHeaderTextColor: '#fff;',
+  },
+}
 
 const dummy = `
-// app
-$theme-gradient: linear-gradient(72deg, #291e95, #cc007a);
-$top-header-text-color: #fff;
-
 /**
  * @light theme
  */

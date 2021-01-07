@@ -21,6 +21,10 @@ const style = {
       navigatorBackgroundColor: '#fceff7;',
       blockquoteTextColor: '#999;',
     },
+    code: {
+      inlineDimmedColor: '#ece5f1;',
+      inlineTextColor: '#4b2043;',
+    },
   },
 }
 
@@ -28,10 +32,6 @@ const dummy = `
 /**
  * @light theme
  */
-// code
-$inline-dimmed-color: #ece5f1;
-$inline-text-color: #4b2043;
-
 // category
 $light-category-border-color: #ecf0f2;
 $light-category-highlight-border-color: #909da1;

@@ -1,0 +1,28 @@
+import React from 'react'
+import styled from 'styled-components'
+
+import Burger from './burger.js'
+
+const Header = styled.header`
+  width: 100%;
+  height: 50px;
+
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  display: flex;
+
+  color: white;
+  background-color: #ffc800;
+
+  @media all and (min-width: 992px) {
+    display: none;
+  }
+`
+
+export default ({ open, sideToggle }) => (
+  <>
+    <Burger open={open} sideToggle={sideToggle} />
+    <Header />
+  </>
+)

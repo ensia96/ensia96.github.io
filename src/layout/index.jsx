@@ -16,7 +16,7 @@ import ToggleBox from './togglebox.js'
 import GreenDot from './greendot.js'
 
 export const Layout = ({ location, title, children }) => {
-  const { innerWidth: width } = useWindowSize(900)
+  const { width } = useWindowSize()
   const [open, setOpen] = useState()
   const [bio, setBio] = useState()
 

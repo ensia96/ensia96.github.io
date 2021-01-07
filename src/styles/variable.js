@@ -16,6 +16,11 @@ const style = {
       middleGray: '#7d7d7d;',
       lightGray: '#aaa;',
     },
+    blogTemplates: {
+      navigatorTextColor: '#cc007a;',
+      navigatorBackgroundColor: '#fceff7;',
+      blockquoteTextColor: '#999;',
+    },
   },
 }
 
@@ -23,11 +28,6 @@ const dummy = `
 /**
  * @light theme
  */
-// blog-templates
-$navigator-text-color: #cc007a;
-$navigator-background-color: #fceff7;
-$blockquote-text-color: #999;
-
 // code
 $inline-dimmed-color: #ece5f1;
 $inline-text-color: #4b2043;

@@ -9,6 +9,13 @@ const style = {
       textShadow: '0 0 0.1px rgba(0, 0, 0, 0.3);',
       hoverTextShadow: '0 0 6px rgba(0, 0, 0, 0.2);',
     },
+    index: {
+      dimmedColor: '#eef5db;',
+      linkColor: '#000080;',
+      darkGray: '#333;',
+      middleGray: '#7d7d7d;',
+      lightGray: '#aaa;',
+    },
   },
 }
 
@@ -16,14 +23,6 @@ const dummy = `
 /**
  * @light theme
  */
-
-// index
-$dimmed-color: #eef5db;
-$light-link-color: #000080;
-$dark-gray: #333;
-$middle-gray: #7d7d7d;
-$light-gray: #aaa;
-
 // blog-templates
 $navigator-text-color: #cc007a;
 $navigator-background-color: #fceff7;

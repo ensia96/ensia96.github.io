@@ -3,17 +3,19 @@ const style = {
     themeGradient: 'linear-gradient(72deg, #291e95, #cc007a);',
     topHeaderTextColor: '#fff;',
   },
+  light: {
+    body: {
+      backgroundColor: '#fff;',
+      textShadow: '0 0 0.1px rgba(0, 0, 0, 0.3);',
+      hoverTextShadow: '0 0 6px rgba(0, 0, 0, 0.2);',
+    },
+  },
 }
 
 const dummy = `
 /**
  * @light theme
  */
-
-// body
-$light-background-color: #fff;
-$light-text-shadow: 0 0 0.1px rgba(0, 0, 0, 0.3);
-$light-hover-text-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
 
 // index
 $dimmed-color: #eef5db;

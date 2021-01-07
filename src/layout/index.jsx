@@ -1,32 +1,69 @@
-import React from 'react'
+import React, { useState } from 'react'
 
-import { Top } from '../components/top'
-import { Header } from '../components/header'
+import useWindowSize from '../hooks/useWindowSize'
+
+import { Bio } from '../components/bio'
 import { ThemeSwitch } from '../components/theme-switch'
 import { Footer } from '../components/footer'
-import { rhythm } from '../utils/typography'
+import { Header } from '../components/header'
 
-import './index.scss'
+import Global from './global.js'
+import Main from './main.js'
+import Overlay from './overlay.js'
+import HeadBar from './headbar.js'
+import SideBar from './sidebar.js'
+import ToggleBox from './togglebox.js'
+import GreenDot from './greendot.js'
 
 export const Layout = ({ location, title, children }) => {
-  const rootPath = `${__PATH_PREFIX__}/`
+  const { width } = useWindowSize()
+  const [open, setOpen] = useState()
+  const [bio, setBio] = useState()
+
+  const sideToggle = () => setOpen(!open)
+  const bioToggle = () => setBio(!bio)
+
+  const isMobile = width < 992
 
   return (
-    <React.Fragment>
-      <Top title={title} location={location} rootPath={rootPath} />
-      <div
-        style={{
-          marginLeft: `auto`,
-          marginRight: `auto`,
-          maxWidth: rhythm(24),
-          padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
-        }}
-      >
-        <ThemeSwitch />
-        <Header title={title} location={location} rootPath={rootPath} />
+    <>
+      <Global open={open} />
+      <SideBar open={open}>
+        <ToggleBox children={<ThemeSwitch />} />
+        <div
+          style={{
+            display: 'flex',
+            alignItems: 'center',
+            paddingLeft: '10px',
+            height: '50px',
+            marginBottom: '10px',
+            cursor: 'pointer',
+            fontSize: '18px',
+          }}
+          onClick={bioToggle}
+        >
+          <GreenDot />
+          <span>
+            <b>춤추는 망고</b>
+          </span>
+        </div>
+        {bio && <Bio />}
+      </SideBar>
+      {isMobile && (
+        <>
+          <HeadBar open={open} sideToggle={sideToggle} />
+          {open && <Overlay onClick={sideToggle} />}
+        </>
+      )}
+      <Main>
+        <Header
+          title={title}
+          location={location}
+          rootPath={`${__PATH_PREFIX__}/`}
+        />
         {children}
         <Footer />
-      </div>
-    </React.Fragment>
+      </Main>
+    </>
   )
 }

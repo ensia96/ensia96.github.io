@@ -7,8 +7,6 @@ import { ThemeSwitch } from '../components/theme-switch'
 import { Footer } from '../components/footer'
 import { Header } from '../components/header'
 
-import './index.scss'
-
 import Global from './global.js'
 import Main from './main.js'
 import Overlay from './overlay.js'
@@ -18,7 +16,7 @@ import ToggleBox from './togglebox.js'
 import GreenDot from './greendot.js'
 
 export const Layout = ({ location, title, children }) => {
-  const { width } = useWindowSize()
+  const { innerWidth: width } = useWindowSize(900)
   const [open, setOpen] = useState()
   const [bio, setBio] = useState()
 

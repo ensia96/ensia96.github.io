@@ -15,14 +15,7 @@ export const Category = ({ category, selectCategory }) => (
         []
       )
       return (
-        <ul
-          className="category-container"
-          role="tablist"
-          id="category"
-          style={{
-            margin: `0 -${rhythm(3 / 4)}`,
-          }}
-        >
+        <ul>
           <Item
             title="All"
             selectedCategory={category}

@@ -4,7 +4,7 @@ import { StaticQuery } from 'gatsby'
 import List from './list.js'
 import Item from './item.js'
 
-export const Category = ({ category, selectCategory }) => (
+export const Category = () => (
   <StaticQuery
     query={categoryQuery}
     render={({ allMarkdownRemark: { edges } }) => {
@@ -17,18 +17,9 @@ export const Category = ({ category, selectCategory }) => (
       )
       return (
         <List>
-          <Item
-            title="All"
-            selectedCategory={category}
-            onClick={selectCategory}
-          />
+          <Item title="All" />
           {categories.map((title, idx) => (
-            <Item
-              key={idx}
-              title={title}
-              selectedCategory={category}
-              onClick={selectCategory}
-            />
+            <Item key={idx} title={title} />
           ))}
         </List>
       )

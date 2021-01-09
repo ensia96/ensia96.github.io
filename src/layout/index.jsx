@@ -15,7 +15,7 @@ import Overlay from './overlay.js'
 import HeadBar from './headbar.js'
 import SideBar from './sidebar.js'
 import ToggleBox from './togglebox.js'
-import GreenDot from './greendot.js'
+import AuthorBox from './authorbox.js'
 
 export const Layout = ({ location, title, children }) => {
   const { width } = useWindowSize()
@@ -32,23 +32,7 @@ export const Layout = ({ location, title, children }) => {
       <Global open={open} />
       <SideBar open={open}>
         <ToggleBox children={<ThemeSwitch />} />
-        <div
-          style={{
-            display: 'flex',
-            alignItems: 'center',
-            paddingLeft: '10px',
-            height: '50px',
-            marginBottom: '10px',
-            cursor: 'pointer',
-            fontSize: '18px',
-          }}
-          onClick={bioToggle}
-        >
-          <GreenDot />
-          <span>
-            <b>춤추는 망고</b>
-          </span>
-        </div>
+        <AuthorBox author="춤추는 망고" onClick={bioToggle} />
         {bio && <Bio />}
         <Category />
       </SideBar>

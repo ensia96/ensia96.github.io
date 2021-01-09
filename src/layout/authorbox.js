@@ -7,7 +7,6 @@ const AuthorBox = styled.div`
   display: flex;
   align-items: center;
   margin-left: 30px;
-  margin-bottom: 10px;
   height: 50px;
   cursor: pointer;
   font-size: 18px;

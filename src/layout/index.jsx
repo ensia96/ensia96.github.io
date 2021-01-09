@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { StaticQuery } from 'gatsby'
 
 import useWindowSize from '../hooks/useWindowSize'
 
@@ -35,6 +36,13 @@ export const Layout = ({ location, title, children }) => {
         <AuthorBox author="춤추는 망고" onClick={bioToggle} />
         {bio && <Bio />}
         <Category />
+        <StaticQuery
+          query={layoutQuery}
+          render={data => {
+            console.log('data : ', data)
+            return <div />
+          }}
+        />
       </SideBar>
       {isMobile && (
         <>
@@ -54,3 +62,35 @@ export const Layout = ({ location, title, children }) => {
     </>
   )
 }
+
+const layoutQuery = graphql`
+  query {
+    site {
+      siteMetadata {
+        title
+        configs {
+          countOfInitialPost
+        }
+      }
+    }
+    allMarkdownRemark(
+      sort: { fields: [frontmatter___date], order: DESC }
+      filter: { frontmatter: { category: { ne: null }, draft: { eq: false } } }
+    ) {
+      edges {
+        node {
+          excerpt(pruneLength: 200, truncate: true)
+          fields {
+            slug
+          }
+          frontmatter {
+            date(formatString: "MMMM DD, YYYY")
+            title
+            category
+            draft
+          }
+        }
+      }
+    }
+  }
+`

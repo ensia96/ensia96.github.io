@@ -28,7 +28,8 @@ export default ({
   location,
 }) => {
   const [count, countRef, increaseCount] = useRenderedCount()
-  const [category, selectCategory] = useCategory()
+
+  const category = window.location.search.split('=').pop()
 
   useIntersectionObserver()
   useScrollEvent(() => {

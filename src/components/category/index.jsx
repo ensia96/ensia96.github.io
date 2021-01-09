@@ -53,3 +53,27 @@ export const Category = ({ categories, category, selectCategory }) => {
     </ul>
   )
 }
+
+const categoryQuery = graphql`
+  query {
+    allMarkdownRemark(
+      sort: { fields: [frontmatter___date], order: DESC }
+      filter: { frontmatter: { category: { ne: null }, draft: { eq: false } } }
+    ) {
+      edges {
+        node {
+          excerpt(pruneLength: 200, truncate: true)
+          fields {
+            slug
+          }
+          frontmatter {
+            date(formatString: "MMMM DD, YYYY")
+            title
+            category
+            draft
+          }
+        }
+      }
+    }
+  }
+`

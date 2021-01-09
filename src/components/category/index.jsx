@@ -83,10 +83,7 @@ const categoryQuery = graphql`
             slug
           }
           frontmatter {
-            date(formatString: "MMMM DD, YYYY")
-            title
             category
-            draft
           }
         }
       }

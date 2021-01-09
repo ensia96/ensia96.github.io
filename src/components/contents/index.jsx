@@ -7,10 +7,8 @@ import { CATEGORY_TYPE } from '../../constants'
 export const Contents = ({ posts, countOfInitialPost, count, category }) => {
   const refinedPosts = useMemo(() =>
     posts
-      .filter(
-        ({ node }) =>
-          category === CATEGORY_TYPE.ALL ||
-          node.frontmatter.category === category
+      .filter(({ node }) =>
+        category ? node.frontmatter.category === category : true
       )
       .slice(0, count * countOfInitialPost)
   )

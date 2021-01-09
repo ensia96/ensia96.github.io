@@ -49,7 +49,7 @@ export const Layout = ({ location, title, children }) => {
             <Global open={open} />
             <SideBar open={open}>
               <ToggleBox children={<ThemeSwitch />} />
-              <AuthorBox author="춤추는 망고" onClick={bioToggle} />
+              <AuthorBox author={author} onClick={bioToggle} />
               {bio && <Bio />}
               <Category />
             </SideBar>

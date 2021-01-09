@@ -25,7 +25,7 @@ export const Category = ({ category, selectCategory }) => (
           }}
         >
           <Item
-            title={'All'}
+            title="All"
             selectedCategory={category}
             onClick={selectCategory}
           />

@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from 'react'
+import React, { useState, useMemo, useEffect } from 'react'
 import { StaticQuery } from 'gatsby'
 
 import useWindowSize from '../hooks/useWindowSize'
@@ -27,6 +27,10 @@ export const Layout = ({ location, title, children }) => {
   const bioToggle = () => setBio(!bio)
 
   const isMobile = width < 992
+
+  useEffect(() => {
+    isMobile && setOpen(false)
+  }, [location])
 
   return (
     <StaticQuery

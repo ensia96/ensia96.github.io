@@ -1,5 +1,6 @@
 import { graphql } from 'gatsby'
 import React from 'react'
+import { globalHistory } from '@reach/router'
 import { Bio } from '../components/bio'
 import { Contents } from '../components/contents'
 import { Head } from '../components/head'
@@ -28,7 +29,7 @@ export default ({
 }) => {
   const [count, countRef, increaseCount] = useRenderedCount()
 
-  const category = window.location.search.split('=').pop()
+  const category = globalHistory.location.search.split('=').pop()
 
   useIntersectionObserver()
   useScrollEvent(() => {

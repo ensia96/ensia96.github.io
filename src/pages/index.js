@@ -4,7 +4,6 @@ import { Bio } from '../components/bio'
 import { Contents } from '../components/contents'
 import { Head } from '../components/head'
 import { HOME_TITLE } from '../constants'
-import { useCategory } from '../hooks/useCategory'
 import { useIntersectionObserver } from '../hooks/useIntersectionObserver'
 import { useRenderedCount } from '../hooks/useRenderedCount'
 import { useScrollEvent } from '../hooks/useScrollEvent'
@@ -28,7 +27,8 @@ export default ({
   location,
 }) => {
   const [count, countRef, increaseCount] = useRenderedCount()
-  const [category, selectCategory] = useCategory()
+
+  const category = window.location.search.split('=').pop()
 
   useIntersectionObserver()
   useScrollEvent(() => {

@@ -1,4 +1,5 @@
-import React, { useState } from 'react'
+import React, { useState, useMemo } from 'react'
+import { StaticQuery } from 'gatsby'
 
 import useWindowSize from '../hooks/useWindowSize'
 
@@ -28,29 +29,70 @@ export const Layout = ({ location, title, children }) => {
   const isMobile = width < 992
 
   return (
-    <>
-      <Global open={open} />
-      <SideBar open={open}>
-        <ToggleBox children={<ThemeSwitch />} />
-        <AuthorBox author="춤추는 망고" onClick={bioToggle} />
-        {bio && <Bio />}
-        <Category />
-      </SideBar>
-      {isMobile && (
-        <>
-          <HeadBar open={open} sideToggle={sideToggle} />
-          {open && <Overlay onClick={sideToggle} />}
-        </>
-      )}
-      <Main>
-        <Header
-          title={title}
-          location={location}
-          rootPath={`${__PATH_PREFIX__}/`}
-        />
-        {children}
-        <Footer />
-      </Main>
-    </>
+    <StaticQuery
+      query={layoutQuery}
+      render={({
+        site: {
+          siteMetadata: { author },
+        },
+        allMarkdownRemark: { edges },
+      }) => {
+        const categories = useMemo(
+          () =>
+            Array.from(
+              new Set(edges.map(({ node }) => node.frontmatter.category))
+            ),
+          []
+        )
+        return (
+          <>
+            <Global open={open} />
+            <SideBar open={open}>
+              <ToggleBox children={<ThemeSwitch />} />
+              <AuthorBox author={author} onClick={bioToggle} />
+              {bio && <Bio />}
+              <Category categories={categories} />
+            </SideBar>
+            {isMobile && (
+              <>
+                <HeadBar open={open} sideToggle={sideToggle} />
+                {open && <Overlay onClick={sideToggle} />}
+              </>
+            )}
+            <Main>
+              <Header
+                title={title}
+                location={location}
+                rootPath={`${__PATH_PREFIX__}/`}
+              />
+              {children}
+              <Footer />
+            </Main>
+          </>
+        )
+      }}
+    />
   )
 }
+
+const layoutQuery = graphql`
+  query {
+    site {
+      siteMetadata {
+        author
+      }
+    }
+    allMarkdownRemark(
+      sort: { fields: [frontmatter___date], order: DESC }
+      filter: { frontmatter: { category: { ne: null }, draft: { eq: false } } }
+    ) {
+      edges {
+        node {
+          frontmatter {
+            category
+          }
+        }
+      }
+    }
+  }
+`

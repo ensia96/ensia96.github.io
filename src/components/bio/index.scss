@@ -1,7 +1,6 @@
 @import '../../styles/variables.scss';
 
 .bio {
-  margin-bottom: 24px;
 
   .author-description {
     display: flex;
@@ -17,16 +16,6 @@
   .author-name-prefix {
     font-size: 90%;
     margin-right: 4px;
-  }
-
-  .author-name-content {
-    display: inline-block;
-    font-size: 95%;
-    padding: 2px 6px;
-    font-weight: bolder;
-    border-radius: 8px;
-    transform-origin: center;
-    animation: flutter 2s infinite linear;
   }
 
   .author-introduction {

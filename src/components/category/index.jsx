@@ -53,8 +53,8 @@ export const Category = ({ categories, category, selectCategory }) => {
       ))}
       <StaticQuery
         query={categoryQuery}
-        render={data => {
-          console.log('data : ', data)
+        render={({ allMarkdownRemark: { edges } }) => {
+          console.log('edges : ', edges)
           return <div />
         }}
       />

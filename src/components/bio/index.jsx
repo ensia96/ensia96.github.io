@@ -45,7 +45,7 @@ export const Bio = ({ open }) => (
                 />
                 <div className="author-name">
                   <NameShake to="/about">@{author}</NameShake>
-                  <span className="author-name-prefix">← About Me!</span>
+                  <span style={{ fontSize: '65%' }}>← About Me!</span>
                   <div className="author-introduction">{introduction}</div>
                   <p className="author-socials">
                     {social.github && (

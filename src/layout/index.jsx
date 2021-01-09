@@ -67,10 +67,7 @@ const layoutQuery = graphql`
   query {
     site {
       siteMetadata {
-        title
-        configs {
-          countOfInitialPost
-        }
+        author
       }
     }
     allMarkdownRemark(
@@ -79,15 +76,8 @@ const layoutQuery = graphql`
     ) {
       edges {
         node {
-          excerpt(pruneLength: 200, truncate: true)
-          fields {
-            slug
-          }
           frontmatter {
-            date(formatString: "MMMM DD, YYYY")
-            title
             category
-            draft
           }
         }
       }

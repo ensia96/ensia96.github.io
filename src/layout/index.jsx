@@ -29,48 +29,49 @@ export const Layout = ({ location, title, children }) => {
   const isMobile = width < 992
 
   return (
-    <>
-      <Global open={open} />
-      <SideBar open={open}>
-        <ToggleBox children={<ThemeSwitch />} />
-        <AuthorBox author="춤추는 망고" onClick={bioToggle} />
-        {bio && <Bio />}
-        <Category />
-        <StaticQuery
-          query={layoutQuery}
-          render={({
-            site: {
-              siteMetadata: { author },
-            },
-            allMarkdownRemark: { edges },
-          }) => {
-            console.log('author : ', author)
-            console.log(
-              'categories : ',
-              Array.from(
-                new Set(edges.map(({ node }) => node.frontmatter.category))
-              )
-            )
-            return <div />
-          }}
-        />
-      </SideBar>
-      {isMobile && (
-        <>
-          <HeadBar open={open} sideToggle={sideToggle} />
-          {open && <Overlay onClick={sideToggle} />}
-        </>
-      )}
-      <Main>
-        <Header
-          title={title}
-          location={location}
-          rootPath={`${__PATH_PREFIX__}/`}
-        />
-        {children}
-        <Footer />
-      </Main>
-    </>
+    <StaticQuery
+      query={layoutQuery}
+      render={({
+        site: {
+          siteMetadata: { author },
+        },
+        allMarkdownRemark: { edges },
+      }) => {
+        console.log('author : ', author)
+        console.log(
+          'categories : ',
+          Array.from(
+            new Set(edges.map(({ node }) => node.frontmatter.category))
+          )
+        )
+        return (
+          <>
+            <Global open={open} />
+            <SideBar open={open}>
+              <ToggleBox children={<ThemeSwitch />} />
+              <AuthorBox author="춤추는 망고" onClick={bioToggle} />
+              {bio && <Bio />}
+              <Category />
+            </SideBar>
+            {isMobile && (
+              <>
+                <HeadBar open={open} sideToggle={sideToggle} />
+                {open && <Overlay onClick={sideToggle} />}
+              </>
+            )}
+            <Main>
+              <Header
+                title={title}
+                location={location}
+                rootPath={`${__PATH_PREFIX__}/`}
+              />
+              {children}
+              <Footer />
+            </Main>
+          </>
+        )
+      }}
+    />
   )
 }
 

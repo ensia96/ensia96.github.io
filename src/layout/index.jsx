@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useMemo } from 'react'
 import { StaticQuery } from 'gatsby'
 
 import useWindowSize from '../hooks/useWindowSize'
@@ -37,12 +37,12 @@ export const Layout = ({ location, title, children }) => {
         },
         allMarkdownRemark: { edges },
       }) => {
-        console.log('author : ', author)
-        console.log(
-          'categories : ',
-          Array.from(
-            new Set(edges.map(({ node }) => node.frontmatter.category))
-          )
+        const categories = useMemo(
+          () =>
+            Array.from(
+              new Set(edges.map(({ node }) => node.frontmatter.category))
+            ),
+          []
         )
         return (
           <>

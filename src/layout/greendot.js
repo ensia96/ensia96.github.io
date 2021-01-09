@@ -7,5 +7,5 @@ export default styled.div`
   border-radius: 50%;
   background-color: #49c39e;
   vertical-align: middle;
-  margin: 0px 10px;
+  margin-right: 10px;
 `

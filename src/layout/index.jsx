@@ -52,7 +52,7 @@ export const Layout = ({ location, title, children }) => {
           </span>
         </div>
         {bio && <Bio />}
-        <Category category={category} selectCategory={selectCategory} />
+        <Category />
       </SideBar>
       {isMobile && (
         <>

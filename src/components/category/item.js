@@ -18,8 +18,8 @@ const Item = styled(Link)`
   }
 `
 
-export default ({ title }) => (
-  <Item to={`/?category=${title}`}>
+export default ({ title, to }) => (
+  <Item to={to}>
     <i>#</i>
     <span>{title}</span>
   </Item>

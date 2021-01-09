@@ -5,9 +5,9 @@ import Item from './item.js'
 
 export const Category = ({ categories }) => (
   <List>
-    <Item title="All" />
+    <Item title="All" to="/" />
     {categories.map((title, idx) => (
-      <Item key={idx} title={title} />
+      <Item key={idx} title={title} to={`/?category=${title}`} />
     ))}
   </List>
 )

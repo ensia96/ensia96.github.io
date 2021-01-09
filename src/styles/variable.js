@@ -26,36 +26,29 @@ const style = {
       inlineTextColor: '#4b2043;',
     },
     category: {
-      categoryBorderColor: '#ecf0f2;',
-      categoryHighlightBorderColor: '#909da1;',
-      categoryBackgroundColor: '#f4f7f8;',
-      categoryTextColor: '#666;',
-      categoryHighlightTextColor: '#636c6e;',
-      categoryItemColor: '#fff;',
+      borderColor: '#ecf0f2;',
+      highlightBorderColor: '#909da1;',
+      backgroundColor: '#f4f7f8;',
+      textColor: '#666;',
+      highlightTextColor: '#636c6e;',
+      itemColor: '#fff;',
+    },
+  },
+  dark: {
+    backgroundColor: '#282c35;',
+    linkColor: '#bb72ec;',
+    lightestFontColor: '#fff;',
+    lightFontColor: '#eeeeee;',
+    middleFontColor: '#d8d7d7;',
+    textShadow: '0 0 0.1px rgba(255, 255, 255, 0.3);',
+    hoverTextShadow: '0 0 6px rgba(255, 255, 255, 0.2);',
+    category: {
+      itemColor: '#282c35;',
+      backgroundColor: '#24272c;',
+      borderColor: 'rgb(56, 54, 54);',
+      textColor: '#d8d7d7;',
+      highlightBorderColor: '#666;',
+      highlightTextColor: '#fff;',
     },
   },
 }
-
-const dummy = `
-/**
- * @dark theme
- */
-$dark-background-color: #282c35;
-$dark-link-color: #bb72ec;
-
-$dark-lightest-font-color: #fff;
-$dark-light-font-color: #eeeeee;
-$dark-middle-font-color: #d8d7d7;
-
-$dark-text-shadow: 0 0 0.1px rgba(255, 255, 255, 0.3);
-$dark-hover-text-shadow: 0 0 6px rgba(255, 255, 255, 0.2);
-
-$dark-category-item-color: #282c35;
-$dark-category-background-color: #24272c;
-
-$dark-category-border-color: rgb(56, 54, 54);
-$dark-category-text-color: #d8d7d7;
-
-$dark-category-highlight-border-color: #666;
-$dark-category-highlight-text-color: #fff;
-`

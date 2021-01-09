@@ -21,7 +21,5 @@ const List = styled.nav`
     margin-left: 50px;
   }
 `
-;`
-`
 
 export default ({ children }) => <List children={children} />

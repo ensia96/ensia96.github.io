@@ -7,6 +7,8 @@ import { ThemeSwitch } from '../components/theme-switch'
 import { Footer } from '../components/footer'
 import { Header } from '../components/header'
 
+import { Category } from '../components/category'
+
 import Global from './global.js'
 import Main from './main.js'
 import Overlay from './overlay.js'
@@ -48,6 +50,7 @@ export const Layout = ({ location, title, children }) => {
           </span>
         </div>
         {bio && <Bio />}
+        <Category />
       </SideBar>
       {isMobile && (
         <>

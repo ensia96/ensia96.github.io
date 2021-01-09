@@ -5,7 +5,7 @@ import Image from 'gatsby-image'
 
 import './index.scss'
 
-const NameShake = styled.div`
+const NameShake = styled(Link)`
   display: inline-block;
   font-size: 95%;
   padding: 2px 6px;
@@ -45,10 +45,7 @@ export const Bio = ({ open }) => (
                 />
                 <div className="author-name">
                   <span className="author-name-prefix">Written by</span>
-                  <Link to={'/about'} className="author-name-content">
-                    <span>@{author}</span>
-                  </Link>
-                  <NameShake to={'/about'}>@{author}</NameShake>
+                  <NameShake to="/about">@{author}</NameShake>
                   <div className="author-introduction">{introduction}</div>
                   <p className="author-socials">
                     {social.github && (

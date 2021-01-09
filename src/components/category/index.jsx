@@ -1,3 +1,4 @@
+import { StaticQuery } from 'gatsby'
 import React, { useCallback, useRef } from 'react'
 import { rhythm } from '../../utils/typography'
 import './index.scss'
@@ -50,6 +51,13 @@ export const Category = ({ categories, category, selectCategory }) => {
           scrollToCenter={scrollToCenter}
         />
       ))}
+      <StaticQuery
+        query={categoryQuery}
+        render={data => {
+          console.log('data : ', data)
+          return <div />
+        }}
+      />
     </ul>
   )
 }

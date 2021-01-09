@@ -29,8 +29,8 @@ export const Layout = ({ location, title, children }) => {
   const isMobile = width < 992
 
   useEffect(() => {
-    setOpen(false)
-  }, [width, location])
+    isMobile && setOpen(false)
+  }, [location])
 
   return (
     <StaticQuery

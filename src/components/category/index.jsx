@@ -1,8 +1,8 @@
 import React, { useMemo } from 'react'
 import { StaticQuery } from 'gatsby'
-import { Item } from './item'
 
 import List from './list.js'
+import Item from './item.js'
 
 export const Category = ({ category, selectCategory }) => (
   <StaticQuery
@@ -17,21 +17,19 @@ export const Category = ({ category, selectCategory }) => (
       )
       return (
         <List>
-          <ul>
+          <Item
+            title="All"
+            selectedCategory={category}
+            onClick={selectCategory}
+          />
+          {categories.map((title, idx) => (
             <Item
-              title="All"
+              key={idx}
+              title={title}
               selectedCategory={category}
               onClick={selectCategory}
             />
-            {categories.map((title, idx) => (
-              <Item
-                key={idx}
-                title={title}
-                selectedCategory={category}
-                onClick={selectCategory}
-              />
-            ))}
-          </ul>
+          ))}
         </List>
       )
     }}

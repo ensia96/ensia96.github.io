@@ -34,15 +34,16 @@ const style = {
       categoryItemColor: '#fff;',
     },
   },
+  dark: {
+    backgroundColor: '#282c35;',
+    linkColor: '#bb72ec;',
+  },
 }
 
 const dummy = `
 /**
  * @dark theme
  */
-$dark-background-color: #282c35;
-$dark-link-color: #bb72ec;
-
 $dark-lightest-font-color: #fff;
 $dark-light-font-color: #eeeeee;
 $dark-middle-font-color: #d8d7d7;

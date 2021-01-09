@@ -38,8 +38,19 @@ export const Layout = ({ location, title, children }) => {
         <Category />
         <StaticQuery
           query={layoutQuery}
-          render={data => {
-            console.log('data : ', data)
+          render={({
+            site: {
+              siteMetadata: { author },
+            },
+            allMarkdownRemark: { edges },
+          }) => {
+            console.log('author : ', author)
+            console.log(
+              'categories : ',
+              Array.from(
+                new Set(edges.map(({ node }) => node.frontmatter.category))
+              )
+            )
             return <div />
           }}
         />

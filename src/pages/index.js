@@ -54,11 +54,7 @@ export default ({
     <Layout location={location} title={title}>
       <Head title={HOME_TITLE} keywords={keywords} />
       <Bio />
-      <Category
-        categories={categories}
-        category={category}
-        selectCategory={selectCategory}
-      />
+      <Category category={category} selectCategory={selectCategory} />
       <Contents
         posts={posts}
         countOfInitialPost={countOfInitialPost}

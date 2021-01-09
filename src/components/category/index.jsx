@@ -1,5 +1,4 @@
 import React, { useCallback, useRef, useMemo } from 'react'
-import _ from 'lodash'
 import { StaticQuery } from 'gatsby'
 import { rhythm } from '../../utils/typography'
 import './index.scss'
@@ -57,7 +56,10 @@ export const Category = ({ categories, category, selectCategory }) => {
         render={({ allMarkdownRemark: { edges } }) => {
           console.log('edges : ', edges)
           const categories = useMemo(
-            () => _.uniq(edges.map(({ node }) => node.frontmatter.category)),
+            () =>
+              Array.from(
+                new Set(edges.map(({ node }) => node.frontmatter.category))
+              ),
             []
           )
           console.log('categories : ', categories)

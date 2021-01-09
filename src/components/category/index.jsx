@@ -4,7 +4,7 @@ import { rhythm } from '../../utils/typography'
 import './index.scss'
 import { Item } from './item'
 
-export const Category = ({ categories, category, selectCategory }) => {
+export const Category = ({ category, selectCategory }) => {
   const containerRef = useRef(null)
 
   const scrollToCenter = useCallback(

@@ -42,19 +42,13 @@ const style = {
     middleFontColor: '#d8d7d7;',
     textShadow: '0 0 0.1px rgba(255, 255, 255, 0.3);',
     hoverTextShadow: '0 0 6px rgba(255, 255, 255, 0.2);',
+    category: {
+      itemColor: '#282c35;',
+      backgroundColor: '#24272c;',
+      borderColor: 'rgb(56, 54, 54);',
+      textColor: '#d8d7d7;',
+      highlightBorderColor: '#666;',
+      highlightTextColor: '#fff;',
+    },
   },
 }
-
-const dummy = `
-/**
- * @dark theme
- */
-$dark-category-item-color: #282c35;
-$dark-category-background-color: #24272c;
-
-$dark-category-border-color: rgb(56, 54, 54);
-$dark-category-text-color: #d8d7d7;
-
-$dark-category-highlight-border-color: #666;
-$dark-category-highlight-text-color: #fff;
-`

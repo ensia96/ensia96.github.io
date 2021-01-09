@@ -26,12 +26,12 @@ const style = {
       inlineTextColor: '#4b2043;',
     },
     category: {
-      categoryBorderColor: '#ecf0f2;',
-      categoryHighlightBorderColor: '#909da1;',
-      categoryBackgroundColor: '#f4f7f8;',
-      categoryTextColor: '#666;',
-      categoryHighlightTextColor: '#636c6e;',
-      categoryItemColor: '#fff;',
+      borderColor: '#ecf0f2;',
+      highlightBorderColor: '#909da1;',
+      backgroundColor: '#f4f7f8;',
+      textColor: '#666;',
+      highlightTextColor: '#636c6e;',
+      itemColor: '#fff;',
     },
   },
   dark: {

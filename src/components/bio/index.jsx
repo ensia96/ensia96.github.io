@@ -1,8 +1,19 @@
 import React from 'react'
+import styled from 'styled-components'
 import { StaticQuery, graphql, Link } from 'gatsby'
 import Image from 'gatsby-image'
 
 import './index.scss'
+
+const NameShake = styled.div`
+  display: inline-block;
+  font-size: 95%;
+  padding: 2px 6px;
+  font-weight: bolder;
+  border-radius: 8px;
+  transform-origin: center;
+  animation: flutter 2s infinite linear;
+`
 
 export const Bio = () => (
   <StaticQuery
@@ -27,6 +38,7 @@ export const Bio = () => (
                 <Link to={'/about'} className="author-name-content">
                   <span>@{author}</span>
                 </Link>
+                <NameShake>ㅌㅔ스트 쉐잌</NameShake>
                 <div className="author-introduction">{introduction}</div>
                 <p className="author-socials">
                   {social.github && (

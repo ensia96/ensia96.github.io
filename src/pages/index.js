@@ -29,10 +29,6 @@ export default ({
   },
   location,
 }) => {
-  const categories = useMemo(
-    () => _.uniq(posts.map(({ node }) => node.frontmatter.category)),
-    []
-  )
   const [count, countRef, increaseCount] = useRenderedCount()
   const [category, selectCategory] = useCategory()
 

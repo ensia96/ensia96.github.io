@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 
 import useWindowSize from '../hooks/useWindowSize'
-import { useCategory } from '../hooks/useCategory'
 
 import { Bio } from '../components/bio'
 import { ThemeSwitch } from '../components/theme-switch'
@@ -22,7 +21,6 @@ export const Layout = ({ location, title, children }) => {
   const { width } = useWindowSize()
   const [open, setOpen] = useState()
   const [bio, setBio] = useState()
-  const [category, selectCategory] = useCategory()
 
   const sideToggle = () => setOpen(!open)
   const bioToggle = () => setBio(!bio)

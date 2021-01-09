@@ -37,6 +37,11 @@ const style = {
   dark: {
     backgroundColor: '#282c35;',
     linkColor: '#bb72ec;',
+    lightestFontColor: '#fff;',
+    lightFontColor: '#eeeeee;',
+    middleFontColor: '#d8d7d7;',
+    textShadow: '0 0 0.1px rgba(255, 255, 255, 0.3);',
+    hoverTextShadow: '0 0 6px rgba(255, 255, 255, 0.2);',
   },
 }
 
@@ -44,13 +49,6 @@ const dummy = `
 /**
  * @dark theme
  */
-$dark-lightest-font-color: #fff;
-$dark-light-font-color: #eeeeee;
-$dark-middle-font-color: #d8d7d7;
-
-$dark-text-shadow: 0 0 0.1px rgba(255, 255, 255, 0.3);
-$dark-hover-text-shadow: 0 0 6px rgba(255, 255, 255, 0.2);
-
 $dark-category-item-color: #282c35;
 $dark-category-background-color: #24272c;
 

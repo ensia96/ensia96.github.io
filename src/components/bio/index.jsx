@@ -38,7 +38,7 @@ export const Bio = () => (
                 <Link to={'/about'} className="author-name-content">
                   <span>@{author}</span>
                 </Link>
-                <NameShake>ㅌㅔ스트 쉐잌</NameShake>
+                <NameShake>@{author}</NameShake>
                 <div className="author-introduction">{introduction}</div>
                 <p className="author-socials">
                   {social.github && (

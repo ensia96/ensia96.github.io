@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import { graphql } from 'gatsby'
 
 import * as Elements from '../components/elements'
@@ -13,7 +13,6 @@ import { Bio } from '../components/bio'
 import { PostNavigator } from '../components/post-navigator'
 import { Disqus } from '../components/disqus'
 import { Utterances } from '../components/utterances'
-import * as ScrollManager from '../utils/scroll'
 
 import '../styles/code.scss'
 import 'katex/dist/katex.min.css'
@@ -39,11 +38,6 @@ export default ({
   pageContext: { slug },
   location,
 }) => {
-  useEffect(() => {
-    ScrollManager.init()
-    //return () => ScrollManager.destroy()
-  }, [])
-
   return (
     <Layout location={location} title={title}>
       <Head title={postTitle} description={post.excerpt} />

@@ -1,11 +1,14 @@
 import React, { useState } from 'react'
 
 import useWindowSize from '../hooks/useWindowSize'
+import { useCategory } from '../hooks/useCategory'
 
 import { Bio } from '../components/bio'
 import { ThemeSwitch } from '../components/theme-switch'
 import { Footer } from '../components/footer'
 import { Header } from '../components/header'
+
+import { Category } from '../components/category'
 
 import Global from './global.js'
 import Main from './main.js'
@@ -19,6 +22,7 @@ export const Layout = ({ location, title, children }) => {
   const { width } = useWindowSize()
   const [open, setOpen] = useState()
   const [bio, setBio] = useState()
+  const [category, selectCategory] = useCategory()
 
   const sideToggle = () => setOpen(!open)
   const bioToggle = () => setBio(!bio)
@@ -48,6 +52,7 @@ export const Layout = ({ location, title, children }) => {
           </span>
         </div>
         {bio && <Bio />}
+        <Category category={category} selectCategory={selectCategory} />
       </SideBar>
       {isMobile && (
         <>

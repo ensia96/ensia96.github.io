@@ -1,18 +1,11 @@
-import React, { useRef, useCallback, useEffect } from 'react'
+import React, { useRef, useCallback } from 'react'
 
-export const Item = ({ title, selectedCategory, onClick, scrollToCenter }) => {
+export const Item = ({ title, selectedCategory, onClick }) => {
   const tabRef = useRef(null)
 
   const handleClick = useCallback(() => {
-    scrollToCenter(tabRef)
     onClick(title)
   }, [tabRef])
-
-  useEffect(() => {
-    if (selectedCategory === title) {
-      scrollToCenter(tabRef)
-    }
-  }, [selectedCategory, tabRef])
 
   return (
     <li

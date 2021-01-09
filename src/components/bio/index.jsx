@@ -15,58 +15,71 @@ const NameShake = styled.div`
   animation: flutter 2s infinite linear;
 `
 
-export const Bio = () => (
+const Container = styled.div`
+  visibility: ${props => (props.show ? 'visiable' : 'hidden')};
+  position: absolute;
+  z-index: 1;
+  border-radius: 2%;
+  background-color: white;
+  margin: 3px;
+`
+
+export const Bio = ({ open }) => (
   <StaticQuery
     query={bioQuery}
     render={data => {
       const { author, social, introduction } = data.site.siteMetadata
 
       return (
-        <div className="bio">
-          <div className="author">
-            <div className="author-description">
-              <Image
-                className="author-image"
-                fixed={data.avatar.childImageSharp.fixed}
-                alt={author}
-                style={{
-                  borderRadius: `100%`,
-                }}
-              />
-              <div className="author-name">
-                <span className="author-name-prefix">Written by</span>
-                <Link to={'/about'} className="author-name-content">
-                  <span>@{author}</span>
-                </Link>
-                <NameShake>@{author}</NameShake>
-                <div className="author-introduction">{introduction}</div>
-                <p className="author-socials">
-                  {social.github && (
-                    <a href={`https://github.com/${social.github}`}>GitHub</a>
-                  )}
-                  {social.medium && (
-                    <a href={`https://medium.com/${social.medium}`}>Medium</a>
-                  )}
-                  {social.twitter && (
-                    <a href={`https://twitter.com/${social.twitter}`}>
-                      Twitter
-                    </a>
-                  )}
-                  {social.facebook && (
-                    <a href={`https://www.facebook.com/${social.facebook}`}>
-                      Facebook
-                    </a>
-                  )}
-                  {social.linkedin && (
-                    <a href={`https://www.linkedin.com/in/${social.linkedin}/`}>
-                      LinkedIn
-                    </a>
-                  )}
-                </p>
+        <Container show={open}>
+          <div className="bio">
+            <div className="author">
+              <div className="author-description">
+                <Image
+                  className="author-image"
+                  fixed={data.avatar.childImageSharp.fixed}
+                  alt={author}
+                  style={{
+                    borderRadius: `100%`,
+                  }}
+                />
+                <div className="author-name">
+                  <span className="author-name-prefix">Written by</span>
+                  <Link to={'/about'} className="author-name-content">
+                    <span>@{author}</span>
+                  </Link>
+                  <NameShake to={'/about'}>@{author}</NameShake>
+                  <div className="author-introduction">{introduction}</div>
+                  <p className="author-socials">
+                    {social.github && (
+                      <a href={`https://github.com/${social.github}`}>GitHub</a>
+                    )}
+                    {social.medium && (
+                      <a href={`https://medium.com/${social.medium}`}>Medium</a>
+                    )}
+                    {social.twitter && (
+                      <a href={`https://twitter.com/${social.twitter}`}>
+                        Twitter
+                      </a>
+                    )}
+                    {social.facebook && (
+                      <a href={`https://www.facebook.com/${social.facebook}`}>
+                        Facebook
+                      </a>
+                    )}
+                    {social.linkedin && (
+                      <a
+                        href={`https://www.linkedin.com/in/${social.linkedin}/`}
+                      >
+                        LinkedIn
+                      </a>
+                    )}
+                  </p>
+                </div>
               </div>
             </div>
           </div>
-        </div>
+        </Container>
       )
     }}
   />

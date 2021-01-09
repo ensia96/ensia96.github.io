@@ -1,6 +1,5 @@
 import React, { useMemo } from 'react'
 import { StaticQuery } from 'gatsby'
-import { rhythm } from '../../utils/typography'
 import { Item } from './item'
 
 export const Category = ({ category, selectCategory }) => (

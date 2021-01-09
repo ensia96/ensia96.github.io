@@ -54,7 +54,6 @@ export const Category = ({ categories, category, selectCategory }) => {
       <StaticQuery
         query={categoryQuery}
         render={({ allMarkdownRemark: { edges } }) => {
-          console.log('edges : ', edges)
           const categories = useMemo(
             () =>
               Array.from(
@@ -62,7 +61,6 @@ export const Category = ({ categories, category, selectCategory }) => {
               ),
             []
           )
-          console.log('categories : ', categories)
           return <div />
         }}
       />

@@ -27,44 +27,45 @@ export const Category = ({ categories, category, selectCategory }) => {
   )
 
   return (
-    <ul
-      ref={containerRef}
-      className="category-container"
-      role="tablist"
-      id="category"
-      style={{
-        margin: `0 -${rhythm(3 / 4)}`,
+    <StaticQuery
+      query={categoryQuery}
+      render={({ allMarkdownRemark: { edges } }) => {
+        const categories = useMemo(
+          () =>
+            Array.from(
+              new Set(edges.map(({ node }) => node.frontmatter.category))
+            ),
+          []
+        )
+        return (
+          <ul
+            ref={containerRef}
+            className="category-container"
+            role="tablist"
+            id="category"
+            style={{
+              margin: `0 -${rhythm(3 / 4)}`,
+            }}
+          >
+            <Item
+              title={'All'}
+              selectedCategory={category}
+              onClick={selectCategory}
+              scrollToCenter={scrollToCenter}
+            />
+            {categories.map((title, idx) => (
+              <Item
+                key={idx}
+                title={title}
+                selectedCategory={category}
+                onClick={selectCategory}
+                scrollToCenter={scrollToCenter}
+              />
+            ))}
+          </ul>
+        )
       }}
-    >
-      <Item
-        title={'All'}
-        selectedCategory={category}
-        onClick={selectCategory}
-        scrollToCenter={scrollToCenter}
-      />
-      {categories.map((title, idx) => (
-        <Item
-          key={idx}
-          title={title}
-          selectedCategory={category}
-          onClick={selectCategory}
-          scrollToCenter={scrollToCenter}
-        />
-      ))}
-      <StaticQuery
-        query={categoryQuery}
-        render={({ allMarkdownRemark: { edges } }) => {
-          const categories = useMemo(
-            () =>
-              Array.from(
-                new Set(edges.map(({ node }) => node.frontmatter.category))
-              ),
-            []
-          )
-          return <div />
-        }}
-      />
-    </ul>
+    />
   )
 }
 

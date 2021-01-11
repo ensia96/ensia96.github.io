@@ -66,27 +66,13 @@ export const Bio = ({ open, setBio }) => (
               <span style={{ fontSize: '65%' }}>← About Me!</span>
             </div>
             <div style={{ fontSize: '80%' }}>{introduction}</div>
-            {Object.keys(social).map(key => (
-              <a href={`https://github.com/${social[key]}`}>{key}</a>
-            ))}
-            {social.github && (
-              <a href={`https://github.com/${social.github}`}>GitHub</a>
-            )}
-            {social.medium && (
-              <a href={`https://medium.com/${social.medium}`}>Medium</a>
-            )}
-            {social.twitter && (
-              <a href={`https://twitter.com/${social.twitter}`}>Twitter</a>
-            )}
-            {social.facebook && (
-              <a href={`https://www.facebook.com/${social.facebook}`}>
-                Facebook
-              </a>
-            )}
-            {social.linkedin && (
-              <a href={`https://www.linkedin.com/in/${social.linkedin}/`}>
-                LinkedIn
-              </a>
+            {Object.keys(social).map(
+              key =>
+                social[key] && (
+                  <a href={socials[key].base + social[key]}>
+                    {socials[key].name}
+                  </a>
+                )
             )}
           </Container>
         </>

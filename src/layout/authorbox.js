@@ -1,6 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 
+import Image from 'gatsby-image'
+
 import GreenDot from './greendot.js'
 
 const AuthorBox = styled.div`
@@ -12,8 +14,9 @@ const AuthorBox = styled.div`
   font-size: 18px;
 `
 
-export default ({ author, onClick }) => (
+export default ({ author, avatar, onClick }) => (
   <AuthorBox onClick={onClick}>
+    <Image fixed={avatar} />
     {author}
     <GreenDot />
   </AuthorBox>

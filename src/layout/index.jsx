@@ -51,13 +51,12 @@ export const Layout = ({ location, title, children }) => {
             ),
           []
         )
-        console.log('avatar : ', avatar)
         return (
           <>
             <Global open={open} />
             <SideBar open={open}>
               <ToggleBox children={<ThemeSwitch />} />
-              <AuthorBox author={author} onClick={bioToggle} />
+              <AuthorBox author={author} avatar={avatar} onClick={bioToggle} />
               <Bio open={bio} setBio={setBio} />
               <Category categories={categories} />
             </SideBar>

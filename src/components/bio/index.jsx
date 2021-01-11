@@ -49,13 +49,10 @@ export const Bio = ({ open, setBio }) => (
               <AboutMe>← About Me!</AboutMe>
             </Title>
             <Text>{introduction}</Text>
-            {Object.keys(social).map(
-              key =>
-                social[key] && (
-                  <Social
-                    href={socials[key].base + social[key]}
-                    target="_blank"
-                  >
+            {Object.entries(social).map(
+              ([key, value]) =>
+                value && (
+                  <Social href={socials[key].base + value} target="_blank">
                     {socials[key].name}
                   </Social>
                 )

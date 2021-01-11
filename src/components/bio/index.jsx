@@ -4,17 +4,7 @@ import { StaticQuery, graphql, Link } from 'gatsby'
 
 import NameShake from './nameshake.js'
 import Container from './container.js'
-
-const OutSide = styled.div`
-  visibility: ${props => (props.show ? 'visiable' : 'hidden')};
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background-color: transparent;
-  z-index: 2;
-`
+import OutSide from './outside.js'
 
 const Social = styled.a`
   display: block;

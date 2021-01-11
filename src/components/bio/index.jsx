@@ -17,9 +17,9 @@ const Text = styled.div`
 
   border-radius: 5%;
 
-  background: #9796f0;
-  background: -webkit-linear-gradient(to right, #fbc7d4, #9796f0);
-  background: linear-gradient(to right, #fbc7d4, #9796f0);
+  background: #c9ffbf;
+  background: -webkit-linear-gradient(to right, #ffafbd, #c9ffbf);
+  background: linear-gradient(to right, #ffafbd, #c9ffbf);
 
   resize: none;
   -webkit-background-clip: text;

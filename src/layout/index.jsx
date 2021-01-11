@@ -36,6 +36,9 @@ export const Layout = ({ location, title, children }) => {
     <StaticQuery
       query={layoutQuery}
       render={({
+        avatar: {
+          childImageSharp: { fixed: avatar },
+        },
         site: {
           siteMetadata: { author },
         },
@@ -53,7 +56,7 @@ export const Layout = ({ location, title, children }) => {
             <Global open={open} />
             <SideBar open={open}>
               <ToggleBox children={<ThemeSwitch />} />
-              <AuthorBox author={author} onClick={bioToggle} />
+              <AuthorBox author={author} avatar={avatar} onClick={bioToggle} />
               <Bio open={bio} setBio={setBio} />
               <Category categories={categories} />
             </SideBar>
@@ -81,6 +84,13 @@ export const Layout = ({ location, title, children }) => {
 
 const layoutQuery = graphql`
   query {
+    avatar: file(absolutePath: { regex: "/profile.png/" }) {
+      childImageSharp {
+        fixed(width: 72, height: 72) {
+          ...GatsbyImageSharpFixed
+        }
+      }
+    }
     site {
       siteMetadata {
         author

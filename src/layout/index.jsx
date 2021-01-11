@@ -81,6 +81,13 @@ export const Layout = ({ location, title, children }) => {
 
 const layoutQuery = graphql`
   query {
+    avatar: file(absolutePath: { regex: "/profile.png/" }) {
+      childImageSharp {
+        fixed(width: 72, height: 72) {
+          ...GatsbyImageSharpFixed
+        }
+      }
+    }
     site {
       siteMetadata {
         author

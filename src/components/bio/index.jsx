@@ -7,6 +7,25 @@ import Container from './container.js'
 import OutSide from './outside.js'
 import Social from './social.js'
 
+const Text = styled.div`
+  width: 100%;
+
+  font-size: 80%;
+
+  padding: 5px;
+  margin: 10px 0px;
+
+  border-radius: 5%;
+
+  background: #9796f0;
+  background: -webkit-linear-gradient(to right, #fbc7d4, #9796f0);
+  background: linear-gradient(to right, #fbc7d4, #9796f0);
+
+  resize: none;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+`
+
 export const Bio = ({ open, setBio }) => (
   <StaticQuery
     query={bioQuery}
@@ -25,11 +44,15 @@ export const Bio = ({ open, setBio }) => (
         <>
           <OutSide show={open} onClick={() => setBio(false)} />
           <Container show={open}>
-            <div>
+            <div style={{ marginTop: '3px' }}>
               <NameShake to="/about">@{author}</NameShake>
-              <span style={{ fontSize: '65%' }}>← About Me!</span>
+              <span
+                style={{ marginLeft: '3px', color: 'white', fontSize: '65%' }}
+              >
+                ← About Me!
+              </span>
             </div>
-            <div style={{ fontSize: '80%' }}>{introduction}</div>
+            <Text>{introduction}</Text>
             {Object.keys(social).map(
               key =>
                 social[key] && (

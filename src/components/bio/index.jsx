@@ -2,8 +2,6 @@ import React from 'react'
 import styled from 'styled-components'
 import { StaticQuery, graphql, Link } from 'gatsby'
 
-import './index.scss'
-
 const NameShake = styled(Link)`
   display: inline-block;
   font-size: 95%;

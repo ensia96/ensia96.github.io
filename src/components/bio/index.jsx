@@ -55,10 +55,10 @@ export const Bio = ({ open, setBio }) => (
         <>
           <OutSide show={open} onClick={() => setBio(false)} />
           <Container show={open}>
-            <div style={{ marginTop: '3px' }}>
+            <Title>
               <NameShake to="/about">@{author}</NameShake>
               <AboutMe>← About Me!</AboutMe>
-            </div>
+            </Title>
             <Text>{introduction}</Text>
             {Object.keys(social).map(
               key =>

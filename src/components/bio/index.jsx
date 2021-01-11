@@ -43,6 +43,12 @@ const OutSide = styled.div`
   z-index: 2;
 `
 
+const Social = styled.a`
+  display: block;
+  font-size: 80%;
+  color: #000000;
+`
+
 export const Bio = ({ open, setBio }) => (
   <StaticQuery
     query={bioQuery}

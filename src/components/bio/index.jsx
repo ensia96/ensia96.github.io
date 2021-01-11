@@ -26,6 +26,12 @@ const Text = styled.div`
   -webkit-text-fill-color: transparent;
 `
 
+const AboutMe = styled.span`
+  margin-left: 3px;
+  color: white;
+  font-size: 65%;
+`
+
 export const Bio = ({ open, setBio }) => (
   <StaticQuery
     query={bioQuery}

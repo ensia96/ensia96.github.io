@@ -75,9 +75,12 @@ export const Bio = ({ open, setBio }) => (
             {Object.keys(social).map(
               key =>
                 social[key] && (
-                  <a href={socials[key].base + social[key]}>
+                  <Social
+                    href={socials[key].base + social[key]}
+                    target="_blank"
+                  >
                     {socials[key].name}
-                  </a>
+                  </Social>
                 )
             )}
           </Container>

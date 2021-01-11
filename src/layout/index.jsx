@@ -51,6 +51,7 @@ export const Layout = ({ location, title, children }) => {
             ),
           []
         )
+        console.log('avatar : ', avatar)
         return (
           <>
             <Global open={open} />

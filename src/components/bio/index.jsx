@@ -9,21 +9,10 @@ import Social from './social.js'
 
 const Text = styled.div`
   width: 100%;
-
-  font-size: 80%;
-
+  font-size: 83%;
   padding: 5px;
   margin: 10px 0px;
-
-  border-radius: 5%;
-
-  background: #c9ffbf;
-  background: -webkit-linear-gradient(to right, #ffafbd, #c9ffbf);
-  background: linear-gradient(to right, #ffafbd, #c9ffbf);
-
-  resize: none;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #ffffff;
 `
 
 const AboutMe = styled.span`

@@ -52,11 +52,7 @@ export const Bio = ({ open, setBio }) => (
           <Container show={open}>
             <div style={{ marginTop: '3px' }}>
               <NameShake to="/about">@{author}</NameShake>
-              <span
-                style={{ marginLeft: '3px', color: 'white', fontSize: '65%' }}
-              >
-                ← About Me!
-              </span>
+              <AboutMe>← About Me!</AboutMe>
             </div>
             <Text>{introduction}</Text>
             {Object.keys(social).map(

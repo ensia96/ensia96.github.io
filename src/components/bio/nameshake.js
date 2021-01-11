@@ -10,6 +10,8 @@ export default styled(Link)`
   transform-origin: center;
   animation: flutter 2s infinite linear;
 
+  background-color: #ffffff;
+
   @-webkit-keyframes flutter {
     0% {
       transform: rotate(0deg);

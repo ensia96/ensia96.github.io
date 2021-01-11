@@ -54,7 +54,7 @@ export const Layout = ({ location, title, children }) => {
             <SideBar open={open}>
               <ToggleBox children={<ThemeSwitch />} />
               <AuthorBox author={author} onClick={bioToggle} />
-              <Bio open={bio} />
+              <Bio open={bio} setBio={setBio} />
               <Category categories={categories} />
             </SideBar>
             {isMobile && (

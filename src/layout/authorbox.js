@@ -14,9 +14,7 @@ const AuthorBox = styled.div`
 
 export default ({ author, onClick }) => (
   <AuthorBox onClick={onClick}>
+    {author}
     <GreenDot />
-    <span>
-      <b>{author}</b>
-    </span>
   </AuthorBox>
 )

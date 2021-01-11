@@ -17,66 +17,71 @@ const NameShake = styled(Link)`
 
 const Container = styled.div`
   visibility: ${props => (props.show ? 'visiable' : 'hidden')};
-  position: absolute;
-  z-index: 1;
+  opacity: ${props => (props.show ? '1' : '0')};
+  transition: visibility 0.15s linear, opacity 0.15s linear;
+  display: block;
+  position: fixed;
+  left: 1rem;
+  top: 6rem;
+  width: 243px;
+  z-index: 3;
   border-radius: 2%;
-  background-color: white;
+  border: 1px solid #dddddd;
+  background-color: #eeeeee;
   margin: 3px;
+  padding: 10px;
 `
 
-export const Bio = ({ open }) => (
+const OutSide = styled.div`
+  visibility: ${props => (props.show ? 'visiable' : 'hidden')};
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: transparent;
+  z-index: 2;
+`
+
+export const Bio = ({ open, setBio }) => (
   <StaticQuery
     query={bioQuery}
     render={data => {
       const { author, social, introduction } = data.site.siteMetadata
 
       return (
-        <Container show={open}>
-          <div className="bio">
-            <div className="author">
-              <div className="author-description">
-                <Image
-                  className="author-image"
-                  fixed={data.avatar.childImageSharp.fixed}
-                  alt={author}
-                  style={{
-                    borderRadius: `100%`,
-                  }}
-                />
-                <div className="author-name">
-                  <NameShake to="/about">@{author}</NameShake>
-                  <span style={{ fontSize: '65%' }}>← About Me!</span>
-                  <div className="author-introduction">{introduction}</div>
-                  <p className="author-socials">
-                    {social.github && (
-                      <a href={`https://github.com/${social.github}`}>GitHub</a>
-                    )}
-                    {social.medium && (
-                      <a href={`https://medium.com/${social.medium}`}>Medium</a>
-                    )}
-                    {social.twitter && (
-                      <a href={`https://twitter.com/${social.twitter}`}>
-                        Twitter
-                      </a>
-                    )}
-                    {social.facebook && (
-                      <a href={`https://www.facebook.com/${social.facebook}`}>
-                        Facebook
-                      </a>
-                    )}
-                    {social.linkedin && (
-                      <a
-                        href={`https://www.linkedin.com/in/${social.linkedin}/`}
-                      >
-                        LinkedIn
-                      </a>
-                    )}
-                  </p>
-                </div>
-              </div>
+        <>
+          <OutSide show={open} onClick={() => setBio(false)} />
+          <Container show={open}>
+            <div>
+              <NameShake to="/about">@{author}</NameShake>
+              <span style={{ fontSize: '65%' }}>← About Me!</span>
             </div>
-          </div>
-        </Container>
+            <div style={{ fontSize: '80%' }}>{introduction}</div>
+            {Object.keys(social).map(key => (
+              <a href={`https://github.com/${social[key]}`}>{key}</a>
+            ))}
+            {social.github && (
+              <a href={`https://github.com/${social.github}`}>GitHub</a>
+            )}
+            {social.medium && (
+              <a href={`https://medium.com/${social.medium}`}>Medium</a>
+            )}
+            {social.twitter && (
+              <a href={`https://twitter.com/${social.twitter}`}>Twitter</a>
+            )}
+            {social.facebook && (
+              <a href={`https://www.facebook.com/${social.facebook}`}>
+                Facebook
+              </a>
+            )}
+            {social.linkedin && (
+              <a href={`https://www.linkedin.com/in/${social.linkedin}/`}>
+                LinkedIn
+              </a>
+            )}
+          </Container>
+        </>
       )
     }}
   />

@@ -49,6 +49,14 @@ export const Bio = ({ open, setBio }) => (
     render={data => {
       const { author, social, introduction } = data.site.siteMetadata
 
+      const socials = {
+        github: { name: 'GitHub', base: 'https://github.com/' },
+        medium: { name: 'Medium', base: 'https://medium.com/' },
+        twitter: { name: 'Twitter', base: 'https://twitter.com/' },
+        facebook: { name: 'Facebook', base: 'https://www.facebook.com/' },
+        linkedin: { name: 'LinkedIn', base: 'https://www.linkedin.com/in/' },
+      }
+
       return (
         <>
           <OutSide show={open} onClick={() => setBio(false)} />

@@ -16,8 +16,20 @@ const AuthorBox = styled.div`
 
 export default ({ author, avatar, onClick }) => (
   <AuthorBox onClick={onClick}>
-    <Image fixed={avatar} />
-    {author}
+    <div
+      style={{ display: 'flex', alignContent: 'center', marginRight: '10px' }}
+    >
+      <Image
+        style={{
+          width: '27px',
+          height: '27px',
+          borderRadius: '100%',
+          marginRight: '5px',
+        }}
+        fixed={avatar}
+      />
+      {author}
+    </div>
     <GreenDot />
   </AuthorBox>
 )

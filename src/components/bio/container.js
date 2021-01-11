@@ -11,7 +11,7 @@ export default styled.div`
   width: 243px;
   z-index: 3;
   border-radius: 2%;
-  background-color: #5c592c;
+  background-color: #272933;
   margin: 3px;
   padding: 10px;
 `

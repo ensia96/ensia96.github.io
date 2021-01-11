@@ -36,6 +36,9 @@ export const Layout = ({ location, title, children }) => {
     <StaticQuery
       query={layoutQuery}
       render={({
+        avatar: {
+          childImageSharp: { fixed: avatar },
+        },
         site: {
           siteMetadata: { author },
         },

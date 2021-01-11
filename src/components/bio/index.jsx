@@ -32,6 +32,11 @@ const AboutMe = styled.span`
   font-size: 65%;
 `
 
+const Title = styled.div`
+  padding: 8px 0px;
+  border-bottom: 2px solid #dddddd;
+`
+
 export const Bio = ({ open, setBio }) => (
   <StaticQuery
     query={bioQuery}

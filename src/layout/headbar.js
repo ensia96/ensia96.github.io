@@ -20,8 +20,10 @@ const Header = styled.header`
 `
 
 export default ({ open, sideToggle }) => (
-  <>
+  <Header>
     <Burger open={open} sideToggle={sideToggle} />
-    <Header />
-  </>
+    <h3 style={{ margin: '0px', alignSelf: 'center', paddingLeft: '55px' }}>
+      한글 테스트
+    </h3>
+  </Header>
 )

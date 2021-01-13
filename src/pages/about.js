@@ -4,40 +4,53 @@ import { graphql } from 'gatsby'
 import { rhythm } from '../utils/typography'
 import { ENGLISH } from '../constants'
 
+import { Layout } from '../layout'
+
 export default ({
+  location,
   data: {
+    site: {
+      siteMetadata: { title },
+    },
     allMarkdownRemark: { edges: resumes },
   },
 }) => (
-  <div
-    style={{
-      marginLeft: `auto`,
-      marginRight: `auto`,
-      maxWidth: rhythm(24),
-      padding: `${rhythm(0.5)} ${rhythm(3 / 4)} ${rhythm(1.5)} ${rhythm(
-        3 / 4
-      )}`,
-    }}
-  >
+  <Layout location={location} title={title}>
     <div
-      dangerouslySetInnerHTML={{
-        __html: resumes
-          .filter(
-            ({
-              node: {
-                frontmatter: { lang },
-              },
-            }) => lang === ENGLISH
-          )
-          .map(({ node }) => node)
-          .shift()['html'],
+      style={{
+        marginLeft: `auto`,
+        marginRight: `auto`,
+        maxWidth: rhythm(24),
+        padding: `${rhythm(0.5)} ${rhythm(3 / 4)} ${rhythm(1.5)} ${rhythm(
+          3 / 4
+        )}`,
       }}
-    />
-  </div>
+    >
+      <div
+        dangerouslySetInnerHTML={{
+          __html: resumes
+            .filter(
+              ({
+                node: {
+                  frontmatter: { lang },
+                },
+              }) => lang === ENGLISH
+            )
+            .map(({ node }) => node)
+            .shift()['html'],
+        }}
+      />
+    </div>
+  </Layout>
 )
 
 export const pageQuery = graphql`
   query {
+    site {
+      siteMetadata {
+        title
+      }
+    }
     allMarkdownRemark(filter: { frontmatter: { category: { eq: null } } }) {
       edges {
         node {

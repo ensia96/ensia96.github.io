@@ -3,9 +3,9 @@
   "private": true,
   "description": "Gatsby blog starter template",
   "version": "0.1.0",
-  "author": "Jbee[JaeYeopHan]<ljyhanll@gmail.com>",
+  "author": "춤추는망고[ensia96]<ensia96@gmail.com>",
   "bugs": {
-    "url": "https://github.com/JaeYeopHan/gatsby-starter-bee/issues"
+    "url": "https://github.com/ensia96/ensia96.github.io/issues"
   },
   "dependencies": {
     "gatsby": "^2.2.8",
@@ -68,7 +68,7 @@
     "recursive-readdir": "^2.2.2",
     "signale": "^1.3.0"
   },
-  "homepage": "https://github.com/JaeYeopHan/gatsby-starter-bee#readme",
+  "homepage": "https://github.com/ensia96/ensia96.github.io",
   "keywords": [
     "gatsby"
   ],

@@ -20,13 +20,19 @@ const Header = styled.header`
   }
 `
 
+const Title = styled.h3`
+  margin: 0px;
+  align-self: center;
+  padding-left: 55px;
+`
+
 export default ({ open, isRoot, title, sideToggle }) => (
   <Header>
     <Burger open={open} sideToggle={sideToggle} />
     {!isRoot && (
-      <h3 style={{ margin: '0px', alignSelf: 'center', paddingLeft: '55px' }}>
+      <Title>
         <Link>{title}</Link>
-      </h3>
+      </Title>
     )}
   </Header>
 )

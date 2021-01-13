@@ -17,30 +17,19 @@ export default ({
 }) => (
   <Layout location={location} title={title}>
     <div
-      style={{
-        marginLeft: `auto`,
-        marginRight: `auto`,
-        maxWidth: rhythm(24),
-        padding: `${rhythm(0.5)} ${rhythm(3 / 4)} ${rhythm(1.5)} ${rhythm(
-          3 / 4
-        )}`,
+      dangerouslySetInnerHTML={{
+        __html: resumes
+          .filter(
+            ({
+              node: {
+                frontmatter: { lang },
+              },
+            }) => lang === ENGLISH
+          )
+          .map(({ node }) => node)
+          .shift()['html'],
       }}
-    >
-      <div
-        dangerouslySetInnerHTML={{
-          __html: resumes
-            .filter(
-              ({
-                node: {
-                  frontmatter: { lang },
-                },
-              }) => lang === ENGLISH
-            )
-            .map(({ node }) => node)
-            .shift()['html'],
-        }}
-      />
-    </div>
+    />
   </Layout>
 )
 

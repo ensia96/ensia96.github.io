@@ -69,11 +69,7 @@ export const Layout = ({ location, title, children }) => {
               </>
             )}
             <Main>
-              <Header
-                title={title}
-                location={location}
-                rootPath={`${__PATH_PREFIX__}/`}
-              />
+              <Header title={title} isRoot={isRoot} />
               {children}
               <Footer />
             </Main>

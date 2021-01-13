@@ -12,7 +12,6 @@ const Header = styled.header`
   z-index: 1;
   display: flex;
 
-  color: white;
   background-color: #ffc800;
 
   @media all and (min-width: 992px) {

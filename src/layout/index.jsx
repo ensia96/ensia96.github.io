@@ -28,6 +28,8 @@ export const Layout = ({ location, title, children }) => {
 
   const isMobile = width < 992
 
+  const isRoot = location.pathname === `${__PATH_PREFIX__}/`
+
   useEffect(() => {
     isMobile && setOpen(false)
   }, [location])

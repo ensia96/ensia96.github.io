@@ -10,7 +10,7 @@ const Item = styled(Link)`
   &:hover {
   }
   i {
-    margin: 10px 20px 10px 30px;
+    margin: 10px 13px 10px 30px;
     vertical-align: middle;
   }
   span {

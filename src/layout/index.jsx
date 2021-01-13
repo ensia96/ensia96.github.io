@@ -64,7 +64,12 @@ export const Layout = ({ location, title, children }) => {
             </SideBar>
             {isMobile && (
               <>
-                <HeadBar open={open} sideToggle={sideToggle} />
+                <HeadBar
+                  open={open}
+                  isRoot={isRoot}
+                  title={title}
+                  sideToggle={sideToggle}
+                />
                 {open && <Overlay onClick={sideToggle} />}
               </>
             )}

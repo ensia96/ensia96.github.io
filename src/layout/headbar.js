@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'gatsby'
 import styled from 'styled-components'
 
 import Burger from './burger.js'
@@ -24,7 +25,7 @@ export default ({ open, isRoot, title, sideToggle }) => (
     <Burger open={open} sideToggle={sideToggle} />
     {!isRoot && (
       <h3 style={{ margin: '0px', alignSelf: 'center', paddingLeft: '55px' }}>
-        {title}
+        <Link>{title}</Link>
       </h3>
     )}
   </Header>

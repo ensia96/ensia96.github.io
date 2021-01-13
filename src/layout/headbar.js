@@ -19,11 +19,13 @@ const Header = styled.header`
   }
 `
 
-export default ({ open, sideToggle }) => (
+export default ({ open, isRoot, title, sideToggle }) => (
   <Header>
     <Burger open={open} sideToggle={sideToggle} />
-    <h3 style={{ margin: '0px', alignSelf: 'center', paddingLeft: '55px' }}>
-      한글 테스트
-    </h3>
+    {!isRoot && (
+      <h3 style={{ margin: '0px', alignSelf: 'center', paddingLeft: '55px' }}>
+        {title}
+      </h3>
+    )}
   </Header>
 )

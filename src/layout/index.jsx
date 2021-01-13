@@ -28,6 +28,8 @@ export const Layout = ({ location, title, children }) => {
 
   const isMobile = width < 992
 
+  const isRoot = location.pathname === `${__PATH_PREFIX__}/`
+
   useEffect(() => {
     isMobile && setOpen(false)
   }, [location])
@@ -62,16 +64,17 @@ export const Layout = ({ location, title, children }) => {
             </SideBar>
             {isMobile && (
               <>
-                <HeadBar open={open} sideToggle={sideToggle} />
+                <HeadBar
+                  open={open}
+                  isRoot={isRoot}
+                  title={title}
+                  sideToggle={sideToggle}
+                />
                 {open && <Overlay onClick={sideToggle} />}
               </>
             )}
             <Main>
-              <Header
-                title={title}
-                location={location}
-                rootPath={`${__PATH_PREFIX__}/`}
-              />
+              <Header title={title} isRoot={isRoot} />
               {children}
               <Footer />
             </Main>

@@ -18,12 +18,16 @@ const Text = styled.div`
 `
 
 const AboutMe = styled.span`
-  margin-left: 3px;
+  display: flex;
+  margin-top: 5px;
   color: white;
   font-size: 65%;
+  justify-content: center;
 `
 
 const Title = styled.div`
+  display: block;
+  height: 100%;
   padding: 8px 0px;
   border-bottom: 2px solid #dddddd;
 `
@@ -38,41 +42,39 @@ export const Bio = ({ open, setBio }) => (
       site: {
         siteMetadata: { author, social, introduction },
       },
-    }) => {
-      const socials = {
-        github: { name: 'GitHub', base: 'https://github.com/' },
-        medium: { name: 'Medium', base: 'https://medium.com/' },
-        twitter: { name: 'Twitter', base: 'https://twitter.com/' },
-        facebook: { name: 'Facebook', base: 'https://www.facebook.com/' },
-        linkedin: { name: 'LinkedIn', base: 'https://www.linkedin.com/in/' },
-      }
-
-      return (
-        <>
-          <OutSide show={open} onClick={() => setBio(false)} />
-          <Container show={open}>
-            <Avatar fixed={avatar} size={100} />
-            <Title>
-              <NameShake to="/about">@{author}</NameShake>
-              <AboutMe>← About Me!</AboutMe>
-            </Title>
-            <Text>{introduction}</Text>
-            {Object.entries(social).map(
-              ([key, value]) =>
-                value && (
-                  <Social
-                    key={key}
-                    href={socials[key].base + value}
-                    target="_blank"
-                  >
-                    {socials[key].name}
-                  </Social>
-                )
-            )}
-          </Container>
-        </>
-      )
-    }}
+    }) => (
+      <>
+        <OutSide show={open} onClick={() => setBio(false)} />
+        <Container show={open}>
+          <Title>
+            <div style={{ textAlign: 'center', marginBottom: '10px' }}>
+              <Avatar style={{ marginLeft: '5px' }} fixed={avatar} size={100} />
+            </div>
+            <div style={{ marginLeft: '5px' }}>
+              <div style={{ display: 'flex', justifyContent: 'center' }}>
+                <NameShake to="/about">@{author}</NameShake>
+              </div>
+              <AboutMe>↑ About Me!</AboutMe>
+              <div
+                style={{
+                  display: 'flex',
+                  justifyContent: 'space-around',
+                  marginTop: '10px',
+                  padding: '5px',
+                  backgroundColor: '#dddddd',
+                  borderRadius: '3%',
+                }}
+              >
+                {Object.entries(social).map(([key, value]) => (
+                  <Social key={key} size={15} type={key} value={value} />
+                ))}
+              </div>
+            </div>
+          </Title>
+          <Text>{introduction}</Text>
+        </Container>
+      </>
+    )}
   />
 )
 

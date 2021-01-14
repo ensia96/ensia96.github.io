@@ -7,6 +7,8 @@ import Container from './container.js'
 import OutSide from './outside.js'
 import Social from './social.js'
 
+import Avatar from '../avatar'
+
 const Text = styled.div`
   width: 100%;
   font-size: 83%;
@@ -29,9 +31,14 @@ const Title = styled.div`
 export const Bio = ({ open, setBio }) => (
   <StaticQuery
     query={bioQuery}
-    render={data => {
-      const { author, social, introduction } = data.site.siteMetadata
-
+    render={({
+      avatar: {
+        childImageSharp: { fixed: avatar },
+      },
+      site: {
+        siteMetadata: { author, social, introduction },
+      },
+    }) => {
       const socials = {
         github: { name: 'GitHub', base: 'https://github.com/' },
         medium: { name: 'Medium', base: 'https://medium.com/' },
@@ -44,6 +51,7 @@ export const Bio = ({ open, setBio }) => (
         <>
           <OutSide show={open} onClick={() => setBio(false)} />
           <Container show={open}>
+            <Avatar fixed={avatar} size={100} />
             <Title>
               <NameShake to="/about">@{author}</NameShake>
               <AboutMe>← About Me!</AboutMe>

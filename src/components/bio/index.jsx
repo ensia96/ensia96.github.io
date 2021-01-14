@@ -36,6 +36,15 @@ const AvatarBox = styled.div`
   text-align: center;
 `
 
+const SocialBox = styled.div`
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+  padding: 5px;
+  background-color: #cccccc;
+  border-radius: 3%;
+`
+
 export const Bio = ({ open, setBio }) => (
   <StaticQuery
     query={bioQuery}
@@ -56,21 +65,11 @@ export const Bio = ({ open, setBio }) => (
               <div style={{ display: 'flex', justifyContent: 'center' }}>
                 <NameShake to="/about">@{author}</NameShake>
               </div>
-              <AboutMe>↑ About Me!</AboutMe>
-              <div
-                style={{
-                  display: 'flex',
-                  justifyContent: 'space-around',
-                  marginTop: '10px',
-                  padding: '5px',
-                  backgroundColor: '#cccccc',
-                  borderRadius: '3%',
-                }}
-              >
+              <SocialBox>
                 {Object.entries(social).map(([key, value]) => (
                   <Social key={key} size={15} type={key} value={value} />
                 ))}
-              </div>
+              </SocialBox>
             </div>
           </Title>
           <Text>{introduction}</Text>

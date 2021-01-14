@@ -50,7 +50,7 @@ export const Bio = ({ open, setBio }) => (
             <div style={{ textAlign: 'center', marginBottom: '10px' }}>
               <Avatar style={{ marginLeft: '5px' }} fixed={avatar} size={100} />
             </div>
-            <div style={{ marginLeft: '5px' }}>
+            <div>
               <div style={{ display: 'flex', justifyContent: 'center' }}>
                 <NameShake to="/about">@{author}</NameShake>
               </div>
@@ -61,7 +61,7 @@ export const Bio = ({ open, setBio }) => (
                   justifyContent: 'space-around',
                   marginTop: '10px',
                   padding: '5px',
-                  backgroundColor: '#dddddd',
+                  backgroundColor: '#cccccc',
                   borderRadius: '3%',
                 }}
               >

@@ -9,7 +9,7 @@ import Avatar from '../components/avatar'
 const AuthorBox = styled.div`
   display: flex;
   align-items: center;
-  margin-left: 30px;
+  margin-left: 25px;
   height: 50px;
   cursor: pointer;
   font-size: 18px;

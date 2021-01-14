@@ -8,7 +8,7 @@ export default styled.div`
   position: fixed;
   left: 1rem;
   top: 6rem;
-  width: 243px;
+  width: 242px;
   z-index: 3;
   border-radius: 2%;
   background-color: #272933;

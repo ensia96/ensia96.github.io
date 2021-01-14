@@ -1,11 +1,13 @@
 import React from 'react'
 import styled from 'styled-components'
-import { StaticQuery, graphql } from 'gatsby'
+import { StaticQuery, graphql, Link } from 'gatsby'
 
 import NameShake from './nameshake.js'
 import Container from './container.js'
 import OutSide from './outside.js'
 import Social from './social.js'
+
+import Avatar from '../avatar'
 
 const Text = styled.div`
   width: 100%;
@@ -15,56 +17,67 @@ const Text = styled.div`
   color: #ffffff;
 `
 
-const AboutMe = styled.span`
-  margin-left: 3px;
-  color: white;
-  font-size: 65%;
-`
-
 const Title = styled.div`
+  display: block;
+  height: 100%;
   padding: 8px 0px;
   border-bottom: 2px solid #dddddd;
+`
+
+const AvatarBox = styled.div`
+  text-align: center;
+`
+
+const SocialBox = styled.div`
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+  padding: 5px;
+  background-color: #cccccc;
+  border-radius: 3%;
+`
+
+const NameBox = styled.div`
+  display: flex;
+  justify-content: center;
 `
 
 export const Bio = ({ open, setBio }) => (
   <StaticQuery
     query={bioQuery}
-    render={data => {
-      const { author, social, introduction } = data.site.siteMetadata
-
-      const socials = {
-        github: { name: 'GitHub', base: 'https://github.com/' },
-        medium: { name: 'Medium', base: 'https://medium.com/' },
-        twitter: { name: 'Twitter', base: 'https://twitter.com/' },
-        facebook: { name: 'Facebook', base: 'https://www.facebook.com/' },
-        linkedin: { name: 'LinkedIn', base: 'https://www.linkedin.com/in/' },
-      }
-
-      return (
-        <>
-          <OutSide show={open} onClick={() => setBio(false)} />
-          <Container show={open}>
-            <Title>
-              <NameShake to="/about">@{author}</NameShake>
-              <AboutMe>← About Me!</AboutMe>
-            </Title>
-            <Text>{introduction}</Text>
-            {Object.entries(social).map(
-              ([key, value]) =>
-                value && (
-                  <Social
-                    key={key}
-                    href={socials[key].base + value}
-                    target="_blank"
-                  >
-                    {socials[key].name}
-                  </Social>
-                )
-            )}
-          </Container>
-        </>
-      )
-    }}
+    render={({
+      avatar: {
+        childImageSharp: { fixed: avatar },
+      },
+      site: {
+        siteMetadata: { author, social, introduction },
+      },
+    }) => (
+      <>
+        <OutSide show={open} onClick={() => setBio(false)} />
+        <Container show={open}>
+          <Title>
+            <AvatarBox>
+              <Link
+                to="/"
+                children={<Avatar fixed={avatar} size={100} />}
+                onClick={() => setBio(false)}
+              />
+            </AvatarBox>
+            <NameBox children={<NameShake to="/about">@{author}</NameShake>} />
+            <SocialBox>
+              {Object.entries(social).map(
+                ([key, value]) =>
+                  value && (
+                    <Social key={key} size={15} type={key} value={value} />
+                  )
+              )}
+            </SocialBox>
+          </Title>
+          <Text>{introduction}</Text>
+        </Container>
+      </>
+    )}
   />
 )
 

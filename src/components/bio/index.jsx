@@ -32,6 +32,10 @@ const Title = styled.div`
   border-bottom: 2px solid #dddddd;
 `
 
+const AvatarBox = styled.div`
+  text-align: center;
+`
+
 export const Bio = ({ open, setBio }) => (
   <StaticQuery
     query={bioQuery}
@@ -47,9 +51,7 @@ export const Bio = ({ open, setBio }) => (
         <OutSide show={open} onClick={() => setBio(false)} />
         <Container show={open}>
           <Title>
-            <div style={{ textAlign: 'center', marginBottom: '10px' }}>
-              <Avatar style={{ marginLeft: '5px' }} fixed={avatar} size={100} />
-            </div>
+            <AvatarBox children={<Avatar fixed={avatar} size={100} />} />
             <div>
               <div style={{ display: 'flex', justifyContent: 'center' }}>
                 <NameShake to="/about">@{author}</NameShake>

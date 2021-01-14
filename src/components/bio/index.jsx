@@ -17,14 +17,6 @@ const Text = styled.div`
   color: #ffffff;
 `
 
-const AboutMe = styled.span`
-  display: flex;
-  margin-top: 5px;
-  color: white;
-  font-size: 65%;
-  justify-content: center;
-`
-
 const Title = styled.div`
   display: block;
   height: 100%;

@@ -58,16 +58,12 @@ export const Bio = ({ open, setBio }) => (
         <Container show={open}>
           <Title>
             <AvatarBox children={<Avatar fixed={avatar} size={100} />} />
-            <div>
-              <NameBox
-                children={<NameShake to="/about">@{author}</NameShake>}
-              />
-              <SocialBox>
-                {Object.entries(social).map(([key, value]) => (
-                  <Social key={key} size={15} type={key} value={value} />
-                ))}
-              </SocialBox>
-            </div>
+            <NameBox children={<NameShake to="/about">@{author}</NameShake>} />
+            <SocialBox>
+              {Object.entries(social).map(([key, value]) => (
+                <Social key={key} size={15} type={key} value={value} />
+              ))}
+            </SocialBox>
           </Title>
           <Text>{introduction}</Text>
         </Container>

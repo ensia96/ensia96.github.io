@@ -37,6 +37,11 @@ const SocialBox = styled.div`
   border-radius: 3%;
 `
 
+const NameBox = styled.div`
+  display: flex;
+  justify-content: center;
+`
+
 export const Bio = ({ open, setBio }) => (
   <StaticQuery
     query={bioQuery}
@@ -54,9 +59,9 @@ export const Bio = ({ open, setBio }) => (
           <Title>
             <AvatarBox children={<Avatar fixed={avatar} size={100} />} />
             <div>
-              <div style={{ display: 'flex', justifyContent: 'center' }}>
-                <NameShake to="/about">@{author}</NameShake>
-              </div>
+              <NameBox
+                children={<NameShake to="/about">@{author}</NameShake>}
+              />
               <SocialBox>
                 {Object.entries(social).map(([key, value]) => (
                   <Social key={key} size={15} type={key} value={value} />

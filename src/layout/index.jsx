@@ -18,72 +18,72 @@ import SideBar from './sidebar.js'
 import ToggleBox from './togglebox.js'
 import AuthorBox from './authorbox.js'
 
-export const Layout = ({ location, title, children }) => {
-  const { width } = useWindowSize()
-  const [open, setOpen] = useState()
-  const [bio, setBio] = useState()
+import TableOfContents from '../components/toc'
 
-  const sideToggle = () => setOpen(!open)
-  const bioToggle = () => setBio(!bio)
+export const Layout = ({ location, title, items, children }) => (
+  <StaticQuery
+    query={layoutQuery}
+    render={({
+      avatar: {
+        childImageSharp: { fixed: avatar },
+      },
+      site: {
+        siteMetadata: { author },
+      },
+      allMarkdownRemark: { edges },
+    }) => {
+      const { width } = useWindowSize()
+      const [open, setOpen] = useState()
+      const [bio, setBio] = useState()
 
-  const isMobile = width < 992
+      const sideToggle = () => setOpen(!open)
+      const bioToggle = () => setBio(!bio)
 
-  const isRoot = location.pathname === `${__PATH_PREFIX__}/`
+      const isMobile = width < 992
 
-  useEffect(() => {
-    isMobile && setOpen(false)
-  }, [location])
+      const isRoot = location.pathname === `${__PATH_PREFIX__}/`
 
-  return (
-    <StaticQuery
-      query={layoutQuery}
-      render={({
-        avatar: {
-          childImageSharp: { fixed: avatar },
-        },
-        site: {
-          siteMetadata: { author },
-        },
-        allMarkdownRemark: { edges },
-      }) => {
-        const categories = useMemo(
-          () =>
-            Array.from(
-              new Set(edges.map(({ node }) => node.frontmatter.category))
-            ),
-          []
-        )
-        return (
-          <>
-            <Global open={open} />
-            <SideBar open={open}>
-              <ToggleBox children={<ThemeSwitch />} />
-              <AuthorBox author={author} avatar={avatar} onClick={bioToggle} />
-              <Bio open={bio} setBio={setBio} />
-              <Category categories={categories} />
-            </SideBar>
-            {isMobile && (
-              <>
-                <HeadBar
-                  open={open}
-                  isRoot={isRoot}
-                  title={title}
-                  sideToggle={sideToggle}
-                />
-                {open && <Overlay onClick={sideToggle} />}
-              </>
-            )}
-            <Main>
-              <Header title={title} isRoot={isRoot} />
-              {children}
-              <Footer />
-            </Main>
-          </>
-        )
-      }}
-    />
-  )
-}
+      useEffect(() => {
+        isMobile && setOpen(false)
+      }, [location])
+      const categories = useMemo(
+        () =>
+          Array.from(
+            new Set(edges.map(({ node }) => node.frontmatter.category))
+          ),
+        []
+      )
+      return (
+        <>
+          <Global open={open} />
+          <SideBar open={open}>
+            <ToggleBox children={<ThemeSwitch />} />
+            <AuthorBox author={author} avatar={avatar} onClick={bioToggle} />
+            <Bio open={bio} setBio={setBio} />
+            <Category categories={categories} />
+          </SideBar>
+          {isMobile && (
+            <>
+              <HeadBar
+                open={open}
+                isRoot={isRoot}
+                title={title}
+                sideToggle={sideToggle}
+              />
+              {open && <Overlay onClick={sideToggle} />}
+            </>
+          )}
+          <Main>
+            {items && <TableOfContents items={items} />}
+            <Header title={title} isRoot={isRoot} />
+            {children}
+            <Footer />
+          </Main>
+        </>
+      )
+    }}
+  />
+)
 
 const layoutQuery = graphql`
   query {

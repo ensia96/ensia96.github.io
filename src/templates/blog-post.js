@@ -21,6 +21,7 @@ export default ({
   data: {
     markdownRemark: post,
     markdownRemark: {
+      tableOfContents: items,
       html,
       frontmatter: { title: postTitle, date },
     },
@@ -37,30 +38,28 @@ export default ({
   pageContext,
   pageContext: { slug },
   location,
-}) => {
-  return (
-    <Layout location={location} title={title}>
-      <Head title={postTitle} description={post.excerpt} />
-      <PostTitle title={postTitle} />
-      <PostDate date={date} />
-      <PostContainer html={html} />
-      <SocialShare title={postTitle} author={author} />
-      {!!buyMeACoffeeId && <SponsorButton sponsorId={buyMeACoffeeId} />}
-      <Elements.Hr />
-      <Bio />
-      <PostNavigator pageContext={pageContext} />
-      {!!disqusShortName && (
-        <Disqus
-          post={post}
-          shortName={disqusShortName}
-          siteUrl={siteUrl}
-          slug={slug}
-        />
-      )}
-      {!!utterances && <Utterances repo={utterances} />}
-    </Layout>
-  )
-}
+}) => (
+  <Layout location={location} items={items} title={title}>
+    <Head title={postTitle} description={post.excerpt} />
+    <PostTitle title={postTitle} />
+    <PostDate date={date} />
+    <PostContainer html={html} />
+    <SocialShare title={postTitle} author={author} />
+    {!!buyMeACoffeeId && <SponsorButton sponsorId={buyMeACoffeeId} />}
+    <Elements.Hr />
+    <Bio />
+    <PostNavigator pageContext={pageContext} />
+    {!!disqusShortName && (
+      <Disqus
+        post={post}
+        shortName={disqusShortName}
+        siteUrl={siteUrl}
+        slug={slug}
+      />
+    )}
+    {!!utterances && <Utterances repo={utterances} />}
+  </Layout>
+)
 
 export const pageQuery = graphql`
   query BlogPostBySlug($slug: String!) {
@@ -80,7 +79,8 @@ export const pageQuery = graphql`
     }
     markdownRemark(fields: { slug: { eq: $slug } }) {
       id
-      excerpt(pruneLength: 280)
+      tableOfContents
+      excerpt(pruneLength: 280, truncate: true)
       html
       frontmatter {
         title

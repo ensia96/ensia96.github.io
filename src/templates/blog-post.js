@@ -41,30 +41,11 @@ export default ({
   pageContext: { slug },
   location,
 }) => {
-  const [currentHeaderUrl, setCurrentHeaderUrl] = useState(undefined)
-
-  useEffect(() => {
-    const handleScroll = () => {
-      let aboveHeaderUrl
-      const headerElements = document.querySelectorAll('.anchor-header')
-
-      Object.values(headerElements).every((elem, i) =>
-        0 < elem.getBoundingClientRect().top - 100
-          ? setCurrentHeaderUrl(aboveHeaderUrl?.split(location.origin)[1])
-          : (i === headerElements.length - 1
-              ? setCurrentHeaderUrl(elem.href.split(location.origin)[1])
-              : (aboveHeaderUrl = elem.href)) || true
-      )
-    }
-    window.addEventListener('scroll', handleScroll)
-    return () => window.removeEventListener('scroll', handleScroll)
-  }, [])
-
   return (
     <Layout location={location} title={title}>
       <Head title={postTitle} description={post.excerpt} />
       <PostTitle title={postTitle} />
-      <TableOfContents items={items} currentHeaderUrl={currentHeaderUrl} />
+      <TableOfContents items={items} />
       <PostDate date={date} />
       <PostContainer html={html} />
       <SocialShare title={postTitle} author={author} />

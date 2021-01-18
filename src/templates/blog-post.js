@@ -43,6 +43,11 @@ export default ({
     <Layout location={location} title={title}>
       <Head title={postTitle} description={post.excerpt} />
       <PostTitle title={postTitle} />
+      <div
+        dangerouslySetInnerHTML={{
+          __html: tableOfContents,
+        }}
+      />
       <PostDate date={date} />
       <PostContainer html={html} />
       <SocialShare title={postTitle} author={author} />

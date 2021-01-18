@@ -1,4 +1,21 @@
 import React, { useState, useEffect, useMemo } from 'react'
+import styled from 'styled-components'
+
+const Toc = styled.nav`
+  z-index: 5;
+  position: fixed;
+  background-color: white;
+
+  display: inline-block;
+
+  width: 200px;
+  right: 0;
+
+  overflow: scroll;
+  white-space: nowrap;
+
+  padding: 5px;
+`
 
 const TableOfContents = ({ items }) => {
   const [currentHeaderUrl, setCurrentHeaderUrl] = useState(undefined)
@@ -34,9 +51,9 @@ const TableOfContents = ({ items }) => {
   )
 
   return items ? (
-    <nav style={{ position: 'fixed', backgroundColor: 'white' }}>
+    <Toc>
       <div dangerouslySetInnerHTML={{ __html: replaceItems }} />
-    </nav>
+    </Toc>
   ) : null
 }
 

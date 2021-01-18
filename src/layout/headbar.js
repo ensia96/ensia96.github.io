@@ -31,7 +31,7 @@ export default ({ open, isRoot, title, sideToggle }) => (
     <Burger open={open} sideToggle={sideToggle} />
     {!isRoot && (
       <Title>
-        <Link>{title}</Link>
+        <Link to="/">{title}</Link>
       </Title>
     )}
   </Header>

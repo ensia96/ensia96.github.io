@@ -42,6 +42,7 @@ export default ({
   location,
 }) => {
   const [currentHeaderUrl, setCurrentHeaderUrl] = useState(undefined)
+
   useEffect(() => {
     const handleScroll = () => {
       let aboveHeaderUrl
@@ -67,6 +68,7 @@ export default ({
       window.removeEventListener('scroll', handleScroll)
     }
   }, [])
+
   return (
     <Layout location={location} title={title}>
       <Head title={postTitle} description={post.excerpt} />

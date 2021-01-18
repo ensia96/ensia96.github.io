@@ -46,27 +46,18 @@ export default ({
   useEffect(() => {
     const handleScroll = () => {
       let aboveHeaderUrl
-      const currentOffsetY = window.pageYOffset
       const headerElements = document.querySelectorAll('.anchor-header')
-      for (const elem of headerElements) {
-        const { top } = elem.getBoundingClientRect()
-        const elemTop = top + currentOffsetY
-        const isLast = elem === headerElements[headerElements.length - 1]
-        if (currentOffsetY < elemTop - 100) {
-          aboveHeaderUrl &&
-            setCurrentHeaderUrl(aboveHeaderUrl.split(location.origin)[1])
-          !aboveHeaderUrl && setCurrentHeaderUrl(undefined)
-          break
-        } else {
-          isLast && setCurrentHeaderUrl(elem.href.split(location.origin)[1])
-          !isLast && (aboveHeaderUrl = elem.href)
-        }
-      }
+
+      Object.values(headerElements).every((elem, i) =>
+        0 < elem.getBoundingClientRect().top - 100
+          ? setCurrentHeaderUrl(aboveHeaderUrl?.split(location.origin)[1])
+          : (i === headerElements.length - 1
+              ? setCurrentHeaderUrl(elem.href.split(location.origin)[1])
+              : (aboveHeaderUrl = elem.href)) || true
+      )
     }
     window.addEventListener('scroll', handleScroll)
-    return () => {
-      window.removeEventListener('scroll', handleScroll)
-    }
+    return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
   return (

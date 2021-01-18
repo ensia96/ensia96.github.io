@@ -21,6 +21,7 @@ export default ({
   data: {
     markdownRemark: post,
     markdownRemark: {
+      tableOfContents,
       html,
       frontmatter: { title: postTitle, date },
     },
@@ -38,6 +39,7 @@ export default ({
   pageContext: { slug },
   location,
 }) => {
+  console.log('result : ', tableOfContents)
   return (
     <Layout location={location} title={title}>
       <Head title={postTitle} description={post.excerpt} />
@@ -80,7 +82,8 @@ export const pageQuery = graphql`
     }
     markdownRemark(fields: { slug: { eq: $slug } }) {
       id
-      excerpt(pruneLength: 280)
+      tableOfContents
+      excerpt(pruneLength: 280, truncate: true)
       html
       frontmatter {
         title

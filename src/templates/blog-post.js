@@ -39,7 +39,6 @@ export default ({
   pageContext: { slug },
   location,
 }) => {
-  console.log('result : ', tableOfContents)
   return (
     <Layout location={location} title={title}>
       <Head title={postTitle} description={post.excerpt} />

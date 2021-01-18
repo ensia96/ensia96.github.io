@@ -40,31 +40,29 @@ export default ({
   pageContext,
   pageContext: { slug },
   location,
-}) => {
-  return (
-    <Layout location={location} title={title}>
-      <Head title={postTitle} description={post.excerpt} />
-      <PostTitle title={postTitle} />
-      <TableOfContents items={items} />
-      <PostDate date={date} />
-      <PostContainer html={html} />
-      <SocialShare title={postTitle} author={author} />
-      {!!buyMeACoffeeId && <SponsorButton sponsorId={buyMeACoffeeId} />}
-      <Elements.Hr />
-      <Bio />
-      <PostNavigator pageContext={pageContext} />
-      {!!disqusShortName && (
-        <Disqus
-          post={post}
-          shortName={disqusShortName}
-          siteUrl={siteUrl}
-          slug={slug}
-        />
-      )}
-      {!!utterances && <Utterances repo={utterances} />}
-    </Layout>
-  )
-}
+}) => (
+  <Layout location={location} title={title}>
+    <Head title={postTitle} description={post.excerpt} />
+    <PostTitle title={postTitle} />
+    <TableOfContents items={items} />
+    <PostDate date={date} />
+    <PostContainer html={html} />
+    <SocialShare title={postTitle} author={author} />
+    {!!buyMeACoffeeId && <SponsorButton sponsorId={buyMeACoffeeId} />}
+    <Elements.Hr />
+    <Bio />
+    <PostNavigator pageContext={pageContext} />
+    {!!disqusShortName && (
+      <Disqus
+        post={post}
+        shortName={disqusShortName}
+        siteUrl={siteUrl}
+        slug={slug}
+      />
+    )}
+    {!!utterances && <Utterances repo={utterances} />}
+  </Layout>
+)
 
 export const pageQuery = graphql`
   query BlogPostBySlug($slug: String!) {

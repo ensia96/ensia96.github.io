@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { graphql } from 'gatsby'
 
 import * as Elements from '../components/elements'
@@ -14,6 +14,8 @@ import { PostNavigator } from '../components/post-navigator'
 import { Disqus } from '../components/disqus'
 import { Utterances } from '../components/utterances'
 
+import TableOfContents from '../components/toc'
+
 import '../styles/code.scss'
 import 'katex/dist/katex.min.css'
 
@@ -21,7 +23,7 @@ export default ({
   data: {
     markdownRemark: post,
     markdownRemark: {
-      tableOfContents,
+      tableOfContents: items,
       html,
       frontmatter: { title: postTitle, date },
     },
@@ -39,15 +41,37 @@ export default ({
   pageContext: { slug },
   location,
 }) => {
+  const [currentHeaderUrl, setCurrentHeaderUrl] = useState(undefined)
+  useEffect(() => {
+    const handleScroll = () => {
+      let aboveHeaderUrl
+      const currentOffsetY = window.pageYOffset
+      const headerElements = document.querySelectorAll('.anchor-header')
+      for (const elem of headerElements) {
+        const { top } = elem.getBoundingClientRect()
+        const elemTop = top + currentOffsetY
+        const isLast = elem === headerElements[headerElements.length - 1]
+        if (currentOffsetY < elemTop - 100) {
+          aboveHeaderUrl &&
+            setCurrentHeaderUrl(aboveHeaderUrl.split(location.origin)[1])
+          !aboveHeaderUrl && setCurrentHeaderUrl(undefined)
+          break
+        } else {
+          isLast && setCurrentHeaderUrl(elem.href.split(location.origin)[1])
+          !isLast && (aboveHeaderUrl = elem.href)
+        }
+      }
+    }
+    window.addEventListener('scroll', handleScroll)
+    return () => {
+      window.removeEventListener('scroll', handleScroll)
+    }
+  }, [])
   return (
     <Layout location={location} title={title}>
       <Head title={postTitle} description={post.excerpt} />
       <PostTitle title={postTitle} />
-      <div
-        dangerouslySetInnerHTML={{
-          __html: tableOfContents,
-        }}
-      />
+      <TableOfContents items={items} currentHeaderUrl={currentHeaderUrl} />
       <PostDate date={date} />
       <PostContainer html={html} />
       <SocialShare title={postTitle} author={author} />

@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { StaticQuery, graphql } from 'gatsby'
+import { StaticQuery, graphql, Link } from 'gatsby'
 
 import NameShake from './nameshake.js'
 import Container from './container.js'
@@ -57,7 +57,13 @@ export const Bio = ({ open, setBio }) => (
         <OutSide show={open} onClick={() => setBio(false)} />
         <Container show={open}>
           <Title>
-            <AvatarBox children={<Avatar fixed={avatar} size={100} />} />
+            <AvatarBox>
+              <Link
+                to="/"
+                children={<Avatar fixed={avatar} size={100} />}
+                onClick={() => setBio(false)}
+              />
+            </AvatarBox>
             <NameBox children={<NameShake to="/about">@{author}</NameShake>} />
             <SocialBox>
               {Object.entries(social).map(

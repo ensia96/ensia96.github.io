@@ -14,8 +14,6 @@ import { PostNavigator } from '../components/post-navigator'
 import { Disqus } from '../components/disqus'
 import { Utterances } from '../components/utterances'
 
-import TableOfContents from '../components/toc'
-
 import '../styles/code.scss'
 import 'katex/dist/katex.min.css'
 
@@ -41,10 +39,9 @@ export default ({
   pageContext: { slug },
   location,
 }) => (
-  <Layout location={location} title={title}>
+  <Layout location={location} items={items} title={title}>
     <Head title={postTitle} description={post.excerpt} />
     <PostTitle title={postTitle} />
-    <TableOfContents items={items} />
     <PostDate date={date} />
     <PostContainer html={html} />
     <SocialShare title={postTitle} author={author} />

@@ -63,11 +63,10 @@ module.exports = {
           {
             resolve: `gatsby-remark-autolink-headers`,
             options: {
-              offsetY: `200`,
-              className: `custom-class`,
-              maintainCase: false,
+              className: `anchor-header`, // 하이라이트 구현
+              maintainCase: false, // url 대소문자 구분
               removeAccents: true,
-              elements: [`h2`, `h3`, `h4`, `h5`],
+              elements: [`h2`, 'h3', `h4`], // 링크 추가 Header 종류
             },
           },
           `gatsby-remark-copy-linked-files`,

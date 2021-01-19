@@ -9,6 +9,8 @@ export default styled.nav`
     background-color: white;
   }
 
+  border: 1px solid #bbbbbb;
+
   display: inline-block;
 
   width: 200px;
@@ -34,6 +36,6 @@ export default styled.nav`
   }
 
   a:hover {
-    background-color: red;
+    color: gray;
   }
 `

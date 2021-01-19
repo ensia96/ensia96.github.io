@@ -18,7 +18,7 @@ import SideBar from './sidebar.js'
 import ToggleBox from './togglebox.js'
 import AuthorBox from './authorbox.js'
 
-import TableOfContents from '../components/toc'
+import TableOfContents from '../components/toc/index'
 
 export const Layout = ({ location, title, items, children }) => (
   <StaticQuery

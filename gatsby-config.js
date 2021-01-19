@@ -66,7 +66,7 @@ module.exports = {
               className: `anchor-header`, // 하이라이트 구현
               maintainCase: false, // url 대소문자 구분
               removeAccents: true,
-              elements: [`h2`, 'h3', `h4`], // 링크 추가 Header 종류
+              elements: [`h1`, `h2`, 'h3', `h4`], // 링크 추가 Header 종류
             },
           },
           `gatsby-remark-copy-linked-files`,

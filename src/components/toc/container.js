@@ -18,10 +18,6 @@ export default styled.nav`
   transition: margin 0.5s;
   margin-right: ${({ open }) => (open ? 0 : '-200px')};
 
-  @media all and (min-width: 992px) {
-    margin-left: 0 !important;
-  }
-
   ul {
     list-style: none;
   }

@@ -1,55 +1,6 @@
 import React, { useState, useEffect, useMemo } from 'react'
-import styled from 'styled-components'
-
-const Toc = styled.nav`
-  z-index: 1;
-  position: fixed;
-  background-color: white;
-
-  display: inline-block;
-
-  width: 200px;
-  right: 0;
-
-  overflow: scroll;
-  white-space: nowrap;
-
-  padding: 5px;
-
-  transition: margin 0.5s;
-  margin-right: ${({ open }) => (open ? 0 : '-200px')};
-
-  @media all and (min-width: 992px) {
-    margin-left: 0 !important;
-  }
-
-  ul {
-    list-style: none;
-  }
-
-  ul:nth-child(1) {
-    margin-left: 10px;
-  }
-
-  a:hover {
-    background-color: red;
-  }
-`
-
-const Button = styled.button`
-  z-index: 1;
-  position: fixed;
-  top: 30%;
-  right: 200px;
-  width: 15px;
-  height: 50px;
-  border-top-left-radius: 100%;
-  border-bottom-left-radius: 100%;
-  transition: margin 0.5s;
-  margin-right: ${({ open }) => (open ? 0 : '-200px')};
-  outline: 0;
-  border: 1px solid gray;
-`
+import Container from './container'
+import Button from './button'
 
 const TableOfContents = ({ items }) => {
   const [currentHeaderUrl, setCurrentHeaderUrl] = useState(undefined)
@@ -87,12 +38,10 @@ const TableOfContents = ({ items }) => {
   )
 
   return items ? (
-    <>
+    <Container open={open}>
       <Button open={open} onClick={() => setOpen(!open)} />
-      <Toc open={open}>
-        <div dangerouslySetInnerHTML={{ __html: replaceItems }} />
-      </Toc>
-    </>
+      <div dangerouslySetInnerHTML={{ __html: replaceItems }} />
+    </Container>
   ) : null
 }
 

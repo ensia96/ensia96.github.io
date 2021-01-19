@@ -9,6 +9,7 @@ const Toc = styled.nav`
   display: inline-block;
 
   width: 200px;
+  height: 280px;
   right: 0;
 
   overflow: scroll;
@@ -25,6 +26,7 @@ const Toc = styled.nav`
 
   button {
     position: fixed;
+    top: 30%;
     right: 200px;
     width: 15px;
     height: 50px;

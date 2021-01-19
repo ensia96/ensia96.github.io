@@ -9,7 +9,6 @@ const Toc = styled.nav`
   display: inline-block;
 
   width: 200px;
-  height: 280px;
   right: 0;
 
   overflow: scroll;

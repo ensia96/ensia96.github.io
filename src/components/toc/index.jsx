@@ -13,7 +13,7 @@ const TableOfContents = ({ items }) => {
       const headerElements = document.querySelectorAll('.anchor-header')
 
       Object.values(headerElements).every((elem, i) =>
-        0 < elem.getBoundingClientRect().top - 100
+        0 < elem.getBoundingClientRect().top - 200
           ? setCurrentHeaderUrl(aboveHeaderUrl?.split(location.origin)[1])
           : (i === headerElements.length - 1
               ? setCurrentHeaderUrl(elem.href.split(location.origin)[1])
@@ -24,7 +24,7 @@ const TableOfContents = ({ items }) => {
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
-  const targetStyle = 'font-size: 16px; color:gray; font-weight: 600;'
+  const targetStyle = 'font-size: 16px; color:royalblue; font-weight: 700;'
 
   const replaceItems = useMemo(
     () =>

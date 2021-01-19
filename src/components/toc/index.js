@@ -22,6 +22,14 @@ const Toc = styled.nav`
   @media all and (min-width: 992px) {
     margin-left: 0 !important;
   }
+
+  ul {
+    list-style: none;
+  }
+
+  ul:nth-child(1) {
+    margin-left: 10px;
+  }
 `
 
 const Button = styled.button`

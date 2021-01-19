@@ -30,6 +30,10 @@ const Toc = styled.nav`
   ul:nth-child(1) {
     margin-left: 10px;
   }
+
+  a:hover {
+    background-color: red;
+  }
 `
 
 const Button = styled.button`

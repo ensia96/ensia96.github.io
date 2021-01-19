@@ -18,6 +18,9 @@ export default styled.nav`
   transition: margin 0.5s;
   margin-right: ${({ open }) => (open ? 0 : '-200px')};
 
+  font-size: 14px;
+  font-family: Catamaran;
+
   ul {
     list-style: none;
   }

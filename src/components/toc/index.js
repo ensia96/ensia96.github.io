@@ -15,10 +15,32 @@ const Toc = styled.nav`
   white-space: nowrap;
 
   padding: 5px;
+
+  transition: margin 0.5s;
+  margin-right: ${({ open }) => (open ? 0 : '-200px')};
+
+  @media all and (min-width: 992px) {
+    margin-left: 0 !important;
+  }
+
+  button {
+    position: fixed;
+    right: 200px;
+    width: 15px;
+    height: 50px;
+    border-top-left-radius: 100%;
+    border-bottom-left-radius: 100%;
+    transition: margin 0.5s;
+    margin-right: ${({ open }) => (open ? 0 : '-200px')};
+    outline: 0;
+    border: 1px solid gray;
+  }
 `
 
 const TableOfContents = ({ items }) => {
   const [currentHeaderUrl, setCurrentHeaderUrl] = useState(undefined)
+
+  const [open, setOpen] = useState(true)
 
   useEffect(() => {
     const handleScroll = () => {
@@ -51,9 +73,12 @@ const TableOfContents = ({ items }) => {
   )
 
   return items ? (
-    <Toc>
-      <div dangerouslySetInnerHTML={{ __html: replaceItems }} />
-    </Toc>
+    <>
+      <Toc open={open}>
+        <button onClick={() => setOpen(!open)} />
+        <div dangerouslySetInnerHTML={{ __html: replaceItems }} />
+      </Toc>
+    </>
   ) : null
 }
 

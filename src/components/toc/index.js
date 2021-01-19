@@ -23,20 +23,20 @@ const Toc = styled.nav`
   @media all and (min-width: 992px) {
     margin-left: 0 !important;
   }
+`
 
-  button {
-    position: fixed;
-    top: 30%;
-    right: 200px;
-    width: 15px;
-    height: 50px;
-    border-top-left-radius: 100%;
-    border-bottom-left-radius: 100%;
-    transition: margin 0.5s;
-    margin-right: ${({ open }) => (open ? 0 : '-200px')};
-    outline: 0;
-    border: 1px solid gray;
-  }
+const Button = styled.button`
+  position: fixed;
+  top: 30%;
+  right: 200px;
+  width: 15px;
+  height: 50px;
+  border-top-left-radius: 100%;
+  border-bottom-left-radius: 100%;
+  transition: margin 0.5s;
+  margin-right: ${({ open }) => (open ? 0 : '-200px')};
+  outline: 0;
+  border: 1px solid gray;
 `
 
 const TableOfContents = ({ items }) => {
@@ -76,8 +76,8 @@ const TableOfContents = ({ items }) => {
 
   return items ? (
     <>
+      <Button open={open} onClick={() => setOpen(!open)} />
       <Toc open={open}>
-        <button onClick={() => setOpen(!open)} />
         <div dangerouslySetInnerHTML={{ __html: replaceItems }} />
       </Toc>
     </>

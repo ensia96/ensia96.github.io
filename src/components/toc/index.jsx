@@ -24,7 +24,7 @@ const TableOfContents = ({ items }) => {
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
-  const targetStyle = 'font-size: 15px; color:white; font-weight: 600;'
+  const targetStyle = 'font-size: 16px; color:gray; font-weight: 600;'
 
   const replaceItems = useMemo(
     () =>

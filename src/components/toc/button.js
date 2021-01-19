@@ -7,11 +7,10 @@ export default styled.button`
   top: 30%;
   right: 200px;
 
-  width: 15px;
+  width: 18px;
   height: 50px;
 
-  border-top-left-radius: 100%;
-  border-bottom-left-radius: 100%;
+  background-color: cornflowerblue;
 
   transition: margin 0.5s;
   margin-right: ${({ open }) => (open ? 0 : '-200px')};

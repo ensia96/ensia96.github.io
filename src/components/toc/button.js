@@ -12,5 +12,5 @@ export default styled.button`
   transition: margin 0.5s;
   margin-right: ${({ open }) => (open ? 0 : '-200px')};
   outline: 0;
-  border: 1px solid gray;
+  border: 1px solid #bbbbbb;
 `

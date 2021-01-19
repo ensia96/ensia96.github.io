@@ -3,23 +3,27 @@ import styled from 'styled-components'
 export default styled.nav`
   z-index: 1;
   position: fixed;
+  display: inline-block;
+
+  right: 0;
+
+  width: 200px;
+
   background-color: transparent;
 
   :hover {
     background-color: white;
   }
 
-  border: 1px solid #bbbbbb;
+  border-top-left-radius: 1%;
+  border-bottom-left-radius: 1%;
 
-  display: inline-block;
-
-  width: 200px;
-  right: 0;
+  border: 1px solid #dddddd;
 
   overflow: scroll;
   white-space: nowrap;
 
-  padding: 5px;
+  padding: 10px;
 
   transition: margin 0.5s;
   margin-right: ${({ open }) => (open ? 0 : '-200px')};
@@ -32,7 +36,7 @@ export default styled.nav`
   }
 
   ul:nth-child(1) {
-    margin-left: 10px;
+    margin-left: 0px;
   }
 
   a:hover {

@@ -2,7 +2,7 @@ import React, { useState, useEffect, useMemo } from 'react'
 import styled from 'styled-components'
 
 const Toc = styled.nav`
-  z-index: 5;
+  z-index: 1;
   position: fixed;
   background-color: white;
 
@@ -25,6 +25,7 @@ const Toc = styled.nav`
 `
 
 const Button = styled.button`
+  z-index: 1;
   position: fixed;
   top: 30%;
   right: 200px;

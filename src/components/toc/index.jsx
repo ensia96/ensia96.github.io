@@ -5,7 +5,7 @@ import Button from './button'
 const TableOfContents = ({ items }) => {
   const [currentHeaderUrl, setCurrentHeaderUrl] = useState(undefined)
 
-  const [open, setOpen] = useState(true)
+  const [open, setOpen] = useState()
 
   useEffect(() => {
     const handleScroll = () => {

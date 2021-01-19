@@ -3,7 +3,11 @@ import styled from 'styled-components'
 export default styled.nav`
   z-index: 1;
   position: fixed;
-  background-color: white;
+  background-color: transparent;
+
+  :hover {
+    background-color: white;
+  }
 
   display: inline-block;
 

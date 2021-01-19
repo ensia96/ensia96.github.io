@@ -9,11 +9,7 @@ export default styled.nav`
 
   width: 200px;
 
-  background-color: transparent;
-
-  :hover {
-    background-color: white;
-  }
+  background-color: white;
 
   border-top-left-radius: 1%;
   border-bottom-left-radius: 1%;

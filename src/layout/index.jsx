@@ -3,7 +3,7 @@ import { StaticQuery } from 'gatsby'
 
 import useWindowSize from '../hooks/useWindowSize'
 
-import { Bio } from '../components/bio'
+import Bio from '../components/bio'
 import { ThemeSwitch } from '../components/theme-switch'
 import Footer from '../components/footer'
 import { Header } from '../components/header'

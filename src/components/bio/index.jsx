@@ -42,7 +42,7 @@ const NameBox = styled.div`
   justify-content: center;
 `
 
-export const Bio = ({ open, setBio }) => (
+export default ({ open, setBio }) => (
   <StaticQuery
     query={bioQuery}
     render={({
@@ -105,5 +105,3 @@ const bioQuery = graphql`
     }
   }
 `
-
-export default Bio

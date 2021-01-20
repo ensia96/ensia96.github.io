@@ -8,7 +8,6 @@ import { PostDate } from '../components/post-date'
 import { PostContainer } from '../components/post-container'
 import { SocialShare } from '../components/social-share'
 import { SponsorButton } from '../components/sponsor-button'
-import { Bio } from '../components/bio'
 import { PostNavigator } from '../components/post-navigator'
 import { Disqus } from '../components/disqus'
 import { Utterances } from '../components/utterances'
@@ -45,7 +44,6 @@ export default ({
     <PostContainer html={html} />
     <SocialShare title={postTitle} author={author} />
     {!!buyMeACoffeeId && <SponsorButton sponsorId={buyMeACoffeeId} />}
-    <Bio />
     <PostNavigator pageContext={pageContext} />
     {!!disqusShortName && (
       <Disqus

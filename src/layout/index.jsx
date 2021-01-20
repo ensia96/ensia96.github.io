@@ -5,7 +5,7 @@ import useWindowSize from '../hooks/useWindowSize'
 
 import { Bio } from '../components/bio'
 import { ThemeSwitch } from '../components/theme-switch'
-import { Footer } from '../components/footer'
+import Footer from '../components/footer'
 import { Header } from '../components/header'
 
 import { Category } from '../components/category'

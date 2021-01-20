@@ -9,7 +9,7 @@ import { PostContainer } from '../components/post-container'
 import { SocialShare } from '../components/social-share'
 import { SponsorButton } from '../components/sponsor-button'
 import { PostNavigator } from '../components/post-navigator'
-import { Disqus } from '../components/disqus'
+import Disqus from '../components/disqus'
 import { Utterances } from '../components/utterances'
 
 import '../styles/code.scss'

@@ -23,8 +23,6 @@ const Container = styled.ul`
   }
 `
 
-import './index.scss'
-
 export const PostNavigator = ({ pageContext: { previous, next } }) => (
   <Container>
     <li>

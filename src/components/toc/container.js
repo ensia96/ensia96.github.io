@@ -5,7 +5,8 @@ export default styled.nav`
   position: fixed;
   display: inline-block;
 
-  right: 0;
+  right: ${({ open }) => (open ? 0 : '-200px')};
+  transition: right 0.5s;
 
   width: 200px;
 
@@ -20,9 +21,6 @@ export default styled.nav`
   white-space: nowrap;
 
   padding: 10px;
-
-  transition: margin 0.5s;
-  margin-right: ${({ open }) => (open ? 0 : '-200px')};
 
   font-size: 14px;
   font-family: Catamaran;

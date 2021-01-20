@@ -5,15 +5,13 @@ export default styled.button`
   position: fixed;
 
   top: 30%;
-  right: 200px;
+  right: ${({ open }) => (open ? '200px' : 0)};
+  transition: right 0.5s;
 
   width: 18px;
   height: 50px;
 
   background-color: #6e96e6;
-
-  transition: margin 0.5s;
-  margin-right: ${({ open }) => (open ? 0 : '-200px')};
 
   outline: 0;
   border: 1px solid #bbbbbb;

@@ -6,7 +6,6 @@ import Head from '../components/head'
 import PostTitle from '../components/post-title'
 import PostDate from '../components/post-date'
 import PostContainer from '../components/post-container'
-import { SocialShare } from '../components/social-share'
 import { SponsorButton } from '../components/sponsor-button'
 import PostNavigator from '../components/post-navigator'
 import Disqus from '../components/disqus'
@@ -28,7 +27,6 @@ export default ({
         title,
         comment: { disqusShortName, utterances },
         siteUrl,
-        author,
         sponsor: { buyMeACoffeeId },
       },
     },
@@ -42,7 +40,6 @@ export default ({
     <PostTitle title={postTitle} />
     <PostDate date={date} />
     <PostContainer html={html} />
-    <SocialShare title={postTitle} author={author} />
     {!!buyMeACoffeeId && <SponsorButton sponsorId={buyMeACoffeeId} />}
     <PostNavigator pageContext={pageContext} />
     {!!disqusShortName && (
@@ -62,7 +59,6 @@ export const pageQuery = graphql`
     site {
       siteMetadata {
         title
-        author
         siteUrl
         comment {
           disqusShortName

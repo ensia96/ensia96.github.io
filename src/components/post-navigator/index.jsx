@@ -1,10 +1,32 @@
 import React from 'react'
 import { Link } from 'gatsby'
 
+import styled from 'styled-components'
+
+const Container = styled.ul`
+  margin: 40px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+
+  li {
+    margin-bottom: 12px;
+  }
+
+  a {
+    padding: 7px 16px 8px 16px;
+    border-radius: 6px;
+    font-size: 12px;
+    opacity: 0.8;
+  }
+`
+
 import './index.scss'
 
 export const PostNavigator = ({ pageContext: { previous, next } }) => (
-  <ul className="navigator">
+  <Container>
     <li>
       {previous && (
         <Link to={previous.fields.slug} rel="prev">
@@ -19,5 +41,5 @@ export const PostNavigator = ({ pageContext: { previous, next } }) => (
         </Link>
       )}
     </li>
-  </ul>
+  </Container>
 )

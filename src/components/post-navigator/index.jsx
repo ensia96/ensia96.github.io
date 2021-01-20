@@ -23,7 +23,7 @@ const Container = styled.ul`
   }
 `
 
-export const PostNavigator = ({ pageContext: { previous, next } }) => (
+export default ({ pageContext: { previous, next } }) => (
   <Container>
     <li>
       {previous && (

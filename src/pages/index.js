@@ -1,7 +1,7 @@
 import { graphql } from 'gatsby'
 import React from 'react'
 import { globalHistory } from '@reach/router'
-import { Contents } from '../components/contents'
+import Contents from '../components/contents'
 import Head from '../components/head'
 import { HOME_TITLE } from '../constants'
 import { useIntersectionObserver } from '../hooks/useIntersectionObserver'

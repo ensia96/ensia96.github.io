@@ -1,7 +1,6 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 
-import * as Elements from '../components/elements'
 import { Layout } from '../layout'
 import { Head } from '../components/head'
 import { PostTitle } from '../components/post-title'
@@ -46,7 +45,6 @@ export default ({
     <PostContainer html={html} />
     <SocialShare title={postTitle} author={author} />
     {!!buyMeACoffeeId && <SponsorButton sponsorId={buyMeACoffeeId} />}
-    <Elements.Hr />
     <Bio />
     <PostNavigator pageContext={pageContext} />
     {!!disqusShortName && (

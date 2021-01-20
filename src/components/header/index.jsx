@@ -13,11 +13,15 @@ const HomeHeader = styled.h1`
   letter-spacing: -2px;
 `
 
+const Content = styled(Link)`
+  box-shadow: none;
+  text-decoration: none;
+  color: inherit;
+`
+
 export default ({ title, isRoot }) =>
   isRoot && (
     <HomeHeader>
-      <Link to={`/`} className="link">
-        {title}
-      </Link>
+      <Content to={`/`}>{title}</Content>
     </HomeHeader>
   )

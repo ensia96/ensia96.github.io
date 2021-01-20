@@ -8,7 +8,7 @@ import { ThemeSwitch } from '../components/theme-switch'
 import Footer from '../components/footer'
 import Header from '../components/header'
 
-import { Category } from '../components/category'
+import Category from '../components/category'
 
 import Global from './global.js'
 import Main from './main.js'

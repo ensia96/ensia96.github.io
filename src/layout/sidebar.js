@@ -1,14 +1,15 @@
 import styled from 'styled-components'
 
 export default styled.div`
-  min-width: 280px;
-  height: 100%;
-  position: fixed;
   z-index: 3;
+  position: fixed;
 
   top: 0;
   left: ${({ open }) => (open ? 0 : '-280px')};
   transition: left 0.5s;
+
+  width: 280px;
+  height: 100%;
 
   overflow-x: hidden;
 
@@ -16,7 +17,6 @@ export default styled.div`
   color: 'white' !important;
 
   @media all and (min-width: 992px) {
-    min-width: 280px;
     left: 0 !important;
   }
 `

@@ -3,7 +3,7 @@ import React, { useMemo } from 'react'
 import { ThumbnailContainer } from '../thumbnail-container'
 import { ThumbnailItem } from '../thumbnail-item'
 
-export const Contents = ({ posts, countOfInitialPost, count, category }) => {
+export default ({ posts, countOfInitialPost, count, category }) => {
   const contents = useMemo(() =>
     posts
       .filter(({ node }) =>

@@ -5,7 +5,7 @@ import styled from 'styled-components'
 
 import './index.scss'
 
-const HomeHeader = styled.h1`
+const Container = styled.h1`
   margin-top: 0;
   border-bottom: none;
   font-weight: 900;
@@ -21,7 +21,7 @@ const Content = styled(Link)`
 
 export default ({ title, isRoot }) =>
   isRoot && (
-    <HomeHeader>
+    <Container>
       <Content to={`/`}>{title}</Content>
-    </HomeHeader>
+    </Container>
   )

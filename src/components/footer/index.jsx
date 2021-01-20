@@ -1,15 +1,5 @@
 import React from 'react'
-import styled from 'styled-components'
-
-const Footer = styled.footer`
-  padding-top: 52px;
-  text-align: center;
-  font-size: 12px;
-
-  a {
-    text-decoration: none !important;
-  }
-`
+import Footer from './container'
 
 export default () => (
   <Footer>

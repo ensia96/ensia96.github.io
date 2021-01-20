@@ -3,8 +3,6 @@ import { Link } from 'gatsby'
 
 import styled from 'styled-components'
 
-import './index.scss'
-
 const Container = styled.h1`
   margin-top: 0;
   border-bottom: none;

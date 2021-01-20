@@ -8,7 +8,7 @@ import PostDate from '../components/post-date'
 import PostContainer from '../components/post-container'
 import { SocialShare } from '../components/social-share'
 import { SponsorButton } from '../components/sponsor-button'
-import { PostNavigator } from '../components/post-navigator'
+import PostNavigator from '../components/post-navigator'
 import Disqus from '../components/disqus'
 import { Utterances } from '../components/utterances'
 

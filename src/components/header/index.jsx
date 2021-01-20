@@ -1,21 +1,7 @@
 import React from 'react'
-import { Link } from 'gatsby'
 
-import styled from 'styled-components'
-
-const Container = styled.h1`
-  margin-top: 0;
-  border-bottom: none;
-  font-weight: 900;
-  font-size: 48px;
-  letter-spacing: -2px;
-`
-
-const Content = styled(Link)`
-  box-shadow: none;
-  text-decoration: none;
-  color: inherit;
-`
+import Container from './container'
+import Content from './contnent'
 
 export default ({ title, isRoot }) =>
   isRoot && (

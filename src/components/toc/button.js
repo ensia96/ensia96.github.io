@@ -10,7 +10,7 @@ export default styled.button`
   width: 18px;
   height: 50px;
 
-  background-color: cornflowerblue;
+  background-color: #6e96e6;
 
   transition: margin 0.5s;
   margin-right: ${({ open }) => (open ? 0 : '-200px')};

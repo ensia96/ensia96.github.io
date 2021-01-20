@@ -7,4 +7,4 @@ const Content = styled.p`
   font-style: italic;
 `
 
-export const PostDate = ({ date }) => <Content>{date}</Content>
+export default ({ date }) => <Content>{date}</Content>

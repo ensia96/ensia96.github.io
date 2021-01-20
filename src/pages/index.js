@@ -1,9 +1,8 @@
 import { graphql } from 'gatsby'
 import React from 'react'
 import { globalHistory } from '@reach/router'
-import { Bio } from '../components/bio'
-import { Contents } from '../components/contents'
-import { Head } from '../components/head'
+import Contents from '../components/contents'
+import Head from '../components/head'
 import { HOME_TITLE } from '../constants'
 import { useIntersectionObserver } from '../hooks/useIntersectionObserver'
 import { useRenderedCount } from '../hooks/useRenderedCount'
@@ -48,7 +47,6 @@ export default ({
   return (
     <Layout location={location} title={title}>
       <Head title={HOME_TITLE} keywords={keywords} />
-      <Bio />
       <Contents
         posts={posts}
         countOfInitialPost={countOfInitialPost}

@@ -1,7 +1,10 @@
 import React from 'react'
+import styled from 'styled-components'
 
-import './index.scss'
+const Content = styled.p`
+  text-align: right;
+  font-size: 12px;
+  font-style: italic;
+`
 
-export const PostDate = ({ date }) => {
-  return <p className="post-date">{date}</p>
-}
+export default ({ date }) => <Content>{date}</Content>

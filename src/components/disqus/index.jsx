@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import ReactDisqusComments from 'react-disqus-comments'
 
-export class Disqus extends Component {
+class Disqus extends Component {
   constructor(props) {
     super(props)
     this.state = { toasts: [] }
@@ -36,3 +36,5 @@ export class Disqus extends Component {
     )
   }
 }
+
+export default Disqus

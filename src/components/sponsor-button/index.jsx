@@ -40,8 +40,7 @@ const Button = styled.a`
 
 export default ({ sponsorId }) => (
   <div className="sponsor-button">
-    <a
-      className="bmc-button"
+    <Button
       target="_blank"
       rel="noopener noreferrer"
       href={`https://www.buymeacoffee.com/${sponsorId}`}
@@ -51,6 +50,6 @@ export default ({ sponsorId }) => (
         alt="Buy me a coffee"
       />
       <Content>Buy me a coffee</Content>
-    </a>
+    </Button>
   </div>
 )

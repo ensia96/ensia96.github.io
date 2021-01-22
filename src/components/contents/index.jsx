@@ -1,6 +1,6 @@
 import React, { useMemo } from 'react'
 
-import { ThumbnailContainer } from '../thumbnail-container'
+import ThumbnailContainer from '../thumbnail-container'
 import { ThumbnailItem } from '../thumbnail-item'
 
 export default ({ posts, countOfInitialPost, count, category }) => {

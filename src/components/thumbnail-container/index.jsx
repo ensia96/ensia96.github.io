@@ -1,7 +1,5 @@
 import React from 'react'
 
-import './index.scss'
+import Container from './container'
 
-export const ThumbnailContainer = React.memo(({ children }) => (
-  <div className="thumbnail-container">{children}</div>
-))
+export default React.memo(({ children }) => <Container children={children} />)

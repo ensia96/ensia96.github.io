@@ -1,20 +1,22 @@
 import React from 'react'
 
-import './index.scss'
+import Container from './container'
+import Button from './button'
+import Logo from './logo'
+import Content from './content'
 
-export const SponsorButton = ({ sponsorId }) => (
-  <div className="sponsor-button">
-    <a
-      className="bmc-button"
+export default ({ sponsorId }) => (
+  <Container>
+    <Button
       target="_blank"
       rel="noopener noreferrer"
       href={`https://www.buymeacoffee.com/${sponsorId}`}
     >
-      <img
+      <Logo
         src="https://www.buymeacoffee.com/assets/img/BMC-btn-logo.svg"
         alt="Buy me a coffee"
       />
-      <span>Buy me a coffee</span>
-    </a>
-  </div>
+      <Content>Buy me a coffee</Content>
+    </Button>
+  </Container>
 )

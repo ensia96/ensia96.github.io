@@ -28,7 +28,7 @@ export default ({ sponsorId }) => (
         src="https://www.buymeacoffee.com/assets/img/BMC-btn-logo.svg"
         alt="Buy me a coffee"
       />
-      <span>Buy me a coffee</span>
+      <Content>Buy me a coffee</Content>
     </a>
   </div>
 )

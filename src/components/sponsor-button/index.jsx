@@ -12,6 +12,10 @@ const Logo = styled.img`
   vertical-align: middle;
 `
 
+const Content = styled.span`
+  margin-left: 6px;
+`
+
 export default ({ sponsorId }) => (
   <div className="sponsor-button">
     <a

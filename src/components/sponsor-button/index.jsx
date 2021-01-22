@@ -1,6 +1,16 @@
 import React from 'react'
 
+import styled from 'styled-components'
+
 import './index.scss'
+
+const Logo = styled.img`
+  width: 20px;
+  margin-bottom: 1px;
+  box-shadow: none;
+  border: none;
+  vertical-align: middle;
+`
 
 export default ({ sponsorId }) => (
   <div className="sponsor-button">

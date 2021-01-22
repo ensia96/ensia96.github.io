@@ -1,11 +1,7 @@
 import React from 'react'
 
-import styled from 'styled-components'
+import Container from './container'
 
 import './index.scss'
-
-const Container = styled.div`
-  min-height: calc(100vh - 3.5rem);
-`
 
 export default React.memo(({ children }) => <Container children={children} />)

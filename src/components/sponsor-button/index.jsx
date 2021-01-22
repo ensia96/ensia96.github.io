@@ -2,7 +2,7 @@ import React from 'react'
 
 import './index.scss'
 
-export const SponsorButton = ({ sponsorId }) => (
+export default ({ sponsorId }) => (
   <div className="sponsor-button">
     <a
       className="bmc-button"

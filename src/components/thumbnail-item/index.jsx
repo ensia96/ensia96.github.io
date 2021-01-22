@@ -4,7 +4,7 @@ import { TARGET_CLASS } from '../../utils/visible'
 
 import './index.scss'
 
-export const ThumbnailItem = ({ node }) => (
+export default ({ node }) => (
   <Link className={`thumbnail ${TARGET_CLASS}`} to={node.fields.slug}>
     <div key={node.fields.slug}>
       <h3>{node.frontmatter.title || node.fields.slug}</h3>

@@ -38,6 +38,11 @@ const Button = styled.a`
   }
 `
 
+const Container = styled.div`
+  text-align: right;
+  margin: 4px;
+`
+
 export default ({ sponsorId }) => (
   <div className="sponsor-button">
     <Button

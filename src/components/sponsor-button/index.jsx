@@ -20,7 +20,7 @@ export default ({ sponsorId }) => (
       rel="noopener noreferrer"
       href={`https://www.buymeacoffee.com/${sponsorId}`}
     >
-      <img
+      <Logo
         src="https://www.buymeacoffee.com/assets/img/BMC-btn-logo.svg"
         alt="Buy me a coffee"
       />

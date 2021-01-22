@@ -5,11 +5,10 @@ import ThumbnailItem from '../thumbnail-item'
 
 export default ({ posts, countOfInitialPost, count, category }) => {
   const contents = useMemo(() =>
-    posts
-      .filter(({ node }) =>
-        category ? node.frontmatter.category === category : true
-      )
-      .slice(0, count * countOfInitialPost)
+    (category
+      ? posts.filter(({ node }) => node.frontmatter.category === category)
+      : posts
+    ).slice(0, count * countOfInitialPost)
   )
 
   return (

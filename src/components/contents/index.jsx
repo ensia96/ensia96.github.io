@@ -13,8 +13,8 @@ export default ({ posts, countOfInitialPost, count, category }) => {
 
   return (
     <ThumbnailContainer>
-      {contents.map(({ node }, index) => (
-        <ThumbnailItem node={node} key={`item_${index}`} />
+      {contents.map(({ node }, i) => (
+        <ThumbnailItem node={node} key={`item_${i}`} />
       ))}
     </ThumbnailContainer>
   )

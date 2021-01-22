@@ -44,7 +44,7 @@ const Container = styled.div`
 `
 
 export default ({ sponsorId }) => (
-  <div className="sponsor-button">
+  <Container>
     <Button
       target="_blank"
       rel="noopener noreferrer"
@@ -56,5 +56,5 @@ export default ({ sponsorId }) => (
       />
       <Content>Buy me a coffee</Content>
     </Button>
-  </div>
+  </Container>
 )

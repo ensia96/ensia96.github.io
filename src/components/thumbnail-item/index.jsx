@@ -3,8 +3,6 @@ import { TARGET_CLASS } from '../../utils/visible'
 
 import Container from './container'
 
-import './index.scss'
-
 export default ({
   node: {
     fields: { slug },

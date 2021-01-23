@@ -15,4 +15,8 @@ export default styled(Link)`
     font-size: 90%;
     line-height: 1.4;
   }
+
+  .visible {
+    opacity: 1;
+  }
 `

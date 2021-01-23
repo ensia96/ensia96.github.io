@@ -1,10 +1,9 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 
-import { rhythm } from '../utils/typography'
 import { ENGLISH } from '../constants'
 
-import { Layout } from '../layout'
+import Layout from '../layout'
 
 export default ({
   location,

@@ -4,10 +4,9 @@ import { globalHistory } from '@reach/router'
 import Contents from '../components/contents'
 import Head from '../components/head'
 import { HOME_TITLE } from '../constants'
-import { useIntersectionObserver } from '../hooks/useIntersectionObserver'
 import { useRenderedCount } from '../hooks/useRenderedCount'
 import { useScrollEvent } from '../hooks/useScrollEvent'
-import { Layout } from '../layout'
+import Layout from '../layout'
 import * as Dom from '../utils/dom'
 import * as EventManager from '../utils/event-manager'
 
@@ -30,7 +29,6 @@ export default ({
 
   const category = globalHistory.location.search.split('=').pop()
 
-  useIntersectionObserver()
   useScrollEvent(() => {
     const isTriggerPos = () =>
       Dom.getDocumentHeight() - (window.scrollY + window.innerHeight) <

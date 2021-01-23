@@ -1,15 +1,13 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 
-import { Layout } from '../layout'
+import Layout from '../layout'
 import Head from '../components/head'
-import PostTitle from '../components/post-title'
-import PostDate from '../components/post-date'
-import PostContainer from '../components/post-container'
 import SponsorButton from '../components/sponsor-button'
-import PostNavigator from '../components/post-navigator'
-import Disqus from '../components/disqus'
-import { Utterances } from '../components/utterances'
+import Navigator from '../components/navigator'
+import Utterances from '../components/utterances'
+
+import Post from '../components/post'
 
 import '../styles/code.scss'
 import 'katex/dist/katex.min.css'
@@ -25,31 +23,19 @@ export default ({
     site: {
       siteMetadata: {
         title,
-        comment: { disqusShortName, utterances },
-        siteUrl,
+        comment: { utterances },
         sponsor: { buyMeACoffeeId },
       },
     },
   },
   pageContext,
-  pageContext: { slug },
   location,
 }) => (
   <Layout location={location} items={items} title={title}>
     <Head title={postTitle} description={post.excerpt} />
-    <PostTitle title={postTitle} />
-    <PostDate date={date} />
-    <PostContainer html={html} />
+    <Post title={postTitle} date={date} html={html} />
     {!!buyMeACoffeeId && <SponsorButton sponsorId={buyMeACoffeeId} />}
-    <PostNavigator pageContext={pageContext} />
-    {!!disqusShortName && (
-      <Disqus
-        post={post}
-        shortName={disqusShortName}
-        siteUrl={siteUrl}
-        slug={slug}
-      />
-    )}
+    <Navigator pageContext={pageContext} />
     {!!utterances && <Utterances repo={utterances} />}
   </Layout>
 )
@@ -59,9 +45,7 @@ export const pageQuery = graphql`
     site {
       siteMetadata {
         title
-        siteUrl
         comment {
-          disqusShortName
           utterances
         }
         sponsor {

@@ -9,7 +9,7 @@ import PostContainer from '../components/post-container'
 import SponsorButton from '../components/sponsor-button'
 import PostNavigator from '../components/post-navigator'
 import Disqus from '../components/disqus'
-import { Utterances } from '../components/utterances'
+import Utterances from '../components/utterances'
 
 import '../styles/code.scss'
 import 'katex/dist/katex.min.css'

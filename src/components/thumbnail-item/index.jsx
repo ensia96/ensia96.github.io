@@ -13,9 +13,7 @@ export default ({
   },
 }) => (
   <Container className={`thumbnail ${TARGET_CLASS}`} to={slug}>
-    <div key={slug}>
-      <h3>{title || slug}</h3>
-      <p dangerouslySetInnerHTML={{ __html: excerpt }} />
-    </div>
+    <h3>{title || slug}</h3>
+    <p dangerouslySetInnerHTML={{ __html: excerpt }} />
   </Container>
 )

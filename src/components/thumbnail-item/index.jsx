@@ -28,10 +28,10 @@ export default ({
     excerpt,
   },
 }) => (
-  <Link className={`thumbnail ${TARGET_CLASS}`} to={slug}>
+  <Container className={`thumbnail ${TARGET_CLASS}`} to={slug}>
     <div key={slug}>
       <h3>{title || slug}</h3>
       <p dangerouslySetInnerHTML={{ __html: excerpt }} />
     </div>
-  </Link>
+  </Container>
 )

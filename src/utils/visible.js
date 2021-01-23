@@ -1,5 +1,7 @@
 import * as Dom from './dom'
 
+// 작업 예정
+
 const ROOT_ID = '#___gatsby'
 export const TARGET_CLASS = 'observed'
 const VISIBLE_RECOGNIZE_CLASS = 'visible'

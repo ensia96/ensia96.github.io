@@ -20,7 +20,7 @@ import AuthorBox from './authorbox.js'
 
 import TableOfContents from '../components/toc'
 
-export const Layout = ({ location, title, items, children }) => (
+export default ({ location, title, items, children }) => (
   <StaticQuery
     query={layoutQuery}
     render={({

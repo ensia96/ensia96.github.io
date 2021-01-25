@@ -6,7 +6,7 @@ import Head from '../components/head'
 import { HOME_TITLE } from '../constants'
 import { useRenderedCount } from '../hooks/useRenderedCount'
 import { useScrollEvent } from '../hooks/useScrollEvent'
-import { Layout } from '../layout'
+import Layout from '../layout'
 import * as Dom from '../utils/dom'
 import * as EventManager from '../utils/event-manager'
 

@@ -11,6 +11,8 @@ import PostNavigator from '../components/post-navigator'
 import Disqus from '../components/disqus'
 import Utterances from '../components/utterances'
 
+import Post from '../components/post'
+
 import '../styles/code.scss'
 import 'katex/dist/katex.min.css'
 
@@ -37,9 +39,7 @@ export default ({
 }) => (
   <Layout location={location} items={items} title={title}>
     <Head title={postTitle} description={post.excerpt} />
-    <PostTitle title={postTitle} />
-    <PostDate date={date} />
-    <PostContainer html={html} />
+    <Post title={postTitle} date={date} html={html} />
     {!!buyMeACoffeeId && <SponsorButton sponsorId={buyMeACoffeeId} />}
     <PostNavigator pageContext={pageContext} />
     {!!disqusShortName && (

@@ -5,7 +5,6 @@ import { Layout } from '../layout'
 import Head from '../components/head'
 import SponsorButton from '../components/sponsor-button'
 import Navigator from '../components/navigator'
-import Disqus from '../components/disqus'
 import Utterances from '../components/utterances'
 
 import Post from '../components/post'
@@ -24,14 +23,12 @@ export default ({
     site: {
       siteMetadata: {
         title,
-        comment: { disqusShortName, utterances },
-        siteUrl,
+        comment: { utterances },
         sponsor: { buyMeACoffeeId },
       },
     },
   },
   pageContext,
-  pageContext: { slug },
   location,
 }) => (
   <Layout location={location} items={items} title={title}>
@@ -39,14 +36,6 @@ export default ({
     <Post title={postTitle} date={date} html={html} />
     {!!buyMeACoffeeId && <SponsorButton sponsorId={buyMeACoffeeId} />}
     <Navigator pageContext={pageContext} />
-    {!!disqusShortName && (
-      <Disqus
-        post={post}
-        shortName={disqusShortName}
-        siteUrl={siteUrl}
-        slug={slug}
-      />
-    )}
     {!!utterances && <Utterances repo={utterances} />}
   </Layout>
 )
@@ -56,9 +45,7 @@ export const pageQuery = graphql`
     site {
       siteMetadata {
         title
-        siteUrl
         comment {
-          disqusShortName
           utterances
         }
         sponsor {

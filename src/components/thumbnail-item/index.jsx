@@ -1,5 +1,4 @@
 import React from 'react'
-import { TARGET_CLASS } from '../../utils/visible'
 
 import Container from './container'
 
@@ -10,7 +9,7 @@ export default ({
     excerpt,
   },
 }) => (
-  <Container className={`thumbnail ${TARGET_CLASS}`} to={slug}>
+  <Container to={slug}>
     <h3>{title || slug}</h3>
     <p dangerouslySetInnerHTML={{ __html: excerpt }} />
   </Container>

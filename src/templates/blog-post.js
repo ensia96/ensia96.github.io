@@ -4,7 +4,7 @@ import { graphql } from 'gatsby'
 import { Layout } from '../layout'
 import Head from '../components/head'
 import SponsorButton from '../components/sponsor-button'
-import PostNavigator from '../components/post-navigator'
+import Navigator from '../components/navigator'
 import Disqus from '../components/disqus'
 import Utterances from '../components/utterances'
 
@@ -38,7 +38,7 @@ export default ({
     <Head title={postTitle} description={post.excerpt} />
     <Post title={postTitle} date={date} html={html} />
     {!!buyMeACoffeeId && <SponsorButton sponsorId={buyMeACoffeeId} />}
-    <PostNavigator pageContext={pageContext} />
+    <Navigator pageContext={pageContext} />
     {!!disqusShortName && (
       <Disqus
         post={post}

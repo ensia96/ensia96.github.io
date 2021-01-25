@@ -7,16 +7,19 @@ export default styled(Link)`
   margin-bottom: 12px;
   padding: 4px;
   padding-bottom: 12px;
-  box-shadow: none;
-  transition: text-shadow 0.3s, opacity 0.4s;
-  opacity: 0;
+  animation: fadein 1s;
+
+  @keyframes fadein {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
 
   p {
     font-size: 90%;
     line-height: 1.4;
-  }
-
-  .visible {
-    opacity: 1;
   }
 `

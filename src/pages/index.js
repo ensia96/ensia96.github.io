@@ -30,8 +30,6 @@ export default ({
 
   const category = globalHistory.location.search.split('=').pop()
 
-  // 작업 예정
-  useIntersectionObserver()
   useScrollEvent(() => {
     const isTriggerPos = () =>
       Dom.getDocumentHeight() - (window.scrollY + window.innerHeight) <

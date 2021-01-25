@@ -4,6 +4,8 @@ import { StaticQuery } from 'gatsby'
 import useWindowSize from '../hooks/useWindowSize'
 
 import Bio from '../components/bio'
+
+// 작업 예정
 import { ThemeSwitch } from '../components/theme-switch'
 import Footer from '../components/footer'
 import Header from '../components/header'

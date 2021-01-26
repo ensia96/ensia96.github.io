@@ -5,8 +5,14 @@ export default createGlobalStyle`
         margin: 0;
         padding: 0;
 
+        color: ${({ theme: { font } }) => font};
+        text-decoration: none;
+        &:hover {
+            text-decoration: none;
+        }
+
         a {
-            color: #333;
+            color: ${({ theme: { font } }) => font};
             text-decoration: none;
             &:hover {
                 text-decoration: none;
@@ -17,7 +23,7 @@ export default createGlobalStyle`
         overflow: auto;
 
         font-family: 'Noto Sans KR', sans-serif;
-        background-color: $light-background-color;
+        background-color: ${({ theme: { background } }) => background};
         -webkit-text-size-adjust: antialiased;
         -moz-osx-font-smoothing: grayscale;
         transition: background-color 0.3s, color 0.3s;

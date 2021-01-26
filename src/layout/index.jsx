@@ -41,6 +41,8 @@ export default ({ location, title, items, children }) => (
       const [open, setOpen] = useState()
       const [bio, setBio] = useState()
 
+      const [isDark, setTheme] = useState()
+
       const sideToggle = () => setOpen(!open)
       const bioToggle = () => setBio(!bio)
 

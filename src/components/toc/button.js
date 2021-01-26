@@ -11,7 +11,7 @@ export default styled.button`
   width: 18px;
   height: 50px;
 
-  background-color: #6e96e6;
+  background-color: ${({ theme: { tocButton } }) => tocButton};
 
   outline: 0;
   border: 1px solid #bbbbbb;

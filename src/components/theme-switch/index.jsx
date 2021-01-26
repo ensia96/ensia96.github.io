@@ -29,7 +29,7 @@ function toggleTheme(theme) {
 }
 
 // 작업 예정
-export const ThemeSwitch = () => {
+export default () => {
   const [checked, setChecked] = useState(false)
 
   const handleChange = checked => {

@@ -13,7 +13,7 @@ export default styled.div`
 
   overflow-x: hidden;
 
-  background-color: #ffc800;
+  background-color: ${({ theme: { main } }) => main};
   color: 'white' !important;
 
   @media all and (min-width: 992px) {

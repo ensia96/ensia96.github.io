@@ -57,7 +57,7 @@ export default ({ location, title, items, children }) => (
       )
       return (
         <>
-          <Global open={open} />
+          <Global />
           <SideBar open={open}>
             <ToggleBox children={<ThemeSwitch />} />
             <AuthorBox author={author} avatar={avatar} onClick={bioToggle} />

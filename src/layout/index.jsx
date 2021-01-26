@@ -58,8 +58,9 @@ export default ({ location, title, items, children }) => (
           ),
         []
       )
+
       return (
-        <>
+        <ThemeProvider theme={light}>
           <Global />
           <SideBar open={open}>
             <ToggleBox children={<ThemeSwitch />} />
@@ -84,7 +85,7 @@ export default ({ location, title, items, children }) => (
             {children}
             <Footer />
           </Main>
-        </>
+        </ThemeProvider>
       )
     }}
   />

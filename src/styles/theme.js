@@ -2,12 +2,12 @@ export const light = {
   main: '#ffcd00',
   background: '#ffffff',
   font: '#333333',
-  tocButton: '#663399',
+  tocButton: '#4B1E78',
 }
 
 export const dark = {
-  main: '#663399',
-  background: '#1a1c1d',
+  main: '#4B1E78',
+  background: '#272827',
   font: '#cccccc',
   tocButton: '#ffcd00',
 }

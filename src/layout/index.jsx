@@ -62,10 +62,12 @@ export default ({ location, title, items, children }) => (
       )
 
       return (
-        <ThemeProvider theme={light}>
+        <ThemeProvider theme={isDark ? dark : light}>
           <Global />
           <SideBar open={open}>
-            <ToggleBox children={<ThemeSwitch />} />
+            <ToggleBox
+              children={<ThemeSwitch isDark={isDark} setTheme={setTheme} />}
+            />
             <AuthorBox author={author} avatar={avatar} onClick={bioToggle} />
             <Bio open={bio} setBio={setBio} />
             <Category categories={categories} />

@@ -6,7 +6,6 @@
  */
 
 @import url(https://cdn.jsdelivr.net/gh/tonsky/FiraCode@1.206/distr/fira_code.css);
-@import './variables.scss';
 
 .gatsby-highlight-code-line {
   background-color: hsla(207, 95%, 15%, 1);
@@ -19,7 +18,7 @@
 }
 
 blockquote {
-  color: $blockquote-text-color;
+  color: #999;
 }
 
 code[class*='language-'],
@@ -71,8 +70,8 @@ pre[class*='language-'] {
   padding: 0.1em 0.6em;
   border-radius: 0.2em;
   white-space: normal;
-  background: $inline-dimmed-color;
-  color: $inline-text-color;
+  background: #ece5f1;
+  color: #4b2043;
 }
 
 .token.comment,

@@ -1,6 +1,9 @@
 import React, { useState, useMemo, useEffect } from 'react'
 import { StaticQuery } from 'gatsby'
 
+import { ThemeProvider } from 'styled-components'
+import { light, dark } from '../styles/theme'
+
 import useWindowSize from '../hooks/useWindowSize'
 
 import Bio from '../components/bio'

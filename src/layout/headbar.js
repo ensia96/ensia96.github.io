@@ -13,7 +13,7 @@ const Header = styled.header`
   z-index: 1;
   display: flex;
 
-  background-color: #ffc800;
+  background-color: ${({ theme: { main } }) => main};
 
   @media all and (min-width: 992px) {
     display: none;

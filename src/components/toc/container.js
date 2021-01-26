@@ -10,7 +10,7 @@ export default styled.nav`
 
   width: 200px;
 
-  background-color: white;
+  background-color: ${({ theme: { background } }) => background};
 
   border-top-left-radius: 1%;
   border-bottom-left-radius: 1%;

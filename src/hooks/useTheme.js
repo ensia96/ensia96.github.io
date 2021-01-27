@@ -1,7 +1,13 @@
 import { useEffect, useState } from 'react'
 
+let initial = 'light'
+
+if (typeof window !== 'undefined') {
+  initial = window.localStorage.getItem('theme')
+}
+
 export default () => {
-  const [theme, setTheme] = useState('light')
+  const [theme, setTheme] = useState(initial)
 
   const toggleTheme = () => {
     if (theme === 'light') {

@@ -1,18 +1,25 @@
 import { useState, useEffect } from 'react'
 
-let state
+let initial
 
 if (typeof window !== `undefined`) {
-  state = localStorage.getItem('theme')
+  initial = localStorage.getItem('theme')
 }
 
 export default () => {
-  const [isDark, setIsDark] = useState(state)
+  const [theme, setTheme] = useState(initial)
 
-  const setTheme = bool => {
-    localStorage.setItem('theme', bool)
-    setIsDark(bool)
+  const changeTheme = bool => {
+    const theme = bool ? 'dark' : 'light'
+    localStorage.setItem('theme', theme)
+    setTheme(theme)
   }
 
-  return [isDark, setTheme]
+  const isDark = theme === 'dark'
+
+  console.log('theme : ', theme)
+  console.log('local storage : ', localStorage.getItem('theme'))
+  console.log('isDark : ', isDark)
+
+  return [isDark, changeTheme]
 }

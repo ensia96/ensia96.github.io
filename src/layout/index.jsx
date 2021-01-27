@@ -63,6 +63,8 @@ export default ({ location, title, items, children }) => (
         []
       )
 
+      console.log('wtf : ', style[theme])
+
       return (
         <ThemeProvider theme={style[theme]}>
           <Global />

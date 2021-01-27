@@ -5,6 +5,7 @@ import { ThemeProvider } from 'styled-components'
 import { light, dark } from '../styles/theme'
 
 import useWindowSize from '../hooks/useWindowSize'
+import useTheme from '../hooks/useTheme'
 
 import Bio from '../components/bio'
 
@@ -41,7 +42,7 @@ export default ({ location, title, items, children }) => (
       const [open, setOpen] = useState()
       const [bio, setBio] = useState()
 
-      const [isDark, setTheme] = useState()
+      const [isDark, setTheme] = useTheme()
 
       const sideToggle = () => setOpen(!open)
       const bioToggle = () => setBio(!bio)
@@ -53,6 +54,7 @@ export default ({ location, title, items, children }) => (
       useEffect(() => {
         isMobile && setOpen(false)
       }, [location])
+
       const categories = useMemo(
         () =>
           Array.from(

@@ -11,6 +11,7 @@ export default styled(Link)`
   animation: flutter 2s infinite linear;
 
   background-color: #ffffff;
+  color: #333333;
 
   @-webkit-keyframes flutter {
     0% {

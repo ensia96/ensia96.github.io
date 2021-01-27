@@ -26,7 +26,6 @@ export default createGlobalStyle`
         background-color: ${({ theme: { background } }) => background};
         -webkit-text-size-adjust: antialiased;
         -moz-osx-font-smoothing: grayscale;
-        transition: background-color 0.3s, color 0.3s;
 
         div[role='group'] {
             -webkit-overflow-scrolling: touch;

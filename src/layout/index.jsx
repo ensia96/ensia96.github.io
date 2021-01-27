@@ -1,7 +1,7 @@
 import React, { useState, useMemo, useEffect } from 'react'
 import { StaticQuery } from 'gatsby'
 
-import { ThemeProvider } from 'styled-components'
+import ThemeProvider from './theme-provider'
 import * as style from '../styles/theme'
 
 import useWindowSize from '../hooks/useWindowSize'
@@ -62,8 +62,6 @@ export default ({ location, title, items, children }) => (
           ),
         []
       )
-
-      console.log('wtf : ', style[theme])
 
       return (
         <ThemeProvider theme={style[theme]}>

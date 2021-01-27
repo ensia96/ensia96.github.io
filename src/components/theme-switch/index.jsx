@@ -5,12 +5,12 @@ import './index.scss'
 
 import Icon from './icon'
 
-export default ({ isDark, setTheme }) => (
+export default ({ theme, toggleTheme }) => (
   <div className="switch-container">
     <label htmlFor="normal-switch">
       <Switch
-        onChange={() => setTheme(!isDark)}
-        checked={isDark}
+        onChange={toggleTheme}
+        checked={theme === 'dark'}
         id="normal-switch"
         height={24}
         width={48}

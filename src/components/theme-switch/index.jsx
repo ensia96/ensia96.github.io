@@ -5,6 +5,7 @@ import './index.scss'
 
 import Icon from './icon'
 
+// 작업 예정
 export default ({ theme, toggleTheme }) => (
   <div className="switch-container">
     <label htmlFor="normal-switch">

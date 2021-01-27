@@ -10,10 +10,15 @@ export default () => {
   const [theme, setTheme] = useState(initial)
 
   const changeTheme = bool => {
+    console.log('bool : ', bool)
     const theme = bool ? 'dark' : 'light'
-    localStorage.setItem('theme', theme)
     setTheme(theme)
   }
+
+  useEffect(() => {
+    console.log('테마 바뀜 : ', theme)
+    localStorage.setItem('theme', theme)
+  }, [theme])
 
   const isDark = theme === 'dark'
 

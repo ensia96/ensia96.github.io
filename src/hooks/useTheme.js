@@ -17,6 +17,7 @@ export default () => {
 
   const isDark = theme === 'dark'
 
+  console.log('initial : ', initial)
   console.log('theme : ', theme)
   console.log('local storage : ', localStorage.getItem('theme'))
   console.log('isDark : ', isDark)

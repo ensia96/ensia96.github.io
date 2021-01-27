@@ -2,7 +2,7 @@ import React, { useState, useMemo, useEffect } from 'react'
 import { StaticQuery } from 'gatsby'
 
 import { ThemeProvider } from 'styled-components'
-import { light, dark } from '../styles/theme'
+import * as style from '../styles/theme'
 
 import useWindowSize from '../hooks/useWindowSize'
 import useTheme from '../hooks/useTheme'
@@ -42,7 +42,7 @@ export default ({ location, title, items, children }) => (
       const [open, setOpen] = useState()
       const [bio, setBio] = useState()
 
-      const [isDark, setTheme] = useTheme()
+      const [theme, toggleTheme] = useTheme()
 
       const sideToggle = () => setOpen(!open)
       const bioToggle = () => setBio(!bio)
@@ -64,11 +64,11 @@ export default ({ location, title, items, children }) => (
       )
 
       return (
-        <ThemeProvider theme={isDark ? dark : light}>
+        <ThemeProvider theme={style[theme]}>
           <Global />
           <SideBar open={open}>
             <ToggleBox
-              children={<ThemeSwitch isDark={isDark} setTheme={setTheme} />}
+              children={<ThemeSwitch theme={theme} toggleTheme={toggleTheme} />}
             />
             <AuthorBox author={author} avatar={avatar} onClick={bioToggle} />
             <Bio open={bio} setBio={setBio} />

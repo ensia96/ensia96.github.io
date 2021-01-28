@@ -3,7 +3,6 @@ import Switch from 'react-switch'
 
 import Icon from './icon'
 
-// 작업 예정
 export default ({ theme, toggleTheme }) => (
   <Switch
     onChange={toggleTheme}

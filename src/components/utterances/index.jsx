@@ -8,6 +8,7 @@ const branch = 'master'
 const DARK_THEME = 'photon-dark'
 const LIGHT_THEME = 'github-light'
 
+// 작업 예정
 export default ({ repo }) => {
   const rootElm = React.createRef()
 

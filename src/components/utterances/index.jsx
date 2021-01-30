@@ -12,10 +12,8 @@ const LIGHT_THEME = 'github-light'
 export default ({ repo, theme }) => {
   const rootElm = React.createRef()
 
-  console.log('theme : ', theme)
-
   useEffect(() => {
-    const isDarkTheme = Dom.hasClassOfBody(THEME.DARK)
+    const isDarkTheme = theme === 'dark'
     const utterances = document.createElement('script')
     const utterancesConfig = {
       src,

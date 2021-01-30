@@ -62,6 +62,10 @@ export default ({ location, title, items, children }) => (
         []
       )
 
+      const childrenWithExtraProp = React.Children.map(children, child =>
+        React.cloneElement(child, { theme })
+      )
+
       return (
         <ThemeProvider theme={style[theme]}>
           <Global />
@@ -87,7 +91,7 @@ export default ({ location, title, items, children }) => (
           <Main>
             {items && <TableOfContents items={items} />}
             <Header title={title} isRoot={isRoot} />
-            {children}
+            {childrenWithExtraProp}
             <Footer />
           </Main>
         </ThemeProvider>

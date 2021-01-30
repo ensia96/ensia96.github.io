@@ -91,7 +91,7 @@ export default ({ location, title, items, children }) => (
           <Main>
             {items && <TableOfContents items={items} />}
             <Header title={title} isRoot={isRoot} />
-            {children}
+            {childrenWithExtraProp}
             <Footer />
           </Main>
         </ThemeProvider>

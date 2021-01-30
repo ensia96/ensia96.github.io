@@ -13,7 +13,7 @@ export default ({ repo, theme }) => {
     const isDarkTheme = theme === 'dark'
     const utterances = document.createElement('script')
     const utterancesConfig = {
-      src,
+      src: 'https://utteranc.es/client.js',
       repo,
       theme: `github-${theme}`,
       label: 'comment',

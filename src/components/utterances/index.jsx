@@ -17,9 +17,10 @@ export default ({ repo, theme }) => {
       crossorigin: 'anonymous',
     }
 
-    Object.keys(config).forEach(configKey => {
-      utterances.setAttribute(configKey, config[configKey])
-    })
+    Object.entries(config).forEach(([key, value]) =>
+      utterances.setAttribute(key, value)
+    )
+
     rootElm.current.appendChild(utterances)
   }, [])
 

@@ -21,6 +21,7 @@ export default ({ repo, theme }) => {
       utterances.setAttribute(key, value)
     )
 
+    rootElm.current.innerHTML = ''
     rootElm.current.appendChild(utterances)
   }, [theme])
 

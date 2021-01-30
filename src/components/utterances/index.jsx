@@ -9,8 +9,10 @@ const DARK_THEME = 'photon-dark'
 const LIGHT_THEME = 'github-light'
 
 // 작업 예정
-export default ({ repo }) => {
+export default ({ repo, theme }) => {
   const rootElm = React.createRef()
+
+  console.log('theme : ', theme)
 
   useEffect(() => {
     const isDarkTheme = Dom.hasClassOfBody(THEME.DARK)

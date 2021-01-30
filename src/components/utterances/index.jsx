@@ -6,7 +6,8 @@ export default ({ repo, theme }) => {
 
   useEffect(() => {
     const utterances = document.createElement('script')
-    const utterancesConfig = {
+
+    const config = {
       src: 'https://utteranc.es/client.js',
       repo,
       theme: `github-${theme}`,
@@ -16,8 +17,8 @@ export default ({ repo, theme }) => {
       crossorigin: 'anonymous',
     }
 
-    Object.keys(utterancesConfig).forEach(configKey => {
-      utterances.setAttribute(configKey, utterancesConfig[configKey])
+    Object.keys(config).forEach(configKey => {
+      utterances.setAttribute(configKey, config[configKey])
     })
     rootElm.current.appendChild(utterances)
   }, [])

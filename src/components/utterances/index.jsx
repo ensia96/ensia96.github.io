@@ -25,5 +25,5 @@ export default ({ repo, theme }) => {
     rootElm.current.appendChild(utterances)
   }, [theme])
 
-  return <div className="utterances" ref={rootElm} />
+  return <div ref={rootElm} />
 }

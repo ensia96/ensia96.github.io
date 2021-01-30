@@ -1,16 +1,10 @@
 import React, { useEffect } from 'react'
 
-const src = 'https://utteranc.es/client.js'
-const branch = 'master'
-const DARK_THEME = 'photon-dark'
-const LIGHT_THEME = 'github-light'
-
 // 작업 예정
 export default ({ repo, theme }) => {
   const rootElm = React.createRef()
 
   useEffect(() => {
-    const isDarkTheme = theme === 'dark'
     const utterances = document.createElement('script')
     const utterancesConfig = {
       src: 'https://utteranc.es/client.js',

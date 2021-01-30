@@ -15,7 +15,6 @@ export default ({ repo, theme }) => {
     const utterancesConfig = {
       src,
       repo,
-      branch,
       theme: isDarkTheme ? DARK_THEME : LIGHT_THEME,
       label: 'comment',
       async: true,

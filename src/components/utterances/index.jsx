@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react'
 
-// 작업 예정
 export default ({ repo, theme }) => {
   const rootElm = React.createRef()
 

@@ -1,17 +1,11 @@
 import React from 'react'
-import { Link } from 'gatsby'
 
-import './index.scss'
+import Container from './container'
+import Content from './contnent'
 
-export const Header = ({ title, location, rootPath }) => {
-  const isRoot = location.pathname === rootPath
-  return (
-    isRoot && (
-      <h1 className="home-header">
-        <Link to={`/`} className="link">
-          {title}
-        </Link>
-      </h1>
-    )
+export default ({ title, isRoot }) =>
+  isRoot && (
+    <Container>
+      <Content to={`/`}>{title}</Content>
+    </Container>
   )
-}

@@ -1,35 +1,28 @@
 import React, { useEffect } from 'react'
 
-import * as Dom from '../../utils/dom'
-import { THEME } from '../../constants'
-
-const src = 'https://utteranc.es/client.js'
-const branch = 'master'
-const DARK_THEME = 'photon-dark'
-const LIGHT_THEME = 'github-light'
-
-export const Utterances = ({ repo }) => {
+export default ({ repo, theme }) => {
   const rootElm = React.createRef()
 
   useEffect(() => {
-    const isDarkTheme = Dom.hasClassOfBody(THEME.DARK)
     const utterances = document.createElement('script')
-    const utterancesConfig = {
-      src,
+
+    const config = {
+      src: 'https://utteranc.es/client.js',
       repo,
-      branch,
-      theme: isDarkTheme ? DARK_THEME : LIGHT_THEME,
+      theme: `github-${theme}`,
       label: 'comment',
       async: true,
       'issue-term': 'pathname',
       crossorigin: 'anonymous',
     }
 
-    Object.keys(utterancesConfig).forEach(configKey => {
-      utterances.setAttribute(configKey, utterancesConfig[configKey])
-    })
-    rootElm.current.appendChild(utterances)
-  }, [])
+    Object.entries(config).forEach(([key, value]) =>
+      utterances.setAttribute(key, value)
+    )
 
-  return <div className="utterances" ref={rootElm} />
+    rootElm.current.innerHTML = ''
+    rootElm.current.appendChild(utterances)
+  }, [theme])
+
+  return <div ref={rootElm} />
 }

@@ -60,15 +60,23 @@ module.exports = {
               inlineCodeMarker: '%',
             },
           },
+          {
+            resolve: `gatsby-remark-autolink-headers`,
+            options: {
+              className: `anchor-header`, // 하이라이트 구현
+              maintainCase: false, // url 대소문자 구분
+              removeAccents: true,
+              elements: [`h1`, `h2`, 'h3', `h4`], // 링크 추가 Header 종류
+            },
+          },
           `gatsby-remark-copy-linked-files`,
           `gatsby-remark-smartypants`,
-          `gatsby-remark-autolink-headers`,
           `gatsby-remark-emoji`,
         ],
       },
     },
     {
-      resolve: `gatsby-plugin-google-analytics`,
+      resolve: `gatsby-plugin-gtag`,
       options: {
         trackingId: metaConfig.ga,
         head: true,
@@ -101,5 +109,6 @@ module.exports = {
     `gatsby-plugin-sass`,
     `gatsby-plugin-lodash`,
     `gatsby-plugin-sitemap`,
+    `gatsby-plugin-styled-components`,
   ],
 }

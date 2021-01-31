@@ -1,62 +1,83 @@
 import React from 'react'
+import styled from 'styled-components'
 import { StaticQuery, graphql, Link } from 'gatsby'
-import Image from 'gatsby-image'
 
-import './index.scss'
+import NameShake from './nameshake.js'
+import Container from './container.js'
+import OutSide from './outside.js'
+import Social from './social.js'
 
-export const Bio = () => (
+import Avatar from '../avatar'
+
+const Text = styled.div`
+  width: 100%;
+  font-size: 83%;
+  padding: 5px;
+  margin: 10px 0px;
+  color: #ffffff;
+`
+
+const Title = styled.div`
+  display: block;
+  height: 100%;
+  padding: 8px 0px;
+  border-bottom: 2px solid #dddddd;
+`
+
+const AvatarBox = styled.div`
+  text-align: center;
+`
+
+const SocialBox = styled.div`
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+  padding: 5px;
+  background-color: #cccccc;
+  border-radius: 3%;
+`
+
+const NameBox = styled.div`
+  display: flex;
+  justify-content: center;
+`
+
+export default ({ open, setBio }) => (
   <StaticQuery
     query={bioQuery}
-    render={data => {
-      const { author, social, introduction } = data.site.siteMetadata
-
-      return (
-        <div className="bio">
-          <div className="author">
-            <div className="author-description">
-              <Image
-                className="author-image"
-                fixed={data.avatar.childImageSharp.fixed}
-                alt={author}
-                style={{
-                  borderRadius: `100%`,
-                }}
+    render={({
+      avatar: {
+        childImageSharp: { fixed: avatar },
+      },
+      site: {
+        siteMetadata: { author, social, introduction },
+      },
+    }) => (
+      <>
+        <OutSide show={open} onClick={() => setBio(false)} />
+        <Container show={open}>
+          <Title>
+            <AvatarBox>
+              <Link
+                to="/"
+                children={<Avatar fixed={avatar} size={100} />}
+                onClick={() => setBio(false)}
               />
-              <div className="author-name">
-                <span className="author-name-prefix">Written by</span>
-                <Link to={'/about'} className="author-name-content">
-                  <span>@{author}</span>
-                </Link>
-                <div className="author-introduction">{introduction}</div>
-                <p className="author-socials">
-                  {social.github && (
-                    <a href={`https://github.com/${social.github}`}>GitHub</a>
-                  )}
-                  {social.medium && (
-                    <a href={`https://medium.com/${social.medium}`}>Medium</a>
-                  )}
-                  {social.twitter && (
-                    <a href={`https://twitter.com/${social.twitter}`}>
-                      Twitter
-                    </a>
-                  )}
-                  {social.facebook && (
-                    <a href={`https://www.facebook.com/${social.facebook}`}>
-                      Facebook
-                    </a>
-                  )}
-                  {social.linkedin && (
-                    <a href={`https://www.linkedin.com/in/${social.linkedin}/`}>
-                      LinkedIn
-                    </a>
-                  )}
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      )
-    }}
+            </AvatarBox>
+            <NameBox children={<NameShake to="/about">@{author}</NameShake>} />
+            <SocialBox>
+              {Object.entries(social).map(
+                ([key, value]) =>
+                  value && (
+                    <Social key={key} size={15} type={key} value={value} />
+                  )
+              )}
+            </SocialBox>
+          </Title>
+          <Text>{introduction}</Text>
+        </Container>
+      </>
+    )}
   />
 )
 
@@ -84,5 +105,3 @@ const bioQuery = graphql`
     }
   }
 `
-
-export default Bio

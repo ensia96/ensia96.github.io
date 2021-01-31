@@ -1,8 +1,8 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 
-import { Layout } from '../layout'
-import { Head } from '../components/head'
+import Layout from '../layout'
+import Head from '../components/head'
 
 export default ({
   data: {

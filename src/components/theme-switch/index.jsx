@@ -92,7 +92,7 @@ right: 0.5em;
 }
 
 export default ({ theme, toggleTheme }) => {
-  console.log('theme : ', theme)
+  const checked = theme === 'light'
 
   return (
     <>

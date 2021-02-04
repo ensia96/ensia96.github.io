@@ -35,12 +35,9 @@ const Input = styled.input`
   height: 0;
 `
 
-const Switch = styled.span`
+const Switch = styled.div`
   cursor: pointer;
-  position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  position: relative;
   height: 2.5em;
   width: 3em;
   transition: 0.2s;
@@ -52,21 +49,20 @@ const Switch = styled.span`
     height: 2.45em;
     bottom: -0.45em;
     background-color: #ccc;
-    transform: skewY(-65deg);
+    transform: ${({ left }) => (left ? 'skewY(-65deg)' : 'skewY(65deg)')};
   }
 
-  background-color: ${({ left, checked }) =>
-    left ? (checked ? '#0084d0' : '#ddd') : checked ? '#ddd' : '#bd5757'};
+  background-color: #ddd;
   bottom: ${({ left, checked }) =>
-    left ? (checked ? '0px' : '0.4em') : checked ? '0.4em' : '0'};
+    left ? (checked ? '0px' : '3.4px') : checked ? '3.4px' : '0'};
   ${({ left, checked }) =>
     left
-      ? `left: ${checked ? '0.5em' : '0.85em'}`
-      : `right: ${checked ? '0.8em' : '0.5em'}`};
+      ? `left: ${checked ? '0em' : '0.3em'}`
+      : `right: ${checked ? '0.3em' : '0em'}`};
   height: ${({ left, checked }) =>
     left ? (checked ? '2.5em' : '2.4em') : checked ? '2.4em' : '2.5em'};
   width: ${({ left, checked }) =>
-    left ? (checked ? '3em' : '2.75em') : checked ? '2.75em' : '3em'};
+    left ? (checked ? '34px' : '32px') : checked ? '32px' : '34px'};
   transform: ${({ left, checked }) =>
     left
       ? checked

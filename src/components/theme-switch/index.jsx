@@ -27,12 +27,12 @@ const Container = styled.label`
     border: 0.5em solid #eee;
     border-bottom: 0;
   }
+`
 
-  input {
-    opacity: 0;
-    width: 0;
-    height: 0;
-  }
+const Input = styled.input`
+  opacity: 0;
+  width: 0;
+  height: 0;
 `
 
 export default ({ theme, toggleTheme }) => {
@@ -41,7 +41,7 @@ export default ({ theme, toggleTheme }) => {
   return (
     <>
       <Container>
-        <input
+        <Input
           type="checkbox"
           checked={theme === 'light'}
           onChange={toggleTheme}

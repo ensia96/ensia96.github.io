@@ -39,7 +39,6 @@ const Switch = ({ children, position, checked }) => {
     left: checked
       ? `
 background-color: #0084d0;
-  color: #fff;
   bottom: 0px;
   left: 0.5em;
   height: 2.5em;
@@ -66,7 +65,6 @@ height: 2.4em;
     right: checked
       ? `
 background-color: #ddd;
-  color: #888;
   bottom: 0.4em;
   right: 0.8em;
   height: 2.4em;
@@ -84,7 +82,6 @@ background-color: #ddd;
 right: 0.5em;
   bottom: 0;
   background-color: #bd5757;
-  color: #fff;
 
 ::before {
   right: -0.375em;

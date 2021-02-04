@@ -56,6 +56,19 @@ cursor: pointer;
 }
     `
 
+  const leftStyle = `
+height: 2.4em;
+  width: 2.75em;
+  left: 0.85em;
+  bottom: 0.4em;
+  background-color: #ddd;
+  transform: rotate(15deg) skewX(15deg);
+
+::before {
+  left: -0.4em;
+}
+    `
+
   const Component = styled.span`
     ${baseStyle}
   `

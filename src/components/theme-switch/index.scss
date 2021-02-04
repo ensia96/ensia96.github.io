@@ -17,11 +17,6 @@
   border-bottom: 0.5em solid #eee;
 }
 
-.rocker-small {
-  font-size: 0.75em; /* Sizes the switch */
-  margin: 1em;
-}
-
 .rocker::before {
   content: "";
   position: absolute;

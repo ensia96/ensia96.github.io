@@ -7,26 +7,13 @@ import styled from 'styled-components'
 import './index.scss'
 
 const Container = styled.label`
-  position: relative;
+  display: flex;
+  align-items: center;
+  font-size: 11px;
   text-align: center;
-  color: #888;
-  width: 7em;
-  height: 4em;
-  overflow: hidden;
-  border-bottom: 0.5em solid #eee;
-  font-size: 0.75em;
-
-  ::before {
-    content: '';
-    position: absolute;
-    top: 0.5em;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #999;
-    border: 0.5em solid #eee;
-    border-bottom: 0;
-  }
+  background-color: #888;
+  border: 3px solid #aaa;
+  border-radius: 5%;
 `
 
 const Input = styled.input`

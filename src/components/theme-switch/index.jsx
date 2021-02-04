@@ -102,10 +102,10 @@ export default ({ theme, toggleTheme }) => {
           checked={theme === 'light'}
           onChange={toggleTheme}
         />
-        <Switch>
+        <Switch position="left">
           <Icon type="sun" />
         </Switch>
-        <Switch>
+        <Switch position="right">
           <Icon type="moon" />
         </Switch>
       </Container>

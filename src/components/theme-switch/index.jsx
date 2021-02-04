@@ -14,6 +14,7 @@ const Container = styled.label`
   height: 4em;
   overflow: hidden;
   border-bottom: 0.5em solid #eee;
+  font-size: 0.75em;
 
   ::before {
     content: '';

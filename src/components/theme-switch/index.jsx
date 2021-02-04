@@ -10,25 +10,11 @@ export default ({ theme, toggleTheme }) => {
 
   return (
     <>
-      <div className="mid">
-        <label className="rocker">
-          <input type="checkbox" />
-          <span className="switch-left">On</span>
-          <span className="switch-right">Off</span>
-        </label>
-      </div>
-      <div className="mid">
-        <label className="rocker rocker-small">
-          <input type="checkbox" />
-          <span className="switch-left">Yes</span>
-          <span className="switch-right">No</span>
-        </label>
-        <label className="rocker rocker-small">
-          <input type="checkbox" />
-          <span className="switch-left">Yes</span>
-          <span className="switch-right">No</span>
-        </label>
-      </div>
+      <label className="rocker">
+        <input type="checkbox" />
+        <span className="switch-left">On</span>
+        <span className="switch-right">Off</span>
+      </label>
       <Switch
         onChange={toggleTheme}
         checked={theme === 'dark'}

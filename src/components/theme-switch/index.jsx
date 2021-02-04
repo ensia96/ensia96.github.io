@@ -35,6 +35,27 @@ const Input = styled.input`
 `
 
 const Switch = ({ children }) => {
+  const baseStyle = `
+cursor: pointer;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.5em;
+  width: 3em;
+  transition: 0.2s;
+
+::before {
+  content: "";
+  position: absolute;
+  width: 0.4em;
+  height: 2.45em;
+  bottom: -0.45em;
+  background-color: #ccc;
+  transform: skewY(-65deg);
+}
+    `
+
   const Component = styled.span``
 
   return <Component>{children}</Component>

@@ -13,9 +13,11 @@ export default () => {
     if (theme === 'light') {
       window.localStorage.setItem('theme', 'dark')
       setTheme('dark')
+      initial = 'dark'
     } else {
       window.localStorage.setItem('theme', 'light')
       setTheme('light')
+      initial = 'light'
     }
   }
 

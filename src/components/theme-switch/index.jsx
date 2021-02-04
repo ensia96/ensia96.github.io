@@ -35,6 +35,8 @@ const Input = styled.input`
 `
 
 const Switch = ({ children, position, checked }) => {
+  const left = position === 'left'
+
   const style = {
     left: `
 background-color: ${checked ? '#0084d0' : '#ddd'};

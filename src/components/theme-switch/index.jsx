@@ -27,6 +27,8 @@ const Switch = styled.div`
   position: relative;
   transition: 0.2s;
 
+  background-color: #ddd;
+
   ::before {
     content: '';
     position: absolute;
@@ -37,12 +39,13 @@ const Switch = styled.div`
     transform: ${({ left }) => (left ? 'skewY(-65deg)' : 'skewY(65deg)')};
   }
 
-  background-color: #ddd;
   bottom: ${({ left, checked }) => (!!left === checked ? '0px' : '3.4px')};
   ${({ left, checked }) =>
     `${left ? 'left' : 'right'}: ${!!left === checked ? '0' : '3px'}`};
+
   height: ${({ left, checked }) => (!!left === checked ? '27.5px' : '26.5px')};
-      width: ${({ left, checked }) => (!!left === checked ? '34px' : '32px')};
+  width: ${({ left, checked }) => (!!left === checked ? '34px' : '32px')};
+
   transform: ${({ left, checked }) =>
     !!left === checked
       ? 'rotate(0deg) skewX(0deg)'

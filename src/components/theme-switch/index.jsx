@@ -53,19 +53,6 @@ export default ({ theme, toggleTheme }) => {
           <Icon type="moon" />
         </span>
       </Container>
-      <label className="rocker">
-        <input
-          type="checkbox"
-          checked={theme === 'light'}
-          onChange={toggleTheme}
-        />
-        <span className="switch-left">
-          <Icon type="sun" />
-        </span>
-        <span className="switch-right">
-          <Icon type="moon" />
-        </span>
-      </label>
       <Switch
         onChange={toggleTheme}
         checked={theme === 'dark'}

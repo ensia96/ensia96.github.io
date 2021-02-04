@@ -50,31 +50,21 @@ background-color: ${checked ? '#0084d0' : '#ddd'};
 ${checked ? 'background-color: transparent; width: 3.0833em;' : 'left: -0.4em;'}
 }
     `,
-    right: checked
-      ? `
-background-color: #ddd;
-  bottom: 0.4em;
-  right: 0.8em;
-  height: 2.4em;
-  width: 2.75em;
-  transform: rotate(-15deg) skewX(-15deg);
+    right: `
+background-color: ${checked ? '#ddd' : '#bd5757'};
+  bottom: ${checked ? '0.4em' : '0'};
+  right: ${checked ? '0.8em' : '0.5em'};
+  height: ${checked ? '2.4em' : '2.5em'};
+  width: ${checked ? '2.75em' : '3em'};
+  transform: ${
+    checked ? 'rotate(-15deg) skewX(-15deg)' : 'rotate(0deg) skewX(0deg)'
+  };
 
 ::before {
-  right: -0.4em;
-  background-color: #ccc;
+  right: ${checked ? '-0.4em' : '-0.375em'};
+  background-color: ${checked ? '#ccc' : 'transparent'};
   transform: skewY(65deg);
 ;
-}
-      `
-      : `
-right: 0.5em;
-  bottom: 0;
-  background-color: #bd5757;
-
-::before {
-  right: -0.375em;
-  background-color: transparent;
-  transform: skewY(65deg);
 }
     `,
   }

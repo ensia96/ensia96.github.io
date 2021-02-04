@@ -95,7 +95,11 @@ ${checked ? 'background-color: transparent; width: 3.0833em;' : 'left: -0.4em;'}
     ${style}
   `
 
-  return <Component>{children}</Component>
+  return (
+    <Component left={left} checked={checked}>
+      {children}
+    </Component>
+  )
 }
 
 export default ({ theme, toggleTheme }) => {

@@ -36,30 +36,18 @@ const Input = styled.input`
 
 const Switch = ({ children, position, checked }) => {
   const style = {
-    left: checked
-      ? `
-background-color: #0084d0;
-  bottom: 0px;
-  left: 0.5em;
-  height: 2.5em;
-  width: 3em;
-  transform: rotate(0deg) skewX(0deg);
+    left: `
+background-color: ${checked ? '#0084d0' : '#ddd'};
+  bottom: ${checked ? '0px' : '0.4em'};
+  left: ${checked ? '0.5em' : '0.85em'};
+  height: ${checked ? '2.5em' : '2.4em'};
+  width: ${checked ? '3em' : '2.75em'};
+  transform: ${
+    checked ? 'rotate(0deg) skewX(0deg)' : 'rotate(15deg) skewX(15deg)'
+  };
 
 ::before {
-  background-color: transparent;
-  width: 3.0833em;
-}
-      `
-      : `
-height: 2.4em;
-  width: 2.75em;
-  left: 0.85em;
-  bottom: 0.4em;
-  background-color: #ddd;
-  transform: rotate(15deg) skewX(15deg);
-
-::before {
-  left: -0.4em;
+${checked ? 'background-color: transparent; width: 3.0833em;' : 'left: -0.4em;'}
 }
     `,
     right: checked

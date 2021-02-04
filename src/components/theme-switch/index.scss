@@ -1,32 +1,3 @@
-/* Switch starts here */
-.rocker {
-  position: relative;
-  text-align: center;
-  color: #888;
-  width: 7em;
-  height: 4em;
-  overflow: hidden;
-  border-bottom: 0.5em solid #eee;
-}
-
-.rocker::before {
-  content: "";
-  position: absolute;
-  top: 0.5em;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #999;
-  border: 0.5em solid #eee;
-  border-bottom: 0;
-}
-
-.rocker input {
-  opacity: 0;
-  width: 0;
-  height: 0;
-}
-
 .switch-left,
 .switch-right {
   cursor: pointer;

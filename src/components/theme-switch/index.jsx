@@ -30,9 +30,9 @@ const Switch = styled.div`
   ::before {
     content: '';
     position: absolute;
-    width: 0.4em;
-    height: 2.45em;
-    bottom: -0.45em;
+    width: 4px;
+    height: 27px;
+    bottom: -5px;
     background-color: #ccc;
     transform: ${({ left }) => (left ? 'skewY(-65deg)' : 'skewY(65deg)')};
   }
@@ -40,8 +40,8 @@ const Switch = styled.div`
   background-color: #ddd;
   bottom: ${({ left, checked }) => (!!left === checked ? '0px' : '3.4px')};
   ${({ left, checked }) =>
-    `${left ? 'left' : 'right'}: ${!!left === checked ? '0em' : '0.3em'}`};
-  height: ${({ left, checked }) => (!!left === checked ? '2.5em' : '2.4em')};
+    `${left ? 'left' : 'right'}: ${!!left === checked ? '0' : '3px'}`};
+  height: ${({ left, checked }) => (!!left === checked ? '27.5px' : '26.5px')};
       width: ${({ left, checked }) => (!!left === checked ? '34px' : '32px')};
   transform: ${({ left, checked }) =>
     !!left === checked
@@ -54,7 +54,7 @@ const Switch = styled.div`
     ${({ left, checked }) =>
       !!left === checked
         ? 'background-color: transparent;'
-        : `${left ? 'left' : 'right'}: -0.4em`}
+        : `${left ? 'left' : 'right'}: -4px`}
 `
 
 export default ({ theme, toggleTheme }) => {

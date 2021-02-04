@@ -57,7 +57,22 @@ cursor: pointer;
     `
 
   const style = {
-    left: `
+    left: checked
+      ? `
+background-color: #0084d0;
+  color: #fff;
+  bottom: 0px;
+  left: 0.5em;
+  height: 2.5em;
+  width: 3em;
+  transform: rotate(0deg) skewX(0deg);
+
+::before {
+  background-color: transparent;
+  width: 3.0833em;
+}
+      `
+      : `
 height: 2.4em;
   width: 2.75em;
   left: 0.85em;

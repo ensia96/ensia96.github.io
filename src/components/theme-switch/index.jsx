@@ -15,6 +15,24 @@ const Container = styled.label`
   height: 4em;
   overflow: hidden;
   border-bottom: 0.5em solid #eee;
+
+  ::before {
+    content: '';
+    position: absolute;
+    top: 0.5em;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #999;
+    border: 0.5em solid #eee;
+    border-bottom: 0;
+  }
+
+  input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
 `
 
 export default ({ theme, toggleTheme }) => {

@@ -34,6 +34,12 @@ const Input = styled.input`
   height: 0;
 `
 
+const Switch = ({ children }) => {
+  const Component = styled.span``
+
+  return <Component>{children}</Component>
+}
+
 export default ({ theme, toggleTheme }) => {
   console.log('theme : ', theme)
 

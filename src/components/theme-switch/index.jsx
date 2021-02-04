@@ -4,8 +4,6 @@ import Icon from './icon'
 
 import styled from 'styled-components'
 
-import './index.scss'
-
 const Container = styled.label`
   display: flex;
   align-items: center;

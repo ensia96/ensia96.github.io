@@ -37,8 +37,8 @@ const Input = styled.input`
 const Switch = ({ children, position, checked }) => {
   const left = position === 'left'
 
-  const style = {
-    left: `
+  const style = left
+    ? `
 background-color: ${checked ? '#0084d0' : '#ddd'};
   bottom: ${checked ? '0px' : '0.4em'};
   left: ${checked ? '0.5em' : '0.85em'};
@@ -51,8 +51,8 @@ background-color: ${checked ? '#0084d0' : '#ddd'};
 ::before {
 ${checked ? 'background-color: transparent; width: 3.0833em;' : 'left: -0.4em;'}
 }
-    `,
-    right: `
+    `
+    : `
 background-color: ${checked ? '#ddd' : '#bd5757'};
   bottom: ${checked ? '0.4em' : '0'};
   right: ${checked ? '0.8em' : '0.5em'};
@@ -68,8 +68,7 @@ background-color: ${checked ? '#ddd' : '#bd5757'};
   transform: skewY(65deg);
 ;
 }
-    `,
-  }
+    `
 
   const Component = styled.span`
     cursor: pointer;
@@ -90,7 +89,7 @@ background-color: ${checked ? '#ddd' : '#bd5757'};
       background-color: #ccc;
       transform: skewY(-65deg);
     }
-    ${style[position]}
+    ${style}
   `
 
   return <Component>{children}</Component>

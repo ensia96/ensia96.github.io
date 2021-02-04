@@ -34,7 +34,7 @@ const Input = styled.input`
   height: 0;
 `
 
-const Switch = ({ children }) => {
+const Switch = ({ children, position = 'left' }) => {
   const baseStyle = `
 cursor: pointer;
   position: absolute;
@@ -85,6 +85,7 @@ right: 0.5em;
 
   const Component = styled.span`
     ${baseStyle}
+    ${style[position]}
   `
 
   return <Component>{children}</Component>

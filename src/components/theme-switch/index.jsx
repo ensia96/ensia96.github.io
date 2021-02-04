@@ -25,8 +25,6 @@ const Input = styled.input`
 const Switch = styled.div`
   cursor: pointer;
   position: relative;
-  height: 2.5em;
-  width: 3em;
   transition: 0.2s;
 
   ::before {

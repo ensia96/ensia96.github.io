@@ -34,7 +34,7 @@ const Input = styled.input`
   height: 0;
 `
 
-const Switch = ({ children, position = 'left' }) => {
+const Switch = ({ children, position }) => {
   const baseStyle = `
 cursor: pointer;
   position: absolute;

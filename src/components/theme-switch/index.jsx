@@ -56,7 +56,8 @@ cursor: pointer;
 }
     `
 
-  const leftStyle = `
+  const style = {
+    left: `
 height: 2.4em;
   width: 2.75em;
   left: 0.85em;
@@ -67,9 +68,8 @@ height: 2.4em;
 ::before {
   left: -0.4em;
 }
-    `
-
-  const rightStyle = `
+    `,
+    right: `
 right: 0.5em;
   bottom: 0;
   background-color: #bd5757;
@@ -80,7 +80,8 @@ right: 0.5em;
   background-color: transparent;
   transform: skewY(65deg);
 }
-    `
+    `,
+  }
 
   const Component = styled.span`
     ${baseStyle}

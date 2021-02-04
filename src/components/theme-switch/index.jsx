@@ -87,25 +87,24 @@ export default ({ theme, toggleTheme }) => {
   const checked = theme === 'light'
 
   return (
-    <>
-      <Container>
-        <Input type="checkbox" checked={checked} onChange={toggleTheme} />
-        <Switch left checked={checked}>
-          <Icon type="sun" />
-        </Switch>
-        <Switch checked={checked}>
-          <Icon type="moon" />
-        </Switch>
-      </Container>
-      <Container>
-        <Input type="checkbox" checked={checked} onChange={toggleTheme} />
-        <span className="switch-left">
-          <Icon type="sun" />
-        </span>
-        <span className="switch-right">
-          <Icon type="moon" />
-        </span>
-      </Container>
-    </>
+    <label
+      style={{
+        display: 'flex',
+        alignItems: 'center',
+        fontSize: '11px',
+        textAlign: 'center',
+        backgroundColor: '#888',
+        border: '3px solid #aaa',
+        borderRadius: '5%',
+      }}
+    >
+      <Input type="checkbox" checked={checked} onChange={toggleTheme} />
+      <Switch left checked={checked}>
+        <Icon type="sun" />
+      </Switch>
+      <Switch checked={checked}>
+        <Icon type="moon" />
+      </Switch>
+    </label>
   )
 }

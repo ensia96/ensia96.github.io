@@ -84,7 +84,24 @@ height: 2.4em;
   left: -0.4em;
 }
     `,
-    right: `
+    right: checked
+      ? `
+background-color: #ddd;
+  color: #888;
+  bottom: 0.4em;
+  right: 0.8em;
+  height: 2.4em;
+  width: 2.75em;
+  transform: rotate(-15deg) skewX(-15deg);
+
+::before {
+  right: -0.4em;
+  background-color: #ccc;
+  transform: skewY(65deg);
+;
+}
+      `
+      : `
 right: 0.5em;
   bottom: 0;
   background-color: #bd5757;

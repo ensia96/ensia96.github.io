@@ -75,13 +75,12 @@ const Switch = styled.div`
   ::before {
     ${({ left, checked }) =>
       left
-        ? `
-${checked ? 'background-color: transparent; width: 3.0833em;' : 'left: -0.4em;'}
-`
-        : `right: ${checked ? '-0.4em' : '-0.375em'};
-  background-color: ${checked ? '#ccc' : 'transparent'};
-  transform: skewY(65deg);`}
-  }
+        ? checked
+          ? 'background-color: transparent;'
+          : 'left: -0.4em;'
+        : checked
+        ? 'right: -0.4em;'
+        : 'background-color: transparent'}
 `
 
 export default ({ theme, toggleTheme }) => {

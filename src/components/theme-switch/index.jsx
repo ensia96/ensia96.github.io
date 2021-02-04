@@ -69,6 +69,19 @@ height: 2.4em;
 }
     `
 
+  const rightStyle = `
+right: 0.5em;
+  bottom: 0;
+  background-color: #bd5757;
+  color: #fff;
+
+::before {
+  right: -0.375em;
+  background-color: transparent;
+  transform: skewY(65deg);
+}
+    `
+
   const Component = styled.span`
     ${baseStyle}
   `

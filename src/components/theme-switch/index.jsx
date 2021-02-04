@@ -37,42 +37,6 @@ const Input = styled.input`
 const Switch = ({ children, position, checked }) => {
   const left = position === 'left'
 
-  const style = `
-background-color: ${
-    left ? (checked ? '#0084d0' : '#ddd') : checked ? '#ddd' : '#bd5757'
-  };
-  bottom: ${left ? (checked ? '0px' : '0.4em') : checked ? '0.4em' : '0'};
-  ${
-    left
-      ? `left: ${checked ? '0.5em' : '0.85em'}`
-      : `right: ${checked ? '0.8em' : '0.5em'}`
-  };
-  height: ${left ? (checked ? '2.5em' : '2.4em') : checked ? '2.4em' : '2.5em'};
-  width: ${left ? (checked ? '3em' : '2.75em') : checked ? '2.75em' : '3em'};
-  transform: ${
-    left
-      ? checked
-        ? 'rotate(0deg) skewX(0deg)'
-        : 'rotate(15deg) skewX(15deg)'
-      : checked
-      ? 'rotate(-15deg) skewX(-15deg)'
-      : 'rotate(0deg) skewX(0deg)'
-  };
-
-::before {
-${
-  left
-    ? `
-${checked ? 'background-color: transparent; width: 3.0833em;' : 'left: -0.4em;'}
-`
-    : `right: ${checked ? '-0.4em' : '-0.375em'};
-  background-color: ${checked ? '#ccc' : 'transparent'};
-  transform: skewY(65deg);`
-}
-
-}
-    `
-
   const Component = styled.span`
     cursor: pointer;
     position: absolute;
@@ -92,7 +56,43 @@ ${checked ? 'background-color: transparent; width: 3.0833em;' : 'left: -0.4em;'}
       background-color: #ccc;
       transform: skewY(-65deg);
     }
-    ${style}
+
+    background-color: ${left
+      ? checked
+        ? '#0084d0'
+        : '#ddd'
+      : checked
+      ? '#ddd'
+      : '#bd5757'};
+    bottom: ${left ? (checked ? '0px' : '0.4em') : checked ? '0.4em' : '0'};
+    ${left
+      ? `left: ${checked ? '0.5em' : '0.85em'}`
+      : `right: ${checked ? '0.8em' : '0.5em'}`};
+    height: ${left
+      ? checked
+        ? '2.5em'
+        : '2.4em'
+      : checked
+      ? '2.4em'
+      : '2.5em'};
+    width: ${left ? (checked ? '3em' : '2.75em') : checked ? '2.75em' : '3em'};
+    transform: ${left
+      ? checked
+        ? 'rotate(0deg) skewX(0deg)'
+        : 'rotate(15deg) skewX(15deg)'
+      : checked
+      ? 'rotate(-15deg) skewX(-15deg)'
+      : 'rotate(0deg) skewX(0deg)'};
+
+    ::before {
+      ${left
+        ? `
+${checked ? 'background-color: transparent; width: 3.0833em;' : 'left: -0.4em;'}
+`
+        : `right: ${checked ? '-0.4em' : '-0.375em'};
+  background-color: ${checked ? '#ccc' : 'transparent'};
+  transform: skewY(65deg);`}
+    }
   `
 
   return (

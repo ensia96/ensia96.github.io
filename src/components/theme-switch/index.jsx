@@ -98,10 +98,10 @@ export default ({ theme, toggleTheme }) => {
     <>
       <Container>
         <Input type="checkbox" checked={checked} onChange={toggleTheme} />
-        <Switch position="left">
+        <Switch position="left" checked={checked}>
           <Icon type="sun" />
         </Switch>
-        <Switch position="right">
+        <Switch position="right" checked={checked}>
           <Icon type="moon" />
         </Switch>
       </Container>

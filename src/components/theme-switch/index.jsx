@@ -56,7 +56,9 @@ cursor: pointer;
 }
     `
 
-  const Component = styled.span``
+  const Component = styled.span`
+    ${baseStyle}
+  `
 
   return <Component>{children}</Component>
 }

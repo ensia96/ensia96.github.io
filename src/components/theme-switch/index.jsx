@@ -40,34 +40,23 @@ const Switch = styled.div`
   }
 
   background-color: #ddd;
-  bottom: ${({ left, checked }) =>
-    left ? (checked ? '0px' : '3.4px') : checked ? '3.4px' : '0'};
+  bottom: ${({ left, checked }) => (!!left === checked ? '0px' : '3.4px')};
   ${({ left, checked }) =>
-    left
-      ? `left: ${checked ? '0em' : '0.3em'}`
-      : `right: ${checked ? '0.3em' : '0em'}`};
-  height: ${({ left, checked }) =>
-    left ? (checked ? '2.5em' : '2.4em') : checked ? '2.4em' : '2.5em'};
-  width: ${({ left, checked }) =>
-    left ? (checked ? '34px' : '32px') : checked ? '32px' : '34px'};
+    `${left ? 'left' : 'right'}: ${!!left === checked ? '0em' : '0.3em'}`};
+  height: ${({ left, checked }) => (!!left === checked ? '2.5em' : '2.4em')};
+      width: ${({ left, checked }) => (!!left === checked ? '34px' : '32px')};
   transform: ${({ left, checked }) =>
-    left
-      ? checked
-        ? 'rotate(0deg) skewX(0deg)'
-        : 'rotate(15deg) skewX(15deg)'
-      : checked
-      ? 'rotate(-15deg) skewX(-15deg)'
-      : 'rotate(0deg) skewX(0deg)'};
+    !!left === checked
+      ? 'rotate(0deg) skewX(0deg)'
+      : left
+      ? 'rotate(15deg) skewX(15deg)'
+      : 'rotate(-15deg) skewX(-15deg)'};
 
   ::before {
     ${({ left, checked }) =>
-      left
-        ? checked
-          ? 'background-color: transparent;'
-          : 'left: -0.4em;'
-        : checked
-        ? 'right: -0.4em;'
-        : 'background-color: transparent'}
+      !!left === checked
+        ? 'background-color: transparent;'
+        : `${left ? 'left' : 'right'}: -0.4em`}
 `
 
 export default ({ theme, toggleTheme }) => {

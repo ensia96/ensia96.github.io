@@ -11,7 +11,11 @@ export default ({ theme, toggleTheme }) => {
   return (
     <>
       <label className="rocker">
-        <input type="checkbox" checked={theme === 'light'} />
+        <input
+          type="checkbox"
+          checked={theme === 'light'}
+          onChange={toggleTheme}
+        />
         <span className="switch-left">On</span>
         <span className="switch-right">Off</span>
       </label>

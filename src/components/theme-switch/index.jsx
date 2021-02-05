@@ -6,12 +6,11 @@ import styled from 'styled-components'
 
 const Container = styled.label`
   display: flex;
-  align-items: center;
-  font-size: 11px;
   text-align: center;
   background-color: #888;
   border: 3px solid #aaa;
   border-radius: 5%;
+  padding: 0 1px;
 `
 
 const Input = styled.input`
@@ -31,18 +30,18 @@ const Switch = styled.div`
     content: '';
     position: absolute;
     width: 4px;
-    height: 27px;
+    height: 26px;
     bottom: -5px;
     background-color: #ccc;
     transform: ${({ left }) => (left ? 'skewY(-65deg)' : 'skewY(65deg)')};
   }
 
-  bottom: ${({ left, checked }) => (!!left === checked ? '0px' : '3.4px')};
+  bottom: ${({ left, checked }) => (!!left === checked ? '0px' : '3px')};
   ${({ left, checked }) =>
-    `${left ? 'left' : 'right'}: ${!!left === checked ? '0' : '3px'}`};
+    `${left ? 'left' : 'right'}: ${!!left === checked ? '0' : '2px'}`};
 
-  height: ${({ left, checked }) => (!!left === checked ? '27.5px' : '26.5px')};
-  width: ${({ left, checked }) => (!!left === checked ? '34px' : '32px')};
+  height: ${({ left, checked }) => (!!left === checked ? '27px' : '26px')};
+  width: ${({ left, checked }) => (!!left === checked ? '32px' : '30px')};
 
   transform: ${({ left, checked }) =>
     !!left === checked

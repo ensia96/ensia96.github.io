@@ -6,5 +6,4 @@ export default styled.label`
   background-color: #888;
   border: 3px solid #aaa;
   border-radius: 5%;
-  padding: 0 1px;
 `

@@ -3,8 +3,10 @@ import React from 'react'
 import * as data from './data/index'
 
 export default ({ type }) => (
-  <svg width="24" height="24">
-    <rect width="24" height="24" fill="none" rx="0" ry="0" />
-    <path fillRule="evenodd" clipRule="evenodd" d={data[type]} />
-  </svg>
+  <svg
+    style={{ width: '20px', height: '20px' }}
+    viewBox="-5 -7 30 30"
+    preserveAspectRatio="none"
+    children={<path fillRule="evenodd" clipRule="evenodd" d={data[type]} />}
+  />
 )

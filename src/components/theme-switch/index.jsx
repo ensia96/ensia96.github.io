@@ -1,12 +1,9 @@
 import React from 'react'
 
-import Icon from './icon'
-
-import styled from 'styled-components'
-
 import Container from './container'
 import Input from './input'
 import Switch from './switch'
+import Icon from './icon'
 
 export default ({ theme, toggleTheme }) => {
   const checked = theme === 'light'

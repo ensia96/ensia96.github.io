@@ -96,3 +96,25 @@ draft: false
 # 3. 마무리
 
 간만에 글을 작성해서 그런지 어색하다.
+
+그래도, 첫 시작치고는 나쁘지 않은 것 같다.
+
+## 오늘 한 일
+
+- 몸살기운 퇴치(이불덮고 땀빼기)
+- 컴퓨터 공학 관련 유튜브 영상 보기  
+    - https://www.youtube.com/watch?v=SzJ46YA_RaA&list=LL&index=8
+    - https://www.youtube.com/watch?v=QXjU9qTsYCc&list=LL&index=50
+- 블로그 공포증 치료 시작
+
+## 느낀 점
+
+- 자막없이 영어로 말하는 영상 보기는 쉽지 않다.
+- 저수준 언어와 컴퓨터 공학에 대해 공부하고 싶다.
+
+## 내일 할 일
+
+- 컴퓨터 공학 관련 사이트 둘러보기
+    - https://brilliant.org/
+- 컴퓨터 공학 관련 유튜브 영상 보기  
+    - https://www.youtube.com/watch?v=tpIctyqH29Q&list=PL8dPuuaLjXtNlUrzyH5r6jN9ulIgZBpdo

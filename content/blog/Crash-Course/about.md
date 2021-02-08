@@ -12,7 +12,7 @@ draft: false
 해당 포스트는  
 Youtube 채널 <a href='https://www.youtube.com/channel/UCX6b17PVsYBQ0ip5gyeme-Q' target='-blank'>'Crash Course'</a> 에서 제공하는 
 <a href='https://www.youtube.com/playlist?list=PL8dPuuaLjXtNlUrzyH5r6jN9ulIgZBpdo' target='-blank'>'Computer Science'</a> 수업을 바탕으로 작성되었습니다.  
-( 사진 속 인물은 수업을 진행해주시는 <a href='https://about.me/carrieannephilbin' target='-blank'>'Carrie Anne Philbin'</a> 님 입니다! )
+( 사진 속 인물은 <a href='https://about.me/carrieannephilbin' target='-blank'>'Carrie Anne Philbin'</a> 선생님 입니다! )
 
 # 1. 컴퓨터?
 
@@ -76,3 +76,20 @@ Youtube 채널 <a href='https://www.youtube.com/channel/UCX6b17PVsYBQ0ip5gyeme-Q
 
 이해하기 힘든 초현대적 기술인 양자컴퓨터,  
 당하면 골치아픈 해킹과 같은 것들에 대해서도 공부할 것이다.
+
+# 3. 마무-리 🤗
+
+## 3-1. 선생님에 대하여 👩‍🏫
+
+이름은 Carrie Anne Philbin, 수상경력이 있는 중학교 컴퓨터 선생님입니다.
+
+'Adventures in Raspberry Pi' 라는 책의 저자이고,  
+'Geek Gurl Diaries' 라는 유튜브를 운영 중입니다. (유튜브는 손 놓으신지 꽤 되신 듯.)
+
+평소에는 'Education for the Raspberry Pi' 재단의 임원으로 교육활동을 합니다.
+
+## 3-2. 이 수업의 목적 ⛳
+
+'인류가 어디까지 왔고, 컴퓨터가 인류를 어디까지 이끌지'
+
+세상에 대한 더 나은 이해와 평가를 갖게 하는 것이 목적입니다.

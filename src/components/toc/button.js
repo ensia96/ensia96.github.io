@@ -2,9 +2,8 @@ import styled from 'styled-components'
 
 export default styled.button`
   z-index: 1;
-  position: fixed;
+  position: inherit;
 
-  top: 30%;
   right: ${({ open }) => (open ? '200px' : 0)};
   transition: right 0.5s;
 

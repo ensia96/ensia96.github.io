@@ -2,10 +2,10 @@ import styled from 'styled-components'
 
 export default styled.button`
   z-index: 1;
-  position: inherit;
+  position: absolute;
 
-  right: ${({ open }) => (open ? '200px' : 0)};
-  transition: right 0.5s;
+  top: 20px;
+  left: -19px;
 
   width: 18px;
   height: 50px;

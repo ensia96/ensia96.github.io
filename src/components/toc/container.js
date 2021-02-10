@@ -9,6 +9,7 @@ export default styled.nav`
   transition: right 0.5s;
 
   width: 200px;
+  height: 300px;
 
   background-color: ${({ theme: { background } }) => background};
 
@@ -21,6 +22,12 @@ export default styled.nav`
 
   font-size: 14px;
   font-family: Catamaran;
+
+  div {
+    height: 100%;
+    overflow: scroll;
+    white-space: nowrap;
+  }
 
   ul {
     list-style: none;

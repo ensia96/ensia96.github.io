@@ -38,12 +38,10 @@ const TableOfContents = ({ items }) => {
   )
 
   return items ? (
-    <>
+    <Container open={open}>
       <Button open={open} onClick={() => setOpen(!open)} />
-      <Container open={open}>
-        <div dangerouslySetInnerHTML={{ __html: replaceItems }} />
-      </Container>
-    </>
+      <div dangerouslySetInnerHTML={{ __html: replaceItems }} />
+    </Container>
   ) : null
 }
 

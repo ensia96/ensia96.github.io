@@ -3,8 +3,8 @@ import styled from 'styled-components'
 export default styled.nav`
   z-index: 1;
   position: fixed;
-  display: inline-block;
 
+  top: 28%;
   right: ${({ open }) => (open ? 0 : '-200px')};
   transition: right 0.5s;
 
@@ -16,9 +16,6 @@ export default styled.nav`
   border-bottom-left-radius: 1%;
 
   border: 1px solid #dddddd;
-
-  overflow: scroll;
-  white-space: nowrap;
 
   padding: 10px;
 

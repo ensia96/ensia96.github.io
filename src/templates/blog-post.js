@@ -9,6 +9,8 @@ import Utterances from '../components/utterances'
 
 import Post from '../components/post'
 
+import Tags from '../components/tags'
+
 import '../styles/code.scss'
 import 'katex/dist/katex.min.css'
 
@@ -35,11 +37,7 @@ export default ({
     <Head title={postTitle} description={post.excerpt} />
     <Post title={postTitle} date={date} html={html} />
     {!!buyMeACoffeeId && <SponsorButton sponsorId={buyMeACoffeeId} />}
-    {tags ? (
-      tags.map(item => <code style={{ margin: '5px' }}># {item}</code>)
-    ) : (
-      <div />
-    )}
+    <Tags tags={tags} />
     <Navigator pageContext={pageContext} />
     {!!utterances && <Utterances repo={utterances} />}
   </Layout>

@@ -2,6 +2,8 @@ import React from 'react'
 
 import Container from './container'
 
+import Tags from '../tags'
+
 export default ({
   node: {
     fields: { slug },
@@ -12,10 +14,6 @@ export default ({
   <Container to={slug}>
     <h3>{title || slug}</h3>
     <p dangerouslySetInnerHTML={{ __html: excerpt }} />
-    {tags ? (
-      tags.map(item => <code style={{ margin: '5px' }}># {item}</code>)
-    ) : (
-      <div />
-    )}
+    <Tags tags={tags} />
   </Container>
 )

@@ -18,6 +18,14 @@ export default createGlobalStyle`
                 text-decoration: none;
             }
         }
+
+        code {
+            padding: 0.1em 0.6em;
+            border-radius: 0.2em;
+            white-space: normal;
+            background: #ffe887;
+            color: #c7a200;
+        }
     }
     html, body {
         overflow: auto;

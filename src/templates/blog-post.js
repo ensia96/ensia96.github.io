@@ -18,7 +18,7 @@ export default ({
     markdownRemark: {
       tableOfContents: items,
       html,
-      frontmatter: { title: postTitle, date },
+      frontmatter: { title: postTitle, tags, date },
     },
     site: {
       siteMetadata: {
@@ -35,6 +35,11 @@ export default ({
     <Head title={postTitle} description={post.excerpt} />
     <Post title={postTitle} date={date} html={html} />
     {!!buyMeACoffeeId && <SponsorButton sponsorId={buyMeACoffeeId} />}
+    {tags ? (
+      tags.map(item => <code style={{ margin: '5px' }}># {item}</code>)
+    ) : (
+      <div />
+    )}
     <Navigator pageContext={pageContext} />
     {!!utterances && <Utterances repo={utterances} />}
   </Layout>
@@ -60,6 +65,7 @@ export const pageQuery = graphql`
       html
       frontmatter {
         title
+        tags
         date(formatString: "MMMM DD, YYYY")
       }
     }

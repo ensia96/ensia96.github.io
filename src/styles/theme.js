@@ -3,6 +3,7 @@ export const light = {
   background: '#ffffff',
   font: '#333333',
   tocButton: '#4B1E78',
+  tag: { background: '#ffe887', font: '#c7a200' },
 }
 
 export const dark = {
@@ -10,6 +11,7 @@ export const dark = {
   background: '#272827',
   font: '#cccccc',
   tocButton: '#ffcd00',
+  tag: { background: '#634f78', font: '#d3abff' },
 }
 
 //tocButton: '#6e96e6',

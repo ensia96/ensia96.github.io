@@ -9,6 +9,8 @@ import Utterances from '../components/utterances'
 
 import Post from '../components/post'
 
+import Tags from '../components/tags'
+
 import '../styles/code.scss'
 import 'katex/dist/katex.min.css'
 
@@ -18,7 +20,7 @@ export default ({
     markdownRemark: {
       tableOfContents: items,
       html,
-      frontmatter: { title: postTitle, date },
+      frontmatter: { title: postTitle, tags, date },
     },
     site: {
       siteMetadata: {
@@ -35,6 +37,7 @@ export default ({
     <Head title={postTitle} description={post.excerpt} />
     <Post title={postTitle} date={date} html={html} />
     {!!buyMeACoffeeId && <SponsorButton sponsorId={buyMeACoffeeId} />}
+    <Tags tags={tags} />
     <Navigator pageContext={pageContext} />
     {!!utterances && <Utterances repo={utterances} />}
   </Layout>
@@ -60,6 +63,7 @@ export const pageQuery = graphql`
       html
       frontmatter {
         title
+        tags
         date(formatString: "MMMM DD, YYYY")
       }
     }

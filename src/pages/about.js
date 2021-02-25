@@ -1,8 +1,6 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 
-import { ENGLISH } from '../constants'
-
 import Layout from '../layout'
 
 export default ({

@@ -4,10 +4,33 @@ date: 0000-00-00 00:00:00
 lang: 'en'
 ---
 
-# Your name
+# 최호준 (mango)
 
-<div align="center">
+![](./profile.png)
 
-_Thank you for reading my resume. If you want to contact me, Please send me an email._
+<details style='text-align: center;'><summary>캐릭터 보기</summary>
 
-</div>
+![](./mango.png)
+</details>
+
+<br>
+
+## 자기소개
+
+### 저는 이런 사람입니다.
+
+- 집중보다는 몰입을 하는 편입니다.
+- 빠른 것보다 바른 것을 중요시합니다.
+- 소통으로 다른 사람의 시선을 경험합니다.
+
+### 저는 이런 개발자입니다.
+
+- 문제가 생기면 해결 방법보다 정확한 원인을 찾으려 노력합니다.
+- 
+
+- 더할 것이 없는 복잡한 코드보다 뺄 것이 없는 단순한 코드
+- 설명하기 쉽고, 이해하기 쉽고, 수정하기 쉬운 코드
+
+## 프로젝트
+
+## 교육 활동

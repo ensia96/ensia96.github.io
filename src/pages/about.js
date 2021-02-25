@@ -17,16 +17,7 @@ export default ({
   <Layout location={location} title={title}>
     <div
       dangerouslySetInnerHTML={{
-        __html: resumes
-          .filter(
-            ({
-              node: {
-                frontmatter: { lang },
-              },
-            }) => lang === ENGLISH
-          )
-          .map(({ node }) => node)
-          .shift()['html'],
+        __html: resumes.map(({ node }) => node).shift()['html'],
       }}
     />
   </Layout>

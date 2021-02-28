@@ -20,9 +20,6 @@ export default createGlobalStyle`
     }
 
     code {
-        padding: 0.1em 0.6em;
-        border-radius: 0.2em;
-        white-space: normal;
         background: ${({
           theme: {
             tag: { background },

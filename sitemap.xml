@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+<url> <loc>https://ensia96.github.io/Crash-Course/5.-컴퓨터는-어떻게-계산할까---alu편/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ensia96.github.io/Crash-Course/4.-이진수로-숫자와-문자-나타내기/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ensia96.github.io/TIL/2021/03/01~07/20210303-til/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ensia96.github.io/TIL/2021/03/01~07/20210302-til/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
@@ -23,7 +24,7 @@
 <url> <loc>https://ensia96.github.io/TIL/2021/02/14~20/20210215-til/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ensia96.github.io/TIL/2021/02/14~20/20210214-til/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ensia96.github.io/TIL/2021/02/07~13/20210213-til/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://ensia96.github.io/Crash-Course/1.-컴퓨팅의-기원/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://ensia96.github.io/Crash-Course/1.-초기-컴퓨팅/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ensia96.github.io/Crash-Course/0.-수업-미리보기/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ensia96.github.io/TIL/2021/02/07~13/20210212-til/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ensia96.github.io/TIL/2021/02/07~13/20210211-til/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>

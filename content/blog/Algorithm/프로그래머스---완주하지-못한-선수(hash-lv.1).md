@@ -9,6 +9,8 @@ tags:
   - "Programmers"
   - "Hash"
   - "Lv.1"
+  - wecode
+  - 위코드
 ---
 
 ## 문제 확인

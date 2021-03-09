@@ -1,4 +1,78 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[춤추는 기술 블로그]]></title><description><![CDATA[어서오세요! 춤추는 망고의 기술 블로그입니다!]]></description><link>https://ensia96.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 08 Mar 2021 15:05:15 GMT</lastBuildDate><item><title><![CDATA[20210308-TIL]]></title><description><![CDATA[오늘 한 일 Crash Course 내용 정리 ‘1-…]]></description><link>https://ensia96.github.io/TIL/2021/03/08~14/20210308-til/</link><guid isPermaLink="false">https://ensia96.github.io/TIL/2021/03/08~14/20210308-til/</guid><pubDate>Mon, 08 Mar 2021 23:58:44 GMT</pubDate><content:encoded>&lt;h1 id=&quot;오늘-한-일&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%98%A4%EB%8A%98-%ED%95%9C-%EC%9D%BC&quot; aria-label=&quot;오늘 한 일 permalink&quot; class=&quot;anchor-header before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;오늘 한 일&lt;/h1&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[춤추는 기술 블로그]]></title><description><![CDATA[어서오세요! 춤추는 망고의 기술 블로그입니다!]]></description><link>https://ensia96.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 09 Mar 2021 14:12:32 GMT</lastBuildDate><item><title><![CDATA[20210309-TIL]]></title><description><![CDATA[오늘 한 일 Crash Course 내용 정리 ‘4. 행렬’ 의 시작 부분까지 정리했다. 회로 구성하고, 이미지 만드는 데에 시간을 너무 많이 썼다.. 래치에 대해 공부했다. 단일 비트의 정보를 기억하는 회로다. 특정한 값에 달라붙어서(latches…]]></description><link>https://ensia96.github.io/TIL/2021/03/08~14/20210309-til/</link><guid isPermaLink="false">https://ensia96.github.io/TIL/2021/03/08~14/20210309-til/</guid><pubDate>Tue, 09 Mar 2021 23:06:33 GMT</pubDate><content:encoded>&lt;h1 id=&quot;오늘-한-일&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%98%A4%EB%8A%98-%ED%95%9C-%EC%9D%BC&quot; aria-label=&quot;오늘 한 일 permalink&quot; class=&quot;anchor-header before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;오늘 한 일&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Crash Course 내용 정리&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;‘4. 행렬’ 의 시작 부분까지 정리했다.&lt;/li&gt;
+&lt;li&gt;회로 구성하고, 이미지 만드는 데에 시간을 너무 많이 썼다..&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;래치에 대해 공부했다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;단일 비트의 정보를 기억하는 회로다.&lt;/li&gt;
+&lt;li&gt;특정한 값에 달라붙어서(latches onto) 값을 저장한다고 해서 ‘Latch’ 라고 부른다.&lt;/li&gt;
+&lt;li&gt;set, reset 2개의 입력을 받고, 1개의 값을 출력한다.&lt;/li&gt;
+&lt;li&gt;동작 방식은
+&lt;a href=&apos;/Crash-Course/6.-레지스터와-ram/#1-3-회로-구성&apos; target=&apos;-blank&apos;&gt;
+‘1-3. 회로 구성’&lt;/a&gt;
+에 정리해뒀다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;게이트 래치에 대해 공부했다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;래치의 입력 부분에 회로를 추가해서 구상한다.&lt;/li&gt;
+&lt;li&gt;정보 입력(data input) 과 쓰기 가능(read enable) 을 입력받고,&lt;br&gt;
+정보 출력(data output) 을 출력한다.&lt;/li&gt;
+&lt;li&gt;논리 회로(logic gate) 의 입력을 열고 닫을 수 있어서 ‘Gated Latch’ 라고 부른다.&lt;/li&gt;
+&lt;li&gt;기본 래치에 비해, 입력을 조합하고 관리하기 편하다.&lt;/li&gt;
+&lt;li&gt;동작 방식은
+&lt;a href=&apos;/Crash-Course/6.-레지스터와-ram/#2-2-동작-방식&apos; target=&apos;-blank&apos;&gt;
+‘2-2. 동작 방식’&lt;/a&gt;
+에 정리해뒀다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;레지스터에 대해 공부했다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;여러 개의 래치로 구성된 단위 정보 기억 장치다.&lt;/li&gt;
+&lt;li&gt;사용된 래치의 개수를 레지스터의 너비라고 한다.&lt;/li&gt;
+&lt;li&gt;여러 개의 래치에 각각 쓰기 가능선을 연결하는 것이 아니라,&lt;br&gt;
+하나의 회로를 추가해 한번에 쓰기 기능을 제어한다.&lt;/li&gt;
+&lt;li&gt;쓰기 가능 입력을 제어하는 선 하나와 래치 당 입/출력선이 1개씩 필요하다.&lt;/li&gt;
+&lt;li&gt;래치를 나란히 배치하면 구성에 필요한 전선의 수가 크게 늘어난다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&quot;생각-정리&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%83%9D%EA%B0%81-%EC%A0%95%EB%A6%AC&quot; aria-label=&quot;생각 정리 permalink&quot; class=&quot;anchor-header before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;생각 정리&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;디자인 작업과는 잘 맞지 않는다는 생각이 들었다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;오늘 수업 정리에서 가장 시간을 많이 쓴 것이 첨부 이미지 만들기였다.&lt;/li&gt;
+&lt;li&gt;구성하기 힘든 것이 아니라, 이상한 디테일에 꽂히면 집중하게 되서 문제다.&lt;/li&gt;
+&lt;li&gt;더 중요한 수업 내용 정리를 내팽게치다니.. 내일은 더 열심히 공부해야겠다.&lt;/li&gt;
+&lt;li&gt;설명 자료 이미지를 미리 준비해두면, 정리하기 더 수월해져서 그나마 다행이다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&quot;내일-할-일&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EB%82%B4%EC%9D%BC-%ED%95%A0-%EC%9D%BC&quot; aria-label=&quot;내일 할 일 permalink&quot; class=&quot;anchor-header before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;내일 할 일&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Crash Course 내용 정리&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;‘6’ 의 내용 정리를 마무리하는 것이 목표다. &lt;code class=&quot;language-text&quot;&gt;(내일은 꼭!)&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;추가 목표&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;알고리즘 관련 글 옮기기&lt;/li&gt;
+&lt;li&gt;‘About’ 페이지 작성하기&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[20210308-TIL]]></title><description><![CDATA[오늘 한 일 Crash Course 내용 정리 ‘1-…]]></description><link>https://ensia96.github.io/TIL/2021/03/08~14/20210308-til/</link><guid isPermaLink="false">https://ensia96.github.io/TIL/2021/03/08~14/20210308-til/</guid><pubDate>Mon, 08 Mar 2021 23:58:44 GMT</pubDate><content:encoded>&lt;h1 id=&quot;오늘-한-일&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%98%A4%EB%8A%98-%ED%95%9C-%EC%9D%BC&quot; aria-label=&quot;오늘 한 일 permalink&quot; class=&quot;anchor-header before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;오늘 한 일&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;Crash Course 내용 정리&lt;/p&gt;
@@ -63,9 +137,8 @@
 &lt;li&gt;
 &lt;p&gt;지금보다 바쁜 일정 속에서도, 지속적으로 성장할 수 있는 방법에 대해 고민해봤다.&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;너무 부담되지 않으면서도, 비교적으로 중요도가 높은 요소들이 필요할 것 같다.&lt;/li&gt;
 &lt;li&gt;아무래도, 짧게 짧게 성취 가능한 목표를 준비하는 방법이 답인 것 같다.&lt;/li&gt;
-&lt;li&gt;그러기 위해선 역시, 공부할 소스를 찾아서 정리해두는 것이 가장 중요할 것이다.&lt;/li&gt;
+&lt;li&gt;공부할 소스를 많이 찾아보고, 따로 정리해둬야겠다.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
@@ -650,7 +723,7 @@ Youtube 채널
 &lt;p&gt;이번 수업에서는 가장 작은 단위인 1비트를 저장하는 회로에서,&lt;br&gt;
 점점 규모를 키워(scale-up) 메모리 모듈까지 구성해볼 것이다.&lt;/p&gt;
 &lt;p&gt;그리고 최종적으로, 메모리와 ALU와 합쳐 CPU를 구성해볼 것이다.&lt;/p&gt;
-&lt;h1 id=&quot;1-정보를-저장하는-방법&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#1-%EC%A0%95%EB%B3%B4%EB%A5%BC-%EC%A0%80%EC%9E%A5%ED%95%98%EB%8A%94-%EB%B0%A9%EB%B2%95&quot; aria-label=&quot;1 정보를 저장하는 방법 permalink&quot; class=&quot;anchor-header before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;1. 정보를 저장하는 방법&lt;/h1&gt;
+&lt;h1 id=&quot;1-래치&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#1-%EB%9E%98%EC%B9%98&quot; aria-label=&quot;1 래치 permalink&quot; class=&quot;anchor-header before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;1. 래치&lt;/h1&gt;
 &lt;p&gt;지금까지 구성해온 회로들은 모두 한 방향으로만 전기를 흘려보냈다.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;지난 수업에서 구성한 리플 자리올림수 가산기도 마찬가지다.&lt;/p&gt;
@@ -888,12 +961,11 @@ Youtube 채널
 &lt;blockquote&gt;
 &lt;p&gt;이 회로 구성도 한번 값이 정해지면 다시 값을 바꿀 수 없다.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h1 id=&quot;1-래치latch&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#1-%EB%9E%98%EC%B9%98latch&quot; aria-label=&quot;1 래치latch permalink&quot; class=&quot;anchor-header before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;1. 래치(Latch)&lt;/h1&gt;
+&lt;h2 id=&quot;1-3-회로-구성&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#1-3-%ED%9A%8C%EB%A1%9C-%EA%B5%AC%EC%84%B1&quot; aria-label=&quot;1 3 회로 구성 permalink&quot; class=&quot;anchor-header before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;1-3. 회로 구성&lt;/h2&gt;
 &lt;p&gt;이렇게 0과 1을 기록하는 회로를 각각 구성해봤는데,&lt;br&gt;
 이 회로들은 하나의 값만 저장할 수 있다는 문제가 있었다.&lt;/p&gt;
 &lt;p&gt;이 단편적인 회로들을 하나의 기억 장치 요소로 만들기 위해선,&lt;br&gt;
 두 회로를 연결한 뒤에 구성을 약간 바꾸기만 하면 된다.&lt;/p&gt;
-&lt;h2 id=&quot;1-1-회로-구성&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#1-1-%ED%9A%8C%EB%A1%9C-%EA%B5%AC%EC%84%B1&quot; aria-label=&quot;1 1 회로 구성 permalink&quot; class=&quot;anchor-header before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;1-1. 회로 구성&lt;/h2&gt;
 &lt;details&gt;&lt;summary&gt;1. 위에서 구성한 값 기록 회로들을 준비한다.&lt;/summary&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
@@ -987,8 +1059,9 @@ Youtube 채널
       /&gt;
     &lt;/span&gt;&lt;/p&gt;
 &lt;/details&gt;
-&lt;details&gt;&lt;summary&gt;5. 두 입력 모두 0이면, 마지막에 입력된 값을 저장한다.&lt;/summary&gt;
-&lt;p&gt;&lt;span
+&lt;details&gt;&lt;summary&gt;5. 모든 입력이 0이 되면, 마지막에 입력된 값을 저장한다.&lt;/summary&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;이런 회로 상태가 되려면, RESET 의 입력을 먼저 0으로 바꿔야 한다.&lt;/code&gt;
+&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 500px;&quot;
     &gt;
@@ -1031,7 +1104,7 @@ Youtube 채널
       /&gt;
     &lt;/span&gt;&lt;/p&gt;
 &lt;/details&gt;
-&lt;details&gt;&lt;summary&gt;7. 이 상태에서 두 입력을 모두 0으로 바꾸면, 마지막 값인 0이 저장된다.&lt;/summary&gt;
+&lt;details&gt;&lt;summary&gt;7. RESET의 입력을 다시 0으로 바꾸면, 마지막 값인 0이 저장된다.&lt;/summary&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 500px;&quot;
@@ -1058,79 +1131,806 @@ Youtube 채널
 &lt;p&gt;&lt;strong&gt;특징을 정리하자면 아래와 같다.&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;‘특정한 값에 달라붙어서’(latches onto value) 저장하는 방식이다.&lt;/li&gt;
-&lt;li&gt;기억 장치에 정보를 넣는 동작은 쓰기(writing) 라 한다.&lt;/li&gt;
-&lt;li&gt;반대로, 정보를 빼오는 동작은 읽기(reading) 라 한다.&lt;/li&gt;
+&lt;li&gt;‘SET’, ‘RESET’ 두 개의 입력을 받고, 하나의 값을 출력한다.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;br&gt;
-&lt;p&gt;&lt;strong&gt;&amp;#x3C;작성 중인 글입니다.&gt;&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;&amp;#x3C;아래 내용은 정리 중입니다.&gt;&lt;/strong&gt;&lt;/p&gt;
-&lt;h2 id=&quot;1-2-게이트-래치gated-latch&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#1-2-%EA%B2%8C%EC%9D%B4%ED%8A%B8-%EB%9E%98%EC%B9%98gated-latch&quot; aria-label=&quot;1 2 게이트 래치gated latch permalink&quot; class=&quot;anchor-header before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;1-2. 게이트 래치(Gated Latch)&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;이 때, 기억 장치에 정보를 넣는 동작은 &lt;strong&gt;쓰기(writing)&lt;/strong&gt; 라 하고,&lt;br&gt;
+반대로, 정보를 빼오는 동작은 &lt;strong&gt;읽기(reading)&lt;/strong&gt; 라 한다.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&quot;2-게이트-래치&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#2-%EA%B2%8C%EC%9D%B4%ED%8A%B8-%EB%9E%98%EC%B9%98&quot; aria-label=&quot;2 게이트 래치 permalink&quot; class=&quot;anchor-header before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;2. 게이트 래치&lt;/h1&gt;
 &lt;p&gt;하나의 비트 정보를 저장하고 불러올 수 있는 것은 좋지만,&lt;br&gt;
 두 가지 입력(set, reset) 을 조합하여 사용하는 것은 비효율적이다.&lt;/p&gt;
 &lt;p&gt;이 때, 값을 설정하면 바로 저장되는 입력선이 있다면,&lt;br&gt;
 래치를 더 쉽게 조작할 수 있을 것이다.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;간편하게 ‘쓰기’ 동작을 할 수 있다는 것은 중요하지만,&lt;br&gt;
-값이 잘못 쓰이지 않도록 입력 기능을 ‘잠그는’ 선도 필요하다.&lt;/p&gt;
+저장할 값을 유지하기 위해 입력 기능을 ‘잠그는’ 선도 필요하다.&lt;/p&gt;
 &lt;/blockquote&gt;
+&lt;h2 id=&quot;2-1-회로-구성&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#2-1-%ED%9A%8C%EB%A1%9C-%EA%B5%AC%EC%84%B1&quot; aria-label=&quot;2 1 회로 구성 permalink&quot; class=&quot;anchor-header before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;2-1. 회로 구성&lt;/h2&gt;
 &lt;details&gt;&lt;summary&gt;논리 회로를 몇 개 추가하기만 해도, 이런 구성의 회로를 만들 수 있다.&lt;/summary&gt;
-&lt;p&gt;&lt;strong&gt;&amp;#x3C;회로 구성 이미지&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;주요 입출력선은 다음과 같다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;정보 입력(data input)선&lt;/li&gt;
+&lt;li&gt;쓰기 가능(write enable)선&lt;/li&gt;
+&lt;li&gt;정보 출력(data output)선&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 700px;&quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 34.333333333333336%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAHCAYAAAAIy204AAAACXBIWXMAAAsSAAALEgHS3X78AAABC0lEQVQoz12RiW6EIBCGff9HbLqx93Y9QBHQ9WDKN2qzWZKJCP/8x1DIsVJKsm2b1vPehyDee4lxlBBirqBnIUZxbpDpfv/vKbi0XSfzPMs9XzzXuq56X9W1dH2vJCd2WZYsFFQEMrAFoN9bJdM0aSOAOI7ihkFaY8TaTt3UTaOkTdsq9lzsx4xP6SDEKgsFiCEiAiTGWrlVtfS924n9HnUYvLqEALLxQeAgTLLkS9Sb1sjP9arxcMiXaAies3bOiTFWE4FBhO/H55cUDJufmGcD4DuTlW/vSk4TMftMcClLeXm9qAAPgWPGQApS0Y/bgnhE2F/M6SFn4VClgTlBivic3eKYFwf36Jz6A5WhHXbCeg8ZAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;gated latch&quot;
+        title=&quot;gated latch&quot;
+        src=&quot;/static/9e27de858a2986fd7c1871c9ae0aadfa/8c557/gated-latch.png&quot;
+        srcset=&quot;/static/9e27de858a2986fd7c1871c9ae0aadfa/5a46d/gated-latch.png 300w,
+/static/9e27de858a2986fd7c1871c9ae0aadfa/0a47e/gated-latch.png 600w,
+/static/9e27de858a2986fd7c1871c9ae0aadfa/8c557/gated-latch.png 700w&quot;
+        sizes=&quot;(max-width: 700px) 100vw, 700px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+    &lt;/span&gt;&lt;/p&gt;
 &lt;/details&gt;
 &lt;br&gt;
-&lt;p&gt;이걸 ‘write enable’ 선이라고 한다.&lt;/p&gt;
-&lt;p&gt;논리 회로 몇 개를 추가해서 원하는 회로를 만들 수 있다.&lt;/p&gt;
-&lt;p&gt;이것을 ‘gated latch’ 라고 한다.&lt;/p&gt;
-&lt;p&gt;문(gate) 을 열거나 닫을 수 있다는 뜻이다.&lt;/p&gt;
-&lt;p&gt;이제 회로가 좀 복잡해지기 시작했다.&lt;/p&gt;
-&lt;p&gt;각 논리 회로를 일일이 다루기 싫으니, 예전에 한 것처럼 추상화 수준을 높이고,&lt;br&gt;
-Gated Latch 전체를 한 상자로 만들어버리자.&lt;/p&gt;
-&lt;p&gt;하나의 비트를 저장하는 상자로 말이다.&lt;/p&gt;
-&lt;h2 id=&quot;1-3&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#1-3&quot; aria-label=&quot;1 3 permalink&quot; class=&quot;anchor-header before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;1-3.&lt;/h2&gt;
-&lt;p&gt;자, 새로운 부품을 테스트해보자!&lt;/p&gt;
-&lt;p&gt;모두 0으로 만들고 시작해보자.&lt;/p&gt;
-&lt;p&gt;0에서 1로, 1에서 0으로 데이터 선을 바꿔도 아무 일도 일어나지 않고, 출력은 0을 유지한다.&lt;/p&gt;
-&lt;p&gt;write enable 선이 꺼져 있기 때문이다.&lt;/p&gt;
-&lt;p&gt;이건 메모리가 바뀌는 것을 막는 것이다.&lt;/p&gt;
-&lt;p&gt;write enable 선을 1로 바꾸어 ‘Gate’ 를 ‘open’ 해주자.&lt;/p&gt;
-&lt;p&gt;이제 래치에 값 1을 저장하도록 데이터 선에 1을 넣을 수 있게 되었다.&lt;/p&gt;
-&lt;p&gt;어떻게 1이 출력되는지 주목해보자.&lt;/p&gt;
-&lt;p&gt;성공!&lt;/p&gt;
-&lt;p&gt;이제 출력이 1로 유지되도록 enable 선을 꺼보자.&lt;/p&gt;
-&lt;p&gt;다시 한 번 데이터 선의 값을 원하는 데로 바꿔보면, 그래도 출력은 같은 값을 유지한다.&lt;/p&gt;
-&lt;p&gt;값이 메모리에 저장된 것이다.&lt;/p&gt;
-&lt;p&gt;이제 enable 선을 다시 켜고, 데이터 선을 사용해서 래치를 0으로 세팅해보자.&lt;/p&gt;
-&lt;p&gt;됐다.&lt;/p&gt;
-&lt;p&gt;enable 선을 끄고, 출력은 0이다.&lt;/p&gt;
-&lt;p&gt;제대로 동작한다.&lt;/p&gt;
-&lt;h1 id=&quot;레지스터&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EB%A0%88%EC%A7%80%EC%8A%A4%ED%84%B0&quot; aria-label=&quot;레지스터 permalink&quot; class=&quot;anchor-header before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;레지스터&lt;/h1&gt;
-&lt;p&gt;물론 컴퓨터 메모리가 한 비트만 저장할 수 있다면 그건 정말로 쓸모가 없다.&lt;/p&gt;
-&lt;p&gt;80년대 PC게임인 프로거를 돌리기에도 절대로 충분하지 않다.&lt;/p&gt;
-&lt;p&gt;아니면 아무것도 못돌리던가.&lt;/p&gt;
-&lt;p&gt;래치를 딱 한 개만 사용하라는 법은 없다.&lt;/p&gt;
-&lt;p&gt;래치 8개를 옆으로 나란히 두면, 8비트 숫자 같은 8비트의 정보를 저장할 수 있게 된다.&lt;/p&gt;
-&lt;p&gt;이렇게 작동하는 래치 그룹을 ‘register’(레지스터) 라고 부른다.&lt;/p&gt;
-&lt;p&gt;숫자 한 개를 저장할 수 있다.&lt;/p&gt;
-&lt;p&gt;그리고 레지스터의 비트 수는 ‘width’(너비) 라고 부른다.&lt;/p&gt;
-&lt;p&gt;초기의 컴퓨터는 8비트 레지스터를 가지고 있었고,&lt;br&gt;
-16, 32 순으로 커져, 요즘 대부분의 컴퓨터는 레지스터가 64비트의 너비를 가진다.&lt;/p&gt;
-&lt;h2 id=&quot;&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#&quot; aria-label=&quot; permalink&quot; class=&quot;anchor-header before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;레지스터에 쓰기 위해, 먼저 모든 래치를 켜야 한다.&lt;/p&gt;
-&lt;p&gt;선 하나를 모든 래치의 enable 입력에 연결하고 1로 세팅하자.&lt;/p&gt;
-&lt;p&gt;그런 뒤에 8개의 데이터 선을 이용하여 데이터를 보내고 enable 을 다시 0으로 되돌린다.&lt;/p&gt;
-&lt;p&gt;그러면 8비트 값은 메모리에 저장된다.&lt;/p&gt;
-&lt;h2 id=&quot;-1&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#-1&quot; aria-label=&quot; 1 permalink&quot; class=&quot;anchor-header before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;래치를 나란히 놓아서 적은 수의 비트를 처리하는 것은 문제가 없다.&lt;/p&gt;
-&lt;p&gt;64비트 레지스터는 64개의 데이터 입력을 위한 선들과 64개의 출력을 위한 선이 필요할 것이다.&lt;/p&gt;
-&lt;p&gt;다행히 모든 래치의 enable 선은 1개만 있어도 된다.&lt;/p&gt;
-&lt;p&gt;그래도 선 129개가 필요하다.(1 + 64 + 64)&lt;/p&gt;
-&lt;p&gt;256 비트 레지스터는 선이 513개나 필요하다.&lt;/p&gt;
-&lt;h1 id=&quot;행렬&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%ED%96%89%EB%A0%AC&quot; aria-label=&quot;행렬 permalink&quot; class=&quot;anchor-header before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;행렬&lt;/h1&gt;
-&lt;p&gt;해결 방법은 매트릭스(행렬) 을 사용하는 것이다.&lt;/p&gt;
-&lt;p&gt;매트릭스에서는 래치를 일렬로 배열하지 않고 격자로 배열한다.&lt;/p&gt;
-&lt;p&gt;256비트 레지스터를 위해서는 16개의 행과 16개의 열로 된 16 * 16 개 격자로 구성한다.&lt;/p&gt;
-&lt;p&gt;래치 하나를 활성화하려면, 해당하는 행과 열을 같이 켜줘야 한다.&lt;/p&gt;
-&lt;p&gt;확대해서 어떻게 동작하는지 보자.&lt;/p&gt;
-&lt;h2 id=&quot;-2&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#-2&quot; aria-label=&quot; 2 permalink&quot; class=&quot;anchor-header before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;열거나 닫을 수 있는(enable/disable) 논리 회로(logic gate) 이기 때문에,&lt;br&gt;
+이런 구성의 래치를 &lt;strong&gt;‘Gated Latch’(게이트 래치)&lt;/strong&gt; 라고 한다.&lt;/p&gt;
+&lt;p&gt;쓰기 기능을 제어할 수 있는 단일 비트 저장 회로를 구성해봤으니,&lt;br&gt;
+이제, 이것을 단순화하여 더 높은 추상화 계층으로 넘어가보자.&lt;/p&gt;
+&lt;h2 id=&quot;2-2-동작-방식&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#2-2-%EB%8F%99%EC%9E%91-%EB%B0%A9%EC%8B%9D&quot; aria-label=&quot;2 2 동작 방식 permalink&quot; class=&quot;anchor-header before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;2-2. 동작 방식&lt;/h2&gt;
+&lt;p&gt;단순화된 게이트 래치 회로와 함께 동작 방식을 살펴보자.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 400px;&quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 75%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAYAAADkmO9VAAAACXBIWXMAAAsSAAALEgHS3X78AAABXUlEQVQ4y62UQVPCMBCF+Z1SmrQptMCAUqEVEHF0RkZPeNc/SRKv69umBSxTnGE4fA3dJi9vdxNaMjJ0TVqnQU1CufEchzk1QaFqQXUQFbIBdbzxf4IVCeIpuK/BsfiMQ374EPVDh8AkzwPLHQWfO5LPWPS6c/DvLcY1RgGB7l9BNtdikXRmaQLypaVRaught7T6suSNsUEbE0XJjXEOISx8U2zOIhX7lHsDU9AfGYr6hpLY0OAdjjNNCpMCvAc9wGnmWPykKQgMhRzvOsJe6ZBVO3DZCZCm1EX6XtulzIunU0uzuaU0QwZw7s80DT80bd5+iqyyhaX5Ct8wFoL8YPUunMVD5yQGyQZO4FCGpcP44FC9aIqUqyGvZdjlvobjiaHRnSlqObg1tICj9berofROayjQFL+phlV3qi7LssudR3R5e0GX6+dQVGcrvvAcNt0UeelNufpdvva/zS9PvDWGxAFOQgAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;gated latch symbol&quot;
+        title=&quot;gated latch symbol&quot;
+        src=&quot;/static/c4b1534a8bfe5d62a7354bae45b71eb7/e17e5/gated-latch-symbol.png&quot;
+        srcset=&quot;/static/c4b1534a8bfe5d62a7354bae45b71eb7/5a46d/gated-latch-symbol.png 300w,
+/static/c4b1534a8bfe5d62a7354bae45b71eb7/e17e5/gated-latch-symbol.png 400w&quot;
+        sizes=&quot;(max-width: 400px) 100vw, 400px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;br&gt;
+&lt;details&gt;&lt;summary&gt;1. 초기 상태의 회로는 모든 값이 0이다.&lt;/summary&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 400px;&quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 75%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAYAAADkmO9VAAAACXBIWXMAAAsSAAALEgHS3X78AAABZUlEQVQ4y61U21LCMBDlO7U0adMLoCBULhZEGHUc9ckf8CfJhtd1NwmFKReV4eE0mU325JxNtg2ZAF4SjXpAJBql4rk+CVHtqREKVQuq7SjkEXgyoeAPhKySYzmhINzXUPg15d0cshwSQRh70DxLKTZfofwiLCnpZeXAc44tSJ0gglTvCWkwSTEyOCBMZga7BeBsusanb4NBjxKuwSZbXIFVGC0dobC2t6gsZx2waHcBkzZgngF2PmjTWKOiTVFOoFjENimWvmpstXwsdYgzr5BZm6SyGWkMpLMchoDBI1mbaBwODY5Kg8WYHEwMhiONt58a39/W1tV4arCc0xqNlpA/zJ6ysht32qBvrEJOlrFXmDuFfEj8rDFRroacG3ulVQ17A8BuH+yJnTvA8sFsaxjs11AsnIuDNdzczuaWeVMQUAnIcnTiluWxW66/w+pt/fIO/9kp+vxO2W/w3dPP6OVL/21+AB8fNdHnliohAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;data 0 write 0 symbol&quot;
+        title=&quot;data 0 write 0 symbol&quot;
+        src=&quot;/static/2fe9bf17e4c5d19844dceebfdbd7f253/e17e5/data-0-write-0-symbol.png&quot;
+        srcset=&quot;/static/2fe9bf17e4c5d19844dceebfdbd7f253/5a46d/data-0-write-0-symbol.png 300w,
+/static/2fe9bf17e4c5d19844dceebfdbd7f253/e17e5/data-0-write-0-symbol.png 400w&quot;
+        sizes=&quot;(max-width: 400px) 100vw, 400px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;2. 입력을 1로 전환해도 값은 변하지 않는다.&lt;/summary&gt;
+&lt;details&gt;&lt;summary&gt;클릭하여, 회로도의 상태를 살펴보자.&lt;/summary&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 700px;&quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 34.333333333333336%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAHCAYAAAAIy204AAAACXBIWXMAAAsSAAALEgHS3X78AAABD0lEQVQoz12SiW6EMAxE+f9PrLattEXtLuSAHBDOqcfASi2SFePYz2NDhfPZ9x3btqn98cVSSuhDQMoZWSyljCgxvvd9QCnlVVPxwjqHMk2YLptnPWc5l2VBCFFzYozIw6CF67oqZBxHDBKjz1jFzm1r5KLAd512ZVKIB8R5j67v0RqLRvKeTav3BBzA8npXIB0ZWLs+no2COALBzncCaRXIZjkPqoZKqZ4AwkbJP/d2AaGjWetEicG9rmHEp0LCruJLVZCpmOucF8WN7pi596/62CEhTOKCv38eemGs1QIq5Hn7+MTb7V2VRl2H1xVwJTEmUX4orTgeoTRCOdI1sj1V8oOxGWNUS2Mxz/9/xS9f3h0gae4oyQAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;data 1 write 0 off &quot;
+        title=&quot;data 1 write 0 off &quot;
+        src=&quot;/static/d3276fe7d4fe8e3b3c8c38978f342979/8c557/data-1-write-0(off).png&quot;
+        srcset=&quot;/static/d3276fe7d4fe8e3b3c8c38978f342979/5a46d/data-1-write-0(off).png 300w,
+/static/d3276fe7d4fe8e3b3c8c38978f342979/0a47e/data-1-write-0(off).png 600w,
+/static/d3276fe7d4fe8e3b3c8c38978f342979/8c557/data-1-write-0(off).png 700w&quot;
+        sizes=&quot;(max-width: 700px) 100vw, 700px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;/details&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 400px;&quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 75%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAYAAADkmO9VAAAACXBIWXMAAAsSAAALEgHS3X78AAABjklEQVQ4y61UyU7DQAztd0KaydIkbelOdxWoACHKiQ+AX+KExAkuSAiBxKEzE3F72MmE0i1IVQ9Ptjzj52c7k4JTUtgnCssBCcHWl4mfB+Er468QLg4M/IUVjtoMk5Pa/wgz0mgOp0P2eAUci/gOEW9SmFbSsL2YQJZ8R0gUJzGcWyKdUtLFPAX7HDujHEEEwTKhICEFJmn2ngkv6I6fUOu8oj98xPjuAVbjG+IwTU5woBKF7tTEEjELmJY1guonQkK5/g6/8oUw/EBl9gbR1/ApyY0U3JDAbfYlgkuJctnEghReaBRyy6yy6GpYTpy0LOwY1oRaH0h0uxq9kUaHyAcDGklPonYjcX0Vo93T6I81Rid0RjYh5KV4IVWtKERHXE2i3dKozmSS7HgqVRilCrmIdy5R8tMZsjLPKDUzlGi0FeotlVSsNhVGQ43Te1LcIEJLrc1Q0FJse8sMs+0wMYMvWRZveQ43Z8vOti1nzL/B7NuKZO53mPNSVoLZRV/t9lLWH/jf6ju85X3/bX4ANMY032EmR40AAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;data 1 write 0 symbol&quot;
+        title=&quot;data 1 write 0 symbol&quot;
+        src=&quot;/static/ec3cdbcf86b3cb699c6e5ccbc1416703/e17e5/data-1-write-0-symbol.png&quot;
+        srcset=&quot;/static/ec3cdbcf86b3cb699c6e5ccbc1416703/5a46d/data-1-write-0-symbol.png 300w,
+/static/ec3cdbcf86b3cb699c6e5ccbc1416703/e17e5/data-1-write-0-symbol.png 400w&quot;
+        sizes=&quot;(max-width: 400px) 100vw, 400px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;3. 입력이 0인 상태에서는 쓰기 기능을 활성화해도 값은 변하지 않는다.&lt;/summary&gt;
+&lt;details&gt;&lt;summary&gt;클릭하여, 회로도의 상태를 살펴보자.&lt;/summary&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 700px;&quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 34.333333333333336%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAHCAYAAAAIy204AAAACXBIWXMAAAsSAAALEgHS3X78AAABDElEQVQoz11RCW7DIBD0/7/Ypml6JDW3weDbU2YbR1WQVsa7wxzQ4L72fce2bVLP+z5n9H2PUgbkUpDlP8s+xoRxmh5nGg69DxjHEVMdPNe6rvAhQGmNruuQUo95nmW2LMsfcS5CRmxD0E+rqnqRgwSUYUBMCdY56YWKUdpItUqL+LG4Hyp+3++EtHpEJjGJGIExnfdCEEInKY6Yh0sSDEMl/CfwIOTQWAtrHb6vNyGjQ7pjNEbi4reLEc55cd8qJeLEfnx+oeFlm0pCdQKutxvO7xdoY+UQY7J/ejvj5fUkgrES0rE2RoiYilfG6A3jpdrg4xDIJnu8aILpdBwnmVGcbll8ceIO50zK+gVCYh0lOA8GUgAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;data 0 write 1&quot;
+        title=&quot;data 0 write 1&quot;
+        src=&quot;/static/a16c60e387aba0d95a7e6a07e8957bbb/8c557/data-0-write-1.png&quot;
+        srcset=&quot;/static/a16c60e387aba0d95a7e6a07e8957bbb/5a46d/data-0-write-1.png 300w,
+/static/a16c60e387aba0d95a7e6a07e8957bbb/0a47e/data-0-write-1.png 600w,
+/static/a16c60e387aba0d95a7e6a07e8957bbb/8c557/data-0-write-1.png 700w&quot;
+        sizes=&quot;(max-width: 700px) 100vw, 700px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;/details&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 400px;&quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 75%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAYAAADkmO9VAAAACXBIWXMAAAsSAAALEgHS3X78AAABi0lEQVQ4y61Uy07DMBDsd0Ia5502fUBDk9KGQgUIFU78QD+JG1cuIAESQkK1E7gNa8e0KKUFoR5Gttf2eGY3m5rlCWwTtWqAeRyWK+d8I9jiTIWQuZWguxyZtQaajLniD4RSpYyFhJhwUEGs91zt5ifLJhGYjgbNA59i4zmsa8KELp3NS8i5jJ2QOkYEPl8RUpMkcZKjRxhkOTqxQDYqcDzLYXTpwq5QlxV2hFJoT0pCpmwvsbAcREKh2RHwmgJhKBBd0qGUw6VDNq3tgCBtUsw/52g0dMwv4QRaoUyu6QjUbVJk5WSZ5oaAkZGaAUe/nyMZ5ohTcjCg/YSjfcUxvSiUq3SUYzimPRoVoayUE7yRslcErRd6dY4oekRj+gwzJVJKiVIYlgrlI84ph+eWOZTKHK1U5zBHu3eP1v4D9pI7NLtPSA9vkc1uKIcfsAy+kkNGRTHNNTn8+p5Mp1BgnrT8jvpRAXtDla11VWaVrmCeXv/yHW7olEqbucvxX52y2uDfX/9HL2/7b/MJn/A1CPVeDjUAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;data 0 write 1 symbol&quot;
+        title=&quot;data 0 write 1 symbol&quot;
+        src=&quot;/static/ac926b8e535493e87237bfb41a7b5d7d/e17e5/data-0-write-1-symbol.png&quot;
+        srcset=&quot;/static/ac926b8e535493e87237bfb41a7b5d7d/5a46d/data-0-write-1-symbol.png 300w,
+/static/ac926b8e535493e87237bfb41a7b5d7d/e17e5/data-0-write-1-symbol.png 400w&quot;
+        sizes=&quot;(max-width: 400px) 100vw, 400px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;4. 쓰기 기능이 활성화된 상태에서 1을 입력하면 1이 출력, 저장된다.&lt;/summary&gt;
+&lt;details&gt;&lt;summary&gt;클릭하여, 회로도의 상태를 살펴보자.&lt;/summary&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 700px;&quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 34.333333333333336%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAHCAYAAAAIy204AAAACXBIWXMAAAsSAAALEgHS3X78AAABCUlEQVQoz22RiW7DIBBE/f+f2Cs90qSxDdhgY3xueZvEiqoirdhzdgYKuZ1t22RdV7W/ftf30nWdxDhIH6P0xNnwvQ+SxnGfKSg612hy/MeWZRHXNFJWlTRtq8DTNGltnuccZ+A+Khi9RZubfi6lDMOggzTE7PsQxFirOfyyqtWqupaU0l2Y+sxu2w0Qqhw2AMww22FunZNLeWWGCpWZLYQrSwAAGx4W7IAUa2PEGCvH75Oys9YpGMMsvL8170YN9lVmzSL6P7+OUvAmdQZBKg2n81kO7x8qjSFkcr++HeTp+UWZooKbHpNrxDF/EGwLPiPkBFK895pMKjnuLImpsZSPwPhx8o/MsV9dIR06LuR+GAAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;data 1 write 1&quot;
+        title=&quot;data 1 write 1&quot;
+        src=&quot;/static/0391da7b770c3ca6184b0d89004e6fdd/8c557/data-1-write-1.png&quot;
+        srcset=&quot;/static/0391da7b770c3ca6184b0d89004e6fdd/5a46d/data-1-write-1.png 300w,
+/static/0391da7b770c3ca6184b0d89004e6fdd/0a47e/data-1-write-1.png 600w,
+/static/0391da7b770c3ca6184b0d89004e6fdd/8c557/data-1-write-1.png 700w&quot;
+        sizes=&quot;(max-width: 700px) 100vw, 700px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;/details&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 400px;&quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 75%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAYAAADkmO9VAAAACXBIWXMAAAsSAAALEgHS3X78AAABpElEQVQ4y7VUyU4CQRCdf9TIOjAsEnBBUMGoY1QkIomJGm/CxeXIFxgPHtyiHN0Sl0SNS9wiKu767KphxAENB/Hw0tU13a9fveoeSfHeo5qQjIk7htNTjH9DcU0JYelmfe705GFXnmF3Pmvjt5i+FddWINQXev1XCEV3Ee7YMULkPP7rkioMJWtqHO4HgTwvtDleoA5kMZ7OoH9oEfHheQbF46kMegdXYHW8wlV/WyZEIpKWyJ7APtq7ttDcesBKJqanOK41ARb7OyzyG2rqwKr7EktMqJPooLlE6uobLuAT8DefwRu4gsuXQ3J0FpHuTQSCJ2gMHfEYCJ4iqm4IhctM4PbdFFTeijinKSRWKld2PUJWnjhptn1AjWUREZvpIFLe1rnNpBQnx2bRE19ltZSPquucJ3GSfhIp8zWe80kUJ0bmWKFVfhUVXPI3Kps2x5IL7Depo7260i8Pm8KHXBZ52dByzB6mZibZQ5MV7BcR11k0D6kpRK4USAwe6sZqXX7gk8w2iC6v/dzldIUu/34Pr/nOVb6H//1Syh/4H99ytf82n7h4MfGUQFSXAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;data 1 write 1 symbol on &quot;
+        title=&quot;data 1 write 1 symbol on &quot;
+        src=&quot;/static/4594ca1ffefb65a8981fabd7af2a625a/e17e5/data-1-write-1-symbol(on).png&quot;
+        srcset=&quot;/static/4594ca1ffefb65a8981fabd7af2a625a/5a46d/data-1-write-1-symbol(on).png 300w,
+/static/4594ca1ffefb65a8981fabd7af2a625a/e17e5/data-1-write-1-symbol(on).png 400w&quot;
+        sizes=&quot;(max-width: 400px) 100vw, 400px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;5. 쓰기 기능을 비활성화해도 값은 유지된다.&lt;/summary&gt;
+&lt;details&gt;&lt;summary&gt;클릭하여, 회로도의 상태를 살펴보자.&lt;/summary&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 700px;&quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 34.333333333333336%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAHCAYAAAAIy204AAAACXBIWXMAAAsSAAALEgHS3X78AAABCklEQVQoz22RiW6DMAyGef9H3NUdXbsCSSCBEE4vn9uialokKz5//7YLub1t22RdV5W/etf30nWdxDhIH6P02FnQvQ+SxnGvKQg616hz/EeWZRHXNFJWlTRtq8DTNGlsnudsZ+A+Khi5RZuTfi6lDMOghSTErPsQxFirvrb1GbBWqepaUkr3wVSndttugFDl0QFggOgOc+ucXMorM6bQMbOEcGUJAGDDQ4MdkGBtjBhj5fh9UnbWOgWjmIb3XbM3YrCvMmsakf/5dZSCnQBEVxJO57Mc3j90NIoYk//17SBPzy/KlCn4yTE5hh3zgWBbcIyQHXTx3qsz6chxZ4lNjP1yCISL439kjvwCVLodMdL5fzcAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;data 1 write 0 on &quot;
+        title=&quot;data 1 write 0 on &quot;
+        src=&quot;/static/71a65f9ed1c8767a18492ee6300f67a2/8c557/data-1-write-0(on).png&quot;
+        srcset=&quot;/static/71a65f9ed1c8767a18492ee6300f67a2/5a46d/data-1-write-0(on).png 300w,
+/static/71a65f9ed1c8767a18492ee6300f67a2/0a47e/data-1-write-0(on).png 600w,
+/static/71a65f9ed1c8767a18492ee6300f67a2/8c557/data-1-write-0(on).png 700w&quot;
+        sizes=&quot;(max-width: 700px) 100vw, 700px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;/details&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 400px;&quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 75%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAYAAADkmO9VAAAACXBIWXMAAAsSAAALEgHS3X78AAABtUlEQVQ4y61USU7DQBDMN5Fsj7fYZN9IgCgiEOAQTjwAXsOdUyS4gJCiIBaxecYBTkX32AGyKEgRh1K3257q6mWcsX2F/0RmOiAh2HpS+8sgPJX6M4Q/L1J4P1bYajHSM4n9i3BCGkaw62QbM+BYmCb8PjNVMmeKYbljAlnybSFhdsawj4l0j3BA2E99jnXpjCCC7HwbMkxSaV4RrrHRvkCxPkRra4D2yTmM8gesNUpkEqwxzLX3ROFupAm530wyAZNmWF02/4iAsF66g5d7RhA8INe/hWjFKJaHyFVvEZbuUSDf3iTCbgTff4ITvMHJkmI/gku+VsisrNJ0Yhj2WJfMaowOlb4ZIV8YobF9qVGq3EA0FfJHI/QOz3RVHG91Bro6FqeH4gYS2ZxCWFCUUaJWjZHvU6IW9dL60Kr9whMM81MrdHsv8Lxn3UM3eNVgpWkPJco1hVJVodYkoorC9laMnVNSXJZwjGQAwiLFRjJlQUOx6HlhD20d5LIT8CoYBk85gsMT3ZXJhPdTX0850puwcMrCm94jMdmrUC7dwyU3ZSY4+dBTq92U+Qv+O/sKd/m//zZfvAAzX1ViCCsAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;data 1 write 0 symbol on &quot;
+        title=&quot;data 1 write 0 symbol on &quot;
+        src=&quot;/static/558c95a2d8ce75abacd35c7846805c33/e17e5/data-1-write-0-symbol(on).png&quot;
+        srcset=&quot;/static/558c95a2d8ce75abacd35c7846805c33/5a46d/data-1-write-0-symbol(on).png 300w,
+/static/558c95a2d8ce75abacd35c7846805c33/e17e5/data-1-write-0-symbol(on).png 400w&quot;
+        sizes=&quot;(max-width: 400px) 100vw, 400px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;6. 쓰기 기능이 비활성화된 상태면 0을 입력해도 값은 유지된다.&lt;/summary&gt;
+&lt;details&gt;&lt;summary&gt;클릭하여, 회로도의 상태를 살펴보자.&lt;/summary&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 700px;&quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 34.333333333333336%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAHCAYAAAAIy204AAAACXBIWXMAAAsSAAALEgHS3X78AAABDElEQVQoz12RiXKDIBCGff9XbNM0PZJGBVQEb7Z8a5J24syOsMd/LIXcvpSSbNum8XzuQ5C+7yXGQUKMErjn4Nx1XsZpeswUFJ1rZBxHmXLhOdZ1Fdc0UlaVNG2rwPM8a21ZlnzPwCEqGL1Fm5t+rmVmjzpIQxwG6bwXY63mACqrWqOqayW/f5yH3J/SDRCpd8sAA4QFLFnn5FruynCxqwni/a4SAMCGfwQPQIq1MWKMle/zRcFQCBjDWNqJt7y3Tqx1qr7KqiGn9+PzSwp2AhCsNJwvFzm+n7I1o0PY5H94O8rL60GJeAgUY9/kGq5YGWoL7PmcgAVmkuRYNKyAcacGOQ9B8OLk/5QnjV9MMx0soNLrbgAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;data 0 write 0 on &quot;
+        title=&quot;data 0 write 0 on &quot;
+        src=&quot;/static/c79f4636f8612f57c2563617be6b0e6b/8c557/data-0-write-0(on).png&quot;
+        srcset=&quot;/static/c79f4636f8612f57c2563617be6b0e6b/5a46d/data-0-write-0(on).png 300w,
+/static/c79f4636f8612f57c2563617be6b0e6b/0a47e/data-0-write-0(on).png 600w,
+/static/c79f4636f8612f57c2563617be6b0e6b/8c557/data-0-write-0(on).png 700w&quot;
+        sizes=&quot;(max-width: 700px) 100vw, 700px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;/details&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 400px;&quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 75%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAYAAADkmO9VAAAACXBIWXMAAAsSAAALEgHS3X78AAABnklEQVQ4y61Uy07CQBTlNzXtTF+UUCyPIiAPBUEXuvIH/Bp/wURXxsRg4gLUdgq6Ot6ZFjQFX4TFSW/uzJx77qs5wxHYJnJZB3ciGLa0ox/Bl3cyhNzOOO3PLze+QUrGbfEHQqlS+gqEgFDPIEjP6A5fKs6kzOiQWSnIdvPkOwxhXBCOCSeEUWpLX5/IOBHkV8uQkyRBI0aN0OrG8AOBbmeGo8sYWpkC7M7B9BkYm0HfmScKB6Ei5E6S/gKSVKXsekKh6As4RYGCK+CdEVkzwl75AcXqIwr+E0pkGy0i7IdwnAlM9xVmnhQ7ISyylUKZsk4qdTOCZiQpMyag9UL12CuNUW/fKviVe/AGBTsfY3h6hUrjTvmbvWvsd26IME4UWqQoL5WVBEUUqFXjVGEInb3BLk7hlCbQ9HcVxBo+w7anqoaW+6IglS5rWK4J+FWh6uhVBNoH8bKGppY0gLMYhpZ0mfdlFvH6Gi7GZNFlOQoaPdQpZVN2dBAlHR6ltuoygUfru5ydQ76Yq1/m8J+bEm2+KasL/jX6Bru87b/NB6OqNFCxxya6AAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;data 0 write 0 symbol on &quot;
+        title=&quot;data 0 write 0 symbol on &quot;
+        src=&quot;/static/2358828949e0ac5f7fcf548b72197005/e17e5/data-0-write-0-symbol(on).png&quot;
+        srcset=&quot;/static/2358828949e0ac5f7fcf548b72197005/5a46d/data-0-write-0-symbol(on).png 300w,
+/static/2358828949e0ac5f7fcf548b72197005/e17e5/data-0-write-0-symbol(on).png 400w&quot;
+        sizes=&quot;(max-width: 400px) 100vw, 400px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;7. 입력이 0인 상태에서 쓰기 기능을 활성화하면 0의 값이 출력, 저장된다.&lt;/summary&gt;
+&lt;details&gt;&lt;summary&gt;클릭하여, 회로도의 상태를 살펴보자.&lt;/summary&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 700px;&quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 34.333333333333336%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAHCAYAAAAIy204AAAACXBIWXMAAAsSAAALEgHS3X78AAABDElEQVQoz11RCW7DIBD0/7/Ypml6JDW3weDbU2YbR1WQVsa7wxzQ4L72fce2bVLP+z5n9H2PUgbkUpDlP8s+xoRxmh5nGg69DxjHEVMdPNe6rvAhQGmNruuQUo95nmW2LMsfcS5CRmxD0E+rqnqRgwSUYUBMCdY56YWKUdpItUqL+LG4Hyp+3++EtHpEJjGJGIExnfdCEEInKY6Yh0sSDEMl/CfwIOTQWAtrHb6vNyGjQ7pjNEbi4reLEc55cd8qJeLEfnx+oeFlm0pCdQKutxvO7xdoY+UQY7J/ejvj5fUkgrES0rE2RoiYilfG6A3jpdrg4xDIJnu8aILpdBwnmVGcbll8ceIO50zK+gVCYh0lOA8GUgAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;data 0 write 1&quot;
+        title=&quot;data 0 write 1&quot;
+        src=&quot;/static/a16c60e387aba0d95a7e6a07e8957bbb/8c557/data-0-write-1.png&quot;
+        srcset=&quot;/static/a16c60e387aba0d95a7e6a07e8957bbb/5a46d/data-0-write-1.png 300w,
+/static/a16c60e387aba0d95a7e6a07e8957bbb/0a47e/data-0-write-1.png 600w,
+/static/a16c60e387aba0d95a7e6a07e8957bbb/8c557/data-0-write-1.png 700w&quot;
+        sizes=&quot;(max-width: 700px) 100vw, 700px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;/details&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 400px;&quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 75%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAYAAADkmO9VAAAACXBIWXMAAAsSAAALEgHS3X78AAABmUlEQVQ4y61U207CQBDlN42l2xsFyk0wgIKIijHokz/AJ/nmqy+aqIkxMewWfTuebVcw5aIhPJzMdLY9c2ZmpzknUNglctmACCQcX/tyI8T8nQyh8DNBf2GFswaGTPjqH4RapY4ViRZxmEHLnPmmmlUl2ySwPQP6YYGxwRTOLXHOjy5pR8bXsSHVCRIU5JKQnCZptWM0iW4/Rq2l0O/NcDqJYdWZYI/kecJWyNPXCt2zlFAkZS8wLzmMVIJyTSEoKxSLCtE1yToStUaMqKFQ4pn2BWPBSKJUUnBDopDCC41C3VzbY3aXipyYJdO3FKw+X+xKVCoKx4NUfUMTtiWqNxLjq1lSVacXp+e0CaGelBd+UNk7wsobs04RRc8ojV+phsR5iWKVqqlwn77DJP4FVfppD7Uyzyg1PYxRbT6icvCERvsB5foLOkf36E/u2MMvuJZM+qfhWGkPxTCNrezhz32yvVkCEeiSP5E/mcHVE+UAkgmPjG+m7KybsshshQjM8x/3cMOmZNbMX9itNmV5wX9n32KXd/23+QYyVDU+1aHNqAAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;data 0 write 1 symbol off &quot;
+        title=&quot;data 0 write 1 symbol off &quot;
+        src=&quot;/static/7287480b28cfed6c1e2d3fe813e83d9d/e17e5/data-0-write-1-symbol(off).png&quot;
+        srcset=&quot;/static/7287480b28cfed6c1e2d3fe813e83d9d/5a46d/data-0-write-1-symbol(off).png 300w,
+/static/7287480b28cfed6c1e2d3fe813e83d9d/e17e5/data-0-write-1-symbol(off).png 400w&quot;
+        sizes=&quot;(max-width: 400px) 100vw, 400px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;8. 쓰기 기능을 비활성화해도 값은 유지된다.&lt;/summary&gt;
+&lt;details&gt;&lt;summary&gt;클릭하여, 회로도의 상태를 살펴보자.&lt;/summary&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 700px;&quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 34.333333333333336%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAHCAYAAAAIy204AAAACXBIWXMAAAsSAAALEgHS3X78AAABCklEQVQoz11Ri3LDIAzL///i1nXdo1kgQAIB8taQ1+R25c4H2LJkQYXH2vcd27ZJPJ+HGDEMA1LKiCkhyj3K2fuAcZrOnopF5zqM44ipFJ5jXVe4roPSGn3fI4QB8zxLbVmWP+KYhIzYiqCfRhX1JI0EpJzhQ4CxVnJdwSjdSjRKi/ixeM4Fv+8PQo56WCYxiWiBNq1zQkBCujimOaYkQc6F8J/ASchiawyMsfi+10LGCUnGZloS4bJ772Gtk+kbpUSc2I/PL1R8bBJRlYB7XeP6foNujTTRJvfL2xUvrxcR4kdwYt22QkRXfDJar2gvlARVqMwkc7RGMMl4Z43i/AgGf5z5c/LilPELPxMdIOe0/rAAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;data 0 write 0 off &quot;
+        title=&quot;data 0 write 0 off &quot;
+        src=&quot;/static/3f605bf221df4e9f0d545399fcb00e89/8c557/data-0-write-0(off).png&quot;
+        srcset=&quot;/static/3f605bf221df4e9f0d545399fcb00e89/5a46d/data-0-write-0(off).png 300w,
+/static/3f605bf221df4e9f0d545399fcb00e89/0a47e/data-0-write-0(off).png 600w,
+/static/3f605bf221df4e9f0d545399fcb00e89/8c557/data-0-write-0(off).png 700w&quot;
+        sizes=&quot;(max-width: 700px) 100vw, 700px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;/details&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 400px;&quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 75%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAYAAADkmO9VAAAACXBIWXMAAAsSAAALEgHS3X78AAABdElEQVQ4y61U21LCMBDlNx1S0pK2XMq1DiAgouI46pM/4E+ahNf1bBOKU8ALw8MhO5v07Dm7CbUwNnRJ1KoJGWsKFcf6R8jyTIVQqkpS7VcZnoAnk8r8gZBVcq4F5MB1BbnfU97NMcsNEDSaHojTBLnVJ4XvwAM+esK68THn1lAnQZDoAyE1JsknlsbAbGmpnxtaLrZ092FJDFDgCuQB0DAUIGaF0b0jlIXtPUrLadcU6PQNxR1DrdRQ9xVkU039oaXu0FAbexxL5OKNpnbbUIRzUeLQTL1CZg2gMog0idBZZjXiFtZmmrLM0Hzl1A+ZcKKp96bp5XlbuJourNvHWhDyD7MnrCxz1cYjWyoUgaZWD3tQWEfMRdQjVCrXQ/626ZWWPRyMYWdkiopsb35jix7W0cNIuP4xQuF6KNfOxdEe7qazmzIfEgItgOWIJ4oBFBPe+NhPOTw15eo9LO/WL/fwny9Fn/9SDh/49+pnvOVL/9t8AasrNgQ3bdolAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;data 0 write 0 symbol off &quot;
+        title=&quot;data 0 write 0 symbol off &quot;
+        src=&quot;/static/3b0d666ebd6411d1fd0c2f95fe534600/e17e5/data-0-write-0-symbol(off).png&quot;
+        srcset=&quot;/static/3b0d666ebd6411d1fd0c2f95fe534600/5a46d/data-0-write-0-symbol(off).png 300w,
+/static/3b0d666ebd6411d1fd0c2f95fe534600/e17e5/data-0-write-0-symbol(off).png 400w&quot;
+        sizes=&quot;(max-width: 400px) 100vw, 400px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;/details&gt;
+&lt;br&gt;
+&lt;p&gt;이렇게, 일반 래치보다 사용하기 더 편리한 게이트 래치를 살펴봤다.&lt;/p&gt;
+&lt;h1 id=&quot;3-레지스터&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#3-%EB%A0%88%EC%A7%80%EC%8A%A4%ED%84%B0&quot; aria-label=&quot;3 레지스터 permalink&quot; class=&quot;anchor-header before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;3. 레지스터&lt;/h1&gt;
+&lt;p&gt;1비트만 저장하는 컴퓨터 기억 장치는 그렇게 유용하지 않다.&lt;br&gt;
+&lt;code class=&quot;language-text&quot;&gt;(80년대 아케이드 게임 &amp;#39;Frogger&amp;#39; 은 커녕, 아무것도 안돌아갈 정도;)&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;물론, 래치를 무조건 1개만 사용해야 하는 것은 아니기 때문에,&lt;br&gt;
+8개의 래치를 나란히 놓아 8비트 숫자와 같은 정보를 저장할 수도 있다.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 500px;&quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 75%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAYAAADkmO9VAAAACXBIWXMAAAsSAAALEgHS3X78AAABhklEQVQ4y61Sa1PDIBDM/7SGQEjS97ud1mh9juP/BT6fe0AtpnasM37YOVj2lruDrNCW/hNZuhGlOVtfy50ZpuJu4rXcjxWq2pKsvify/jcuMTzd1JOG5itH/bGlWxmSeoWhycLSaHrOsfZGJFWW0ZCJXBkaTCxt9452rfNrTmxGlpYbR+ud82s25biBrj04mi6dzw0VGhjCleHbxe3VIEBVJ+7YXlnHdnXUNeAAoaIHG4oaLU9xg0SVE0M5EvIG3AgchHwmcCbGiE3EOOqYUzG/ii3LhaGyBblFfAa5QlWICntxB+6ACK58wdka1T2Fs+KQ5L2GPIGCMglRhUdQSK4hULhNv4Hrg4NJPbfeQMNAQ6ffEdG6/kDELMs9NI/IG2IsS54hypb3wBx4MJ6UOwBCrl7CSM5QAWs2wDaeYV20iQYVFgOeYRNmIHLMaRbnhQMxBIrICevbEZiTnznmyw/guaNGhceJ3yaiStZ/QZKXCf9lwh9K4yWui67+q8KuwSWui67+EzdeNOWRpH3sAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;8 gated latches&quot;
+        title=&quot;8 gated latches&quot;
+        src=&quot;/static/96f58fb3d0f5f2d9e333d52e9a53d56c/0b533/8-gated-latches.png&quot;
+        srcset=&quot;/static/96f58fb3d0f5f2d9e333d52e9a53d56c/5a46d/8-gated-latches.png 300w,
+/static/96f58fb3d0f5f2d9e333d52e9a53d56c/0b533/8-gated-latches.png 500w&quot;
+        sizes=&quot;(max-width: 500px) 100vw, 500px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;br&gt;
+&lt;p&gt;이렇게 여러 개의 래치를 연결지어 구성한 회로를 &lt;strong&gt;‘Register’(레지스터)&lt;/strong&gt; 라고 한다.&lt;/p&gt;
+&lt;p&gt;레지스터는 여러 비트로 구성된 단일 정보를 기억하는데,&lt;br&gt;
+이 때, 저장된 정보의 비트 수를 레지스터의 너비(width) 라고 한다.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;초기에는 8비트 레지스터가 많이 사용되었지만,&lt;br&gt;
+오늘날의 컴퓨터는 대부분 64비트 레지스터를 사용한다.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;3-1-동작-방식&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#3-1-%EB%8F%99%EC%9E%91-%EB%B0%A9%EC%8B%9D&quot; aria-label=&quot;3 1 동작 방식 permalink&quot; class=&quot;anchor-header before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;3-1. 동작 방식&lt;/h2&gt;
+&lt;p&gt;레지스터에 정보를 저장하려면 쓰기 기능을 활성화해야 한다.&lt;/p&gt;
+&lt;p&gt;이 때, 8개의 쓰기 가능 입력을 각각 처리하는 것이 아니라,&lt;br&gt;
+하나의 회로를 추가해 모든 래치를 제어할 수 있다.&lt;/p&gt;
+&lt;details&gt;&lt;summary&gt;1. 모든 쓰기 가능 입력을 단일 회로로 연결한다.&lt;/summary&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 500px;&quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 75%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAYAAADkmO9VAAAACXBIWXMAAAsSAAALEgHS3X78AAABgUlEQVQ4y61S2XLCMAzkP0tx7FylQIBAOMqQQmmnH2z7WV3FooSjUx540Ky8ltZaJZ0ocfTI6LQPKrZX+b3clWC7+LLxXu7mhCZzpNPzRj7/x7UETy91taXJzNPL0NGzDk3dyNJo6mhQXHNc+6RaU8YiyETPWOqPHC3WnlYb3+TcmA8clZWn+co3OYsyVqjb1J6K0je9YUILQahyNHbxetoPYdITd7QXZ2I3kbocHEIZ0WBBlcFygRc0phxZ6qGhl4MbBAt8p3CnhsBcYih1zBnpT8WynlqKNyAXwD3IGaYCGpzVG7gaCC4+4G6O6Xa4WyKvW32H0KcwUEcjSbETs7aUQcBgdwkK2A4LZ2NgZSnZIlCXfAFhP/kGvsLyCjUQN8h1yTsc49UPxFZwJ/knAhNoiGs0RO9oOtbtpbaWesmjggWhqvCKmoDAlKoM1hTbOnKMvIIqWIuWYQ0NYmURnCkMFj6KfCH+KA2aE968a8eNPvkPHxe/gip2Z/gXdxmX9T8majZ72sTEDQAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;8 bit register&quot;
+        title=&quot;8 bit register&quot;
+        src=&quot;/static/389b9a8e95f6989a328ebcd080661fcc/0b533/8-bit-register.png&quot;
+        srcset=&quot;/static/389b9a8e95f6989a328ebcd080661fcc/5a46d/8-bit-register.png 300w,
+/static/389b9a8e95f6989a328ebcd080661fcc/0b533/8-bit-register.png 500w&quot;
+        sizes=&quot;(max-width: 500px) 100vw, 500px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;2. 단일 회로에 1을 입력해 쓰기 가능을 활성화한다.&lt;/summary&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 500px;&quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 75%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAYAAADkmO9VAAAACXBIWXMAAAsSAAALEgHS3X78AAACPElEQVQ4y61UW1PaYBDN/6xASLgmXBIDIRcQFASknen0H3WmM5ZOsRaL1eGiLSAzbae2kAT7droJKij45sPObvac3W/35EsYNmTjOY1ZfQjw1qPYIm97fjVe521oeAe4fhnb941W43We9fSEXMRGMPxwwmB45tnqhC5nyXsw4fKkraAFSXEQS9jwBd0iCz72H0RphHhqQrkbr+EWayEp2x73RWBlSv62oWt+zoKQtKHqDjTTQZziLdZBRPyFdHYAOdf1Yl/QQVS0kSWeueMgtW17tXd9GJZfasTRCuG4jUh8ES/Wnd6uPCU5/i5yoQUvFLXBkwW4pcZMgDRjU1OwdEogSRaawUckVpx6RDY9I4wKSAY2SrircWIKH+8Q3+VQLkXyRBYaMwllBKXYh2qewKh1sK11UTg4gmRcwtg7QrbchaJ/Rb5xDEnvo1BvQTIvUah+RKbURzbfgdloQ9Z6EKQxGFkdICb+gVbswCieQUj9ROXVIfjIHHuNQxL/BxSjh0LlM2LJ36i+fgcudIP6m7dUdw21cI6dShsR4RqSegFGVMbQal9QqjSRq5+iVGtCLZ+i8LIFc/cT5Too7TeRrZyhePABevkEerWNEsWZ8jl2a++h1oi/30JCHtHK6ncIxhiy0kPcnNApfQi5MZLGN6SVC8pdQc4QphGm9SFmh0gYQ6RzA8T1iYcJ+StqNvReHuPn5vDzc++O+Uloz3MOvHxwvszdY/ONmJsLrN7D5zJm/cPf9DOwn2zwmP8fYao1IKr/zvoAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;8 bit register write 1&quot;
+        title=&quot;8 bit register write 1&quot;
+        src=&quot;/static/2abfc9acd1b800c13cdf5419460183cd/0b533/8-bit-register-write-1.png&quot;
+        srcset=&quot;/static/2abfc9acd1b800c13cdf5419460183cd/5a46d/8-bit-register-write-1.png 300w,
+/static/2abfc9acd1b800c13cdf5419460183cd/0b533/8-bit-register-write-1.png 500w&quot;
+        sizes=&quot;(max-width: 500px) 100vw, 500px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;3. 각 래치의 정보 입력선에 1비트씩 값을 입력한다.&lt;/summary&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;&amp;#39;10110101&amp;#39; 을 입력한 경우의 예시&lt;/code&gt;
+&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 500px;&quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 75%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAYAAADkmO9VAAAACXBIWXMAAAsSAAALEgHS3X78AAACX0lEQVQ4y61UW3PSUBDO/5RbSLgFCOFOUu6XUlodx3/kaCtjcaSaTkulpTjYaqXtFJJA3z6XIDFgH3zw4czZ82X3O7v77Qnj4XX8z8X8OWhwc8vdbj+NaRaB3V4jtBNskv2NLYlWZHZSZpXdytnrn4D1TdcIFud1TKOzbq4nMtQsQic7h5gcIhC+Me0FidMzR1gaISRem5jHp8Hh0RCN65CSBp65NeuSxYWMdavXQCDyHUm5h/TWCYKRH0T2CH/4J6T0BeLZL2SPiZT8BB1p2YBSMCAmdLi8mqUDYy/XL0zAh+7gE26p9AfCDHP38FP4glNwgYff5WrkqyMYNgjTze+rxBgucI9I4itc7AxcQoOLmxHh2CzRRVlHqQVuysobo4CgDj54CyE2goObg5Mm5KOb8Sz13ixZTA2hlFUqU4XcVCHl+qjstpHaOoNS/YhCo0ttOEW+1YUkX6DSaiOd7yG//QHJ0jnZx6g9byNOcYL0DUw8MyARJsiVVCilUwjiDerkwPnnqO6+Q0QaI6n0UawfIRS9w/bLt2D5R+y8ek0l3yNb6KFQV6kF95CIi4mlLlHdO6CADrI7xyg2DymrDhov3kCpdFHb20ep8R7p+gmKrQ6KjUPK8sC0U7UeKs02xe8T3kEkPqIMs31kS58RSw4g5K8gpgem0pmCSiN0iVz5E6TUOULyNcTcAInsGWWlIpoZQlCuzG9y+WjZRxozZqHkwnDQvPEhg8SZW6o7SajVLPJBg7C5pabLu8SW87oQZ7YUxT7YrM3eXOw/YjZC3Zr2zZ+Bh7O/XW39LW/4/wIz8DTjoWn6TwAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;8 bit register write 1 10110101&quot;
+        title=&quot;8 bit register write 1 10110101&quot;
+        src=&quot;/static/d17a8d8a6d9039bf4e68f0c42cb09c19/0b533/8-bit-register-write-1-10110101.png&quot;
+        srcset=&quot;/static/d17a8d8a6d9039bf4e68f0c42cb09c19/5a46d/8-bit-register-write-1-10110101.png 300w,
+/static/d17a8d8a6d9039bf4e68f0c42cb09c19/0b533/8-bit-register-write-1-10110101.png 500w&quot;
+        sizes=&quot;(max-width: 500px) 100vw, 500px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;4. 쓰기 기능을 비활성화해도 값은 유지된다.&lt;/summary&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 500px;&quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 75%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAYAAADkmO9VAAAACXBIWXMAAAsSAAALEgHS3X78AAACMElEQVQ4y61U2XLaQBDUfyag1YUQ9xHAgIEABfnDVF6SwuUEA8Yu0GrxY6dXHBKExzxsadQz29s9o5Uh3Aj/cxnJi4TpHJ/p2HTkpfgc38P+IUwIruPzpluye1iKMFFl5/awvPBKoeVF8UoT3GIpQnkhzFgfqDQX8IvrOLY8ic9ColyPUKxExI5EZ6zWVPhkysvBWoRxVpK1FfzSC5rdH2j1vyNfWnPjgeQRGi2FZkfFsSb1CxFaXYXeQKHSUNybzMFI280V9vCCN3iFLa3vYszJMU9VXhDB9c92JWsjBDzA8TVRCKEVasuO/45i4xlZ6wCnQdvOB4s38MsrmFRdaj4xp2BX6cJX8PKvCKp/kHEPsGsyVldqPPHQk2WnvkMw2CDb5mnjENkmlU62yHW2MHsSxa8rYhL2hIP6QqXjd/gPrzCHrO+TpM2a2QqCNWZZW27QSoGncXOuxyKCzlTbo6qxhFtlrsXngKvE/IzLU3C/hXC15QedYy1bYNGhEbTfUZ4/w9TglCpGCvnRCoX5C0Q/QmVOO1RjjdinSQR/tEFhuoQYK1jDkLhEZbaAzVhUSOi331B+XCBDJaIbIlM/IOgsEfSWyNYUqoNfMGtsfIft4LRzrTWKvd9sg4oxnasOf0JUw+NQhBPC9jhRi73jJAWbbLn7eJl2dJw2c16euP7EWG+5uzjWmM7pGmGfhhJ/+fGSyZ0+YUl8nUsuwzGXxoyrpHP/ByGc9N29ucs39X8B23Q2JFTYMLEAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;8 bit register write 0 10110101&quot;
+        title=&quot;8 bit register write 0 10110101&quot;
+        src=&quot;/static/b4e45336ed4ecbb801ea032129ba2695/0b533/8-bit-register-write-0-10110101.png&quot;
+        srcset=&quot;/static/b4e45336ed4ecbb801ea032129ba2695/5a46d/8-bit-register-write-0-10110101.png 300w,
+/static/b4e45336ed4ecbb801ea032129ba2695/0b533/8-bit-register-write-0-10110101.png 500w&quot;
+        sizes=&quot;(max-width: 500px) 100vw, 500px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;/details&gt;
+&lt;br&gt;
+&lt;p&gt;이렇게, 연속적인 비트의 조합을 하나의 단위 정보로 저장할 수 있다.&lt;br&gt;
+&lt;code class=&quot;language-text&quot;&gt;(위의 예시에서 구성한 레지스터는 너비가 8이므로, 8비트 레지스터라고 한다.)&lt;/code&gt;&lt;/p&gt;
+&lt;h2 id=&quot;3-2-문제&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#3-2-%EB%AC%B8%EC%A0%9C&quot; aria-label=&quot;3 2 문제 permalink&quot; class=&quot;anchor-header before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;3-2. 문제&lt;/h2&gt;
+&lt;p&gt;작은 규모의 정보를 저장하는 레지스터의 경우는 괜찮겠지만,&lt;br&gt;
+더 큰 너비의 레지스터의 경우에는 해결해야할 문제가 하나 있다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;래치 1개당 입/출력선이 각각 1개씩 사용된다.&lt;/li&gt;
+&lt;li&gt;레지스터 전체에 쓰기 가능 연결선 1개가 사용된다.&lt;/li&gt;
+&lt;li&gt;따라서, 1개의 레지스터에는 ‘(너비 * 2) + 1’ 개의 전선이 사용된다.  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;br&gt;
+&lt;p&gt;위에서 살펴본 8비트 레지스터는 총 17개의 전선으로 해결 가능하지만,&lt;br&gt;
+64비트 레지스터의 경우 구성하기 위해 129개의 전선을 필요로 한다.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;256비트 레지스터의 경우, 레지스터 1개 당 513개의 전선이 사용될 것이다.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;br&gt;
+&lt;p&gt;&lt;strong&gt;&amp;#x3C;작성 중인 글입니다.&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&amp;#x3C;아래 내용은 정리 중입니다.&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;h1 id=&quot;4-행렬&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#4-%ED%96%89%EB%A0%AC&quot; aria-label=&quot;4 행렬 permalink&quot; class=&quot;anchor-header before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;4. 행렬&lt;/h1&gt;
+&lt;p&gt;래치를 나란히 배치하는 레지스터는 너비가 넓어지는 만큼 전선 수가 늘어나고,&lt;br&gt;
+규모가 커질수록 문제가 심각해지기 때문에, 새로운 배열 방법을 찾을 필요가 있다.&lt;/p&gt;
+&lt;p&gt;이런 문제를 해결하기 위해 일렬로 배열하는 방법대신,&lt;br&gt;
+&lt;strong&gt;‘Matrix’(행렬)&lt;/strong&gt; 구조를 적용해, 격자(grid) 에 배치해 볼 것이다.&lt;/p&gt;
+&lt;details&gt;&lt;summary&gt;256비트 레지스터 기준, &apos;16 * 16&apos; 크기의 격자로 구성된다.&lt;/summary&gt;
+&lt;ul&gt;
+&lt;li&gt;16개의 행(row) 과 열(column) 로 구성되어 있다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;스크린샷 찍어서 쓸 걸..&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 1024px;&quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 75%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAYAAADkmO9VAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABq0lEQVQ4y41U207CQBDlO0Xa3QJFEJFQEMUYLyhtuUR/w/gR+k29hOjLeKa7a9emJDyczGRm5+z0zGwbopMRw22n9Od32FdQvsq3JOAp6/7Ll2hUyRwUiDZinoIAHJGSf5bRZJrTaJxTMMtJ8hmp8uasi1jDkPHNTReFAyS6iF0AI2VdQF6m1J1k5E+zwnKO48LgvNKh7Gb0/vFNn18/dOoj+ZKQiBJlV0CYkLsE2D7r2ErnERP3qEEjDSY6QWfb1z3t3vY0DnJq9XGBITSF7DNRbF2yKi8TD5qwEBXfPprk1HTSAmKYqoOxPhxqn2Nr6wI792gIWdgx9LhJC8vkhR5csNGFkSYKrVisYXJPSUnozTCMYUZymqqBDLSGsfVJ5lPtWGh1+2B16GKC3h10m4NQ6okd0jCqaFg3lOAK+4V1COY5+X3sXb9myscS8tp4fkadHoDllbxGtoZGq80BDeOqhthBA4etp4dyzJSjmimbJ6eQFk+pWBs+tNUEa+0zwc7qys4tk3pCfo+iB8Jr4BbgdVpovxpbWP7MenrlH6ckLaZfhXcgLsufwy/0NUQYT8naqgAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;16 16 latch matrix&quot;
+        title=&quot;16 16 latch matrix&quot;
+        src=&quot;/static/41d94c7fa2f59ef73bcfebd9625cd7d9/2bef9/16*16-latch-matrix.png&quot;
+        srcset=&quot;/static/41d94c7fa2f59ef73bcfebd9625cd7d9/5a46d/16*16-latch-matrix.png 300w,
+/static/41d94c7fa2f59ef73bcfebd9625cd7d9/0a47e/16*16-latch-matrix.png 600w,
+/static/41d94c7fa2f59ef73bcfebd9625cd7d9/2bef9/16*16-latch-matrix.png 1024w&quot;
+        sizes=&quot;(max-width: 1024px) 100vw, 1024px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;/details&gt;
+&lt;br&gt;
+&lt;p&gt;위의 사진을 확대해서 자세하게 살펴보자.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;이 구조는 임의의 래치를 하나 활성화하려면, 행 &lt;strong&gt;그리고&lt;/strong&gt; 열을 함께 지정해줘야 한다.&lt;/p&gt;
+&lt;details&gt;&lt;summary&gt;클릭하여 위치 표현 방식을 확인해보자.&lt;/summary&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 1024px;&quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 75%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAYAAADkmO9VAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABZElEQVQ4y62UTVODMBCG+0shnRZap9Px5tiRfihaCAWm/jMPnh07OqhXWs7rbrqhSeCmh2dm4U2eZpOUgRgfwR+dwB+fQARHoGeXNgu4NnP17uyg54EWilsMtzWIGHm08eIGpk/fMEGobjMaS3MWhlAXYoOUGOZdvLyBq7JSUG3lNOeeO0HXRbhEdhimiLTxUhTuKgXVbUZjac7KELYta6HsEUpDKBs7Z6E6h5HZ8hopeICDt0NhUSmotnKas3Fa7qwws+msUGeS93HdJ4z+tofa8/8tixEfyoqFWY8wM4SZIcxYuHZXiFIRcRsJt8IMES9BoaxgKr9UPdR5wtJl7d7DGuYPB5jvkQIpTd5hVnzCzf4VFs8vMCs/1DuVFTwnPsAQHfY9vDuef81ZodArzCq4zt/AT06XTK8wYoe+h+0p65YdSEjtTtIfVbfZlrcp6vun0Nck7McPMQ9rxbl2xgSXj8MvCIdJvGa3KqUAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;16 16 latch matrix 10 14&quot;
+        title=&quot;16 16 latch matrix 10 14&quot;
+        src=&quot;/static/dfb7ca7286806068bc141e190c071eef/2bef9/16*16-latch-matrix-10-14.png&quot;
+        srcset=&quot;/static/dfb7ca7286806068bc141e190c071eef/5a46d/16*16-latch-matrix-10-14.png 300w,
+/static/dfb7ca7286806068bc141e190c071eef/0a47e/16*16-latch-matrix-10-14.png 600w,
+/static/dfb7ca7286806068bc141e190c071eef/2bef9/16*16-latch-matrix-10-14.png 1024w&quot;
+        sizes=&quot;(max-width: 1024px) 100vw, 1024px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;/details&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;4-1&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#4-1&quot; aria-label=&quot;4 1 permalink&quot; class=&quot;anchor-header before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;4-1.&lt;/h2&gt;
+&lt;details&gt;&lt;summary&gt;1. 이미지&lt;/summary&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 500px;&quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 75%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAYAAADkmO9VAAAACXBIWXMAAAsSAAALEgHS3X78AAACM0lEQVQ4y5VSyW4TQRScz0RxPN2zeY2T2BMn2PEWx46IBVK48RlcOXPASIggISQOHEDihg8wPcMmRFFvOokmmEU5lHq6+029qnrteFGCsvcFzd336B6+Qsn9Dr/yETo0RHJjOEJ2q/QTg+NnOHvwMCfyKp9I/A2b+uuN4YzmTzE+eYLT+49yTBePuV9ifHeJkawFjP6H+RJO1FjlFuPeaxwMX8L1P6PS/IBouEJYWyGociWCit1H/0J9BUcFWZ5be/8N+kfPsVH+ARWkcPczqO0MYT9D0MtQHWbQ3QwuoeSuQ8Tcx/bMbRNeBkcyE++tzjv0xi9ychmU3pcsDVp7KVpxyoFl8KspVIPDmiYkMmzK7yZRI/pEYAqE8Vv0JpZQC+GBgfJSeH4KXxS7hCL4k38vwc5hiuYohV6w9ow4SvL664RFhSTUWwbNARUOU1Rvk3hgUBtR+dSgzyhiqlZd1s1ZXzV5VOsKVYGQ9tQ2cczukwThqcHWjKruJPAlEjbQbWLX2He7RjgiYYmWfRKys6JFTRuaeekN5qdp2ec5YyhLI8lT7kVl9LvCDgkX5yjtUOEeCcfGEkkxv8WaDEGG4U04LFEqQ+kQA0smXNcJZ1RYIWGThHVrObfNSfqMoHHCDGcG4ZzfU6tc1e2U1wkvLW/ScpDktgRaVtoK+EO9nqLGpxNEtBxYu1d14d+Gcjnl0AatCqs8GYEK7ABU8f6PCovPJkyvkBMU9vlZaC7u0ovm9vwXXMs36Pm0rFUAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;zoom in matrix&quot;
+        title=&quot;zoom in matrix&quot;
+        src=&quot;/static/5b410a4813aaa1052bccccf452811537/0b533/zoom-in-matrix.png&quot;
+        srcset=&quot;/static/5b410a4813aaa1052bccccf452811537/5a46d/zoom-in-matrix.png 300w,
+/static/5b410a4813aaa1052bccccf452811537/0b533/zoom-in-matrix.png 500w&quot;
+        sizes=&quot;(max-width: 500px) 100vw, 500px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;2. 이미지&lt;/summary&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 500px;&quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 75%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAYAAADkmO9VAAAACXBIWXMAAAsSAAALEgHS3X78AAACS0lEQVQ4y52US2/TQBSF8zNR0nj8jBOneT9okzQJSVM1FaCy41+whTULqIREFrCvECuUBfHYgqYSh3PtRGoaHoLF0YzvzHxzz722M5YXIm99Q7n+GZ3+R+SMW9iFFUw3/C9lBPYg9wOD6TtcPn8By72B7d0gp77jwPx3ZYazK4zO3mD+7CX1CtPHrzG6uMJw9pbxXQ3/Jp7JeMGSFr+i3fuEh/0PMIoxCr0v8Pwl3NISjoyUU+BYXML7k7g/o5yYdVuj0b1Gb/QeWfcWqhnBsGKoagy3F8M5juGfxDA7MQxKdakm1eJzK40ZjTg5kzFdnXivNK9xPFwg561htVdQtobla1TaESqtiA2LYfsRVKBhTkKCNIwu52WqSPUoR98Btu4C2TGbh60IFkfbYcYGpSgesp+EqPUjlIcRzAvuvaQehcn+XwNbXCTEPNQoD5jhSQT/iOCBRnHIzCcaPZaixaxVh5nNCKQbOfNboMnbzBI3VakpLxiHcOcah6eMn4ewadfiBWaDqlOuWL4PHBBop5YV66I8nYJZLzPLEpi0zNoqliEvFwWbdcnSu5+hNGVOYG0Ndb5C8FTDP9XIS+FHOrEmTZBmWGM2SzKVtSY1SGHC2gXOFsjSslsNUZ1GqE8iztPO2kcawRlryEvcGeeTNHNVSru8D9zUMHtAoB8iKLMZNQJ9eSc1HDdCqRShyGfHo2UntSv2RcLZb8qYltU6+cilVnmplxwkTHGfvDKiJOakMdEWtp/haJF8NfIHEshWW+hOzN1ctAFt4z8B3Aw44lIBirUAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;zoom in matrix and&quot;
+        title=&quot;zoom in matrix and&quot;
+        src=&quot;/static/e2337c6a760e89d643e6d9859fa7b8c6/0b533/zoom-in-matrix-and.png&quot;
+        srcset=&quot;/static/e2337c6a760e89d643e6d9859fa7b8c6/5a46d/zoom-in-matrix-and.png 300w,
+/static/e2337c6a760e89d643e6d9859fa7b8c6/0b533/zoom-in-matrix-and.png 500w&quot;
+        sizes=&quot;(max-width: 500px) 100vw, 500px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;3. 이미지&lt;/summary&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 500px;&quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 75%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAYAAADkmO9VAAAACXBIWXMAAAsSAAALEgHS3X78AAACeUlEQVQ4y5VUW08TQRTuz5SU7uyl29tu2+32fkdLlYqiPunPML7pi5fEiIkPBWOIoIkCMRiaALuzBUn088xsi1KUhIcvZ+dk5pvzne/MRjTTQ0w7huXsotz8gKhyCj1xCDXuE7wrIyLIrkV/odV7h/uPHksicUmU/cC8enJlRDr9t+jefIPBg6eEZ+jfeYHF5ZcI86sX0LkM/VVEzMxISiw1NqRksa511mEkD2CmRxRHiBOMRBjN1CWg/RFmBLJvhcoWat01SeRUPmFeO4GaCxBvEOoBku0AejUAqwRQyhRdQpG+3XCtFAhagIjomdCedb+i2g4rc2ubZNQYWtJHtsSRLXJSECBhcWg2mXXDg1L0oVR8xPM+WMqH3iKY/A9hrvgFVZIq5LvVTbptDKaRQTqHbnAojIOpHDGDcnc95JscVocjvkLu3vNgLPpy3/8JdarQ9mC1OOw2HW4eIbngIdXlSNzy0aA2FJsks0QV9z0wUsP0GcKpGYJQ5FiaUx891AZDVPrrcJa3YS9SLwdH0EmuRjJVl+D4k7mdIRQuMypb9FA6nDiASrJL1Q3Mzf2U+6JkVoyqj+X8sJ9UlVqmaPry7BmhXdimGXyOfPmznMmVh0/Qu/2KjHovZ9Kpb8FpbKJQ+wi7twOrRyY1iYjMUVshmeA657IYcCHZcnZwfem1HGQrvwvT3kemvgd36Tuc/h6swYikk0kkl6WJMPUvQtnDNfkM9eQhEpl9pHPfpEkxlQwyxkilj2EmBWgChESNS8nCDMFzTrIgrC8M6Q2fykcuBl44Pb2ZERQjBCOof+WnZBcqrHeH8tWIn4Ma988Qbp7FhHjyPc3/Bjw1OGr6rcuTAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;zoom in matrix and 1 1&quot;
+        title=&quot;zoom in matrix and 1 1&quot;
+        src=&quot;/static/fd1d3b23be895931505731b18a1c3e79/0b533/zoom-in-matrix-and-1-1.png&quot;
+        srcset=&quot;/static/fd1d3b23be895931505731b18a1c3e79/5a46d/zoom-in-matrix-and-1-1.png 300w,
+/static/fd1d3b23be895931505731b18a1c3e79/0b533/zoom-in-matrix-and-1-1.png 500w&quot;
+        sizes=&quot;(max-width: 500px) 100vw, 500px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;4. 이미지&lt;/summary&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 500px;&quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 75%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAYAAADkmO9VAAAACXBIWXMAAAsSAAALEgHS3X78AAACEUlEQVQ4y51UXVPbMBDM/+zY+rId28RJSgJtnBAogVJmWvpfLeX5uqeTCWl5oQ83liXd3u3e2hNdelImkO486S8IhXWFvQLr/4gJg6kskLnxlP8caLk8UtsGyhQu8NkHY6L3SLwF2PeB9NNA7smTe0SHaf9DsecOa0+2DnT5DVSvAYx39dUL7SneqxQsTSXBZ3r6TtQMaD0ZtNr2IQIVTSC7Fl3N3FPZIzae6ptAjgtdp1hJKH5e4fnZJ8oQUulAOZI1EswUnTKgDXHdrRGrQOv+SNUF9ma4dz9QDqAcwMUCjTDLHXJLAMZp8pSXAqjKVN2KyAZP61AQ0+fCmUPir4EW20AX+0DFC7T/De0ffLwnHb4BjPowFRxqdDPbBZqBbgNJqjtQh/gVBtdvjrTaHikHG/04RL2Z1Tng5gQYu25AC/5UByTcDlQ8e+oe0PXzQBZ0DWjqSy+50Yd/A7KxXdKwFnCmEQt8EglyK51k0DzqiTUPJX4gI+VoYFwo2INIzuDH9sVTAz+aXvylrmQIPAwD6rNDoHKb2OySRPylvHa4wMGd+MzNA82RsLyHVToUa9Ep9G1RsD5Awx8ABHUFuqoR//0LmDTM8Rk62KWFRTpYosQ6NygCfRp4dIr3CqHGfwC7wQqYOpsyd8j0YA22EmuVsV5OxI577hQ6dTT+RN6nDEClwuvExhhBz8O/2T+d/wH8qzqRd1qWKwAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;zoom in matrix 0 0&quot;
+        title=&quot;zoom in matrix 0 0&quot;
+        src=&quot;/static/3f47ebb18734caecdc898848030168af/0b533/zoom-in-matrix-0-0.png&quot;
+        srcset=&quot;/static/3f47ebb18734caecdc898848030168af/5a46d/zoom-in-matrix-0-0.png 300w,
+/static/3f47ebb18734caecdc898848030168af/0b533/zoom-in-matrix-0-0.png 500w&quot;
+        sizes=&quot;(max-width: 500px) 100vw, 500px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;5. 이미지&lt;/summary&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 500px;&quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 75%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAYAAADkmO9VAAAACXBIWXMAAAsSAAALEgHS3X78AAACMElEQVQ4y51Uy3LTQBDMd0JJu9Jasiw/sR2DH9jGsQlQEH4tB76ASlWqctSuDLemZyUlNuQSDl1a7e70zPS0dKETCxU56L6FfksorlPutbj+D1wImQocovcW4dcCo1GJPHcIFC/I2QtxodcM3JDsYwF9XcBcW5gDK6z3X4S1VJhZxJnD+ANbnZGY7+qdrdpu8z2tIdKkFeRMt59BJoSxRcRS84XzRK2OQzytdI0GFsmCmFtklMRIolmNSQUlz0s+39i6ZQqptEPIYM2AqM1KhVASMetg6jCYlJgyYbvHJD3e2xUISRSSuDVkIdLlivcTEvppypRHFaFK6swxBxMdEYrYJH8d/uKgSgSGgd8KDJcO3bVD64baf6f2e5KapsITQq+PtMHAzuAe880t5ttbzFY/0NveI9uUSDm4xbzEZFkiZDf6UHi9pYhzwvkJYWSR5g/IR3fID3fo7n4i//KA3r5E9LlAzHYjtqnHtor1PvybUIxtag0lY3JkVrY6PiJ49RuhZkVxLQc193pyLUPxH0jTsjcwL7TEg6wuoB/zG7ZMP8YLarQmLjmIWTWMaGvRu3JIlnU3q4rMfymPFQ55sK18ZgacLANGOwfTZ7KcxNQ3Z8LsilJ8IuGe+2xXdSr//UtYaxjyMzS0Tt516NMSCdch9TTUp0OPtvmeEqr5B8TOS+B5zqYsFdLEmp4UK4lWgehlKrH9nnmCritqfiLPt0xCpdzjxBo0pOewJ/tP538AMt06OxK7QyQAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;zoom in matrix write 1&quot;
+        title=&quot;zoom in matrix write 1&quot;
+        src=&quot;/static/19b4cbaf6b585f2f699d5e5ae87616ea/0b533/zoom-in-matrix-write-1.png&quot;
+        srcset=&quot;/static/19b4cbaf6b585f2f699d5e5ae87616ea/5a46d/zoom-in-matrix-write-1.png 300w,
+/static/19b4cbaf6b585f2f699d5e5ae87616ea/0b533/zoom-in-matrix-write-1.png 500w&quot;
+        sizes=&quot;(max-width: 500px) 100vw, 500px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;6. 이미지&lt;/summary&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 500px;&quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 75%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAYAAADkmO9VAAAACXBIWXMAAAsSAAALEgHS3X78AAACiElEQVQ4y5VUa08TURDtrzSEtvvs9m3ZLmwfS0traZUCIcoX/RnGb/AFNT5QNIBElKKJQjWY1ojt7rZg4nHubQulGBI+nNzdyd0zc2bOrEfWWvDLHcT0Oszp9/AKp1CCx5ACbULr2vAwsjHvX+Rm3+Dug4eciCXxiifwSd1rwzNTeYXC7Zeo3lshrKKy+BjlhSfoxdcvYeYqVNbh0aJNLnHK+sAls/fMzDuooV/QIk06mwgQ1GDv1MJ9RIaeh2IeUXV435KpfWQK25xIT32CT+5CSjgIWISsg1DegZJ2IKZs+M0O/EYHPqNLpwvRtCEkHQiyAw/rGdN+0/iKdL5XmZGp0aBcKKEWElM2EpMOKbARirchxhzEyweYzOzBmN5DVG9ACFOyXAuKZp8TJia/IE1SmXwjXaNsLicVZBui0sa4QNWILsaVP7CWN5HNbyFX2kBm+SN8Sx0EykSoXkWoOIgkviNb2IJV3KT+7iJf3iC8RmVhjatI53aQzNbgK3cgkRpRGSEcDCOZ3oefYlq0gVjykE+9eOcFd0Kp+gzzyyswrV1YpbfQTeq33u37doSQTVmksln2QOQn5OBvbnqW4MYYKAlVoti8kmjyAPHEN8gKVWYSmdbm354RxulCZXENE+ZnXsnS/UeYnX9Kg9rhnmTSdItA7YiX6giXTqBOu5AMIsv1yBjXhSkzgzPJMf0Qt+aecyPHJurQ4g1Es0cw5n5ArxwhVm3SpInIoHWL0Bn+HyHv4TZfQyV0jCD1jw2FDckvuZBVF+FIB1qIgbzHJJIDBi1gPBckM8JscYt2+JQvOTO8oLhnmUWCoPYgEqSh+IDsUoXMImxr2M9B6l88vzyKPnH/eRD/B5uRN0aq5wKGAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;zoom in matrix 1 1 write 1&quot;
+        title=&quot;zoom in matrix 1 1 write 1&quot;
+        src=&quot;/static/4d4878ed42ec5d551b1f58a7aff0a0c6/0b533/zoom-in-matrix-1-1-write-1.png&quot;
+        srcset=&quot;/static/4d4878ed42ec5d551b1f58a7aff0a0c6/5a46d/zoom-in-matrix-1-1-write-1.png 300w,
+/static/4d4878ed42ec5d551b1f58a7aff0a0c6/0b533/zoom-in-matrix-1-1-write-1.png 500w&quot;
+        sizes=&quot;(max-width: 500px) 100vw, 500px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;7. 이미지&lt;/summary&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 500px;&quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 75%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAYAAADkmO9VAAAACXBIWXMAAAsSAAALEgHS3X78AAACgElEQVQ4y5VUaU8TURTtrzREyqwdOl1op1NKV1ooVKASFWOCP0P9pH5wiwiiRJAIiYAb1aC0Ll2GgonHe18LtJWY8OFk5t1579x7zr1vXKpRxYB6gIBVQiz9Bv3SEbTBn1A8NUL13HAxWV//H2QmXuLazVuCiJP0y4dwK81zw5UtPEfu0iJm5u4R7qMw+wiTlx+jFV/qwGLXOnsWCktwGf6ykDic2hSSeZ3Ivobu/QGPWRHfNC9h8JeIibi3AsMsd6C99pXhkvWG8C0ysoVEbo0OfIc1st3yNbIrYnFKkB5foYQblHgDRqIMt92EFHUIDSgjNUh2HZLagIs9Y+1D9kfER1uV2Ym39NER7+HhdwgNvxdkXIE5tIfx4gKsxA6i6U2YoW+QzAb0TBWaUT8lDEU/iEpYoh1vEXKVDElr4KL0mxp1BFmv4+r8bUq+jtH8MqZuPIBnjmybrEHT/0dIJL7QFyRzq0iNvRL+jk4uE16IprGKeGYddpL2Fki2twpZ6yE8bkYkvoUBihn+feEjE4xNPROTkJ95iuL1u4iRl6n8CqzYNtzhZntuewi5CpbE2T2+ClTqLEvmBBf6QEkOoFAVXIk/8gnB0GeoGlUWIzKjJs6eEAZpQ2H2IcKxHVHJlfk7mCg+EV7xTEZImpUikB3BfAlm/hB62oFiE1mmRcZcXV3m4WXJAWsX49MLYoAD4RKM4D78yT3Y019hFfYQmCkjSE1QbLpuPnqaZxEKD9fENeRBHiT/uCncpAHFgao7MH0HMLwMBzJLVOsnFjBPl2QmTI6titHgS84DL2nOSWaZIOktyASlI35M9k+FPCJ8a/jnoLQ3nm7uRZu4/X4c/wvxBza6ePOLewAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;zoom in matrix 1 1 write 1 input 1&quot;
+        title=&quot;zoom in matrix 1 1 write 1 input 1&quot;
+        src=&quot;/static/9c294fac8f93df24ea848a11e6594734/0b533/zoom-in-matrix-1-1-write-1-input-1.png&quot;
+        srcset=&quot;/static/9c294fac8f93df24ea848a11e6594734/5a46d/zoom-in-matrix-1-1-write-1-input-1.png 300w,
+/static/9c294fac8f93df24ea848a11e6594734/0b533/zoom-in-matrix-1-1-write-1-input-1.png 500w&quot;
+        sizes=&quot;(max-width: 500px) 100vw, 500px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;8. 이미지&lt;/summary&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 500px;&quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 75%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAYAAADkmO9VAAAACXBIWXMAAAsSAAALEgHS3X78AAACfUlEQVQ4y5VTy1ITURDNZ6IxmZmETJ7kTd5vCBhAlJVsXLq3XKlVFiiFYBWWiS8oxBdQVlmgIckMAguO3R0DhLBhcerO7Tt9bvfpcy2aqw2b9hf+8C5Gsx9htZ/AoR9AHe4Q2teGhcmGrKfIja3h3vwjIeJLrMoxbqlH14alUH2N4sQKanNPCc9QnVnE+PQLdOOrF7ByaT+IQnUVFpdvX1qMZ9alZd6nCu/gdDcx7PktZw43QW9JzOn+04XnHMO80pnLuw+L4jRFt0jiM1LFhvwcTmx1dY3sSIwvyJbfyIWxzIYgnqSVEOU1vYHw6BfJsbBm3PtI9AeS+W5l0dQm7NohVdZEMP4Vwdg3xLPr0L17cASo2koTapyQpC5GDiSeKb8V/c8Ig7HvSFIl3GI02SVUNAOag4idh7ArR7CrJmxOis10EMqa8BVMZOYamH/wEJWppf4KBwiJSAu04c8ZCOQN+LMtuEtteIoG9MkOMhkTUSLVEgeYuvuEtGxSjtlP2BsGE3JM8RpQg22kanUkqw2Ep7cRGDfhqLWIqANHrg0lYiAS3/zv20sts+gKtcQa8sScOumkdWgA6xi6cQqreoybGvlTO4IaogfhO6TvY3LIJ/Eu554RBiLb5MEFhGha7MnZ+48xNvUSifx78SRPVqac2kB5chnV2iLS+Tq5Ywu5ypqQ9VXIU2bzcsv+8A7Kt5fFrL7QLtyBX0jkPqB6ZwGV2hImZp+jNPlK7KX796SbQULRsCHPkI2s+/bgDf6UIYmelMAG5r3makmyjeI8PB4G7/taZsJ0qU5v+EQeORuef+7d3Eu4iF68dzZQYbpYl1fDAl/181U4PzME/wBO+DcCh0Ar9AAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;zoom in matrix 1 1 read 1 output 1&quot;
+        title=&quot;zoom in matrix 1 1 read 1 output 1&quot;
+        src=&quot;/static/778475e07da59d8f988b45c509be4e09/0b533/zoom-in-matrix-1-1-read-1-output-1.png&quot;
+        srcset=&quot;/static/778475e07da59d8f988b45c509be4e09/5a46d/zoom-in-matrix-1-1-read-1-output-1.png 300w,
+/static/778475e07da59d8f988b45c509be4e09/0b533/zoom-in-matrix-1-1-read-1-output-1.png 500w&quot;
+        sizes=&quot;(max-width: 500px) 100vw, 500px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;/details&gt;
 &lt;p&gt;enable 된 두 선의 교점에 있는 래치만 동작시키고, 나머지는 동작하지 않도록 해야 한다.&lt;/p&gt;
 &lt;p&gt;그러기 위해서, 믿음직한 AND 회로를 사용한다.&lt;/p&gt;
 &lt;p&gt;AND 회로는 열과 행이 모두 1이 되어야 1을 출력해서,&lt;br&gt;
@@ -1143,7 +1943,7 @@ Gated Latch 전체를 한 상자로 만들어버리자.&lt;/p&gt;
 &lt;p&gt;나머지 래치들은 단순히 데이터 선의 값들을 무시해버린다.&lt;/p&gt;
 &lt;p&gt;그것들은 쓰기가 가능하지 않으니까 말이다.&lt;/p&gt;
 &lt;p&gt;같은 방법으로 하나의 read enable 선을 사용해서 하나의 래치를 콕 찍어서 데이터를 읽어올 수 있다.&lt;/p&gt;
-&lt;h2 id=&quot;-3&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#-3&quot; aria-label=&quot; 3 permalink&quot; class=&quot;anchor-header before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&quot;&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#&quot; aria-label=&quot; permalink&quot; class=&quot;anchor-header before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;정리하면, 256비트 메모리를 위해서 총 35개의 선만 사용하면 된다.&lt;/p&gt;
 &lt;p&gt;데이터 선 1개, write enable 1개, read enable 1개, 래치 선택을 위한 16개의 행 선과 16개의 열 선.&lt;/p&gt;
 &lt;p&gt;엄청나게 선의 수를 줄일 수 있다.&lt;/p&gt;
@@ -1161,14 +1961,14 @@ Gated Latch 전체를 한 상자로 만들어버리자.&lt;/p&gt;
 &lt;p&gt;특정한 행이나 열을 선택한 주소로 변환하기 위해서는 멀티플렉서라고 하는 특별한 부품이 필요하다.&lt;/p&gt;
 &lt;p&gt;적어도 ALU에 비교하면 꽤 멋진 이름을 가진 컴퓨터 부품이다.&lt;/p&gt;
 &lt;p&gt;멀티플렉서는 어떤 크기도 가능하지만, 여기서는 행이 16개니까, 1 to 16 멀티플렉서가 필요하다.&lt;/p&gt;
-&lt;h2 id=&quot;-4&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#-4&quot; aria-label=&quot; 4 permalink&quot; class=&quot;anchor-header before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&quot;-1&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#-1&quot; aria-label=&quot; 1 permalink&quot; class=&quot;anchor-header before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;이렇게 동작한다.&lt;/p&gt;
 &lt;p&gt;4비트 숫자를 입력하고, 출력선을 그에 해당하는 출력선에 연결한다.&lt;/p&gt;
 &lt;p&gt;0000을 넣으면, 제일 첫 열을 선택할 것이다.&lt;/p&gt;
 &lt;p&gt;0001을 넣으면, 그 다음 열을 선택할 것이다.&lt;/p&gt;
 &lt;p&gt;다른 수도 마찬가지다.&lt;/p&gt;
 &lt;p&gt;행을 담당하는 멀티플렉서와 열을 담당하는 멀티플렉서가 필요하다.&lt;/p&gt;
-&lt;h2 id=&quot;-5&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#-5&quot; aria-label=&quot; 5 permalink&quot; class=&quot;anchor-header before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&quot;-2&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#-2&quot; aria-label=&quot; 2 permalink&quot; class=&quot;anchor-header before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;좋다. 다시 복잡해지기 시작했다.&lt;/p&gt;
 &lt;p&gt;256비트 메모리를 하나의 부품으로 만들어보자.&lt;/p&gt;
 &lt;p&gt;한 번 더 새로운 추상화 레벨!&lt;/p&gt;
@@ -1180,14 +1980,14 @@ Gated Latch 전체를 한 상자로 만들어버리자.&lt;/p&gt;
 &lt;p&gt;이 선으로 데이터 읽기, 쓰기를 할 것이다.&lt;/p&gt;
 &lt;p&gt;아쉽게도, 256비트 메모리라고 할 지라도 뭔가를 하기에는 충분하지 않다.&lt;/p&gt;
 &lt;p&gt;그래서 더 확장해볼 것이다.&lt;/p&gt;
-&lt;h2 id=&quot;-6&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#-6&quot; aria-label=&quot; 6 permalink&quot; class=&quot;anchor-header before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&quot;-3&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#-3&quot; aria-label=&quot; 3 permalink&quot; class=&quot;anchor-header before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;이것들을 한 열로 붙여보면 레지스터와 같다.&lt;/p&gt;
 &lt;p&gt;8개를 1열로 세웠으니, 8비트 숫자를 저장할 수 있다.&lt;/p&gt;
 &lt;p&gt;8비트는 1바이트다.&lt;/p&gt;
 &lt;p&gt;그럴려면, 8개 모든 256비트 메모리에 정확히 똑같은 주소를 동시에 입력해야 한다.&lt;/p&gt;
 &lt;p&gt;그리고, 각 메모리에는 숫자의 한 비트씩 저장하는 것이다.&lt;/p&gt;
 &lt;p&gt;즉, 방금 만든 부품은 256개의 주소에 256바이트를 저장할 수 있다는 것이다.&lt;/p&gt;
-&lt;h2 id=&quot;-7&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#-7&quot; aria-label=&quot; 7 permalink&quot; class=&quot;anchor-header before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&quot;-4&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#-4&quot; aria-label=&quot; 4 permalink&quot; class=&quot;anchor-header before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;이렇게 복잡한건 치워버리고, 다시 한번 간단하게 만들어보자.&lt;/p&gt;
 &lt;p&gt;일렬로 연결된 메모리 모듈과 회로로 생각하는 대신에,&lt;br&gt;
 주소로 지정 가능한 메모리의 일정한 분할 단위(뱅크) 라고 생각해보자.&lt;/p&gt;
@@ -1195,7 +1995,7 @@ Gated Latch 전체를 한 상자로 만들어버리자.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;이 메모리를 다음 강의에서 만들어 볼 CPU에 사용할 것이다.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h2 id=&quot;-8&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#-8&quot; aria-label=&quot; 8 permalink&quot; class=&quot;anchor-header before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&quot;-5&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#-5&quot; aria-label=&quot; 5 permalink&quot; class=&quot;anchor-header before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;요즘 컴퓨터에서 메모리를 메가바이트와 기가바이트로 확장하는 방법도 여기서 배운 것과 동일하다.&lt;/p&gt;
 &lt;p&gt;작은 메모리 묶음을 크고 크고 더 큰 배열로 묶는 것이다.&lt;/p&gt;
 &lt;p&gt;메모리 위치의 수가 증가하면, 주소도 증가해야 한다.&lt;/p&gt;
@@ -1205,11 +2005,11 @@ Gated Latch 전체를 한 상자로 만들어버리자.&lt;/p&gt;
 &lt;p&gt;오늘 배운 메모리의 중요한 특성은 언제, 어느 위치든 무작위 순서로 접근이 가능하다는 것이다.&lt;/p&gt;
 &lt;p&gt;그래서 임의 접근 메모리(Random Access Memory), RAM이라고 부르는 것이다.&lt;/p&gt;
 &lt;p&gt;컴퓨터에 얼마나 큰 RAM을 달았는지 얘기하는 것은 컴퓨터 메모리를 말하는 것이다.&lt;/p&gt;
-&lt;h2 id=&quot;-9&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#-9&quot; aria-label=&quot; 9 permalink&quot; class=&quot;anchor-header before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&quot;-6&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#-6&quot; aria-label=&quot; 6 permalink&quot; class=&quot;anchor-header before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;RAM은 인간의 단기 또는 활동 중인 기억과 비슷하다.&lt;/p&gt;
 &lt;p&gt;사람은 일들이 잘 되고 있는지 계속 추적하고 있어야 한다.&lt;/p&gt;
 &lt;p&gt;내가 점심을 먹었는지, 전화 요금을 냈는지 하는 것들 말이다.&lt;/p&gt;
-&lt;h2 id=&quot;-10&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#-10&quot; aria-label=&quot; 10 permalink&quot; class=&quot;anchor-header before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&quot;-7&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#-7&quot; aria-label=&quot; 7 permalink&quot; class=&quot;anchor-header before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;이게 진짜 막대기 모양의 RAM이다.&lt;/p&gt;
 &lt;p&gt;보드에 8개의 메모리가 납땜되어 있다.&lt;/p&gt;
 &lt;p&gt;메모리 모듈 한 개를 조심스럽게 열어서 확대해보면, 가장 먼저 32개의 메모리 사각형이 보인다.&lt;/p&gt;

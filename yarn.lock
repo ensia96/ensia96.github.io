@@ -1125,9 +1125,9 @@
     tslib "~2.0.1"
 
 "@graphql-tools/utils@^7.0.0", "@graphql-tools/utils@^7.0.2", "@graphql-tools/utils@^7.1.2", "@graphql-tools/utils@^7.1.5", "@graphql-tools/utils@^7.1.6", "@graphql-tools/utils@^7.2.1", "@graphql-tools/utils@^7.5.0":
-  version "7.5.2"
-  resolved "https://registry.yarnpkg.com/@graphql-tools/utils/-/utils-7.5.2.tgz#34b676a734eeed6064ba598b132d8018f539501c"
-  integrity sha512-/ml6AUCmtjvvxR9JX9/xyV52759SqbFR74K8i+AzyOzqM3Ns0c0ZpBFdIMiKzh6UYULPsoHblzfj0ES1yrrtGw==
+  version "7.6.0"
+  resolved "https://registry.yarnpkg.com/@graphql-tools/utils/-/utils-7.6.0.tgz#ac570a2b5a9bcd5d6446995f58ba22609e01ca7d"
+  integrity sha512-YCZDDdhfb4Yhie0IH031eGdvQG8C73apDuNg6lqBNbauNw45OG/b8wi3+vuMiDnJTJN32GQUb1Gt9gxDKoRDKw==
   dependencies:
     "@ardatan/aggregate-error" "0.0.6"
     camel-case "4.1.2"
@@ -1794,9 +1794,9 @@
     form-data "^3.0.0"
 
 "@types/node@*", "@types/node@^14.14.10":
-  version "14.14.33"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-14.14.33.tgz#9e4f8c64345522e4e8ce77b334a8aaa64e2b6c78"
-  integrity sha512-oJqcTrgPUF29oUP8AsUqbXGJNuPutsetaa9kTQAQce5Lx5dTYWV02ScBiT/k1BX/Z7pKeqedmvp39Wu4zR7N7g==
+  version "14.14.34"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-14.14.34.tgz#07935194fc049069a1c56c0c274265abeddf88da"
+  integrity sha512-dBPaxocOK6UVyvhbnpFIj2W+S+1cBTkHQbFQfeeJhoKFbzYcVUGHvddeWPSucKATb3F0+pgDq0i6ghEaZjsugA==
 
 "@types/node@^8.5.7":
   version "8.10.66"
@@ -15338,9 +15338,9 @@ yaml-loader@^0.6.0:
     yaml "^1.8.3"
 
 yaml@^1.7.2, yaml@^1.8.3:
-  version "1.10.0"
-  resolved "https://registry.yarnpkg.com/yaml/-/yaml-1.10.0.tgz#3b593add944876077d4d683fee01081bd9fff31e"
-  integrity sha512-yr2icI4glYaNG+KWONODapy2/jDdMSDnrONSjblABjD9B4Z5LgiircSt8m8sRZFNi08kG9Sm0uSHtEmP3zaEGg==
+  version "1.10.1"
+  resolved "https://registry.yarnpkg.com/yaml/-/yaml-1.10.1.tgz#bb13d805ed104fba38f533570f3441027eeeca22"
+  integrity sha512-z/asvd+V08l1ywhaemZVirCwjdzLo6O1/0j2JbYCsGjiezupNQqjs5IIPyNtctbHjPEckqzVGd4jvpU5Lr25vQ==
 
 yargs-parser@^13.1.2:
   version "13.1.2"

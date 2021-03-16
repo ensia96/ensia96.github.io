@@ -1,4 +1,399 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[춤추는 기술 블로그]]></title><description><![CDATA[어서오세요! 춤추는 망고의 기술 블로그입니다!]]></description><link>https://ensia96.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 15 Mar 2021 11:17:46 GMT</lastBuildDate><item><title><![CDATA[20210315-TIL]]></title><description><![CDATA[오늘 한 일 Crash Course 내용 정리 ‘7’ 의 내용 정리를 마무리했다. ‘8’ 의 내용을 모두 받아 적었다. ‘…]]></description><link>https://ensia96.github.io/TIL/2021/03/15~21/20210315-til/</link><guid isPermaLink="false">https://ensia96.github.io/TIL/2021/03/15~21/20210315-til/</guid><pubDate>Mon, 15 Mar 2021 20:14:48 GMT</pubDate><content:encoded>&lt;h1 id=&quot;오늘-한-일&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%98%A4%EB%8A%98-%ED%95%9C-%EC%9D%BC&quot; aria-label=&quot;오늘 한 일 permalink&quot; class=&quot;anchor-header before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;오늘 한 일&lt;/h1&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[춤추는 기술 블로그]]></title><description><![CDATA[어서오세요! 춤추는 망고의 기술 블로그입니다!]]></description><link>https://ensia96.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 16 Mar 2021 14:39:20 GMT</lastBuildDate><item><title><![CDATA[20210316-TIL]]></title><description><![CDATA[오늘 한 일 프로그래머스 알고리즘 문제를 풀었다. ‘베스트앨범’ 이라는 문제를 풀었다. 여러 조건에 맞춰 정렬하는 문제였다. 클래스를 활용하는 풀이가 인상깊었다. Crash Course 내용 정리 ‘…]]></description><link>https://ensia96.github.io/TIL/2021/03/15~21/20210316-til/</link><guid isPermaLink="false">https://ensia96.github.io/TIL/2021/03/15~21/20210316-til/</guid><pubDate>Tue, 16 Mar 2021 23:37:18 GMT</pubDate><content:encoded>&lt;h1 id=&quot;오늘-한-일&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%98%A4%EB%8A%98-%ED%95%9C-%EC%9D%BC&quot; aria-label=&quot;오늘 한 일 permalink&quot; class=&quot;anchor-header before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;오늘 한 일&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;프로그래머스 알고리즘 문제를 풀었다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;‘베스트앨범’ 이라는 문제를 풀었다.&lt;/li&gt;
+&lt;li&gt;여러 조건에 맞춰 정렬하는 문제였다.&lt;/li&gt;
+&lt;li&gt;클래스를 활용하는 풀이가 인상깊었다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Crash Course 내용 정리&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;‘1. 두 수를 더하는 프로그램’ 까지 정리했다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;CPU에서 프로그램이 실행되는 과정을 살펴봤다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;지난 수업(6) 에서 사용한 프로그램을 복습했다.&lt;/li&gt;
+&lt;li&gt;2진수 값을 명령 코드와 정보 위치로 바꿔봤다.&lt;/li&gt;
+&lt;li&gt;별도의 해석없이 내용 그대로만 볼 수 있어서 편했다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&quot;생각-정리&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%83%9D%EA%B0%81-%EC%A0%95%EB%A6%AC&quot; aria-label=&quot;생각 정리 permalink&quot; class=&quot;anchor-header before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;생각 정리&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;알고리즘 문제는 정말 알다가도 모르겠다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;레벨 3이길래 훨씬 더 어렵고 복잡한 내용일 줄 알았다.&lt;/li&gt;
+&lt;li&gt;레벨이 낮은 다른 문제들보다 훨씬 더 쉬웠던 것 같다.&lt;br&gt;
+&lt;code class=&quot;language-text&quot;&gt;물론, 쉬움 난이도가 훨씬 어렵게 느껴질 때도 있긴 하다..&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;많은 기대를 하고 문제를 풀었는데, 뭔가 허무했다..&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;주말 사이에 주문한 트랙볼 마우스가 도착했다!&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;그립감, 조작감, 스펙, 디자인, 가격 모두 맘에 든다!&lt;/li&gt;
+&lt;li&gt;처음에는 트랙패드 쓰던 습관 때문에 볼을 꾹꾹 눌렀다..&lt;code class=&quot;language-text&quot;&gt;&amp;lt;(ㅇ -ㅇ);;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;적응하는데 몇 분도 안걸렸고, 손목이 편ㅡ안해졌다 ㅋㅋㅋ&lt;/li&gt;
+&lt;li&gt;
+&lt;details&gt;&lt;summary&gt;동글동글 트랙볼~&lt;/summary&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 1200px; &quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 75%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAPABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABAAD/8QAFgEBAQEAAAAAAAAAAAAAAAAAAQAD/9oADAMBAAIQAxAAAAESC5S23s3/xAAcEAACAQUBAAAAAAAAAAAAAAABAiEAAxESEyL/2gAIAQEAAQUC6QrKaMllGs4tt4//xAAVEQEBAAAAAAAAAAAAAAAAAAAAEf/aAAgBAwEBPwGo/8QAFhEBAQEAAAAAAAAAAAAAAAAAABES/9oACAECAQE/Acq//8QAGhAAAQUBAAAAAAAAAAAAAAAAAAECEBEhMv/aAAgBAQAGPwI4MZkpZ//EABsQAQACAgMAAAAAAAAAAAAAAAEAETFRIWGB/9oACAEBAAE/IV2OPYfs91cDcxAqGZaA4ImxP//aAAwDAQACAAMAAAAQiz//xAAWEQEBAQAAAAAAAAAAAAAAAAAAESH/2gAIAQMBAT8Qqtv/xAAXEQADAQAAAAAAAAAAAAAAAAAAAREh/9oACAECAQE/EHKHGH//xAAeEAEAAgEEAwAAAAAAAAAAAAABABEhMUFRYXGRwf/aAAgBAQABPxCvDyWSCbDoXkdXhiDbYbYIGi689S9HF8hc3D3P/9k=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;20210316 TIL&quot;
+        title=&quot;20210316 TIL&quot;
+        src=&quot;/static/68c6bef8420f873d83738432f2a7d1c2/e5166/20210316-TIL.jpg&quot;
+        srcset=&quot;/static/68c6bef8420f873d83738432f2a7d1c2/f93b5/20210316-TIL.jpg 300w,
+/static/68c6bef8420f873d83738432f2a7d1c2/b4294/20210316-TIL.jpg 600w,
+/static/68c6bef8420f873d83738432f2a7d1c2/e5166/20210316-TIL.jpg 1200w,
+/static/68c6bef8420f873d83738432f2a7d1c2/d9c39/20210316-TIL.jpg 1800w,
+/static/68c6bef8420f873d83738432f2a7d1c2/df51d/20210316-TIL.jpg 2400w,
+/static/68c6bef8420f873d83738432f2a7d1c2/d2602/20210316-TIL.jpg 4032w&quot;
+        sizes=&quot;(max-width: 1200px) 100vw, 1200px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;/details&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&quot;내일-할-일&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EB%82%B4%EC%9D%BC-%ED%95%A0-%EC%9D%BC&quot; aria-label=&quot;내일 할 일 permalink&quot; class=&quot;anchor-header before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;내일 할 일&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Crash Course 내용 정리&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;‘8’ 의 내용 정리를 마무리짓는 것이 목표다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;추가 목표&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;알고리즘 관련 글 옮기기&lt;/li&gt;
+&lt;li&gt;‘About’ 페이지 작성하기&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[프로그래머스 - 베스트앨범(Hash Lv.3)]]></title><description><![CDATA[…]]></description><link>https://ensia96.github.io/Algorithm/프로그래머스---베스트앨범(hash-lv.3)/</link><guid isPermaLink="false">https://ensia96.github.io/Algorithm/프로그래머스---베스트앨범(hash-lv.3)/</guid><pubDate>Tue, 16 Mar 2021 16:20:09 GMT</pubDate><content:encoded>&lt;h2 id=&quot;문제-확인&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EB%AC%B8%EC%A0%9C-%ED%99%95%EC%9D%B8&quot; aria-label=&quot;문제 확인 permalink&quot; class=&quot;anchor-header before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;문제 확인&lt;/h2&gt;
+&lt;details&gt;&lt;summary&gt;펼쳐보기&lt;/summary&gt;
+&lt;h3 id=&quot;문제-설명&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EB%AC%B8%EC%A0%9C-%EC%84%A4%EB%AA%85&quot; aria-label=&quot;문제 설명 permalink&quot; class=&quot;anchor-header before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;문제 설명&lt;/h3&gt;
+&lt;p&gt;스트리밍 사이트에서 장르 별로 가장 많이 재생된 노래를 두 개씩 모아 베스트 앨범을 출시하려 합니다. 노래는 고유 번호로 구분하며, 노래를 수록하는 기준은 다음과 같습니다.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;속한 노래가 많이 재생된 장르를 먼저 수록합니다.&lt;/li&gt;
+&lt;li&gt;장르 내에서 많이 재생된 노래를 먼저 수록합니다.&lt;/li&gt;
+&lt;li&gt;장르 내에서 재생 횟수가 같은 노래 중에서는 고유 번호가 낮은 노래를 먼저 수록합니다.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;노래의 장르를 나타내는 문자열 배열 genres와 노래별 재생 횟수를 나타내는 정수 배열 plays가 주어질 때, 베스트 앨범에 들어갈 노래의 고유 번호를 순서대로 return 하도록 solution 함수를 완성하세요.&lt;/p&gt;
+&lt;h3 id=&quot;제한사항&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%A0%9C%ED%95%9C%EC%82%AC%ED%95%AD&quot; aria-label=&quot;제한사항 permalink&quot; class=&quot;anchor-header before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;제한사항&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;genres[i]는 고유번호가 i인 노래의 장르입니다.&lt;/li&gt;
+&lt;li&gt;plays[i]는 고유번호가 i인 노래가 재생된 횟수입니다.&lt;/li&gt;
+&lt;li&gt;genres와 plays의 길이는 같으며, 이는 1 이상 10,000 이하입니다.&lt;/li&gt;
+&lt;li&gt;장르 종류는 100개 미만입니다.&lt;/li&gt;
+&lt;li&gt;장르에 속한 곡이 하나라면, 하나의 곡만 선택합니다.&lt;/li&gt;
+&lt;li&gt;모든 장르는 재생된 횟수가 다릅니다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;입출력-예&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%9E%85%EC%B6%9C%EB%A0%A5-%EC%98%88&quot; aria-label=&quot;입출력 예 permalink&quot; class=&quot;anchor-header before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;입출력 예&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;genres&lt;/th&gt;
+&lt;th&gt;plays&lt;/th&gt;
+&lt;th&gt;return&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;[“classic”, “pop”, “classic”, “classic”, “pop”]&lt;/td&gt;
+&lt;td&gt;[500, 600, 150, 800, 2500]&lt;/td&gt;
+&lt;td&gt;[4, 1, 3, 0]&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&quot;입출력-예-설명&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%9E%85%EC%B6%9C%EB%A0%A5-%EC%98%88-%EC%84%A4%EB%AA%85&quot; aria-label=&quot;입출력 예 설명 permalink&quot; class=&quot;anchor-header before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;입출력 예 설명&lt;/h3&gt;
+&lt;p&gt;classic 장르는 1,450회 재생되었으며, classic 노래는 다음과 같습니다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;고유 번호 3: 800회 재생&lt;/li&gt;
+&lt;li&gt;고유 번호 0: 500회 재생&lt;/li&gt;
+&lt;li&gt;고유 번호 2: 150회 재생&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;pop 장르는 3,100회 재생되었으며, pop 노래는 다음과 같습니다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;고유 번호 4: 2,500회 재생&lt;/li&gt;
+&lt;li&gt;고유 번호 1: 600회 재생&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;따라서 pop 장르의 [4, 1]번 노래를 먼저, classic 장르의 [3, 0]번 노래를 그다음에 수록합니다.&lt;/p&gt;
+&lt;p&gt;※ 공지 - 2019년 2월 28일 테스트케이스가 추가되었습니다.&lt;/p&gt;
+&lt;h3 id=&quot;제공하는-소스-코드&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%A0%9C%EA%B3%B5%ED%95%98%EB%8A%94-%EC%86%8C%EC%8A%A4-%EC%BD%94%EB%93%9C&quot; aria-label=&quot;제공하는 소스 코드 permalink&quot; class=&quot;anchor-header before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;제공하는 소스 코드&lt;/h3&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;python&quot;&gt;&lt;pre class=&quot;language-python&quot;&gt;&lt;code class=&quot;language-python&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;solution&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;genres&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; plays&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+    answer &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; answer&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;출처 :
+&lt;a href=&apos;https://programmers.co.kr/learn/courses/30/lessons/42579&apos; target=&apos;-blank&apos;&gt;프로그래머스&lt;/a&gt;&lt;/p&gt;
+&lt;/details&gt;
+&lt;h2 id=&quot;접근&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%A0%91%EA%B7%BC&quot; aria-label=&quot;접근 permalink&quot; class=&quot;anchor-header before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;접근&lt;/h2&gt;
+&lt;p&gt;문제의 조건을 만족하기 위해선, 정렬을 진행하는 순서가 중요하다고 생각했고,&lt;br&gt;
+&lt;code class=&quot;language-text&quot;&gt;장르 별로 비교한 후에, 장르에 포함되는 곡들을 비교해야 한다.&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;장르는 100개 미만이기 때문에, 장르를 기준으로 정보를 저장하면 될 것이라 생각했다.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;코드를 작성하기 전에 정리한 내용&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;조건&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;가장 많이 재생된 장르&lt;/li&gt;
+&lt;li&gt;가장 많이 재생된 곡&lt;/li&gt;
+&lt;li&gt;재생 횟수가 같다면 작은 고유번호&lt;/li&gt;
+&lt;li&gt;장르 별로 최대 2곡&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;방법&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;장르 순서로 정렬하기 위해 해시 테이블 생성&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;‘genres table’ : &lt;code class=&quot;language-text&quot;&gt;{장르: {재생 횟수: i, 곡 목록: [고유번호]}}&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;모든 곡에 대해서 반복문 수행&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;해당 장르의 횟수 누적&lt;/li&gt;
+&lt;li&gt;해당 장르의 곡 목록 추가&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;장르의 총 재생 횟수로 정렬된 배열 생성&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;‘sorted list’ : &lt;code class=&quot;language-text&quot;&gt;[{재생 횟수:i, 곡 목록: [고유번호]}]&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;정렬된 장르에 대해서 반복문 수행&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;곡 목록의 고유번호들을 재생 횟수로 정렬&lt;/li&gt;
+&lt;li&gt;정렬된 순서에 맞춰 2개의 원소를 정답 배열에 추가&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;검색&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EA%B2%80%EC%83%89&quot; aria-label=&quot;검색 permalink&quot; class=&quot;anchor-header before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;검색&lt;/h2&gt;
+&lt;p&gt;별도의 검색은 하지 않았다.&lt;/p&gt;
+&lt;h2 id=&quot;풀이&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%ED%92%80%EC%9D%B4&quot; aria-label=&quot;풀이 permalink&quot; class=&quot;anchor-header before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;풀이&lt;/h2&gt;
+&lt;details&gt;&lt;summary&gt;1. 주어진 소스 코드에 docstring 을 추가했다.&lt;/summary&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;python&quot;&gt;&lt;pre class=&quot;language-python&quot;&gt;&lt;code class=&quot;language-python&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;solution&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;genres&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; plays&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;token triple-quoted-string string&quot;&gt;&apos;&apos;&apos;
+    input
+        - genres : [노래의 장르] (1 &amp;lt;= [] &amp;lt;= 10,000, 종류 &amp;lt; 100)
+        - plays  : [재생된 횟수] (len(genres))
+    output
+        - answer : [곡 고유번호]
+    &apos;&apos;&apos;&lt;/span&gt;
+    answer &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; answer&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;2. 정보를 저장할 해시 테이블을 선언했다.&lt;/summary&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;python&quot;&gt;&lt;pre class=&quot;language-python&quot;&gt;&lt;code class=&quot;language-python&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;solution&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;genres&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; plays&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;token triple-quoted-string string&quot;&gt;&apos;&apos;&apos;
+    input
+        - genres : [노래의 장르] (1 &amp;lt;= [] &amp;lt;= 10,000, 종류 &amp;lt; 100)
+        - plays  : [재생된 횟수] (len(genres))
+    output
+        - answer : [곡 고유번호]
+    &apos;&apos;&apos;&lt;/span&gt;
+    answer      &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+    genre_table &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+    &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; answer&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;3. 장르 별로 저장할 정보를 해시 테이블에 입력했다.&lt;/summary&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;python&quot;&gt;&lt;pre class=&quot;language-python&quot;&gt;&lt;code class=&quot;language-python&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;solution&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;genres&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; plays&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;token triple-quoted-string string&quot;&gt;&apos;&apos;&apos;
+    input
+        - genres : [노래의 장르] (1 &amp;lt;= [] &amp;lt;= 10,000, 종류 &amp;lt; 100)
+        - plays  : [재생된 횟수] (len(genres))
+    output
+        - answer : [곡 고유번호]
+    &apos;&apos;&apos;&lt;/span&gt;
+    answer      &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+    genre_table &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+    &lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; song&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; play &lt;span class=&quot;token keyword&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;token builtin&quot;&gt;enumerate&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;plays&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+        genre &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; genres&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;song&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; genre &lt;span class=&quot;token keyword&quot;&gt;not&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;in&lt;/span&gt; genre_table&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+            genre_table&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;genre&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;plays&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;songs&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+    &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; answer&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;4. 장르 별 총 재생 횟수를 누적시키고, 곡 목록을 추가했다.&lt;/summary&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;python&quot;&gt;&lt;pre class=&quot;language-python&quot;&gt;&lt;code class=&quot;language-python&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;solution&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;genres&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; plays&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;token triple-quoted-string string&quot;&gt;&apos;&apos;&apos;
+    input
+        - genres : [노래의 장르] (1 &amp;lt;= [] &amp;lt;= 10,000, 종류 &amp;lt; 100)
+        - plays  : [재생된 횟수] (len(genres))
+    output
+        - answer : [곡 고유번호]
+    &apos;&apos;&apos;&lt;/span&gt;
+    answer      &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+    genre_table &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+    &lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; song&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; play &lt;span class=&quot;token keyword&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;token builtin&quot;&gt;enumerate&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;plays&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+        genre &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; genres&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;song&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; genre &lt;span class=&quot;token keyword&quot;&gt;not&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;in&lt;/span&gt; genre_table&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+            genre_table&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;genre&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;plays&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;songs&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+        genre_table&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;genre&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;plays&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;+=&lt;/span&gt; play
+        genre_table&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;genre&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;songs&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;append&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;song&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+    &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; answer&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;5. 해시 테이블의 정보를 정렬하여 배열에 저장했다.&lt;/summary&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;python&quot;&gt;&lt;pre class=&quot;language-python&quot;&gt;&lt;code class=&quot;language-python&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;solution&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;genres&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; plays&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;token triple-quoted-string string&quot;&gt;&apos;&apos;&apos;
+    input
+        - genres : [노래의 장르] (1 &amp;lt;= [] &amp;lt;= 10,000, 종류 &amp;lt; 100)
+        - plays  : [재생된 횟수] (len(genres))
+    output
+        - answer : [곡 고유번호]
+    &apos;&apos;&apos;&lt;/span&gt;
+    answer      &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+    genre_table &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+    &lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; song&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; play &lt;span class=&quot;token keyword&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;token builtin&quot;&gt;enumerate&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;plays&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+        genre &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; genres&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;song&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; genre &lt;span class=&quot;token keyword&quot;&gt;not&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;in&lt;/span&gt; genre_table&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+            genre_table&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;genre&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;plays&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;songs&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+        genre_table&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;genre&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;plays&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;+=&lt;/span&gt; play
+        genre_table&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;genre&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;songs&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;append&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;song&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+    sorted_list &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token builtin&quot;&gt;sorted&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;genre_table&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;values&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; key&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;lambda&lt;/span&gt; x&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; x&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;plays&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; reverse&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token boolean&quot;&gt;True&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+    &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; answer&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;6. 장르 별로 곡 목록을 정렬하여 정답 배열에 추가했다.&lt;/summary&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;python&quot;&gt;&lt;pre class=&quot;language-python&quot;&gt;&lt;code class=&quot;language-python&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;solution&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;genres&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; plays&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;token triple-quoted-string string&quot;&gt;&apos;&apos;&apos;
+    input
+        - genres : [노래의 장르] (1 &amp;lt;= [] &amp;lt;= 10,000, 종류 &amp;lt; 100)
+        - plays  : [재생된 횟수] (len(genres))
+    output
+        - answer : [곡 고유번호]
+    &apos;&apos;&apos;&lt;/span&gt;
+    answer      &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+    genre_table &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+    &lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; song&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; play &lt;span class=&quot;token keyword&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;token builtin&quot;&gt;enumerate&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;plays&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+        genre &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; genres&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;song&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; genre &lt;span class=&quot;token keyword&quot;&gt;not&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;in&lt;/span&gt; genre_table&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+            genre_table&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;genre&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;plays&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;songs&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+        genre_table&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;genre&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;plays&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;+=&lt;/span&gt; play
+        genre_table&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;genre&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;songs&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;append&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;song&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+    sorted_list &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token builtin&quot;&gt;sorted&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;genre_table&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;values&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; key&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;lambda&lt;/span&gt; x&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; x&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;plays&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; reverse&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token boolean&quot;&gt;True&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+    &lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; genre &lt;span class=&quot;token keyword&quot;&gt;in&lt;/span&gt; sorted_list&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+        answer&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;extend&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token builtin&quot;&gt;sorted&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;genre&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;songs&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; key&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;lambda&lt;/span&gt; x&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; plays&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;x&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; reverse&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token boolean&quot;&gt;True&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+    &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; answer&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/details&gt;
+&lt;br&gt;
+&lt;blockquote&gt;
+&lt;details&gt;&lt;summary&gt;같은 동작을 자바스크립트로 코딩해봤다.&lt;/summary&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt; &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token function-variable function&quot;&gt;solution&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;genres&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; plays&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+   &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; answer &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+   &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; genreTable &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+ 
+   plays&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;forEach&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;play&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; song&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+     &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; genre &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; genres&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;song&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+     genreTable&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;genre&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; genreTable&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;genre&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;||&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; plays&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; songs&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+ 
+     genreTable&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;genre&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;plays &lt;span class=&quot;token operator&quot;&gt;+=&lt;/span&gt; play&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+     genreTable&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;genre&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;songs&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;push&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;song&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+   &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+ 
+   Object&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;values&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;genreTable&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+     &lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;sort&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;a&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; b&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; b&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;plays &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt; a&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;plays&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+     &lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;map&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; songs &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; songs&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;sort&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;a&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; b&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; plays&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;b&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt; plays&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;a&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+     &lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;forEach&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;songs&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; songs&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;slice&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;forEach&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;song&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; answer&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;push&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;song&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+ 
+   &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; answer&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+ &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/details&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;배운-것&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EB%B0%B0%EC%9A%B4-%EA%B2%83&quot; aria-label=&quot;배운 것 permalink&quot; class=&quot;anchor-header before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;배운 것&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;값을 비교하며 배열을 구성하는 것보다, 마지막에 한번에 정렬하는 것이 더 낫다.&lt;/li&gt;
+&lt;li&gt;단순한 구조라면 객체를 선언하고 키에 값을 넣는 것보다, 한번에 선언하는 것이 더 낫다.&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;다른 사람의 풀이를 보고, 정렬 가능한 클래스를 구현하는 방법을 배웠다.&lt;/p&gt;
+&lt;details&gt;&lt;summary&gt;클래스를 활용한 풀이&lt;/summary&gt;
+&lt;ul&gt;
+&lt;li&gt;특정한 구조의 정보를 저장하기 위해 클래스를 사용할 수 있다는 것을 배웠다.&lt;/li&gt;
+&lt;li&gt;정렬에 필요한 메소드를 구성하고, 슬라이싱 대신 횟수를 세는 방식이 인상깊었다.&lt;/li&gt;
+&lt;li&gt;길이는 길지만, 읽기 좋은 코드인 것 같다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;python&quot;&gt;&lt;pre class=&quot;language-python&quot;&gt;&lt;code class=&quot;language-python&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;solution&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;genres&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; plays&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+    answer &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+    dic &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+    album_list &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; i &lt;span class=&quot;token keyword&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;token builtin&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token builtin&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;genres&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+        dic&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;genres&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;i&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; dic&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;get&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;genres&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;i&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; plays&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;i&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+        album_list&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;append&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;album&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;genres&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;i&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; plays&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;i&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; i&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+    dic &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token builtin&quot;&gt;sorted&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;dic&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;items&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; key&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;lambda&lt;/span&gt; dic&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;dic&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; reverse&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token boolean&quot;&gt;True&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+    album_list &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token builtin&quot;&gt;sorted&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;album_list&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; reverse&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token boolean&quot;&gt;True&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+
+
+    &lt;span class=&quot;token keyword&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;token builtin&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;dic&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+        play_genre &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; dic&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;pop&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;play_genre&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+        cnt &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; ab &lt;span class=&quot;token keyword&quot;&gt;in&lt;/span&gt; album_list&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+            &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; play_genre&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;==&lt;/span&gt; ab&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;genre&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+                answer&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;append&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;ab&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;track&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+                cnt &lt;span class=&quot;token operator&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;
+            &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; cnt &lt;span class=&quot;token operator&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+                &lt;span class=&quot;token keyword&quot;&gt;break&lt;/span&gt;
+
+    &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; answer
+
+&lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;album&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;__init__&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;self&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; genre&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; play&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; track&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+        self&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;genre &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; genre
+        self&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;play &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; play
+        self&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;track &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; track
+
+    &lt;span class=&quot;token keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;__lt__&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;self&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; other&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; self&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;play &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt; other&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;play
+    &lt;span class=&quot;token keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;__le__&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;self&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; other&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; self&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;play &lt;span class=&quot;token operator&quot;&gt;&amp;lt;=&lt;/span&gt; other&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;play
+    &lt;span class=&quot;token keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;__gt__&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;self&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; other&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; self&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;play &lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; other&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;play
+    &lt;span class=&quot;token keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;__ge__&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;self&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; other&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; self&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;play &lt;span class=&quot;token operator&quot;&gt;&gt;=&lt;/span&gt; other&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;play
+    &lt;span class=&quot;token keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;__eq__&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;self&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; other&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; self&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;play &lt;span class=&quot;token operator&quot;&gt;==&lt;/span&gt; other&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;play
+    &lt;span class=&quot;token keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;__ne__&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;self&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; other&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; self&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;play &lt;span class=&quot;token operator&quot;&gt;!=&lt;/span&gt; other&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;play&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/details&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[20210315-TIL]]></title><description><![CDATA[오늘 한 일 Crash Course 내용 정리 ‘7’ 의 내용 정리를 마무리했다. ‘8’ 의 내용을 모두 받아 적었다. ‘…]]></description><link>https://ensia96.github.io/TIL/2021/03/15~21/20210315-til/</link><guid isPermaLink="false">https://ensia96.github.io/TIL/2021/03/15~21/20210315-til/</guid><pubDate>Mon, 15 Mar 2021 20:14:48 GMT</pubDate><content:encoded>&lt;h1 id=&quot;오늘-한-일&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%98%A4%EB%8A%98-%ED%95%9C-%EC%9D%BC&quot; aria-label=&quot;오늘 한 일 permalink&quot; class=&quot;anchor-header before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;오늘 한 일&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;Crash Course 내용 정리&lt;/p&gt;
@@ -1428,7 +1823,8 @@ Youtube 채널
 에서 제공하는 
 ‘Computer Science’
 수업을 바탕으로 작성되었습니다. ( 사진 속 인물은
-‘Carrie Anne Philbin…]]></description><link>https://ensia96.github.io/Crash-Course/8.-명령어와-프로그램/</link><guid isPermaLink="false">https://ensia96.github.io/Crash-Course/8.-명령어와-프로그램/</guid><pubDate>Mon, 15 Mar 2021 18:03:03 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+‘Carrie Anne Philbin’
+선생님 입니다! )…]]></description><link>https://ensia96.github.io/Crash-Course/8.-명령어와-프로그램/</link><guid isPermaLink="false">https://ensia96.github.io/Crash-Course/8.-명령어와-프로그램/</guid><pubDate>Mon, 15 Mar 2021 18:03:03 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 500px; &quot;
     &gt;
@@ -1459,61 +1855,281 @@ Youtube 채널
 &lt;a href=&apos;https://about.me/carrieannephilbin&apos; target=&apos;-blank&apos;&gt;‘Carrie Anne Philbin’&lt;/a&gt;
 선생님 입니다! )&lt;/p&gt;
 &lt;/blockquote&gt;
+&lt;h1 id=&quot;0-시작하기에-앞서&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#0-%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0%EC%97%90-%EC%95%9E%EC%84%9C&quot; aria-label=&quot;0 시작하기에 앞서 permalink&quot; class=&quot;anchor-header before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;0. 시작하기에 앞서,&lt;/h1&gt;
+&lt;p&gt;지난 수업에서는 ALU, 제어 장치, 클럭과 기억 장치를 결합해 CPU를 구성해봤고,&lt;br&gt;
+아주 기본적인 구성으로도 여러 기능을 수행할 수 있다는 것을 확인했다.&lt;/p&gt;
+&lt;p&gt;이렇게 각각의 구성 요소들을 전자 회로 단위부터 구성해봤으니,&lt;br&gt;
+이번 수업에서는 실제로 사용되는 명령어들을 CPU로 실행해 볼 것이다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;CPU의 강점은 다른 명령의 조합을 입력할 때마다 다르게 동작한다는 것인데,&lt;br&gt;
+이런 특징을 &lt;strong&gt;‘프로그램밍 가능하다(programmable)’&lt;/strong&gt; 라고 표현한다.&lt;/li&gt;
+&lt;li&gt;따라서, CPU는 소프트웨어로 제어할 수 있는 하드웨어의 일부라고 할 수 있다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&quot;1-두-수를-더하는-프로그램&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#1-%EB%91%90-%EC%88%98%EB%A5%BC-%EB%8D%94%ED%95%98%EB%8A%94-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%A8&quot; aria-label=&quot;1 두 수를 더하는 프로그램 permalink&quot; class=&quot;anchor-header before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;1. 두 수를 더하는 프로그램&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;지난 수업에서 사용했던 간단한 프로그램을 다시 살펴보자.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;details&gt;&lt;summary&gt;1. 기억 장치부터 살펴보자.&lt;/summary&gt;
+&lt;ul&gt;
+&lt;li&gt;각 주소에는 8비트 데이터가 저장되어 있다.&lt;/li&gt;
+&lt;li&gt;앞부분의 4비트는 명령 코드를 나타낸다.&lt;/li&gt;
+&lt;li&gt;나머지 4비트는 메모리 위치를 나타낸다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 700px; &quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 56.333333333333336%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAACkElEQVQoz02T604TURSF5yHURANExUSNFNQmXIKgAQUMTEMrUW6KUZQ2tNQgUAqUKAVssUVaEN/EaFIjKUK1DBqUSygpGNozhfYhlvucmR/+OMkkZ59vr732GunL41OI9xmwOVCEfc81pL0VSL+pBntbCzVQj2yoAYeBJiT9svhWA3VggVpRk5qsQJLe/Hl5Cd9tBYg8OgFp+VkeNgbLsTdmpIIyMJ8OCzbgeF5GwncPnxyd+GjvxPZUC47CMtTZu2AzHFqF1EQZEu5i/HQWItp9GlLMWkDqLuPvKyPY9A0wf42AqXMycu/N2Jh4gM/Oh1hyPsWPkQ7kFpvpzkTQBmpcg/R0JQ48RqEyZsuHFO89hx1XEVJeTZ0auAP1XSMyYTOyBNyeuo9VdytW+nqwPtqJ7KJZ3KmhRhr9NtK+Khy+LiXGFcR7z0JS+gqRGCkmYDmpu0Wd65EJycgsWMTjLQJ+c7Vj2WGDMsKBzQS00KHRg3WalzT27rABayROWqfZE+4SpMlgAQwSMGxCZt4iFG5NEnC4HSvOHihjGvCIA0MmMGrOfDeFmMRwMRT7eV2hW1dIl4y68u6aQosYeXmojYDPoXgI+MEsFHKPxcY5kCt0GaA4CBi3k4dDRTicKNU2TL6oc7qH+siR/g58tVuxRh7mxMhm4TOvZbRp/nZ7SPeQb5lv6GDcSH5Uis3xDXIF/wOXdCAfWQ3Jwhpey+jNwfh1/O6/iNWePEjR7jP49eICLaZESBehpozxrB0vyNj0tiA62IbYQBeU0VYch5u0HFJWmZ7DXfJvnayLPqEcRrpOipRzlTz1qclyioIW7sxsHfb9TdjxmujI2JsmK8hjNkPK/NWiNjl6VaiLWfPFn/IPTlw+Spd1WiYAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;memory&quot;
+        title=&quot;memory&quot;
+        src=&quot;/static/a551a534ef62ff3f806b7841dd04f4c7/8c557/memory.png&quot;
+        srcset=&quot;/static/a551a534ef62ff3f806b7841dd04f4c7/5a46d/memory.png 300w,
+/static/a551a534ef62ff3f806b7841dd04f4c7/0a47e/memory.png 600w,
+/static/a551a534ef62ff3f806b7841dd04f4c7/8c557/memory.png 700w&quot;
+        sizes=&quot;(max-width: 700px) 100vw, 700px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;2. 0번 주소의 값을 살펴보자.&lt;/summary&gt;
+&lt;ul&gt;
+&lt;li&gt;‘0010 1110’ 이라는 값이 저장되어 있다.&lt;/li&gt;
+&lt;li&gt;명령 코드 ‘0010’ 은 ‘LOAD_A’ 를 나타낸다.&lt;/li&gt;
+&lt;li&gt;메모리 위치 ‘1110’ 은 14번 주소를 나타낸다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 700px; &quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 56.333333333333336%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAADBklEQVQozy2T60/TVxjHa+J1Me6NzugqMnzhdJJ4DSAg0s6yyq1UWgsUcE4KvyIU6AWwTo03RsErDm9oTNTsxRLfmPjGewsiFjsH5aIoRu5Lll3wD/jsqezFJ8/3Ocn5nifnfI/q4Z4veFEZS9i1juEfNzB2LIGxk9sYb9Iy0ZzGxGk9E2fTmRQmzohu1glapnzJ9HuTGT60QfZ+TacSxYOixagCJWpeeeJ5c3AzoyfiGfeJ2alvxeA7Ji9kMvWzgT9ac0QLLQYmz2cy4tPz3JXBr4U5tFdoCLvX85tjFf59y1BFnMM1qxk9uJ4pma7Xt4Pg6UxCZ4SWbMIXDHSL0ci5HP6MIGvvfdk8rjHypDoLf5WeXlccfc7VPFNWoAoqK+k5vJlQawbha1n0/ZJLoDWfl7esvLxtpbOtkI62IkLXrfTdKqD/eh7Dzbt44TXwzGGiXTHRXx/PYN03dO2PRhWqjOZ3VzKBskKC1XkEXAXcsRbTV2/m3WETIcduepxmAko+/rJ8uiotvPXl0uXdRXtlHn6bhUHvVoYOxBIs/wpV2B3NXbOGimV2qtWllC4pxy7as6IUp/TuqBkcagX7UjtHYkt4fdI0Y+iwyEG7xTCRofpYuvfHoOp3r+SmUUfiZ3VoP3eTushDykKPVPenXrPof0QnLailIKaKgYjhAaNMaKbdbpqZUAyDFWLY61RzI1tHwmwv2xd4SJpbS+KcOpKlpsx3kzLP/alum+chblYtFrUYnsilw2PkoWLhic3MgDeBwdq1dJXLHXaXf8m9ojiOJ+bjS7XSkFpMg2YvDdp9NOpKaEqLYBNt47imjEvGvQw1GAg4s3mkmHlqy6XXs4Vw5JVt8sr+H5bTU7OK8aNr+cu3ib/PbuWflu38e1HH9JV0pq9m8vFqFh/bsqTPYPryTt43ptPhzJAMCoqeUNVGyWEMT7+XHD4oXkJnWRSvqtcw5N3Ih6MJjMhPGW3UMtqUxtgpvZDOWPNOQXSTjpGftAwc0kgSkgjVbJEkrOG5ZPC+/JT/AH7xFthu5/XZAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;address 0&quot;
+        title=&quot;address 0&quot;
+        src=&quot;/static/e200a9db442d3be0d6730d3722dbb619/8c557/address-0.png&quot;
+        srcset=&quot;/static/e200a9db442d3be0d6730d3722dbb619/5a46d/address-0.png 300w,
+/static/e200a9db442d3be0d6730d3722dbb619/0a47e/address-0.png 600w,
+/static/e200a9db442d3be0d6730d3722dbb619/8c557/address-0.png 700w&quot;
+        sizes=&quot;(max-width: 700px) 100vw, 700px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;3. 이 값을 명령어의 내용으로 바꿔서 생각해보자.&lt;/summary&gt;
+&lt;ul&gt;
+&lt;li&gt;‘00101110’ 보다 읽기도 쉽고, 한 눈에 알아볼 수 있다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 700px; &quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 56.333333333333336%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAADAklEQVQozy2Sy0/TWRzFO4mOkhhnozPR4aUsfAwk6qgICkibKYFCKVgKUiyGAH2gFmx/BamORlGwhSgDEqL4SNS4MHEzyWwUH7TIo1gUC4gYjFChJmacwT/g421xcXLOd3HPPfd7j6z38M8MW5MI2BOZObWd4LkUgs3pfHQpmG/NYr4tm/lLKhYuqwQL3aoUUBBypTHRmBY5E7BvZtASxyPDGmSeqmheOvbw9uRO5pqShZEwa1Ow0J5NqFNN6IqGTwKhzgIWOjQs/JXHrDuHQXsu9w0FeI/KCUjbGLUm0Fe5DtmAOZaAbRNz4qaQSDfm/gPfpTz8YXSoCXRqGBGYbdfwub2Az0K/d+XTay2k16zliTGf19Juxu2beG6OQeYzxzF2eif+rlwC19WM39Pi6dLz4k4Z/rtlDPQcor/HgP9GGeN39EzcLGWm9QDDTg391iK8piLx9BSmGn5juCYemd8azyt7Gh7TIXx1B/HY9TwoK2f8hI53p4vwW4sZs+nwmEvpM5UyeKyEdy4tQ84DeIXuM5bwxpnKdGMSvpoNyAJSPH8Xyzm6zkJdtBHj2hosQjtijNjELMUuwRptxvKLhTNJVUxdKBIJhaG1RAQpXjI8kcTIkY3IJqQ4bhcq2RvVgOInO5mrHWSscgiWxCwhX/0dQu+Lqke/sZZJYTjUWCgS6vBadEw2hg0T8YUNA7YYbuUrSVnmZH+Ug30/1pO6vCHCGSslMlZIEU5f4SD5h3pKooXheS1eR/hTinlarYvs8E39VobCOxyp+ZV/DMk07S3FlamnObOcFnkFzYpKXMoq3FnVEVxUVtMkN9FdWMF0iwaPLZ/HZh3PqrW8duyKNOW5UfxyX+V6xo4n8PHsVv51/c6Xy6n817Gf/7uVLF5TsdiTJ1jN1x41i1eFvprD+xYV/TaV6GAuXnM2/todjNYm8KxC9PCRYS0Dplhe1m1h2rmDD2dTmL2QztxFBUF3FsG2HIKtqiWEtVvJbIuCyT/loglpjNbtwn9sC4Oigw/L1/ANc5IW2kTgrEIAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;address 0 change&quot;
+        title=&quot;address 0 change&quot;
+        src=&quot;/static/8ad0dbf88308e807cccdc035075b77b8/8c557/address-0-change.png&quot;
+        srcset=&quot;/static/8ad0dbf88308e807cccdc035075b77b8/5a46d/address-0-change.png 300w,
+/static/8ad0dbf88308e807cccdc035075b77b8/0a47e/address-0-change.png 600w,
+/static/8ad0dbf88308e807cccdc035075b77b8/8c557/address-0-change.png 700w&quot;
+        sizes=&quot;(max-width: 700px) 100vw, 700px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;4. 나머지 위치의 값들도 바꿔보자.&lt;/summary&gt;
+&lt;ul&gt;
+&lt;li&gt;이렇게 4개의 명령어로 구성된 프로그램과 3, 14라는 숫자가 저장되어 있다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 700px; &quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 56.333333333333336%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAADA0lEQVQozy2T/U+TZxSG+0fMJVuccTojUzHOTRH5cFAQaQt9i21paSmbgTmnlLYUoYDLkhnm+HCoNZu4X8wWk80YTcyWGKBCce1LK1TChxBUDNgCfvwN106LP5w8T97kvp77Pec+muG694m5s5nx7+H5uc94+WMuyZ8KSfZoSfWWkbpYzmq/PlOpX3Ty7aiUlrXuAubaCzKamZYs1O+2MFT7Hpqxhs1MnT3EYucXrJzPIfnzEVJ9AusvZy1YydpVZaOCJlavyHm5guUeHarfwC2XiYeNxQLcR6JpO+H6D9BEv93CtD+LFz98zvr5XGYvlqD2VJAQYSJoZPqyiYmgwvIlhTdXqli/amKp28hwUxVDp8w8OKkw3XKQ2eadRE59hCZ2+mPmW3fzrCuP6etG4r9bmbppIzrgZOIPJ5N/Onl4zUXihpOFARuvxelS73FiHQqRJguRM1Xy67kstO1m/PRWNI/c23nakc2T9iJCJ2uJNNYw4nPyt+MrVG8NU63VhBocDNY7UX123vy2AYwGLIyfVRj3GUSbx2J7NnExp5lwf8LTc3uZ931JWGthrMTM7Rw7f+U4iJSIsPQ4Ia2V+3nVxFwW3g68A7ZZiLUpxP06AeazGMjm0Zlt4rBRHHaKQ98RBo/ZGNFbuVdq51aRk5BeICYzg+U2/tXaUE9YM8AXfWYirWZxWEm8RYABcRjYQzwNTPdwIbCLOU8hIQGNlFVzp9DBzdxabuc7eFBq5Z8iO3cP1xCtE+B1AfZWMdpsJuxViHp1zAUOyxx2bfQwPeVZydF8yyGm6vU8bqhgpNZMyFXNsMtO+Gsboyfs3HfU8NhvlR4qLPUYGfWaGPNUoHrKMlOeSU/5m81owvUfkvDuYLFjL8muA6z25rPeX8yr4DERG3j9a6WcRt5eM0pkjJJDA88v6Pmv2SDuylDdWiY8+0l4tsnDksOhuk2o6Sz6snjWuZ8V2ZSVrkJedmtlWzY2Jdmny1T6nuo7yvIFLU++L2Y2UMCk9yCT7k9RJYODrk38D/VKLkwOAJobAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;memory change&quot;
+        title=&quot;memory change&quot;
+        src=&quot;/static/69eb67800057c378216ac89eb2ac700f/8c557/memory-change.png&quot;
+        srcset=&quot;/static/69eb67800057c378216ac89eb2ac700f/5a46d/memory-change.png 300w,
+/static/69eb67800057c378216ac89eb2ac700f/0a47e/memory-change.png 600w,
+/static/69eb67800057c378216ac89eb2ac700f/8c557/memory-change.png 700w&quot;
+        sizes=&quot;(max-width: 700px) 100vw, 700px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;/details&gt;
+&lt;br&gt;
+&lt;p&gt;이제, 프로그램을 차근차근 실행해보자.&lt;/p&gt;
+&lt;details&gt;&lt;summary&gt;1. 첫번째 명령어 &apos;LOAD_A 14&apos; 를 실행한다.&lt;/summary&gt;
+&lt;ul&gt;
+&lt;li&gt;14번 주소의 값 ‘3’ 을 레지스터A에 읽어들인다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 700px; &quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 56.333333333333336%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAADAUlEQVQoz0WTy1ObVRiH80eoMx1FKy4cpZ0O1aItojVpTRtCyeX7CFCm1U4LQwMJIYRcoCGFAgmUXtCFC7eu3DqjVRhbSkI+EkIoSQgWkhQrxYUL/4LHt3Hh4syczXnO7/K+usXLr5FyHyXvq6N8o579Wx/zPPYppfkzlL8x8uzr8xzcN3Ew38zBvfO8mPuCF7cNHMw0UQg1UQrXkxt6l2TvmyxcegXd42uvs+Y9Rd7fQClykvLEaZ5OGVmeshKfsZOeVXl+18azOzYqc1a5t1COmkj6zPxwycpyv56cr571gXdYunoIndZbw4rzGAvden7paSY+aObn6yqrAZUHfV1ooQ4WBruIBzpJjnSwNubgyU07i24bC70Kv3Vb2PQ1kBeVCWHp0n2HSbmOsxn4hM1RA7kxE9kbNvK3VHnYTn5SZXPCwe6Mwu8xhe2Yyh93rfKRlYRbJeG0ifWTFAN1aMLSrbtrJcMTbAx/xsaIkY3wBVKjKkv+i6Kok+K0ymPfRVaCnWij7VXonthPiAPNb0EbbGYr1MjT0FFSzrfRZT21JPs+Iu01sBU+QzrYKorsfP/lVzxwdfH3t61sRLrYnuogO95WzXL/vo2VwMtYLKSG/gem+2pF4YAodJ1AG9CT8RtZC7Wgjaj86BRIVBWghexNR/WeHXdIhu1kwg6WfQqrfnEzZGIrKMDgEVL9Akz3Hybtrifh+pyfei5QmjbyJGJhfayNnVmF3dtKFRIPdpCJOChMqRQmFR56JBaPhRWPSTI8RdH/PppTMtSu1xDvPUY5/AGViSb2ogb+nDvHX/Mt/5UQVfjnu1b27tnJSMMJAT/yOljyWogPmUkOGqst57zScvcb6OLXDvGw+wir7ga2RxophvUUI0Z2ps3E/W0sD7ezE7OzPS0WQ21oQYXEsMyf14zmNZJ0G8gMHOdluY+uyBwuXn6VRM9bpF11FPwfsjPWyO74aUqTZ6lEz1GZMVGOmaunEpONuXOW/Vk9Bfk4F2wi42kg435PNqWGX2VT/gVU8DGQizLsEgAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;load a 14&quot;
+        title=&quot;load a 14&quot;
+        src=&quot;/static/a1810911092cf6181cea346039303cfc/8c557/load-a-14.png&quot;
+        srcset=&quot;/static/a1810911092cf6181cea346039303cfc/5a46d/load-a-14.png 300w,
+/static/a1810911092cf6181cea346039303cfc/0a47e/load-a-14.png 600w,
+/static/a1810911092cf6181cea346039303cfc/8c557/load-a-14.png 700w&quot;
+        sizes=&quot;(max-width: 700px) 100vw, 700px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;2. 다음 명령어인 &apos;LOAD_B 15&apos; 를 실행한다.&lt;/summary&gt;
+&lt;ul&gt;
+&lt;li&gt;15번 주소의 값 ‘14’ 을 레지스터B에 읽어들인다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 700px; &quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 56.333333333333336%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAAC/ElEQVQozyWTTVOTZxSG8yPqdJyWinThWHSstsUqYjUVoyRCSN4QEEZGR0EkmA/IJ5ZEEAlQqeKiXbh11W1nWjswRU1CXvISiIFIFEhEB3Xhor/g8iQunnnO4nmuue/7nKOb7fyclHM/q95qir8cZPvWj7wZP87m9CkK9w28un+W9/eMvJuWc/csb++c5u2vet5N1JELyTv5szKwh2TPV8xc+Axd7MoXLPYfZTVQw2bkCIWRE7y8bSA22kx8woo2aePNbxZeTVko3rFI3UghaiQ5YOLPC83E+vQC/JYl59c8ubwTnXqtgvneA8x06/n3qpG4x8Q/12wsBGw8cnSghtqYcbcTD5wnOdjG4pCdZxErs04LM1cV/usyk/UeZrV/DwlRqdMclWL5EFl/Hc+C9ayEG8jcbGJ1VJG7VW4b2RE7G5MKL8YV8lGF16JYDTWTcNpIOCxi/Qj5YDVqbyW6JVeVAH8g4/uJTMhAZqiR1A0bT3ztZUVrY1J725kPnke90VqGbk1ZSYgD1WdG9Rh5HqrlZWg/qd7d6JbdVSQdh9E8ep6HT6EFm8gOW3nYeZFH1zv48EcTmUgH+dttLA+3SJZWtu9ZmA+UYmkiNVACHmNdgJqjCl3aubusUHXpWQoYSA+eEzsKf/UKJGrjw+9mlm/ay/XysB0t3Eo6bCfmVVjwiRtvwyeFgX2kSkCtrxLNeZBE30n+7m5kc8wgoTezFG5hfUIpZ7cogHiwrQzKSQS5WwpzHoWnbjPz7gZywaOs+b/5lKHa8yXxngMUhr6jOFLHVvRntqfO8H7axAtpQH7cxv8PzGzdtZKO2EkI+HG/nTmXjIznHEmXgexADSulLndVoItf2clc1z4WnDXkB2tZC+tZixhYHzMR97cQ87eKUiv5MbE42FKOI+GVDH1GFrynBXiStOsQpeY+viRzONu5g0T3LrS+anL+71kP17IxfIKN0XqK0TMUJxoojJvkGKWWbZmqZ3tSGjgkAx04TtpdQ9q5VzalQjZlBx8BT54xkRBioMoAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;load b 15&quot;
+        title=&quot;load b 15&quot;
+        src=&quot;/static/96b7489610676b1567510c73441e17a9/8c557/load-b-15.png&quot;
+        srcset=&quot;/static/96b7489610676b1567510c73441e17a9/5a46d/load-b-15.png 300w,
+/static/96b7489610676b1567510c73441e17a9/0a47e/load-b-15.png 600w,
+/static/96b7489610676b1567510c73441e17a9/8c557/load-b-15.png 700w&quot;
+        sizes=&quot;(max-width: 700px) 100vw, 700px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;3. 다음 명령어인 &apos;ADD B A&apos; 를 실행한다.&lt;/summary&gt;
+&lt;ul&gt;
+&lt;li&gt;이번에는 더하기 연산을 수행해야 하기 때문에, ALU를 이용한다.&lt;/li&gt;
+&lt;li&gt;두 개의 레지스터에 있는 값을 지정하여 연산을 진행한다.&lt;/li&gt;
+&lt;li&gt;결과 값은 2번째로 지정된 레지스터인 A에 저장된다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 700px; &quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 56.333333333333336%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAAC/klEQVQozyWT3U/bZRiG+0dozOIXjgOdSOY2aHSAkuIsa4uUftAymM7FQSyMtpQWfhQoYzQUCGObHniwY0889cApZB/0k0JbRz8otBQRERM98C+4fKgHT/K+yZs7930996tau/EKSWc9OV8dlakLHM99wNHCR+w//ITKt1oOvrnKyQO9jI6T+1f5c/lTmTZOFlvIT7SwP32B7Og7xB1vsPr5S6jCt15ly3OZ3JiacuBDKndb2QtqCQe7iCya2VyycnTPxG8yB8tdHK10UFnQEx818MP1LsK3NWS975N21vL8qzOoEl+/TmzwPKv9Gn4e0BPxGPjJYWVj3MrjoT4SEz2suvuIjF8j7u9hK2DjxYyZNaeJNYeZJwOdbHvV5EbfJipaqs2hGpLDF8kqzWxPtZEN6EhPmsnNWXlxx04uaGX7ro3yooXdkIXigoXfV0wk/UY2xowkPB3klcsUlToSgzWo0s6zwrCRjLeVzISWzNRn8tjKc19v1dHOvJy9vcSUayQm7eyK4OGKmagkSPhEdMRAYaKJPX89ycG3RNBdy4arkfxMM/vzreJKL2Pm+xtf8ni4j3++65R7L7vzdjKz3cLSzPEDE7HxUyydJEf1FPzN7Cn1bA6dRZVynTpskBiX+PuRml8DAlyx8uNgH8WQVQSNZO7YKIrTzKxNGNpJCcew1yKRJY1XR0ERh8p7JIfE4dZwDQnHJWHUQH65mVKwXaAbSQe6KS1ZKMtsTduIKD2kZmwURDg/Z+HpiIX1ESMxt67KcGfs3f8Znm456jhPyd9IafpjDkMa/lhu56+Hhiqv4oKVfx91cnjfXBWMivAzj40nLhPrLgNxl7a65axHttz/GqrIrTM87Re7TjW7k03sBDTszGgpzRuIjHUT9tkpSR+LsuENf7fUyELU18W6u4O4W0vsdhtbroukXbU8uyk9XPviZaIDb7I5XEd+vEFcNlGebaUcvMJBqJ2DRR2VkKFa5tPzyb0rHC9pKExLoZUWUm41Kec54pL0F/kp/wGfrjJfaIUVYQAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;add b a&quot;
+        title=&quot;add b a&quot;
+        src=&quot;/static/7380f168ce39d406bd167671e5c36675/8c557/add-b-a.png&quot;
+        srcset=&quot;/static/7380f168ce39d406bd167671e5c36675/5a46d/add-b-a.png 300w,
+/static/7380f168ce39d406bd167671e5c36675/0a47e/add-b-a.png 600w,
+/static/7380f168ce39d406bd167671e5c36675/8c557/add-b-a.png 700w&quot;
+        sizes=&quot;(max-width: 700px) 100vw, 700px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;/details&gt;
+&lt;details&gt;&lt;summary&gt;4. 마지막 명령어인 &apos;STORE_A 13&apos; 을 실행한다.&lt;/summary&gt;
+&lt;ul&gt;
+&lt;li&gt;이번에는 레지스터A에 있는 값을 13번 주소에 써넣는다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 700px; &quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 56.333333333333336%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAADAUlEQVQozy2T3U/bZRiG+0e4qDEosgOnjMzN0LixzdkJHbSDfv0oMHTTOCZQKC2UfhHasTW03dDJDozx3BNPTXSGxQ379WtLaWFlRT7a4WR4oIl/weWzzoM373Pwvneu576fR3P/ysvknC2Up5upzh5n/+b7PI2dZXexnepdPbW7nRzc6eJg0SB3J89ud/Bs4TwH8TNsBOSd/Hk0dYTM8OssfXIITeLqa6xMnqLs1bIbPkn1xjm2InoSETPJuJX8LYWnX1l48qWF2oJZ6m6q0S4yU0Z++NhMYkzHI8+7rDoPs/z5q2jUkQbSo8dYGtLxyxcGkm4jP48oZH0K9xyDqIF+ltyDJH0DZIL9rITsrIWtLDktLA3b+HXIxLpHS3nyLVLDDWjyjkZp+QTr3rOs+TsohzpZnbFSvqlQut5HOaKwfsPOTtzG7zEbm1EbfwixGjCTciqkHBZp/SSbvmbU0UY0q84mEWyl5PmAUkBPabab3IzCsveSEA1QiUrtuUTKP0B2po8tEd0TwZR0oHpNqG4DjwNtbAVayI2+iaboaiLj0JKf1PE49BF5f48QWfn+yqfcGx/kn29NlMKDVCIDFOd6617uf20h7XtuSw+5qS4RPM2Wv4W8o0kIJ4RwvJXshI6CT08heBE1qPCj+LcpdH9/Y6J43V6vi3N2VmbtFMTHhMeGOt39v6AQ+o+SGxPB/Fgjeedx0mMf8tO1bnbn9ayFTKyGe9mWhHdu20SkT0LppxC2szGvsBGx8dBt4zdXD2lXl3h4ior3nRceqpJMcuSYzOB71OZOsxfV8efCBf5aNL4IIabw73c97N2x1slSkvoD93NCEymPgYyrg/UprcyipDwkKSevvsKDoaNknVo2g21UQjoqYT3b80aS3l4S3j62Y9Z6utlgL6rfRnrazLLrotDppbPzrEycoDhxmIefyRzev3yI1LU3yI83s+FrZTvUxs7cOXYi7dSiF3gSN1CNGeunFpeNWWhn/5YEOKuj7D9DwaWl4HxbNqVBNuUl/gNYizGUmprCOwAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;store a 13&quot;
+        title=&quot;store a 13&quot;
+        src=&quot;/static/eeeac199e36462a5019b8d0de4d8b75f/8c557/store-a-13.png&quot;
+        srcset=&quot;/static/eeeac199e36462a5019b8d0de4d8b75f/5a46d/store-a-13.png 300w,
+/static/eeeac199e36462a5019b8d0de4d8b75f/0a47e/store-a-13.png 600w,
+/static/eeeac199e36462a5019b8d0de4d8b75f/8c557/store-a-13.png 700w&quot;
+        sizes=&quot;(max-width: 700px) 100vw, 700px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;/details&gt;
+&lt;br&gt;
+&lt;p&gt;이렇게 2개의 숫자를 더하는 프로그램을 실행해봤다.&lt;/p&gt;
 &lt;br&gt;
 &lt;p&gt;&lt;strong&gt;&amp;#x3C;작성 중인 글입니다.&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;&amp;#x3C;아래 내용은 정리 중입니다.&gt;&lt;/strong&gt;&lt;/p&gt;
-&lt;h1 id=&quot;0-시작하기에-앞서&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#0-%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0%EC%97%90-%EC%95%9E%EC%84%9C&quot; aria-label=&quot;0 시작하기에 앞서 permalink&quot; class=&quot;anchor-header before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;0. 시작하기에 앞서,&lt;/h1&gt;
-&lt;p&gt;지난 수업에서 ALU, 제어 장치, 약간의 메모리, 그리고 클럭을 합쳐서&lt;br&gt;
-기본적이지만 동작 가능한 중앙 처리 장치(CPU) 를 만들어봤다.&lt;/p&gt;
-&lt;p&gt;컴퓨터의 똑딱거리는 심장이 뛰는 것이다.&lt;/p&gt;
-&lt;p&gt;이 많은 부품에 대해서 전자 회로에서부터 차례대로 알아가는 어려운 일을 해왔다.&lt;/p&gt;
-&lt;p&gt;이제 우리 CPU에게 실제로 처리할 명령어들을 줄 시간이다.&lt;/p&gt;
-&lt;p&gt;CPU를 강력하게 만드는 점은 프로그램이 가능하다(programmable)는 것이다.&lt;/p&gt;
-&lt;p&gt;명령어의 순서를 바꾸면, CPU는 다른 일을 수행한다.&lt;/p&gt;
-&lt;p&gt;그래서, CPU는 변경하기 쉬운 소프트웨어(software)로 제어가 가능한 하드웨어(hardware) 조각이다.&lt;/p&gt;
-&lt;h1 id=&quot;1-cpu-동작-복습하기&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#1-cpu-%EB%8F%99%EC%9E%91-%EB%B3%B5%EC%8A%B5%ED%95%98%EA%B8%B0&quot; aria-label=&quot;1 cpu 동작 복습하기 permalink&quot; class=&quot;anchor-header before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;1. CPU 동작 복습하기&lt;/h1&gt;
-&lt;p&gt;지난 수업에서 차근차근 살펴본 간단한 프로그램을 빠르게 복습해보자.&lt;/p&gt;
-&lt;p&gt;컴퓨터 메모리는 이렇게 생겼다.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;각 주소에는 8비트 데이터가 저장되어 있다.&lt;/li&gt;
-&lt;li&gt;우리가 구성한 CPU에서 첫 4비트는 명령 코드를 나타낸다.&lt;/li&gt;
-&lt;li&gt;다음 4비트는 메모리 주소나 레지스터를 나타낸다.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;메모리 주소 0에는 0010 1110 이 있다.&lt;/p&gt;
-&lt;p&gt;다시 설명하면, 명령 코드인 첫번째 4비트는 ‘LOAD_A’ 명령어라는 뜻이다.&lt;/p&gt;
-&lt;p&gt;이 명령어는 다음 4비트에 적혀있는 메모리 주소에서 데이터를 읽어와서,&lt;br&gt;
-레지스터A에 저장하는 것이다.&lt;/p&gt;
-&lt;p&gt;여기서 메모리 주소는 1110(14) 다.&lt;/p&gt;
-&lt;p&gt;이제 메모리 주소 0에 ‘0010 1110’ 대신 ‘LOAD_A 14’ 명령어가 있다고 하자.&lt;/p&gt;
-&lt;p&gt;이게 훨씬 읽기도 쉽고, 이해하기도 쉽다.&lt;/p&gt;
-&lt;p&gt;Carrie Anne 선생님이 말하기도 편하다 ㅎ.&lt;/p&gt;
-&lt;p&gt;메모리의 나머지 정보들도 똑같이 바꿀 수 있다.&lt;/p&gt;
-&lt;p&gt;이 경우에, 우리 프로그램은 명령어가 4개 밖에 없다.&lt;/p&gt;
-&lt;p&gt;그리고, 숫자 3과 14도 메모리에 넣었다.&lt;/p&gt;
-&lt;p&gt;자 이제 순서대로 프로그램을 진행해보자.&lt;/p&gt;
-&lt;p&gt;첫번째는 ‘LOAD_A 14’ 이다.&lt;/p&gt;
-&lt;p&gt;이것은 14번 주소에 저장된 숫자 3을 가져다가 레지스터A에 저장하는 것이다.&lt;/p&gt;
-&lt;p&gt;다음은 ‘LOAD_B 15’, 매모리의 15번 주소에 저장된 숫자 14를 레지스터B에 저장한다.&lt;/p&gt;
-&lt;p&gt;됐다. 쉽죠?&lt;/p&gt;
-&lt;p&gt;이제 ‘ADD’ 명령어 차례다.&lt;/p&gt;
-&lt;p&gt;이 명령어는 프로세서가 ALU를 사용해서 2개의 레지스터의 값을 서로 더하라는 것이다.&lt;/p&gt;
-&lt;p&gt;여기서는 A와 B를 더하는 것이다.&lt;/p&gt;
-&lt;p&gt;더하기의 결과가 두번째로 적혀있는 레지스터에 저장되기 때문에 순서가 중요하다. &lt;/p&gt;
-&lt;p&gt;여기서는, 더하기 결과는 레지스터A에 저장된다.&lt;/p&gt;
-&lt;p&gt;마지막으로, ‘STORE_A 13’ 은 CPU가 레지스터A의 값을 메모리의 13번 위치에 쓰라고 명령하는 것이다.&lt;/p&gt;
-&lt;p&gt;예쓰!&lt;/p&gt;
-&lt;p&gt;우리 프로그램이 숫자 2개를 더했다.&lt;/p&gt;
-&lt;p&gt;명령어 4개로 놀기에 이것보다 흥미로운 것은 없을 것이다.&lt;/p&gt;
 &lt;h1 id=&quot;2-명령어-추가하기&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#2-%EB%AA%85%EB%A0%B9%EC%96%B4-%EC%B6%94%EA%B0%80%ED%95%98%EA%B8%B0&quot; aria-label=&quot;2 명령어 추가하기 permalink&quot; class=&quot;anchor-header before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;2. 명령어 추가하기&lt;/h1&gt;
-&lt;p&gt;몇개를 더 추가해보자.&lt;/p&gt;
-&lt;p&gt;더하기(ADD) 와 비슷하게 두 개의 레지스터 값을 연산하는 빼기(subtract) 기능,&lt;br&gt;
-또 JUMP 라는 근사한 새 명령어를 넣어보자.&lt;/p&gt;
+&lt;p&gt;이렇게, 간단한 명령어 4가지로 동작하는 프로그램을 실행해봤다.&lt;/p&gt;
+&lt;p&gt;더 다양한 프로그램을 구성할 수 있도록, 명령어를 몇 개 추가해보자.&lt;/p&gt;
+&lt;h2 id=&quot;2-1-뺄셈-명령어&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#2-1-%EB%BA%84%EC%85%88-%EB%AA%85%EB%A0%B9%EC%96%B4&quot; aria-label=&quot;2 1 뺄셈 명령어 permalink&quot; class=&quot;anchor-header before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;2-1. 뺄셈 명령어&lt;/h2&gt;
+&lt;p&gt;덧셈 명령어(ADD) 와는 반대로, 뺄셈 명령어(SUB)를 추가해보자.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;명령어 : SUB(subtract)&lt;/li&gt;
+&lt;li&gt;설명 : 두 개의 레지스터에 저장된 값을 빼고, 두 번째 레지스터에 값을 써넣는다.&lt;/li&gt;
+&lt;li&gt;주소 혹은 레지스터 : 2비트 레지스터 ID, 2비트 레지스터 ID&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;2-2-점프-명령어&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#2-2-%EC%A0%90%ED%94%84-%EB%AA%85%EB%A0%B9%EC%96%B4&quot; aria-label=&quot;2 2 점프 명령어 permalink&quot; class=&quot;anchor-header before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;2-2. 점프 명령어&lt;/h2&gt;
+&lt;p&gt;이번엔 점프(JUMP) 라는 새로운 명령어를 추가해보자.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;명령어 : JUMP&lt;/li&gt;
+&lt;li&gt;설명 : 명령어 주소 레지스터를 새로운 주소로 변경 &lt;code class=&quot;language-text&quot;&gt;(주소로 점프)&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;주소 혹은 레지스터 : 4비트 메모리 주소&lt;/li&gt;
+&lt;/ul&gt;
+&lt;br&gt;
+&lt;p&gt;&lt;strong&gt;특징을 정리하면 아래와 같다.&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;추상화 계층에 따라서 동작 방식을 다르게 표현할 수 있다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;고수준 : 이름 그대로 프로그램을 새로운 위치로 점프시킨다.&lt;/li&gt;
+&lt;li&gt;저수준 : 명령어 주소 레지스터에 값을 덮어씌우는 동작을 수행한다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;명령 순서를 변경하거나, 일부 명령을 건더뛰고자 할 때 유용하게 사용된다.&lt;/li&gt;
+&lt;li&gt;예를 들어, ‘JUMP 0’ 명령어를 실행하면 0번 주소로 이동하게 된다.&lt;br&gt;
+&lt;code class=&quot;language-text&quot;&gt;(= 프로그램이 처음부터 다시 실행된다.)&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;2-3-조건부-점프-명령어&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#2-3-%EC%A1%B0%EA%B1%B4%EB%B6%80-%EC%A0%90%ED%94%84-%EB%AA%85%EB%A0%B9%EC%96%B4&quot; aria-label=&quot;2 3 조건부 점프 명령어 permalink&quot; class=&quot;anchor-header before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;2-3. 조건부 점프 명령어&lt;/h2&gt;
+&lt;p&gt;이번엔 특별한 형태의 점프 명령어(JUMP_NEGATIVE)를 추가해보자.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;명령어 : JUMP_NEGATIVE&lt;/li&gt;
+&lt;li&gt;설명 : ALU의 결과가 음수(negative) 면, 명령어 주소 레지스터를 새로운 주소로 변경&lt;/li&gt;
+&lt;li&gt;주소 혹은 레지스터 : 4비트 메모리 주소&lt;/li&gt;
+&lt;/ul&gt;
+&lt;br&gt;
 &lt;h2 id=&quot;&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#&quot; aria-label=&quot; permalink&quot; class=&quot;anchor-header before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;이름에서 알 수 있듯이, 이 명령어는 프로그램을 새 위치로 ‘점프’ 시키는 것이다.&lt;/p&gt;
-&lt;p&gt;이것은 명령어 처리 순서를 바꾸거나, 명령어 몇 개를 건너뛰고 싶을 때 유용하게 사용된다.&lt;/p&gt;
-&lt;p&gt;예를 들어 ‘JUMP 0’ 은 프로그램을 처음으로 되돌아가게 할 수 있다.&lt;/p&gt;
-&lt;p&gt;세부 동작은 명령어의 뒤 4비트가 가리키는 값을 명령어 주소 레지스터의 현재 값에 덮어쓰는 것이다.&lt;/p&gt;
-&lt;h2 id=&quot;-1&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#-1&quot; aria-label=&quot; 1 permalink&quot; class=&quot;anchor-header before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;JUMP 의 스페셜 버전인 ‘JUMP_NEGATIVE’ 도 추가해보자.&lt;/p&gt;
 &lt;p&gt;이 명령어는 ALU의 음수(negative) 플래그가 참으로 설정될 때만 점프하는 것이다.&lt;/p&gt;
 &lt;blockquote&gt;
@@ -1521,7 +2137,7 @@ Youtube 채널
 연산 결과가 0이거나 양수이면, 음수 플래그는 설정되지 않는다.&lt;br&gt;
 그래서 JUMP_NEGATIVE 에 의한 점프는 일어나지 않고, CPU는 바로 다음 명령어를 처리할 것이다.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h2 id=&quot;-2&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#-2&quot; aria-label=&quot; 2 permalink&quot; class=&quot;anchor-header before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&quot;-1&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#-1&quot; aria-label=&quot; 1 permalink&quot; class=&quot;anchor-header before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;마지막으로, 컴퓨터가 처리를 언제 끝낼지 알려줄 필요가 있기 때문에, HALT(중단) 명령어가 필요하다.&lt;/p&gt;
 &lt;p&gt;우리가 만든 이전 프로그램은 이렇게 정정되었어야 한다.&lt;/p&gt;
 &lt;p&gt;그렇지 않으면, CPU는 STORE 명령어 이후에도 계속 0을 읽어서 수행하게 된다.&lt;/p&gt;

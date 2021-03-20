@@ -1,6 +1,6 @@
 ---
 title: 프로그래머스 - 다리를 지나는 트럭(Stack/Queue Lv.2)
-date: 2021-03-19 22:34:98
+date: 2021-03-20 12:22:98
 category: Algorithm
 thumbnail: { thumbnailSrc }
 draft: false
@@ -13,8 +13,6 @@ tags:
   - wecode
   - 위코드
 ---
-
-**<작성 중인 글입니다.>**
 
 ## 문제 확인
 
@@ -145,7 +143,6 @@ def solution(bridge_length, weight, truck_weights):
 ```
 </details>
 
-
 <details><summary>2. 동작에 필요한 변수들을 선언했다.</summary>
 
 - 시간 변수, 다리 큐, 도착 시간 배열을 선언했다.
@@ -165,7 +162,6 @@ def solution(bridge_length, weight, truck_weights):
     arrival = []
 ```
 </details>
-
 
 <details><summary>3. 트럭들이 다리를 지나가도록 반복문을 구성했다.</summary>
 
@@ -280,9 +276,167 @@ def solution(bridge_length, weight, truck_weights):
 ```
 </details>
 
+<details><summary>추가 : 도착시간 배열을 생성하지 않아도 된다.</summary>
+
+- 다리 큐에 트럭 무게 대신에 (트럭 무게, 도착 시간) 을 넣으면 된다.
+
+<details><summary>결과 비교하기</summary>
+
+코드의 줄 수가 조금 줄어들지만, 성능 상의 이점은 거의 없다.  
+`(오른쪽이 도착 시간 배열을 없앤 경우다.)`
+
+![](./images/results-2.png)
+</details>
+
+```python
+def solution(bridge_length, weight, truck_weights):
+    '''
+    input
+        - bridge_length : 다리의 길이 (1 <= i <= 10000)
+        - weight        : 다리가 견딜 수 있는 무게 (1 <= i <= 10000)
+        - truck_weights : [트럭의 무게] (1 <= [] <= 10000, 1 <= truck <= weight)
+    output
+        - answer        : 모든 트럭이 다리를 건너는데 걸리는 최소 시간
+    '''
+    time = 1
+    truck = truck_weights.pop(0)
+    bridge = [(truck, bridge_length)]
+    on_bridge = truck
+
+    while truck_weights:
+        truck = truck_weights[0]
+
+        if time == bridge[0][1]:
+            on_bridge -= bridge.pop(0)[0]
+
+        if on_bridge + truck <= weight:
+            on_bridge += truck
+            bridge.append((
+                truck_weights.pop(0),
+                time + bridge_length))
+
+        time += 1
+
+    return bridge[-1][1] + 1
+```
+</details>
+
+<details><summary>추가 : 시간을 건너 뛰도록 할 수 있다.</summary>
+
+- 다음 트럭이 올라오지 못하는 경우엔, 맨 앞의 트럭의 도착 시간으로 이동하면 된다.
+
+<details><summary>결과 비교하기</summary>
+
+시간을 건너뛴 경우가 오른쪽이다.
+
+![](./images/results-3.png)
+</details>
+
+```python
+def solution(bridge_length, weight, truck_weights):
+    '''
+    input
+        - bridge_length : 다리의 길이 (1 <= i <= 10000)
+        - weight        : 다리가 견딜 수 있는 무게 (1 <= i <= 10000)
+        - truck_weights : [트럭의 무게] (1 <= [] <= 10000, 1 <= truck <= weight)
+    output
+        - answer        : 모든 트럭이 다리를 건너는데 걸리는 최소 시간
+    '''
+    time = 1
+    truck = truck_weights.pop(0)
+    bridge = [truck]
+    arrival = [bridge_length]
+    on_bridge = truck
+
+    while truck_weights:
+        truck = truck_weights[0]
+
+        if time == arrival[0]:
+            on_bridge -= bridge.pop(0)
+            arrival.pop(0)
+
+        if on_bridge + truck <= weight:
+            on_bridge += truck
+            bridge.append(truck_weights.pop(0))
+            arrival.append(time + bridge_length)
+        else:
+            time = arrival[0] - 1
+
+        time += 1
+
+    return arrival[-1] + 1
+```
+</details>
+
+<br>
+
+> <details><summary>같은 동작을 자바스크립트로 코딩해봤다.</summary>
+> 
+> ```javascript
+> const solution = (bridge_length, weight, truck_weights) => {
+>   let time = 1;
+>   let truck = truck_weights.shift();
+>   const bridge = [truck];
+>   const arrival = [bridge_length];
+>   let on_bridge = truck;
+> 
+>   while (truck_weights.length) {
+>     truck = truck_weights[0];
+> 
+>     if (time == arrival[0]) {
+>       on_bridge -= bridge.shift();
+>       arrival.shift();
+>     }
+> 
+>     if (on_bridge + truck <= weight) {
+>       on_bridge += truck;
+>       bridge.push(truck_weights.shift());
+>       arrival.push(time + bridge_length);
+>     }
+> 
+>     time += 1;
+>   }
+> 
+>   return arrival.pop() + 1;
+> };
+> ```
+> </details>
+
 ## 배운 것
 
 - 값 비교에 'is' 키워드를 사용하면 엄청나게 비효율적이다.
-   - 분명히 제대로 동작하는 코드인데 처음엔 시간 초과 판정을 받았다.
+   - 제대로 동작하는 코드를 제출했는데 시간 초과 판정을 받았었다.
    - 뭔가 이상하다 싶어서 조건문에 있던 'is' 를 '==' 으로 바꿨고, 정답 처리를 받았다.
    - is 는 완전히 같은 정보인지 여부를 판단할 때만 사용하자..
+- 다른 사람의 풀이를 보고 시간을 건너뛰도록 코드를 추가할 수 있다는 것을 배웠다.
+  <details><summary>시간을 건너뛰는 구문을 추가한 풀이</summary>
+
+  ```javascript
+  function solution(bridge_length, weight, truck_weights) {
+      // '다리'를 모방한 큐에 간단한 배열로 정리 : [트럭무게, 얘가 나갈 시간].
+      let time = 0, qu = [[0, 0]], weightOnBridge = 0;
+    
+      // 대기 트럭, 다리를 건너는 트럭이 모두 0일 때 까지 다음 루프 반복
+      while (qu.length > 0 || truck_weights.length > 0) {
+        // 1. 현재 시간이, 큐 맨 앞의 차의 '나갈 시간'과 같다면 내보내주고,
+        //    다리 위 트럭 무게 합에서 빼준다.
+        if (qu[0][1] === time) weightOnBridge -= qu.shift()[0];
+    
+        if (weightOnBridge + truck_weights[0] <= weight) {
+          // 2. 다리 위 트럭 무게 합 + 대기중인 트럭의 첫 무게가 감당 무게 이하면 
+          //    다리 위 트럭 무게 업데이트, 큐 뒤에 [트럭무게, 이 트럭이 나갈 시간] 추가.
+          weightOnBridge += truck_weights[0];
+          qu.push([truck_weights.shift(), time + bridge_length]);
+        } else {
+          // 3. 다음 트럭이 못올라오는 상황이면 얼른 큐의
+          //    첫번째 트럭이 빠지도록 그 시간으로 점프한다.
+          //    참고: if 밖에서 1 더하기 때문에 -1 해줌
+          if (qu[0]) time = qu[0][1] - 1;
+        }
+        // 시간 업데이트 해준다.
+        time++;
+      }
+      return time;
+  }
+  ```
+  </details>

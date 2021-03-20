@@ -23,8 +23,16 @@ const Head = ({ description, keywords = [], title }) => (
           {...metaData}
           meta={[
             {
-              name: `description`,
+              property: `description`,
               content: metaDescription,
+            },
+            {
+              property: `og:locale`,
+              content: `ko_KR`,
+            },
+            {
+              property: `og:site_name`,
+              content: _title,
             },
             {
               property: `og:title`,

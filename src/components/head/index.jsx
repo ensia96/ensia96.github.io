@@ -2,7 +2,7 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
 
-const Head = ({ description, lang, keywords = [], title }) => (
+const Head = ({ description, keywords = [], title }) => (
   <StaticQuery
     query={detailsQuery}
     render={({

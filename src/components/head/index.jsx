@@ -23,6 +23,10 @@ const Head = ({ description, title }) => (
           {...metaData}
           meta={[
             {
+              name: `description`,
+              content: metaDescription,
+            },
+            {
               property: `description`,
               content: metaDescription,
             },

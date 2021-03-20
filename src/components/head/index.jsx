@@ -6,6 +6,13 @@ const Head = ({ description, lang, keywords = [], title }) => (
   <StaticQuery
     query={detailsQuery}
     render={data => {
+      const metaData = {
+        htmlAttributes: {
+          lang: 'ko',
+        },
+        title,
+        titleTemplate: `%s | ${data.site.siteMetadata.title}`,
+      }
       const metaDescription = description || data.site.siteMetadata.description
       return (
         <Helmet

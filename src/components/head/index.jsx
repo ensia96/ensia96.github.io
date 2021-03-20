@@ -5,15 +5,19 @@ import { StaticQuery, graphql } from 'gatsby'
 const Head = ({ description, lang, keywords = [], title }) => (
   <StaticQuery
     query={detailsQuery}
-    render={data => {
+    render={({
+      site: {
+        siteMetadata: { title: _title, description: _description, author },
+      },
+    }) => {
       const metaData = {
         htmlAttributes: {
           lang: 'ko',
         },
         title,
-        titleTemplate: `%s | ${data.site.siteMetadata.title}`,
+        titleTemplate: `%s | ${_title}`,
       }
-      const metaDescription = description || data.site.siteMetadata.description
+      const metaDescription = description || _description
       return (
         <Helmet
           {...metaData}
@@ -40,7 +44,7 @@ const Head = ({ description, lang, keywords = [], title }) => (
             },
             {
               name: `twitter:creator`,
-              content: data.site.siteMetadata.author,
+              content: author,
             },
             {
               name: `twitter:title`,

@@ -18,7 +18,6 @@ export default ({
       siteMetadata: {
         configs: { countOfInitialPost },
         title,
-        keywords,
       },
     },
     allMarkdownRemark: { edges: posts },
@@ -44,7 +43,7 @@ export default ({
 
   return (
     <Layout location={location} title={title}>
-      <Head title={HOME_TITLE} keywords={keywords} />
+      <Head title={HOME_TITLE} />
       <Contents
         posts={posts}
         countOfInitialPost={countOfInitialPost}

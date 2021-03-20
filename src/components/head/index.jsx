@@ -2,7 +2,7 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
 
-const Head = ({ description, lang, meta, keywords = [], title }) => (
+const Head = ({ description, lang, keywords = [], title }) => (
   <StaticQuery
     query={detailsQuery}
     render={data => {
@@ -47,16 +47,11 @@ const Head = ({ description, lang, meta, keywords = [], title }) => (
               name: `twitter:description`,
               content: metaDescription,
             },
-          ]
-            .concat(
-              keywords.length > 0
-                ? {
-                    name: `keywords`,
-                    content: keywords.join(`, `),
-                  }
-                : []
-            )
-            .concat(meta)}
+            {
+              name: `keywords`,
+              content: keywords.join(`, `),
+            },
+          ]}
         />
       )
     }}

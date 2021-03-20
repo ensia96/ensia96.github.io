@@ -65,7 +65,7 @@ const Head = ({ description, lang, meta, keywords, title }) => (
 )
 
 Head.defaultProps = {
-  lang: `en`,
+  lang: `ko`,
   meta: [],
   keywords: [],
 }

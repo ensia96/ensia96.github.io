@@ -12,7 +12,6 @@ module.exports = {
     linkedin: `ensia96`, // Your LinkedIn account
   },
   icon: `content/assets/felog.png`, // Add your favicon
-  keywords: [`blog`],
   comment: {
     disqusShortName: '', // Your disqus-short-name. check disqus.com.
     utterances: 'ensia96/ensia96.github.io', // Your repository for archive comment

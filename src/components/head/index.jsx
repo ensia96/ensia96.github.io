@@ -16,11 +16,7 @@ const Head = ({ description, lang, keywords = [], title }) => (
       const metaDescription = description || data.site.siteMetadata.description
       return (
         <Helmet
-          htmlAttributes={{
-            lang,
-          }}
-          title={title}
-          titleTemplate={`%s | ${data.site.siteMetadata.title}`}
+          {...metaData}
           meta={[
             {
               name: `description`,

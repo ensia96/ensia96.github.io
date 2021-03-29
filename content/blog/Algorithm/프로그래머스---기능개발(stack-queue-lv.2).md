@@ -183,7 +183,7 @@ def solution(progresses, speeds):
 
 ## 검색
 
-별다른 검색은 하지 않았다.
+별도의 검색은 하지 않았다.
 
 ## 풀이
 
@@ -468,3 +468,5 @@ def solution(progresses, speeds):
         return [q[1] for q in Q]
   ```
   </details>
+
+- 20210329 - 표현 수정('별다른' -> '별도의')

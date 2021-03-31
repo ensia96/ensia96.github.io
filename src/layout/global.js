@@ -19,6 +19,66 @@ export default createGlobalStyle`
         }
     }
 
+    details {
+
+        ::-webkit-details-marker {
+            display: none;
+        }
+
+        transform-origin: center;
+        transition: 200ms linear;
+
+        &[open] summary ~ * {
+          animation: open 0.3s ease-in-out;
+        }
+
+        @keyframes open {
+          0% {
+            opacity: 0;
+          }
+          100% {
+            opacity: 1;
+          }
+        }
+
+        margin-top: .25em;
+        border-radius: 4px;
+        border: .25em solid ${({ theme: { main } }) => main};
+
+        &>:nth-child(2) {
+            margin-top: 0.5em;
+        }
+
+        &>:not(:first-child) {
+            padding: 0 0.5em;
+        }
+
+        &>table {
+            margin: 1em;
+            width: -webkit-fill-available
+        }
+
+        &>summary {
+            font-weight: 500;
+            color: ${({ theme: { main } }) => main};
+            padding: 0.1em 0.5em 0.2em;
+            background: ${({ theme: { font } }) => font};
+        }
+
+        &>summary:before {
+            content: 'ㅡ';
+            margin-right: 0.5em;
+        }
+
+        &[open]>summary {
+            border-bottom: .25em solid ${({ theme: { main } }) => main};
+            &:before {
+                content: 'ㅁ';
+                margin-right: 0.5em;
+            }
+        }
+    }
+
     code {
         background: ${({
           theme: {

@@ -1,13 +1,13 @@
 export const light = {
   main: '#ffcd00',
-  background: '#ffffff',
+  background: '#FBFAF5',
   font: '#333333',
-  tocButton: '#4B1E78',
+  tocButton: '#501499',
   tag: { background: '#ffe887', font: '#c7a200' },
 }
 
 export const dark = {
-  main: '#4B1E78',
+  main: '#501499',
   background: '#272827',
   font: '#cccccc',
   tocButton: '#ffcd00',

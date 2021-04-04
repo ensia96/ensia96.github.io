@@ -72,6 +72,7 @@ def solution(phone_book):
 
 출처 :
 <a href='https://programmers.co.kr/learn/courses/30/lessons/42577' target='-blank'>프로그래머스</a>
+
 </details>
 
 ## 접근
@@ -111,8 +112,9 @@ def solution(phone_book):
 
 <details><summary>적용한 방법 : 인덱스 값을 늘려가면서 모든 문자열을 조회하는 방법</summary>
 
-해당 문자열이 확실하게 접두어인지 검증하는 부분이 없다..  
-`(뭔가 잘못됐음을 깨닫고 코딩을 멈춘 상태..)`
+- 해당 문자열이 확실하게 접두어인지 검증하는 부분이 없다..  
+  `(뭔가 잘못됐음을 깨닫고 코딩을 멈춘 상태..)`
+
 ```python
 def solution(phone_book):
     '''
@@ -154,7 +156,9 @@ def solution(phone_book):
 
         index += 1
 ```
+
 </details>
+
 <details><summary>올바른 방법 : 모든 문자열을 첫 문자부터 더해가면서, 해시 테이블에 존재하는지 확인하는 방법</summary>
 
 ```python
@@ -180,16 +184,18 @@ def solution(phone_book):
                 answer = False
     return answer
 ```
+
 </details>
 
 <br>
 
 <details><summary>두 풀이 방식의 결과 비교하기</summary>
 
-왼쪽(내 풀이) 은 평균적으로 메모리를 적게 사용했고, 일부 효율성 테스트에서는 더 좋은 성능을 보였다.  
-`(접두어가 없는 경우엔 즉시 반환하기 때문인 것 같다.)`
+- 왼쪽(내 풀이) 은 평균적으로 메모리를 적게 사용했고, 일부 효율성 테스트에서는 더 좋은 성능을 보였다.  
+  `(접두어가 없는 경우엔 즉시 반환하기 때문인 것 같다.)`
 
-![](./images/results.png)
+![](./images/hash/results.png)
+
 </details>
 
 ## 풀이
@@ -204,6 +210,7 @@ def solution(phone_book):
     hash_map = {}
     return answer
 ```
+
 </details>
 
 <details><summary>2. 각 전화번호를 해시 테이블의 key 로 입력한다.</summary>
@@ -216,6 +223,7 @@ def solution(phone_book):
         hash_map[phone_number] = 1
     return answer
 ```
+
 </details>
 
 <details><summary>3. 전화번호부를 순회하는 반복문를 생성하고, 임시 접두어 변수를 선언한다.</summary>
@@ -230,6 +238,7 @@ def solution(phone_book):
         temp = ""
     return answer
 ```
+
 </details>
 
 <details><summary>4. 전화번호를 하나씩 더해, 가능한 접두어를 모두 구성하도록 반복문을 추가한다.</summary>
@@ -246,11 +255,12 @@ def solution(phone_book):
             temp += number
     return answer
 ```
+
 </details>
 
 <details><summary>5. 임시 접두어 변수가 해시 테이블에 있는지 조회한다.</summary>
 
-이 때, 현재의 전화번호와 조회하는 접두어가 일치하지 않도록 조건을 추가한다.
+- 이 때, 현재의 전화번호와 조회하는 접두어가 일치하지 않도록 조건을 추가한다.
 
 ```python
 def solution(phone_book):
@@ -266,6 +276,7 @@ def solution(phone_book):
                 answer = False
     return answer
 ```
+
 </details>
 
 ## 배운 것
@@ -282,74 +293,90 @@ def solution(phone_book):
    - 반대로, 해시 맵은 NUll 값을 허용하고, 병렬 처리를 고려하지 않을 때 사용한다.
    - <a href='https://hee96-story.tistory.com/48' target='-blank'>'[자료구조] Hash/HashTable/HashMap - Hee\'s story'</a> 참고
 - 다른 사람의 풀이를 보고 zip() 함수와 startswith() 메소드의 사용법을 알게됐다.
-  <details><summary>해시를 사용하지 않은 풀이 방법</summary>
 
-  `(Python 에서 camelCase 라니; 불-편..)`
-  ```python
-  def solution(phoneBook):
-        phoneBook = sorted(phoneBook)
-    
-        for p1, p2 in zip(phoneBook, phoneBook[1:]):
-            if p2.startswith(p1):
-                return False
-        return True
-  ```
-  </details>
-  <details><summary>zip 함수는 반복 가능한 객체(iterable) 를 인자로 받아, 컨테이너 구조의 zip 객체를 반환한다.</summary>
+<details><summary>해시를 사용하지 않은 풀이 방법</summary>
 
-  - 여러 개의 인자를 받을 수 있으며, 입력받은 모든 객체의 정보를 순서대로 묶어 반환한다.
-  ```python
-  >>> zip([1, 2, 3], [4, 5, 6], [7, 8, 9])
-  <zip object at 0x7ff80a3190a0>
-  >>> a = zip([1, 2, 3], [4, 5, 6], [7, 8, 9])
-  >>> a
-  <zip object at 0x7ff80a319690>
-  >>> list(a)
-  [(1, 4, 7), (2, 5, 8), (3, 6, 9)]
-  ```
-  </details>
-  <details><summary>startswith 메소드는 문자열 정보에서만 지원되고, 진리 값을 반환한다.</summary>
+`(Python 에서 camelCase 라니; 불-편..)`
 
-      - 해당 문자열이 인자로 받은 문자열로 시작되는지 여부를 탐색하고, 그 결과를 반환한다.
-      <details><summary>첫 번째 인자로는 문자열, 혹은 문자열로만 구성된 튜플 자료형만 입력받을 수 있다.</summary>
+```python
+def solution(phoneBook):
+    phoneBook = sorted(phoneBook)
 
-          ```python
-          >>> test = 'haha'
-          >>> test.startswith(1)
-          Traceback (most recent call last):
-            File "<stdin>", line 1, in <module>
-          TypeError: startswith first arg must be str or a tuple of str, not int
-          >>> test.startswith(1.1)
-          Traceback (most recent call last):
-            File "<stdin>", line 1, in <module>
-          TypeError: startswith first arg must be str or a tuple of str, not float
-          >>> test.startswith([])
-          Traceback (most recent call last):
-            File "<stdin>", line 1, in <module>
-          TypeError: startswith first arg must be str or a tuple of str, not list
-          >>> test.startswith({})
-          Traceback (most recent call last):
-            File "<stdin>", line 1, in <module>
-          TypeError: startswith first arg must be str or a tuple of str, not dict
-          >>> test.startswith(())
-          False
-          >>> test.startswith(('ha'))
-          True
-          >>> test.startswith('h')
-          True
-          ```
-          </details>
-          <details><summary>2번째, 3번째 인자를 통해 탐색 범위를 지정할 수 있다.</summary>
+    for p1, p2 in zip(phoneBook, phoneBook[1:]):
+        if p2.startswith(p1):
+            return False
+    return True
+```
 
-          | Parameter | Description |
-          |-|-|
-          | value | Required. The value to check if the string starts with |
-          | start | Optional. An Integer specifying at which position to start the search |
-          | end | Optional. An Integer specifying at which position to end the search |
-          \- 출처 :
-          <a href='https://www.w3schools.com/python/ref_string_startswith.asp' target='-blank'>
-          'w3schools.com'
-          </a>
-          </details>
-  </details>
+</details>
 
+<details><summary>zip 함수는 반복 가능한 객체(iterable) 를 인자로 받아, 컨테이너 구조의 zip 객체를 반환한다.</summary>
+
+- 여러 개의 인자를 받을 수 있으며, 입력받은 모든 객체의 정보를 순서대로 묶어 반환한다.
+
+```python
+>>> zip([1, 2, 3], [4, 5, 6], [7, 8, 9])
+<zip object at 0x7ff80a3190a0>
+>>> a = zip([1, 2, 3], [4, 5, 6], [7, 8, 9])
+>>> a
+<zip object at 0x7ff80a319690>
+>>> list(a)
+[(1, 4, 7), (2, 5, 8), (3, 6, 9)]
+```
+
+</details>
+
+<details><summary>startswith 메소드는 문자열 정보에서만 지원되고, 진리 값을 반환한다.</summary>
+
+- 해당 문자열이 인자로 받은 문자열로 시작되는지 여부를 탐색하고, 그 결과를 반환한다.
+
+<details><summary>첫 번째 인자로는 문자열, 혹은 문자열로만 구성된 튜플 자료형만 입력받을 수 있다.</summary>
+
+```python
+>>> test = 'haha'
+>>> test.startswith(1)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: startswith first arg must be str or a tuple of str, not int
+>>> test.startswith(1.1)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: startswith first arg must be str or a tuple of str, not float
+>>> test.startswith([])
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: startswith first arg must be str or a tuple of str, not list
+>>> test.startswith({})
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: startswith first arg must be str or a tuple of str, not dict
+>>> test.startswith(())
+False
+>>> test.startswith(('ha'))
+True
+>>> test.startswith('h')
+True
+```
+
+</details>
+
+<details><summary>2번째, 3번째 인자를 통해 탐색 범위를 지정할 수 있다.</summary>
+
+| Parameter | Description |
+|-|-|
+| value | Required. The value to check if the string starts with |
+| start | Optional. An Integer specifying at which position to start the search |
+| end | Optional. An Integer specifying at which position to end the search |
+
+\- 출처 :
+<a href='https://www.w3schools.com/python/ref_string_startswith.asp' target='-blank'>
+'w3schools.com'
+</a>
+
+</details>
+
+</details>
+
+<br>
+
+\- 20210404 - 마크다운 구성 변경

@@ -82,6 +82,7 @@ def solution(clothes):
 
 출처 :
 <a href='https://programmers.co.kr/learn/courses/30/lessons/42578' target='-blank'>프로그래머스</a>
+
 </details>
 
 ## 접근
@@ -110,6 +111,7 @@ def solution(clothes):
 - 이 과정을 반복
 
 하지만, 이 방식으로 여러 종류의 옷이 조합된 경우를 확인하려면 너무 복잡해진다.
+
 </details>
 
 <details><summary>'이렇게하면 되지 않을까?' 싶었던 해결 아이디어</summary>
@@ -129,6 +131,7 @@ def solution(clothes):
 
 마지막으로, 모든 의상의 종류에 대해 아무것도 입지 않는 경우 1만 빼면,  
 최소한 하나 이상의 의상을 입는 모든 경우의 수를 구할 수 있다.
+
 </details>
 
 <br>
@@ -162,6 +165,7 @@ def solution(clothes):
 
     return _test - 1
 ```
+
 </details>
 
 <details><summary>나의 풀이에 기록된 코드</summary>
@@ -181,6 +185,7 @@ def solution(c):
 
     return r-1
 ```
+
 </details>
 
 ## 풀이
@@ -198,6 +203,7 @@ def solution(clothes):
     answer = 0
     return answer
 ```
+
 </details>
 
 <details><summary>2. 종류 별로 옷을 구분하기 위해 딕셔너리를 선언했다.</summary>
@@ -212,6 +218,7 @@ def solution(clothes):
     '''
     closet = {}
 ```
+
 </details>
 
 <details><summary>3. (종류: [의상 이름]) 을 딕셔너리에 추가했다.</summary>
@@ -231,6 +238,7 @@ def solution(clothes):
             closet[kind] = []
         closet[kind].append(name)
 ```
+
 </details>
 
 <details><summary>4. 의상의 종류 별로 선택 가능한 모든 경우를 곱했다.</summary>
@@ -254,6 +262,7 @@ def solution(clothes):
     for key in closet:
         answer *= len(closet[key]) + 1
 ```
+
 </details>
 
 <details><summary>5. 아무것도 입지 않은 경우를 제외했다.</summary>
@@ -279,6 +288,7 @@ def solution(clothes):
 
     return answer - 1
 ```
+
 </details>
 
 <br>
@@ -308,6 +318,7 @@ def solution(clothes):
 
     return answer - 1
 ```
+
 </details>
 
 <br>
@@ -329,6 +340,7 @@ def solution(clothes):
 >   return answer - 1;
 > };
 > ```
+>
 > </details>
 
 ## 배운 것
@@ -337,44 +349,55 @@ def solution(clothes):
    - 결과를 위주로 생각하는 것이 아니라, 구간구간 현재 상태를 점검해야 한다.
    - 지난 번에 접했던 문제에서 얻은 교훈을 적용한 덕분에 쉽게 풀었다..
 - 다른 사람의 풀이를 보고, reduce() 함수를 사용하는 방법을 배웠다.
-  <details><summary>reduce() 함수를 활용한 풀이</summary>
 
-  기존의 값과 (각각의 값 + 1) 을 곱하는 콜백, Counter 객체, 곱의 초기값 1을  
+<details><summary>reduce() 함수를 활용한 풀이</summary>
+
+- 기존의 값과 (각각의 값 + 1) 을 곱하는 콜백, Counter 객체, 곱의 초기값 1을  
   reduce() 함수에 인자로 넣어주고, 마지막에 1을 빼는 방법이다.
-  ```python
-  def solution(clothes):
-        from collections import Counter
-        from functools import reduce
-        cnt = Counter([kind for name, kind in clothes])
-        answer = reduce(lambda x, y: x*(y+1), cnt.values(), 1) - 1
-        return answer
-  ```
-  </details>
-  <details><summary>reduce() 함수는 인자로 받은 함수와 객체에 대해 연산한다.</summary>
 
-  - 유용한 고계 함수들의 집합인 'functools' 라이브러리에 포함된 함수다.
-  - 순수 함수(콜백), 반복 가능한 객체(iterable), 계산 초기값(initializer) 를 인자로 받는다.
-     - 인자의 순서는 고정이고, 마지막 인자 'initializer' 는 선택적 인자(기본 값 = None)다.
-     - 이 때, 순수 함수는 두 개의 인자를 받는 함수여야 한다.
-  - 인자로 받은 순수 함수에 인자로 받은 반복 가능한 객체의 원소를 연속적으로 입력한다.
-  - 위의 과정에서 순수 함수의 실행 결과를 기준으로 계산 결과를 누적시킨다.
-  </details>
-  <details><summary>reduce() 함수의 동작 방식을 코드로 표현하면,</summary>
+```python
+def solution(clothes):
+    from collections import Counter
+    from functools import reduce
+    cnt = Counter([kind for name, kind in clothes])
+    answer = reduce(lambda x, y: x*(y+1), cnt.values(), 1) - 1
+    return answer
+```
 
-      \- 출처 : 
-      <a href='https://docs.python.org/ko/3/library/functools.html' target='-blank'>
-      'Python'
-      </a>
+</details>
 
-      ```python
-      def reduce(function, iterable, initializer=None):
-            it = iter(iterable)
-            if initializer is None:
-                value = next(it)
-            else:
-                value = initializer
-            for element in it:
-                value = function(value, element)
-            return value
-      ```
-  </details>
+<details><summary>reduce() 함수는 인자로 받은 함수와 객체에 대해 연산한다.</summary>
+
+- 유용한 고계 함수들의 집합인 'functools' 라이브러리에 포함된 함수다.
+- 순수 함수(콜백), 반복 가능한 객체(iterable), 계산 초기값(initializer) 를 인자로 받는다.
+   - 인자의 순서는 고정이고, 마지막 인자 'initializer' 는 선택적 인자(기본 값 = None)다.
+   - 이 때, 순수 함수는 두 개의 인자를 받는 함수여야 한다.
+- 인자로 받은 순수 함수에 인자로 받은 반복 가능한 객체의 원소를 연속적으로 입력한다.
+- 위의 과정에서 순수 함수의 실행 결과를 기준으로 계산 결과를 누적시킨다.
+
+</details>
+
+<details><summary>reduce() 함수의 동작 방식을 코드로 표현하면,</summary>
+
+\- 출처 : 
+<a href='https://docs.python.org/ko/3/library/functools.html' target='-blank'>
+'Python'
+</a>
+
+```python
+def reduce(function, iterable, initializer=None):
+    it = iter(iterable)
+    if initializer is None:
+        value = next(it)
+    else:
+        value = initializer
+    for element in it:
+        value = function(value, element)
+    return value
+```
+
+</details>
+
+<br>
+
+\- 20210404 - 마크다운 구성 변경

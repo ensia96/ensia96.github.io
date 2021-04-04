@@ -67,6 +67,7 @@ def solution(bridge_length, weight, truck_weights):
 
 출처 :
 <a href='https://programmers.co.kr/learn/courses/30/lessons/42583' target='-blank'>프로그래머스</a>
+
 </details>
 
 ## 접근
@@ -98,6 +99,7 @@ def solution(bridge_length, weight, truck_weights):
 
 하지만, 이 방법은 맨 앞의 트럭이 다리를 건넌 후에,  
 다른 트럭이 올라오는 경우를 계산하기에 부적합했다.
+
 </details>
 
 <details><summary>다음으로는 모든 과정을 효율적으로 수행하는 방법에 대해 고민해봤다.</summary>
@@ -118,6 +120,7 @@ def solution(bridge_length, weight, truck_weights):
      다리가 버틸 수 있는 최대 무게와 비교하여 처리한다.
 5. 반복문이 1번 수행될 때마다 시간을 1씩 증가시킨다.
 6. 반복문이 종료되면, 도착 시간 배열의 마지막 값에 1을 더해 반환한다.
+
 </details>
 
 ## 검색
@@ -141,6 +144,7 @@ def solution(bridge_length, weight, truck_weights):
     answer = 0
     return answer
 ```
+
 </details>
 
 <details><summary>2. 동작에 필요한 변수들을 선언했다.</summary>
@@ -161,6 +165,7 @@ def solution(bridge_length, weight, truck_weights):
     bridge = []
     arrival = []
 ```
+
 </details>
 
 <details><summary>3. 트럭들이 다리를 지나가도록 반복문을 구성했다.</summary>
@@ -196,6 +201,7 @@ def solution(bridge_length, weight, truck_weights):
 
         time += 1
 ```
+
 </details>
 
 <details><summary>4. 마지막 트럭이 다리를 건너는 시간을 반환한다.</summary>
@@ -227,6 +233,7 @@ def solution(bridge_length, weight, truck_weights):
 
     return arrival[-1] + 1
 ```
+
 </details>
 
 <br>
@@ -237,9 +244,10 @@ def solution(bridge_length, weight, truck_weights):
 
 <details><summary>결과 비교하기</summary>
 
-모든 과정을 반복하는 것이 왼쪽, 첫 번째 동작을 생략한 것이 오른쪽이다.
+- 모든 과정을 반복하는 것이 왼쪽, 첫 번째 동작을 생략한 것이 오른쪽이다.
 
-![](./images/results-1.png)
+![](./images/stack-queue/1/results-1.png)
+
 </details>
 
 ```python
@@ -274,6 +282,7 @@ def solution(bridge_length, weight, truck_weights):
 
     return arrival[-1] + 1
 ```
+
 </details>
 
 <details><summary>추가 : 도착시간 배열을 생성하지 않아도 된다.</summary>
@@ -282,10 +291,11 @@ def solution(bridge_length, weight, truck_weights):
 
 <details><summary>결과 비교하기</summary>
 
-코드의 줄 수가 조금 줄어들지만, 성능 상의 이점은 거의 없다.  
-`(오른쪽이 도착 시간 배열을 없앤 경우다.)`
+- 코드의 줄 수가 조금 줄어들지만, 성능 상의 이점은 거의 없다.  
+  `(오른쪽이 도착 시간 배열을 없앤 경우다.)`
 
-![](./images/results-2.png)
+![](./images/stack-queue/1/results-2.png)
+
 </details>
 
 ```python
@@ -319,6 +329,7 @@ def solution(bridge_length, weight, truck_weights):
 
     return bridge[-1][1] + 1
 ```
+
 </details>
 
 <details><summary>추가 : 시간을 건너 뛰도록 할 수 있다.</summary>
@@ -327,9 +338,10 @@ def solution(bridge_length, weight, truck_weights):
 
 <details><summary>결과 비교하기</summary>
 
-시간을 건너뛴 경우가 오른쪽이다.
+- 시간을 건너뛴 경우가 오른쪽이다.
 
-![](./images/results-3.png)
+![](./images/stack-queue/1/results-3.png)
+
 </details>
 
 ```python
@@ -366,12 +378,13 @@ def solution(bridge_length, weight, truck_weights):
 
     return arrival[-1] + 1
 ```
+
 </details>
 
 <br>
 
 > <details><summary>같은 동작을 자바스크립트로 코딩해봤다.</summary>
-> 
+>
 > ```javascript
 > const solution = (bridge_length, weight, truck_weights) => {
 >   let time = 1;
@@ -400,6 +413,7 @@ def solution(bridge_length, weight, truck_weights):
 >   return arrival.pop() + 1;
 > };
 > ```
+>
 > </details>
 
 ## 배운 것
@@ -409,34 +423,40 @@ def solution(bridge_length, weight, truck_weights):
    - 뭔가 이상하다 싶어서 조건문에 있던 'is' 를 '==' 으로 바꿨고, 정답 처리를 받았다.
    - is 는 완전히 같은 정보인지 여부를 판단할 때만 사용하자..
 - 다른 사람의 풀이를 보고 시간을 건너뛰도록 코드를 추가할 수 있다는 것을 배웠다.
-  <details><summary>시간을 건너뛰는 구문을 추가한 풀이</summary>
 
-  ```javascript
-  function solution(bridge_length, weight, truck_weights) {
-      // '다리'를 모방한 큐에 간단한 배열로 정리 : [트럭무게, 얘가 나갈 시간].
-      let time = 0, qu = [[0, 0]], weightOnBridge = 0;
-    
-      // 대기 트럭, 다리를 건너는 트럭이 모두 0일 때 까지 다음 루프 반복
-      while (qu.length > 0 || truck_weights.length > 0) {
-        // 1. 현재 시간이, 큐 맨 앞의 차의 '나갈 시간'과 같다면 내보내주고,
-        //    다리 위 트럭 무게 합에서 빼준다.
-        if (qu[0][1] === time) weightOnBridge -= qu.shift()[0];
-    
-        if (weightOnBridge + truck_weights[0] <= weight) {
-          // 2. 다리 위 트럭 무게 합 + 대기중인 트럭의 첫 무게가 감당 무게 이하면 
-          //    다리 위 트럭 무게 업데이트, 큐 뒤에 [트럭무게, 이 트럭이 나갈 시간] 추가.
-          weightOnBridge += truck_weights[0];
-          qu.push([truck_weights.shift(), time + bridge_length]);
-        } else {
-          // 3. 다음 트럭이 못올라오는 상황이면 얼른 큐의
-          //    첫번째 트럭이 빠지도록 그 시간으로 점프한다.
-          //    참고: if 밖에서 1 더하기 때문에 -1 해줌
-          if (qu[0]) time = qu[0][1] - 1;
-        }
-        // 시간 업데이트 해준다.
-        time++;
-      }
-      return time;
+<details><summary>시간을 건너뛰는 구문을 추가한 풀이</summary>
+
+```javascript
+function solution(bridge_length, weight, truck_weights) {
+  // '다리'를 모방한 큐에 간단한 배열로 정리 : [트럭무게, 얘가 나갈 시간].
+  let time = 0, qu = [[0, 0]], weightOnBridge = 0;
+
+  // 대기 트럭, 다리를 건너는 트럭이 모두 0일 때 까지 다음 루프 반복
+  while (qu.length > 0 || truck_weights.length > 0) {
+    // 1. 현재 시간이, 큐 맨 앞의 차의 '나갈 시간'과 같다면 내보내주고,
+    //    다리 위 트럭 무게 합에서 빼준다.
+    if (qu[0][1] === time) weightOnBridge -= qu.shift()[0];
+
+    if (weightOnBridge + truck_weights[0] <= weight) {
+      // 2. 다리 위 트럭 무게 합 + 대기중인 트럭의 첫 무게가 감당 무게 이하면 
+      //    다리 위 트럭 무게 업데이트, 큐 뒤에 [트럭무게, 이 트럭이 나갈 시간] 추가.
+      weightOnBridge += truck_weights[0];
+      qu.push([truck_weights.shift(), time + bridge_length]);
+    } else {
+      // 3. 다음 트럭이 못올라오는 상황이면 얼른 큐의
+      //    첫번째 트럭이 빠지도록 그 시간으로 점프한다.
+      //    참고: if 밖에서 1 더하기 때문에 -1 해줌
+      if (qu[0]) time = qu[0][1] - 1;
+    }
+    // 시간 업데이트 해준다.
+    time++;
   }
-  ```
-  </details>
+  return time;
+}
+```
+
+</details>
+
+<br>
+
+\- 20210404 - 마크다운 구성 변경

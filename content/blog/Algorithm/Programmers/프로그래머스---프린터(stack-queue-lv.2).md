@@ -64,6 +64,7 @@ def solution(priorities, location):
 
 출처 :
 <a href='https://programmers.co.kr/learn/courses/30/lessons/42587' target='-blank'>프로그래머스</a>
+
 </details>
 
 ## 접근
@@ -112,45 +113,44 @@ def solution(priorities, location):
 
 ## 검색
 
-- <details><summary>list.pop() 과 list.pop(0), deque 의 시간 복잡도에 대해 검색해봤다.</summary>
+<details><summary>list.pop() 과 list.pop(0), deque 의 시간 복잡도에 대해 검색해봤다.</summary>
 
-  검색어는 아래와 같다.
+검색어는 아래와 같다.
 
-  - 'python pop time complexity'
-  - 'python deque time complexity'
+- 'python pop time complexity'
+- 'python deque time complexity'
 
-  참고한 문서는 아래와 같다. `(+ 블로그 글에 인용된 문서들)`
+참고한 문서는 아래와 같다. `(+ 블로그 글에 인용된 문서들)`
 
-  - <a href='https://wayhome25.github.io/python/2017/06/14/time-complexity/' target='-blank'>
-    '파이썬 자료형 별 주요 연산자의 시간 복잡도 (Big-O)'</a>
-  - <a href='https://dev.plusblog.co.kr/42' target='-blank'>
-    '파이썬 기본 연산자들의 시간 복잡도(Big-O) 정리'</a>
-  - <a href='https://wiki.python.org/moin/TimeComplexity' target='-blank'>
-    'Time complexity in the Python wiki'</a>
+- <a href='https://wayhome25.github.io/python/2017/06/14/time-complexity/' target='-blank'>
+  '파이썬 자료형 별 주요 연산자의 시간 복잡도 (Big-O)'</a>
+- <a href='https://dev.plusblog.co.kr/42' target='-blank'>
+  '파이썬 기본 연산자들의 시간 복잡도(Big-O) 정리'</a>
+- <a href='https://wiki.python.org/moin/TimeComplexity' target='-blank'>
+  'Time complexity in the Python wiki'</a>
 
-  <br>
+<br>
 
-  **앞으로, 스택/큐를 사용하는 경우에는 무조건 deque 를 사용하기로 했다.**
+**앞으로, 스택/큐를 사용하는 경우에는 무조건 deque 를 사용하기로 했다.**
 
-  </details>
+</details>
 
-- <details><summary>import 후에 접근하는 방식과 from, import 의 성능 차이에 대해 검색해봤다.</summary>
+<details><summary>import 후에 접근하는 방식과 from, import 의 성능 차이에 대해 검색해봤다.</summary>
 
-  검색어는 아래와 같다.
+검색어는 아래와 같다.
 
-  - 'python from import vs import performance'
+- 'python from import vs import performance'
 
-  참고한 문서는 아래와 같다.
+참고한 문서는 아래와 같다.
 
-  - <a href='https://stackoverflow.com/questions/3591962/python-import-x-or-from-x-import-y-performance' target='-blank'>
-    'Python import X or from X import Y? (performance)'</a>
+- <a href='https://stackoverflow.com/questions/3591962/python-import-x-or-from-x-import-y-performance' target='-blank'>
+  'Python import X or from X import Y? (performance)'</a>
 
-  <br>
+<br>
 
-  **모듈을 가져올 땐 꼭 필요한 것만 가져올 수 있도록 습관을 들이기로 했다.**
+**모듈을 가져올 땐 꼭 필요한 것만 가져올 수 있도록 습관을 들이기로 했다.**
 
-  </details>
-
+</details>
 
 ## 풀이
 
@@ -168,6 +168,7 @@ def solution(priorities, location):
     answer = 0
     return answer
 ```
+
 </details>
 
 <details><summary>2. 큐, 스택, 중요도 변수, 정답 변수를 선언했다.</summary>
@@ -192,6 +193,7 @@ def solution(priorities, location):
 
     return answer
 ```
+
 </details>
 
 <details><summary>3. 큐에 담긴 원소를 순회하는 반복문을 추가했다.</summary>
@@ -219,6 +221,7 @@ def solution(priorities, location):
 
     return answer
 ```
+
 </details>
 
 <details><summary>4. 조건이 충족되면 인쇄되도록 조건문을 추가했다.</summary>
@@ -255,6 +258,7 @@ def solution(priorities, location):
 
     return answer
 ```
+
 </details>
 
 <details><summary>5. 지정된 문서가 출력되면 값을 반환하는 조건문을 추가했다.</summary>
@@ -295,12 +299,13 @@ def solution(priorities, location):
 
         task_queue.append((priority, is_target))
 ```
+
 </details>
 
 <br>
 
 > <details><summary>같은 동작을 자바스크립트로 코딩해봤다.</summary>
-> 
+>
 > ```javascript
 > const solution = (priorities, location) => {
 >   const taskQueue = priorities.map((priority, _) => [priority, _ == location]);
@@ -321,6 +326,7 @@ def solution(priorities, location):
 >   }
 > };
 > ```
+>
 > </details>
 
 ## 배운 것
@@ -334,90 +340,105 @@ def solution(priorities, location):
      \- 출처 : 
      <a href='https://docs.python.org/ko/3.8/library/dis.html' target='-blank'>'Python'</a>
 - 다른 사람의 풀이를 보고, 내장 함수 any() 와, for, else 문을 배웠다.
-  <details><summary>any()를 활용한 풀이</summary>
 
-  - 인쇄되는 여부에 상관없이 반복하면서 인쇄된 경우에만 정답 변수를 증가시키고,  
-    인쇄된 문서가 지정된 문서라면 정답을 반환하는 풀이 방식이다.
-  - any 의 인자로 'generator expression(생성기 표현식)' 이 입력되어 있다.
-  - 효율성은 조금 아쉽지만, any() 를 활용했다는 점이 인상깊었다.
+<details><summary>any()를 활용한 풀이</summary>
 
-  ```python
-  def solution(priorities, location):
-        queue =  [(i,p) for i,p in enumerate(priorities)]
-        answer = 0
-        while True:
-            cur = queue.pop(0)
-            if any(cur[1] < q[1] for q in queue):
-                queue.append(cur)
-            else:
-                answer += 1
-                if cur[0] == location:
-                    return answer
-  ```
-  </details>
-  <details><summary>any() 함수는 반복 가능 객체를 입력받아 진리값을 반환한다.</summary>
+- 인쇄되는 여부에 상관없이 반복하면서 인쇄된 경우에만 정답 변수를 증가시키고,  
+  인쇄된 문서가 지정된 문서라면 정답을 반환하는 풀이 방식이다.
+- any 의 인자로 'generator expression(생성기 표현식)' 이 입력되어 있다.
+- 효율성은 조금 아쉽지만, any() 를 활용했다는 점이 인상깊었다.
 
-  - 입력받은 객체의 원소 중 '참' 인 경우가 하나라도 있는 지를 확인할 때 사용한다.
-  - 하나라도 참이면 'True', 아니라면 'False' 가 된다.
-  - 자매품으로 전체 원소가 참인지 여부를 확인하는 all() 함수가 있다.
-  </details>
-  <details><summary>any() 함수의 동작 방식을 코드로 표현하면,</summary>
+```python
+def solution(priorities, location):
+    queue =  [(i,p) for i,p in enumerate(priorities)]
+    answer = 0
+    while True:
+        cur = queue.pop(0)
+        if any(cur[1] < q[1] for q in queue):
+            queue.append(cur)
+        else:
+            answer += 1
+            if cur[0] == location:
+                return answer
+```
 
-      \- 출처 : 
-      <a href='https://docs.python.org/3/library/functions.html?#any' target='-blank'>
-      'Python'
-      </a>
+</details>
 
-      ```python
-      def any(iterable):
-            for element in iterable:
-                if element:
-                    return True
-            return False
-      ```
-  </details>
-  <details><summary>all() 함수의 동작 방식을 코드로 표현하면,</summary>
+<details><summary>any() 함수는 반복 가능 객체를 입력받아 진리값을 반환한다.</summary>
 
-      \- 출처 : 
-      <a href='https://docs.python.org/3/library/functions.html?#all' target='-blank'>
-      'Python'
-      </a>
+- 입력받은 객체의 원소 중 '참' 인 경우가 하나라도 있는 지를 확인할 때 사용한다.
+- 하나라도 참이면 'True', 아니라면 'False' 가 된다.
+- 자매품으로 전체 원소가 참인지 여부를 확인하는 all() 함수가 있다.
 
-      ```python
-      def all(iterable):
-            for element in iterable:
-                if not element:
-                    return False
+</details>
+
+<details><summary>any() 함수의 동작 방식을 코드로 표현하면,</summary>
+
+\- 출처 : 
+<a href='https://docs.python.org/3/library/functions.html?#any' target='-blank'>
+'Python'
+</a>
+
+```python
+def any(iterable):
+    for element in iterable:
+        if element:
             return True
-      ```
-  </details>
-  <details><summary>for, else 문을 활용한 풀이</summary>
+    return False
+```
 
-      - 인쇄된 여부를 비교하고, 현재 인쇄되어야 하는 값만 수정하는 풀이 방식이다.
-      - 원소를 삭제하지 않고, 조건에 의해 무시되도록 하는 방식이 인상깊었다.
-      - 배열을 변형하지 않기 때문에 훨씬 더 효율적으로 동작했다..
-      - for 문의 동작 과정에서 break 없이 동작이 온전히 종료된 경우에 else 절로 넘어간다.
+</details>
 
-      ```python
-      def solution(priorities, location):
-            answer = 0
-            search, c = sorted(priorities, reverse=True), 0
-            while True:
-                for i, priority in enumerate(priorities):
-                    s = search[c]
-                    if priority == s:
-                        c += 1
-                        answer += 1
-                        if i == location:
-                            break
-                else:
-                    continue
-                break
-            return answer
-      ```
-  </details>
+<details><summary>all() 함수의 동작 방식을 코드로 표현하면,</summary>
 
-  - <details><summary>각각의 풀이에 대한 결과</summary>
+\- 출처 : 
+<a href='https://docs.python.org/3/library/functions.html?#all' target='-blank'>
+'Python'
+</a>
 
-      ![](./images/stack-queue/4/compare.png)
-    </details>
+```python
+def all(iterable):
+    for element in iterable:
+        if not element:
+            return False
+    return True
+```
+
+</details>
+
+<details><summary>for, else 문을 활용한 풀이</summary>
+
+- 인쇄된 여부를 비교하고, 현재 인쇄되어야 하는 값만 수정하는 풀이 방식이다.
+- 원소를 삭제하지 않고, 조건에 의해 무시되도록 하는 방식이 인상깊었다.
+- 배열을 변형하지 않기 때문에 훨씬 더 효율적으로 동작했다..
+- for 문의 동작 과정에서 break 없이 동작이 온전히 종료된 경우에 else 절로 넘어간다.
+
+```python
+def solution(priorities, location):
+    answer = 0
+    search, c = sorted(priorities, reverse=True), 0
+    while True:
+        for i, priority in enumerate(priorities):
+            s = search[c]
+            if priority == s:
+                c += 1
+                answer += 1
+                if i == location:
+                    break
+        else:
+            continue
+        break
+    return answer
+```
+
+</details>
+
+<details><summary>각각의 풀이에 대한 결과</summary>
+
+![](./images/stack-queue/4/compare.png)
+
+</details>
+
+<br>
+
+\- 20210404 - 마크다운 구성 변경

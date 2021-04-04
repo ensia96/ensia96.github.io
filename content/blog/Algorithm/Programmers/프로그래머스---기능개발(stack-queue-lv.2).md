@@ -66,6 +66,7 @@ def solution(progresses, speeds):
 
 출처 :
 <a href='https://programmers.co.kr/learn/courses/30/lessons/42584' target='-blank'>프로그래머스</a>
+
 </details>
 
 ## 접근
@@ -140,7 +141,9 @@ def solution(progresses, speeds):
 
     return answer
 ```
+
 </details>
+
 </details>
 
 <br>
@@ -179,6 +182,7 @@ def solution(progresses, speeds):
 
     return answer
 ```
+
 </details>
 
 ## 검색
@@ -201,6 +205,7 @@ def solution(progresses, speeds):
     answer = []
     return answer
 ```
+
 </details>
 
 <details><summary>2. 작업 진행을 계산하기 위해 시간 변수를 추가했다.</summary>
@@ -221,6 +226,7 @@ def solution(progresses, speeds):
 
     return answer
 ```
+
 </details>
 
 <details><summary>3. 진행할 작업이 없을 때까지 배포 시간을 최신화하는 코드를 추가했다.</summary>
@@ -245,6 +251,7 @@ def solution(progresses, speeds):
 
     return answer
 ```
+
 </details>
 
 <details><summary>4. 배포 가능한 작업들을 처리하고, 정답 배열의 값을 증가시키는 코드를 추가했다.</summary>
@@ -275,6 +282,7 @@ def solution(progresses, speeds):
 
     return answer
 ```
+
 </details>
 
 <details><summary>5. 정확한 시간에 배포할 수 있도록, 계산된 시간을 올림하는 코드를 추가했다.</summary>
@@ -308,16 +316,18 @@ def solution(progresses, speeds):
 
     return answer
 ```
+
 </details>
 
 <br>
 
 <details><summary>추가 : 작업 진행도와 속도에 대한 변수를 추가하면 코드가 깔끔해진다.</summary>
 
-- <details><summary>결과 비교하기</summary>
+<details><summary>결과 비교하기</summary>
 
-  ![](./images/stack-queue/3/add-variable.png)
-  </details>
+![](./images/stack-queue/3/add-variable.png)
+
+</details>
 
 ```python
 def solution(progresses, speeds):
@@ -349,14 +359,16 @@ def solution(progresses, speeds):
 
     return answer
 ```
+
 </details>
 
 <details><summary>추가 : 내장 모듈을 이용하면 성능을 향상시킬 수 있다.</summary>
 
-- <details><summary>결과 비교하기</summary>
+<details><summary>결과 비교하기</summary>
 
-  ![](./images/stack-queue/3/math-module.png)
-  </details>
+![](./images/stack-queue/3/math-module.png)
+
+</details>
 
 ```python
 def solution(progresses, speeds):
@@ -385,14 +397,16 @@ def solution(progresses, speeds):
 
     return answer
 ```
+
 </details>
 
 <details><summary>추가 : 두 가지 모두 적용하면 깔끔한 코드, 준수한 성능을 얻을 수 있다.</summary>
 
-- <details><summary>결과 비교하기</summary>
+<details><summary>결과 비교하기</summary>
 
-  ![](./images/stack-queue/3/compare.png)
-  </details>
+![](./images/stack-queue/3/compare.png)
+
+</details>
 
 ```python
 def solution(progresses, speeds):
@@ -422,6 +436,7 @@ def solution(progresses, speeds):
 
     return answer
 ```
+
 </details>
 
 <br>
@@ -444,29 +459,35 @@ def solution(progresses, speeds):
 >   return answer;
 > };
 > ```
+>
 > </details>
 
 ## 배운 것
 
 - 다른 사람의 풀이를 보고, 나누기 몫의 올림 값을 효율적으로 구하는 방법을 배웠다.
-  <details><summary>음수의 나눗셈 몫을 활용한 풀이</summary>
 
-  - 모든 정보들이 효율적으로 구성되어 있다는 점이 인상깊었다.
-      - 진도와 속도를 하나로 묶고 for 문을 사용해 불필요한 동작이 최소화된다. `(pop() 등)`
-      - (배포 시점, 배포된 작업 수) 형태의 정보가 깔끔하게 활용된다.
-  - 음수의 나눗셈을 이용하면 나눗셈 몫을 효율적으로 올림할 수 있다는 것을 배웠다.  
-    `(생각지도 못한 신선한 방법; ㄴㅇㄱ)`
+<details><summary>음수의 나눗셈 몫을 활용한 풀이</summary>
 
-  ```python
-  def solution(progresses, speeds):
-        Q=[]
-        for p, s in zip(progresses, speeds):
-            if len(Q)==0 or Q[-1][0]<-((p-100)//s):
-                Q.append([-((p-100)//s),1])
-            else:
-                Q[-1][1]+=1
-        return [q[1] for q in Q]
-  ```
-  </details>
+- 모든 정보들이 효율적으로 구성되어 있다는 점이 인상깊었다.
+   - 진도와 속도를 하나로 묶고 for 문을 사용해 불필요한 동작이 최소화된다. `(pop() 등)`
+   - (배포 시점, 배포된 작업 수) 형태의 정보가 깔끔하게 활용된다.
+- 음수의 나눗셈을 이용하면 나눗셈 몫을 효율적으로 올림할 수 있다는 것을 배웠다.  
+  `(생각지도 못한 신선한 방법; ㄴㅇㄱ)`
 
-- 20210329 - 표현 수정('별다른' -> '별도의')
+```python
+def solution(progresses, speeds):
+      Q=[]
+      for p, s in zip(progresses, speeds):
+          if len(Q)==0 or Q[-1][0]<-((p-100)//s):
+              Q.append([-((p-100)//s),1])
+          else:
+              Q[-1][1]+=1
+      return [q[1] for q in Q]
+```
+
+</details>
+
+<br>
+
+\- 20210329 - 표현 수정('별다른' -> '별도의')
+\- 20210404 - 마크다운 구성 변경

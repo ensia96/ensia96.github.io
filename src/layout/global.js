@@ -11,6 +11,10 @@ export default createGlobalStyle`
         text-decoration: none;
     }
 
+    del {
+        text-decoration: line-through;
+    }
+
     a {
         color: ${({ theme: { font } }) => font};
         text-decoration: none;

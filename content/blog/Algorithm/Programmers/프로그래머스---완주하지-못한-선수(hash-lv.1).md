@@ -62,6 +62,7 @@ def solution(participant, completion):
 
 출처 :
 <a href='https://programmers.co.kr/learn/courses/30/lessons/42576' target='-blank'>프로그래머스</a>
+
 </details>
 
 ## 접근
@@ -105,6 +106,7 @@ def solution(participant, completion):
     answer = ''
     return answer
 ```
+
 </details>
 
 <details><summary>2. 마라톤의 결과를 비교하는 데에 사용할 딕셔너리를 선언했다.</summary>
@@ -120,6 +122,7 @@ def solution(participant, completion):
     '''
     result = dict()
 ```
+
 </details>
 
 <details><summary>3. (참가자의 이름: 이름이 같은 사람의 수) 를 딕셔너리에 추가했다.</summary>
@@ -140,6 +143,7 @@ def solution(participant, completion):
             result[name] = 0
         result[name] += 1
 ```
+
 </details>
 
 <details><summary>4. 위에서 완성한 딕셔너리에서 완주자의 수를 뺐다.</summary>
@@ -163,6 +167,7 @@ def solution(participant, completion):
     for name in completion:
         result[name] -= 1
 ```
+
 </details>
 
 <details><summary>5. 명단에 남아있는 사람을 반환했다.</summary>
@@ -190,6 +195,7 @@ def solution(participant, completion):
         if result[name] == 1:
             return name
 ```
+
 </details>
 
 <br>
@@ -213,65 +219,84 @@ def solution(participant, completion):
 >   return participant.find(name => result[name])
 > }
 > ```
+>
 > </details>
 
 ## 배운 것
 
 - 파이썬의 딕셔너리는 해시 테이블이다.
 - 다른 사람의 풀이를 보고, collections 모듈과 hash() 함수를 활용하는 방법을 배웠다.
-  <details><summary>collections 모듈을 활용한 풀이</summary>
 
-  두 배열에 포함된 요소들의 갯수를 key, value 형태로 저장하는  
+<details><summary>collections 모듈을 활용한 풀이</summary>
+
+- 두 배열에 포함된 요소들의 갯수를 key, value 형태로 저장하는  
   'Counter' 클래스를 활용하여 `참가자 - 완주자`에서 남은 원소를 반환하는 방법이다.  
   `(놀랍게도 Counter 클래스로 생성된 객체는 빼기 연산이 가능하다고 한다!)`
-  ```python
-  import collections
 
-  def solution(participant, completion):
-        answer = collections.Counter(participant) - collections.Counter(completion)
-        return list(answer.keys())[0]
-  ```
-  <details><summary>코드를 더 짧게 바꿔봤다.</summary>
-  
-  ```python
-  from collections import Counter
+```python
+import collections
 
-  def solution(participant, completion):
-        return list(Counter(participant) - Counter(completion)).keys().pop()
-  ```
-  </details>
-  </details>
-  <details><summary>hash 함수를 활용한 풀이</summary>
+def solution(participant, completion):
+    answer = collections.Counter(participant) - collections.Counter(completion)
+    return list(answer.keys())[0]
+```
 
-  hash() 함수를 이용해 문자열을 정수형 값으로 변환한 후,  
+<details><summary>코드를 더 짧게 바꿔봤다.</summary>
+
+```python
+from collections import Counter
+
+def solution(participant, completion):
+    return list(Counter(participant) - Counter(completion)).keys().pop()
+```
+
+</details>
+
+</details>
+
+<details><summary>hash 함수를 활용한 풀이</summary>
+
+- hash() 함수를 이용해 문자열을 정수형 값으로 변환한 후,  
+
   > 모든 참가자 이름의 해시값 - 모든 완주자 이름의 해시값 = 남은 이름의 해시값
 
   으로 해시값을 얻어 해당 해시의 원본 문자열이 담긴 딕셔너리에서 값을 호출하는 방법이다.
-  ```python
-  def solution(participant, completion):
-        answer = ''
-        temp = 0
-        dic = {}
-        for part in participant:
-            dic[hash(part)] = part
-            temp += int(hash(part))
-        for com in completion:
-            temp -= hash(com)
-        answer = dic[temp]
 
-        return answer
-  ```
-  </details>
+```python
+def solution(participant, completion):
+    answer = ''
+    temp = 0
+    dic = {}
+    for part in participant:
+        dic[hash(part)] = part
+        temp += int(hash(part))
+    for com in completion:
+        temp -= hash(com)
+    answer = dic[temp]
+
+    return answer
+```
+
+</details>
+
 - 세상엔 대단한 개발자가 정말 많다는 것을 알게됐다.
-  <details><summary>다른 사람의 풀이(자바스크립트)</summary>
 
-  완주자 배열에 (이름: 수) 형태의 원소를 추가하여 유사객체로 변환한 후에  
+<details><summary>다른 사람의 풀이(자바스크립트)</summary>
+
+- 완주자 배열에 (이름: 수) 형태의 원소를 추가하여 유사객체로 변환한 후에  
   참가자 배열의 원소를 순서대로 순회하며 아래 연산을 진행하도록 하고,
-  - 이름에 해당하는 값을 감소시킨다.
-  - 그 시점의 값이 0 혹은 NaN (거짓) 가 될 경우에 반환하도록 부정 연산을 취한다.
+
+   - 이름에 해당하는 값을 감소시킨다.
+   - 그 시점의 값이 0 혹은 NaN (거짓) 가 될 경우에 반환하도록 부정 연산을 취한다.
 
   그 연산의 결과를 find 콜백의 리턴 트리거로 만드는 방법이다.
-  ```javascript
-  var solution=(_,$)=>_.find(_=>!$[_]--,$.map(_=>$[_]=($[_]|0)+1))
-  ```
-  </details>
+
+```javascript
+var solution=(_,$)=>_.find(_=>!$[_]--,$.map(_=>$[_]=($[_]|0)+1))
+```
+
+</details>
+
+<br>
+
+\- 20210404 - 마크다운 구성 변경

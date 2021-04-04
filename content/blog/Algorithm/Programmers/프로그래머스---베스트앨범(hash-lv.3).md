@@ -69,6 +69,7 @@ def solution(genres, plays):
 
 출처 :
 <a href='https://programmers.co.kr/learn/courses/30/lessons/42579' target='-blank'>프로그래머스</a>
+
 </details>
 
 ## 접근
@@ -117,6 +118,7 @@ def solution(genres, plays):
     answer = []
     return answer
 ```
+
 </details>
 
 <details><summary>2. 정보를 저장할 해시 테이블을 선언했다.</summary>
@@ -135,6 +137,7 @@ def solution(genres, plays):
 
     return answer
 ```
+
 </details>
 
 <details><summary>3. 장르 별로 저장할 정보를 해시 테이블에 입력했다.</summary>
@@ -158,6 +161,7 @@ def solution(genres, plays):
 
     return answer
 ```
+
 </details>
 
 <details><summary>4. 장르 별 총 재생 횟수를 누적시키고, 곡 목록을 추가했다.</summary>
@@ -184,6 +188,7 @@ def solution(genres, plays):
 
     return answer
 ```
+
 </details>
 
 <details><summary>5. 해시 테이블의 정보를 정렬하여 배열에 저장했다.</summary>
@@ -212,6 +217,7 @@ def solution(genres, plays):
 
     return answer
 ```
+
 </details>
 
 <details><summary>6. 장르 별로 곡 목록을 정렬하여 정답 배열에 추가했다.</summary>
@@ -243,6 +249,7 @@ def solution(genres, plays):
 
     return answer
 ```
+
 </details>
 
 <br>
@@ -270,6 +277,7 @@ def solution(genres, plays):
 >    return answer;
 >  };
 > ```
+>
 > </details>
 
 
@@ -278,56 +286,62 @@ def solution(genres, plays):
 - 값을 비교하며 배열을 구성하는 것보다, 마지막에 한번에 정렬하는 것이 더 낫다.
 - 단순한 구조라면 객체를 선언하고 키에 값을 넣는 것보다, 한번에 선언하는 것이 더 낫다.
 - 다른 사람의 풀이를 보고, 정렬 가능한 클래스를 구현하는 방법을 배웠다.
-  <details><summary>클래스를 활용한 풀이</summary>
 
-   - 특정한 구조의 정보를 저장하기 위해 클래스를 사용할 수 있다는 것을 배웠다.
-   - 정렬에 필요한 메소드를 구성하고, 슬라이싱 대신 횟수를 세는 방식이 인상깊었다.
-   - 길이는 길지만, 읽기 좋은 코드인 것 같다.
+<details><summary>클래스를 활용한 풀이</summary>
 
-  ```python
-  def solution(genres, plays):
-        answer = []
-        dic = {}
-        album_list = []
-        for i in range(len(genres)):
-            dic[genres[i]] = dic.get(genres[i], 0) + plays[i]
-            album_list.append(album(genres[i], plays[i], i))
-    
-        dic = sorted(dic.items(), key=lambda dic:dic[1], reverse=True)
-        album_list = sorted(album_list, reverse=True)
-    
-    
-    
-        while len(dic) > 0:
-            play_genre = dic.pop(0)
-            print(play_genre)
-            cnt = 0;
-            for ab in album_list:
-                if play_genre[0] == ab.genre:
-                    answer.append(ab.track)
-                    cnt += 1
-                if cnt == 2:
-                    break
-    
-        return answer
-    
-    class album:
-        def __init__(self, genre, play, track):
-            self.genre = genre
-            self.play = play
-            self.track = track
-    
-        def __lt__(self, other):
-            return self.play < other.play
-        def __le__(self, other):
-            return self.play <= other.play
-        def __gt__(self, other):
-            return self.play > other.play
-        def __ge__(self, other):
-            return self.play >= other.play
-        def __eq__(self, other):
-            return self.play == other.play
-        def __ne__(self, other):
-            return self.play != other.play
-  ```
-  </details>
+- 특정한 구조의 정보를 저장하기 위해 클래스를 사용할 수 있다는 것을 배웠다.
+- 정렬에 필요한 메소드를 구성하고, 슬라이싱 대신 횟수를 세는 방식이 인상깊었다.
+- 길이는 길지만, 읽기 좋은 코드인 것 같다.
+
+```python
+def solution(genres, plays):
+    answer = []
+    dic = {}
+    album_list = []
+    for i in range(len(genres)):
+        dic[genres[i]] = dic.get(genres[i], 0) + plays[i]
+        album_list.append(album(genres[i], plays[i], i))
+
+    dic = sorted(dic.items(), key=lambda dic:dic[1], reverse=True)
+    album_list = sorted(album_list, reverse=True)
+
+
+
+    while len(dic) > 0:
+        play_genre = dic.pop(0)
+        print(play_genre)
+        cnt = 0;
+        for ab in album_list:
+            if play_genre[0] == ab.genre:
+                answer.append(ab.track)
+                cnt += 1
+            if cnt == 2:
+                break
+
+    return answer
+
+class album:
+    def __init__(self, genre, play, track):
+        self.genre = genre
+        self.play = play
+        self.track = track
+
+    def __lt__(self, other):
+        return self.play < other.play
+    def __le__(self, other):
+        return self.play <= other.play
+    def __gt__(self, other):
+        return self.play > other.play
+    def __ge__(self, other):
+        return self.play >= other.play
+    def __eq__(self, other):
+        return self.play == other.play
+    def __ne__(self, other):
+        return self.play != other.play
+```
+
+</details>
+
+<br>
+
+\- 20210404 - 마크다운 구성 변경

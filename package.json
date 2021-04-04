@@ -67,6 +67,7 @@
     "url": "git+https://github.com/ensia96/ensia96.github.io.git"
   },
   "scripts": {
+    "clean": "rm -rf public .cache",
     "post": "gatsby-post-gen",
     "dep": "gatsby build && gh-pages -d public -b master",
     "dev": "gatsby develop",

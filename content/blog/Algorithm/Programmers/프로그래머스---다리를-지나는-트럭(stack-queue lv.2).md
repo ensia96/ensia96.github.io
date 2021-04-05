@@ -459,4 +459,4 @@ function solution(bridge_length, weight, truck_weights) {
 
 <br>
 
-\- 20210404 - 마크다운 구성 변경
+- 20210404 - 마크다운 구성 변경

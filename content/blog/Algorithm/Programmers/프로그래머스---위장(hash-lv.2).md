@@ -400,4 +400,4 @@ def reduce(function, iterable, initializer=None):
 
 <br>
 
-\- 20210404 - 마크다운 구성 변경
+- 20210404 - 마크다운 구성 변경

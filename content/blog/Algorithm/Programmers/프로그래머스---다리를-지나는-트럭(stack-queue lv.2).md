@@ -444,7 +444,7 @@ function solution(bridge_length, weight, truck_weights) {
       qu.push([truck_weights.shift(), time + bridge_length]);
     } else {
       // 3. 다음 트럭이 못올라오는 상황이면 얼른 큐의
-      //    첫번째 트럭이 빠지도록 그 시간으로 점프한다.
+      //    첫 번째 트럭이 빠지도록 그 시간으로 점프한다.
       //    참고: if 밖에서 1 더하기 때문에 -1 해줌
       if (qu[0]) time = qu[0][1] - 1;
     }
@@ -460,3 +460,4 @@ function solution(bridge_length, weight, truck_weights) {
 <br>
 
 - 20210404 - 마크다운 구성 변경
+- 20210418 - 맞춤법 수정(첫번째 -> 첫 번째)

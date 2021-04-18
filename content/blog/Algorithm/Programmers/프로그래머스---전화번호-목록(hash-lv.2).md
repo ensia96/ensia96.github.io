@@ -360,7 +360,7 @@ True
 
 </details>
 
-<details><summary>2번째, 3번째 인자를 통해 탐색 범위를 지정할 수 있다.</summary>
+<details><summary>2, 3번째 인자를 통해 탐색 범위를 지정할 수 있다.</summary>
 
 | Parameter | Description |
 |-|-|
@@ -380,3 +380,4 @@ True
 <br>
 
 - 20210404 - 마크다운 구성 변경
+- 20210418 - 표기 수정(2번째, 3번째 -> 2, 3번째)

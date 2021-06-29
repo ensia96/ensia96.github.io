@@ -63,7 +63,7 @@ def solution(priorities, location):
 ```
 
 출처 :
-<a href='https://programmers.co.kr/learn/courses/30/lessons/42587' target='-blank'>프로그래머스</a>
+['프로그래머스'](https://programmers.co.kr/learn/courses/30/lessons/42587)
 
 </details>
 
@@ -122,12 +122,9 @@ def solution(priorities, location):
 
 참고한 문서는 아래와 같다. `(+ 블로그 글에 인용된 문서들)`
 
-- <a href='https://wayhome25.github.io/python/2017/06/14/time-complexity/' target='-blank'>
-  '파이썬 자료형 별 주요 연산자의 시간 복잡도 (Big-O)'</a>
-- <a href='https://dev.plusblog.co.kr/42' target='-blank'>
-  '파이썬 기본 연산자들의 시간 복잡도(Big-O) 정리'</a>
-- <a href='https://wiki.python.org/moin/TimeComplexity' target='-blank'>
-  'Time complexity in the Python wiki'</a>
+- ['파이썬 자료형 별 주요 연산자의 시간 복잡도 (Big-O)'](https://wayhome25.github.io/python/2017/06/14/time-complexity)
+- ['파이썬 기본 연산자들의 시간 복잡도(Big-O) 정리'](https://dev.plusblog.co.kr/42)
+- ['Time complexity in the Python wiki'](https://wiki.python.org/moin/TimeComplexity)
 
 <br>
 
@@ -143,8 +140,7 @@ def solution(priorities, location):
 
 참고한 문서는 아래와 같다.
 
-- <a href='https://stackoverflow.com/questions/3591962/python-import-x-or-from-x-import-y-performance' target='-blank'>
-  'Python import X or from X import Y? (performance)'</a>
+- ['Python import X or from X import Y? (performance)'](https://stackoverflow.com/questions/3591962/python-import-x-or-from-x-import-y-performance)
 
 <br>
 
@@ -338,7 +334,7 @@ def solution(priorities, location):
    - 모듈 형태로 제공되서 `import dis` 로 가져온 후에 사용할 수 있다.
    - 정확하게는 CPython 인터프리터의 구현 세부 사항을 표기하는 것이라고 한다.  
      \- 출처 : 
-     <a href='https://docs.python.org/ko/3.8/library/dis.html' target='-blank'>'Python'</a>
+     ['Python'](https://docs.python.org/ko/3.8/library/dis.html)
 - 다른 사람의 풀이를 보고, 내장 함수 any() 와, for, else 문을 배웠다.
 
 <details><summary>any()를 활용한 풀이</summary>
@@ -375,9 +371,7 @@ def solution(priorities, location):
 <details><summary>any() 함수의 동작 방식을 코드로 표현하면,</summary>
 
 \- 출처 : 
-<a href='https://docs.python.org/3/library/functions.html?#any' target='-blank'>
-'Python'
-</a>
+['Python'](https://docs.python.org/3/library/functions.html?#any)
 
 ```python
 def any(iterable):
@@ -392,9 +386,7 @@ def any(iterable):
 <details><summary>all() 함수의 동작 방식을 코드로 표현하면,</summary>
 
 \- 출처 : 
-<a href='https://docs.python.org/3/library/functions.html?#all' target='-blank'>
-'Python'
-</a>
+['Python'](https://docs.python.org/3/library/functions.html?#all)
 
 ```python
 def all(iterable):

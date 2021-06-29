@@ -81,7 +81,7 @@ def solution(clothes):
 ```
 
 출처 :
-<a href='https://programmers.co.kr/learn/courses/30/lessons/42578' target='-blank'>프로그래머스</a>
+['프로그래머스'](https://programmers.co.kr/learn/courses/30/lessons/42578)
 
 </details>
 
@@ -380,9 +380,7 @@ def solution(clothes):
 <details><summary>reduce() 함수의 동작 방식을 코드로 표현하면,</summary>
 
 \- 출처 : 
-<a href='https://docs.python.org/ko/3/library/functools.html' target='-blank'>
-'Python'
-</a>
+['Python'](https://docs.python.org/ko/3/library/functools.html)
 
 ```python
 def reduce(function, iterable, initializer=None):

@@ -68,7 +68,7 @@ def solution(genres, plays):
 ```
 
 출처 :
-<a href='https://programmers.co.kr/learn/courses/30/lessons/42579' target='-blank'>프로그래머스</a>
+['프로그래머스'](https://programmers.co.kr/learn/courses/30/lessons/42579)
 
 </details>
 

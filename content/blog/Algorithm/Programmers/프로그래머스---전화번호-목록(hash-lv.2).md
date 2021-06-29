@@ -71,7 +71,7 @@ def solution(phone_book):
 ```
 
 출처 :
-<a href='https://programmers.co.kr/learn/courses/30/lessons/42577' target='-blank'>프로그래머스</a>
+['프로그래머스'](https://programmers.co.kr/learn/courses/30/lessons/42577)
 
 </details>
 
@@ -102,9 +102,7 @@ def solution(phone_book):
 
 문제를 검색 해보았고, 접근법은 맞았는데 구현 방식이 문제였다는 것을 확인했다.
 
-> <a href='https://velog.io/@vvakki_/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-%ED%95%B4%EC%8B%9C-%EC%A0%84%ED%99%94%EB%B2%88%ED%98%B8-%EB%AA%A9%EB%A1%9D' target='-blank'>
-'[프로그래머스] 해시 - 전화번호 목록 - Velog'
-</a>
+> ['[프로그래머스] 해시 - 전화번호 목록 - Velog'](https://velog.io/@vvakki_/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-%ED%95%B4%EC%8B%9C-%EC%A0%84%ED%99%94%EB%B2%88%ED%98%B8-%EB%AA%A9%EB%A1%9D)
 
 <br>
 
@@ -286,12 +284,13 @@ def solution(phone_book):
    - 구현하려는 기능을 정리하는 방법에 대해 연구해봐야겠다..
 - Python 에서 딕셔너리를 선언하는 방법에는 성능 차이가 있다.
    - 처음 알게된 사실이었고, 공학 수업을 듣고있는 터라 뭔가 더 와닿았다.
-   - <a href='https://stackoverflow.com/questions/17097985/dict-vs-in-python-which-is-better/17098017' target='-blank'>'스택오버플로 - dict() vs {}'</a> 에서 내용을 확인할 수 있다.
+   - ['스택오버플로 - dict() vs {}'](https://stackoverflow.com/questions/17097985/dict-vs-in-python-which-is-better/17098017)
+     에서 내용을 확인할 수 있다.
 - 해시 테이블과 해시 맵의 차이점을 알게됐다.
    - Java 기준으로, 동기화 지원 여부의 차이가 있다고 한다.
    - 해시 테이블은 Null 값을 허용하지 않고, 병렬 처리(동기화) 가 필요할 때 사용한다.
    - 반대로, 해시 맵은 NUll 값을 허용하고, 병렬 처리를 고려하지 않을 때 사용한다.
-   - <a href='https://hee96-story.tistory.com/48' target='-blank'>'[자료구조] Hash/HashTable/HashMap - Hee\'s story'</a> 참고
+   - ['[자료구조] Hash/HashTable/HashMap - Hee\'s story'](https://hee96-story.tistory.com/48) 참고
 - 다른 사람의 풀이를 보고 zip() 함수와 startswith() 메소드의 사용법을 알게됐다.
 
 <details><summary>해시를 사용하지 않은 풀이 방법</summary>
@@ -369,9 +368,7 @@ True
 | end | Optional. An Integer specifying at which position to end the search |
 
 \- 출처 :
-<a href='https://www.w3schools.com/python/ref_string_startswith.asp' target='-blank'>
-'w3schools.com'
-</a>
+['w3schools.com'](https://www.w3schools.com/python/ref_string_startswith.asp)
 
 </details>
 

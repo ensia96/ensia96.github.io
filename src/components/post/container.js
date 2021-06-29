@@ -1,3 +1,8 @@
 import React from 'react'
 
-export default ({ html }) => <div dangerouslySetInnerHTML={{ __html: html }} />
+export default ({ html }) => (
+  <>
+    <base target="_blank" />
+    <div dangerouslySetInnerHTML={{ __html: html }} />
+  </>
+)

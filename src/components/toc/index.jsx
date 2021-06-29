@@ -26,6 +26,8 @@ const TableOfContents = ({ items }) => {
 
   const targetStyle = 'font-size: 16px; font-weight: 700;'
 
+  items = items.replaceAll(`">`, `" target="_self">`)
+
   const replaceItems = useMemo(
     () =>
       currentHeaderUrl

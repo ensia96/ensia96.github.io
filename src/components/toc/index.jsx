@@ -26,6 +26,8 @@ const TableOfContents = ({ items }) => {
 
   const targetStyle = 'font-size: 16px; font-weight: 700;'
 
+  items = items.replaceAll(`">`, `" target="_self">`)
+
   const replaceItems = useMemo(
     () =>
       currentHeaderUrl
@@ -39,7 +41,6 @@ const TableOfContents = ({ items }) => {
 
   return items ? (
     <Container open={open}>
-      <base target="_self" />
       <Button open={open} onClick={() => setOpen(!open)} />
       <div dangerouslySetInnerHTML={{ __html: replaceItems }} />
     </Container>

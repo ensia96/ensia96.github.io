@@ -62,6 +62,8 @@ export default ({ location, title, items, children }) => (
         []
       )
 
+      console.log(edges.map(({ node }) => node.fields.slug))
+
       const childrenWithExtraProp = React.Children.map(children, child =>
         React.cloneElement(child, { theme })
       )
@@ -122,6 +124,9 @@ const layoutQuery = graphql`
         node {
           frontmatter {
             category
+          }
+          fields {
+            slug
           }
         }
       }

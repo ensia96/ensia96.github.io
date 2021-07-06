@@ -64,7 +64,11 @@ export default ({ location, title, items, children }) => (
 
       console.log(
         edges.map(({ node }) => {
-          return node.fields.slug.split('/').filter(data => data)
+          const pathArray = node.fields.slug.split('/').filter(data => data)
+
+          pathArray.pop()
+
+          return pathArray
         })
       )
 

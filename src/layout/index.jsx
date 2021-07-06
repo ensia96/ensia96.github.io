@@ -64,7 +64,7 @@ export default ({ location, title, items, children }) => (
 
       console.log(
         edges.map(({ node }) => {
-          return node.fields.slug.split('/')
+          return node.fields.slug.split('/').filter(data => data)
         })
       )
 

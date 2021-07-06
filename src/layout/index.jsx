@@ -62,30 +62,28 @@ export default ({ location, title, items, children }) => (
         []
       )
 
-      console.log(
-        [
-          ...new Set(
-            edges.map(({ node }) => {
-              const pathArray = node.fields.slug.split('/').filter(data => data)
+      const structure = [
+        ...new Set(
+          edges.map(({ node }) => {
+            const pathArray = node.fields.slug.split('/').filter(data => data)
 
-              pathArray.pop()
+            pathArray.pop()
 
-              return pathArray.join('/')
-            })
-          ),
-        ].reduce((object, path) => {
-          let hierarchy = object
-
-          path.split('/').forEach(item => {
-            !hierarchy[item] && (hierarchy[item] = {})
-            hierarchy = hierarchy[item]
+            return pathArray.join('/')
           })
+        ),
+      ].reduce((object, path) => {
+        let hierarchy = object
 
-          hierarchy.path = path
+        path.split('/').forEach(item => {
+          !hierarchy[item] && (hierarchy[item] = {})
+          hierarchy = hierarchy[item]
+        })
 
-          return object
-        }, {})
-      )
+        hierarchy.path = path
+
+        return object
+      }, {})
 
       const childrenWithExtraProp = React.Children.map(children, child =>
         React.cloneElement(child, { theme })

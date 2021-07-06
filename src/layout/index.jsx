@@ -62,6 +62,29 @@ export default ({ location, title, items, children }) => (
         []
       )
 
+      const structure = [
+        ...new Set(
+          edges.map(({ node }) => {
+            const pathArray = node.fields.slug.split('/').filter(data => data)
+
+            pathArray.pop()
+
+            return pathArray.join('/')
+          })
+        ),
+      ].reduce((object, path) => {
+        let hierarchy = object
+
+        path.split('/').forEach(item => {
+          !hierarchy[item] && (hierarchy[item] = {})
+          hierarchy = hierarchy[item]
+        })
+
+        hierarchy.path = path
+
+        return object
+      }, {})
+
       const childrenWithExtraProp = React.Children.map(children, child =>
         React.cloneElement(child, { theme })
       )
@@ -75,7 +98,7 @@ export default ({ location, title, items, children }) => (
             />
             <AuthorBox author={author} avatar={avatar} onClick={bioToggle} />
             <Bio open={bio} setBio={setBio} />
-            <Category categories={categories} />
+            <Category structure={structure} categories={categories} />
           </SideBar>
           {isMobile && (
             <>
@@ -122,6 +145,9 @@ const layoutQuery = graphql`
         node {
           frontmatter {
             category
+          }
+          fields {
+            slug
           }
         }
       }

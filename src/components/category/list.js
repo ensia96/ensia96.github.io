@@ -1,25 +1,39 @@
 import React from 'react'
 import styled from 'styled-components'
 
-const List = styled.nav`
-  -ms-overflow-style: none;
-  ::-webkit-scrollbar {
-    display: none;
+const Detail = styled.details`
+  border: transparent;
+
+  & > :nth-child(2) {
+    margin-top: 0;
   }
-  overflow: auto;
-  padding: 10px 0;
-  ul {
-    height: 100%;
-    margin: 0;
-    list-style: none;
+
+  & > summary {
+    margin-top: 0;
+    font-weight: bold;
+    padding: 0.1em 0 0.2em;
+    background: transparent;
   }
-  ul li {
-    margin: 0;
+
+  & > summary:before {
+    content: '📁';
+    margin-right: 1em;
   }
-  ul li div {
-    padding: 5px;
-    margin-left: 50px;
+
+  &[open] > summary {
+    border-bottom: 0;
+    &:before {
+      content: '📂';
+      margin-right: 1em;
+    }
   }
 `
 
-export default ({ children }) => <List children={children} />
+export default ({ title, children }) => (
+  <Detail>
+    <summary>
+      <span>{title}</span>
+    </summary>
+    {children}
+  </Detail>
+)

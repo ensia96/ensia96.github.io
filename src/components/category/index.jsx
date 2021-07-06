@@ -1,13 +1,30 @@
 import React from 'react'
 
-import List from './list.js'
 import Item from './item.js'
+import Container from './container.js'
+import List from './list.js'
 
-export default ({ categories }) => (
-  <List>
-    <Item title="All" to="/" />
-    {categories.map((title, idx) => (
-      <Item key={idx} title={title} to={`/?category=${title}`} />
-    ))}
-  </List>
-)
+export default ({ structure }) => {
+  const Recursion = ({ object, object: { path }, title }) => {
+    const titles = Object.keys(object)
+
+    const recursion = titles.map(title => (
+      <Recursion object={object[title]} title={title} />
+    ))
+
+    return path ? (
+      <Item title={title} to={`/?path=${path}`}></Item>
+    ) : title ? (
+      <List title={title}>{recursion}</List>
+    ) : (
+      <>{recursion}</>
+    )
+  }
+
+  return (
+    <Container>
+      <Item icon="🏠" title="Home" to="/" />
+      <Recursion object={structure} />
+    </Container>
+  )
+}

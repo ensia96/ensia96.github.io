@@ -62,15 +62,17 @@ export default ({ location, title, items, children }) => (
         []
       )
 
-      console.log(
-        edges.map(({ node }) => {
-          const pathArray = node.fields.slug.split('/').filter(data => data)
+      console.log([
+        ...new Set(
+          edges.map(({ node }) => {
+            const pathArray = node.fields.slug.split('/').filter(data => data)
 
-          pathArray.pop()
+            pathArray.pop()
 
-          return pathArray.join('/')
-        })
-      )
+            return pathArray.join('/')
+          })
+        ),
+      ])
 
       const childrenWithExtraProp = React.Children.map(children, child =>
         React.cloneElement(child, { theme })

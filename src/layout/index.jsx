@@ -68,7 +68,7 @@ export default ({ location, title, items, children }) => (
 
           pathArray.pop()
 
-          return pathArray
+          return pathArray.join('/')
         })
       )
 

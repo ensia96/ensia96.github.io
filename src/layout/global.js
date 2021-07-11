@@ -24,6 +24,7 @@ export default createGlobalStyle`
     }
 
     details {
+        cursor: pointer;
 
         ::-webkit-details-marker {
             display: none;

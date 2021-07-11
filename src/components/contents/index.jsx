@@ -6,7 +6,7 @@ import ThumbnailItem from '../thumbnail-item'
 export default ({ posts, countOfInitialPost, count, category }) => {
   const contents = useMemo(() =>
     (category
-      ? posts.filter(({ node }) => node.frontmatter.category === category)
+      ? posts.filter(({ node }) => node.fields.slug.includes(category))
       : posts
     ).slice(0, count * countOfInitialPost)
   )

@@ -3,24 +3,26 @@ import styled from 'styled-components'
 import { Link } from 'gatsby'
 
 const Item = styled(Link)`
+  margin: 0;
+  height: 30.78px;
   display: block;
-  height: 36px;
   text-transform: uppercase;
   font-weight: bold;
   &:hover {
   }
-  i {
-    margin: 10px 13px 10px 30px;
+  div {
+    margin: 0px 1em 0px 0px;
     vertical-align: middle;
+    display: inline;
   }
   span {
     vertical-align: middle;
   }
 `
 
-export default ({ title, to }) => (
+export default ({ icon = '📒', title, to }) => (
   <Item to={to}>
-    <i>#</i>
+    <div>{icon}</div>
     <span>{title}</span>
   </Item>
 )

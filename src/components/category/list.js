@@ -2,7 +2,6 @@ import styled from 'styled-components'
 
 export default styled.details`
   border: transparent;
-  margin: 0;
 
   & > :nth-child(2) {
     margin-top: 0;

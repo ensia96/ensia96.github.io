@@ -8,23 +8,16 @@ export default ({ structure }) => {
   const Recursion = ({ object, object: { path }, title }) => {
     const titles = Object.keys(object)
 
+    const recursion = titles.map(title => (
+      <Recursion object={object[title]} title={title} />
+    ))
+
     return path ? (
       <Item title={title} to={`/?path=${path}`}></Item>
     ) : title ? (
-      <List>
-        <summary>
-          <span>{title}</span>
-        </summary>
-        {titles.map(title => (
-          <Recursion object={object[title]} title={title} />
-        ))}
-      </List>
+      <List title={title}>{recursion}</List>
     ) : (
-      <>
-        {titles.map(title => (
-          <Recursion object={object[title]} title={title} />
-        ))}
-      </>
+      <>{recursion}</>
     )
   }
 

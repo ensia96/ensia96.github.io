@@ -1,6 +1,7 @@
+import React from 'react'
 import styled from 'styled-components'
 
-export default styled.details`
+const Detail = styled.details`
   border: transparent;
 
   & > :nth-child(2) {
@@ -27,3 +28,12 @@ export default styled.details`
     }
   }
 `
+
+export default ({ title, children }) => (
+  <Detail>
+    <summary>
+      <span>{title}</span>
+    </summary>
+    {children}
+  </Detail>
+)

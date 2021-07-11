@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 import Item from './item.js'
+import Container from './container.js'
 
 const Toggle = styled.details`
   border: transparent;
@@ -28,14 +29,6 @@ const Toggle = styled.details`
       content: '📂';
       margin-right: 1em;
     }
-  }
-`
-
-const Container = styled.div`
-  padding-left: 30px;
-
-  & > * {
-    margin-top: 10px;
   }
 `
 

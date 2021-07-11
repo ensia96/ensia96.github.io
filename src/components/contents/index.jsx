@@ -7,7 +7,7 @@ export default ({ posts, countOfInitialPost, count, category }) => {
   const contents = useMemo(() =>
     (category
       ? posts.filter(({ node }) => node.fields.slug.includes(category))
-      : posts
+      : posts.filter(({ node }) => !node.fields.slug.includes('TIL'))
     ).slice(0, count * countOfInitialPost)
   )
 

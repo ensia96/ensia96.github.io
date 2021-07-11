@@ -491,7 +491,7 @@ def solution(prices):
 
 - 왜 놓친 부분이 있는걸 알고, 해결 방식을 바꿔야 한다는 사실을 알고도 그랬을까 ㅠㅜㅠㅜㅠ
 
-![](../../TIL/images/으아아아.gif)
+![](../../Experience Storage/TIL/images/으아아아.gif)
 
 </details>
 

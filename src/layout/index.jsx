@@ -98,7 +98,7 @@ export default ({ location, title, items, children }) => (
             />
             <AuthorBox author={author} avatar={avatar} onClick={bioToggle} />
             <Bio open={bio} setBio={setBio} />
-            <Category categories={categories} />
+            <Category structure={structure} categories={categories} />
           </SideBar>
           {isMobile && (
             <>

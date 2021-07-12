@@ -24,6 +24,10 @@ export default styled.nav`
   font-family: Catamaran;
 
   div {
+    ::-webkit-scrollbar {
+      display: none;
+    }
+
     height: 100%;
     overflow: scroll;
     white-space: nowrap;

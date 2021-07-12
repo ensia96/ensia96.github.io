@@ -18,8 +18,6 @@ export default styled.nav`
 
   border: 1px solid #dddddd;
 
-  padding: 10px;
-
   font-size: 14px;
   font-family: Catamaran;
 
@@ -27,6 +25,7 @@ export default styled.nav`
     ::-webkit-scrollbar {
       display: none;
     }
+    padding: 10px 0 0 10px;
 
     height: 100%;
     overflow: scroll;
@@ -35,6 +34,7 @@ export default styled.nav`
 
   ul {
     list-style: none;
+    margin-left: 15px;
   }
 
   ul:nth-child(1) {

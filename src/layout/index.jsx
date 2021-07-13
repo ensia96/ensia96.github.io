@@ -10,14 +10,15 @@ import useTheme from '../hooks/useTheme'
 import getStructure from '../utils/getStructure'
 
 import Footer from '../components/footer'
-import Header from '../components/header'
 
 import Global from './global'
-import Main from './main'
 import Overlay from './overlay'
 
 import SideBar from './sidebar'
 import HeadBar from './headbar'
+
+import Main from './main'
+import Header from './header'
 
 import TableOfContents from '../components/toc'
 

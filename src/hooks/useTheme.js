@@ -7,8 +7,8 @@ export default () => {
 
   const toggleTheme = () => {
     theme === 'light'
-      ? !Storage.setTheme('local', 'theme', 'dark') && setTheme('dark')
-      : !Storage.setTheme('local', 'theme', 'light') && setTheme('light')
+      ? !Storage.setData('local', 'theme', 'dark') && setTheme('dark')
+      : !Storage.setData('local', 'theme', 'light') && setTheme('light')
   }
 
   useEffect(() => {

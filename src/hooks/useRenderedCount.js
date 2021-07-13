@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from 'react'
 import * as Storage from '../utils/storage'
 
-export function useRenderedCount() {
+export default () => {
   const initialCount = Storage.getData('session', 'count', 1)
   const [count, setCount] = useState(initialCount)
   const countRef = useRef(count)

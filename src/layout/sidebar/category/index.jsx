@@ -2,7 +2,7 @@ import React from 'react'
 
 import Item from './item.js'
 import Container from './container.js'
-import List from './list.js'
+import List from './list'
 
 export default ({ structure }) => {
   const Recursion = ({ object, object: { path }, title }) => {

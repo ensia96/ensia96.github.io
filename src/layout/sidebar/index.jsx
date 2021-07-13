@@ -1,6 +1,6 @@
 import React from 'react'
 
-import Container from './container.js'
+import Container from './container'
 
 import ToggleBox from './toggle-box'
 import AuthorBox from './author-box'

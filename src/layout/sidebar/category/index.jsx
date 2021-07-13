@@ -1,7 +1,7 @@
 import React from 'react'
 
-import Item from './item.js'
-import Container from './container.js'
+import Item from './item'
+import Container from './container'
 import List from './list'
 
 export default ({ structure }) => {

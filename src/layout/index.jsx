@@ -9,21 +9,15 @@ import useTheme from '../hooks/useTheme'
 
 import getStructure from '../utils/getStructure.js'
 
-import Bio from '../components/bio'
-
-import ThemeSwitch from '../components/theme-switch'
 import Footer from '../components/footer'
 import Header from '../components/header'
-
-import Category from '../components/category'
 
 import Global from './global.js'
 import Main from './main.js'
 import Overlay from './overlay.js'
 import HeadBar from './headbar.js'
-import SideBar from './sidebar.js'
-import ToggleBox from './togglebox.js'
-import AuthorBox from './authorbox.js'
+
+import SideBar from './sidebar'
 
 import TableOfContents from '../components/toc'
 
@@ -65,14 +59,17 @@ export default ({ location, title, items, children }) => (
       return (
         <ThemeProvider theme={style[theme]}>
           <Global />
-          <SideBar open={open}>
-            <ToggleBox
-              children={<ThemeSwitch theme={theme} toggleTheme={toggleTheme} />}
-            />
-            <AuthorBox author={author} avatar={avatar} onClick={bioToggle} />
-            <Bio open={bio} setBio={setBio} />
-            <Category structure={structure} />
-          </SideBar>
+          <SideBar
+            open={open}
+            theme={theme}
+            toggleTheme={toggleTheme}
+            author={author}
+            avatar={avatar}
+            bioToggle={bioToggle}
+            bio={bio}
+            setBio={setBio}
+            structure={structure}
+          />
           {isMobile && (
             <>
               <HeadBar

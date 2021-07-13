@@ -4,7 +4,7 @@ import styled from 'styled-components'
 import Image from 'gatsby-image'
 
 import GreenDot from './greendot.js'
-import Avatar from '../components/avatar'
+import Avatar from '../avatar'
 
 const AuthorBox = styled.div`
   display: flex;

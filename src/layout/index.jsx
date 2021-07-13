@@ -16,7 +16,7 @@ import SideBar from './sidebar'
 import HeadBar from './headbar'
 
 import Main from './main'
-import TableOfContents from '../components/toc'
+import TableOfContents from './toc'
 import Header from './header'
 import Footer from './footer'
 

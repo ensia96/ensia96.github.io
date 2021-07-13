@@ -2,7 +2,7 @@ import React, { useState, useEffect, useMemo } from 'react'
 import Container from './container'
 import Button from './button'
 
-const TableOfContents = ({ items }) => {
+export default ({ items }) => {
   const [currentHeaderUrl, setCurrentHeaderUrl] = useState(undefined)
 
   const [open, setOpen] = useState(true)
@@ -46,5 +46,3 @@ const TableOfContents = ({ items }) => {
     </Container>
   ) : null
 }
-
-export default TableOfContents

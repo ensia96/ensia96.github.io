@@ -1,20 +1,10 @@
 const isEmpty = storage => !storage || storage === {}
 
-export const getValueFrom = (storage, key) => {
-  if (isEmpty(storage)) {
-    return
-  }
-  const rawData = storage.getItem(key)
+export const getValueFrom = (storage, key, rawData = undefined) =>
+  !isEmpty(storage) &&
+  (rawData = storage.getItem(key)) &&
+  rawData &&
+  JSON.parse(rawData)
 
-  if (!rawData) {
-    return
-  }
-  return JSON.parse(rawData)
-}
-
-export const setValueTo = (storage, key, data) => {
-  if (isEmpty(storage)) {
-    return
-  }
-  return storage.setItem(key, JSON.stringify(data))
-}
+export const setValueTo = (storage, key, data) =>
+  !isEmpty(storage) && storage.setItem(key, JSON.stringify(data))

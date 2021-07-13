@@ -9,8 +9,6 @@ import useTheme from '../hooks/useTheme'
 
 import getStructure from '../utils/getStructure'
 
-import Footer from '../components/footer'
-
 import Global from './global'
 import Overlay from './overlay'
 
@@ -18,9 +16,9 @@ import SideBar from './sidebar'
 import HeadBar from './headbar'
 
 import Main from './main'
-import Header from './header'
-
 import TableOfContents from '../components/toc'
+import Header from './header'
+import Footer from './footer'
 
 export default ({ location, title, items, children }) => (
   <StaticQuery

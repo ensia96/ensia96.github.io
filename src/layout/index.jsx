@@ -28,7 +28,7 @@ export default ({ location, title, items, children }) => (
         childImageSharp: { fixed: avatar },
       },
       site: {
-        siteMetadata: { author },
+        siteMetadata: { author, social, introduction },
       },
       allMarkdownRemark: { edges: posts },
     }) => {
@@ -64,6 +64,8 @@ export default ({ location, title, items, children }) => (
             toggleTheme={toggleTheme}
             author={author}
             avatar={avatar}
+            social={social}
+            introduction={introduction}
             bioToggle={bioToggle}
             bio={bio}
             setBio={setBio}
@@ -104,6 +106,14 @@ const layoutQuery = graphql`
     site {
       siteMetadata {
         author
+        introduction
+        social {
+          twitter
+          github
+          medium
+          facebook
+          linkedin
+        }
       }
     }
     allMarkdownRemark(

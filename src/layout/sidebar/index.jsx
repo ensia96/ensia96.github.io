@@ -13,6 +13,8 @@ export default ({
   toggleTheme,
   author,
   avatar,
+  social,
+  introduction,
   bioToggle,
   bio,
   setBio,
@@ -21,7 +23,14 @@ export default ({
   <Container open={open}>
     <ToggleBox theme={theme} toggleTheme={toggleTheme} />
     <AuthorBox author={author} avatar={avatar} onClick={bioToggle} />
-    <Bio open={bio} setBio={setBio} />
+    <Bio
+      open={bio}
+      setBio={setBio}
+      avatar={avatar}
+      author={author}
+      social={social}
+      introduction={introduction}
+    />
     <Category structure={structure} />
   </Container>
 )

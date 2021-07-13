@@ -48,7 +48,7 @@ export default ({
         posts={posts}
         countOfInitialPost={countOfInitialPost}
         count={count}
-        category={path}
+        path={path}
       />
     </Layout>
   )

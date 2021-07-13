@@ -1,7 +1,6 @@
-import React from 'react'
 import styled from 'styled-components'
 
-const StyledBurger = styled.button`
+export default styled.button`
   position: fixed;
   top: 0.9rem;
   left: 0.9rem;
@@ -43,11 +42,3 @@ const StyledBurger = styled.button`
     }
   }
 `
-
-export default ({ open, sideToggle }) => (
-  <StyledBurger open={open} onClick={sideToggle}>
-    <div />
-    <div />
-    <div />
-  </StyledBurger>
-)

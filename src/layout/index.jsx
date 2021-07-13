@@ -7,17 +7,17 @@ import * as style from '../styles/theme'
 import useWindowSize from '../hooks/useWindowSize'
 import useTheme from '../hooks/useTheme'
 
-import getStructure from '../utils/getStructure.js'
+import getStructure from '../utils/getStructure'
 
 import Footer from '../components/footer'
 import Header from '../components/header'
 
-import Global from './global.js'
-import Main from './main.js'
-import Overlay from './overlay.js'
-import HeadBar from './headbar.js'
+import Global from './global'
+import Main from './main'
+import Overlay from './overlay'
 
 import SideBar from './sidebar'
+import HeadBar from './headbar'
 
 import TableOfContents from '../components/toc'
 

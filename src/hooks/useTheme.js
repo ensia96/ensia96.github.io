@@ -1,31 +1,18 @@
 import { useEffect, useState } from 'react'
-
-let initial = 'light'
-
-if (typeof window !== 'undefined') {
-  initial = window.localStorage.getItem('theme')
-}
+import * as Storage from '../utils/storage'
 
 export default () => {
-  const [theme, setTheme] = useState(initial)
+  const _theme = Storage.getTheme('light')
+  const [theme, setTheme] = useState(_theme)
 
   const toggleTheme = () => {
-    if (theme === 'light') {
-      window.localStorage.setItem('theme', 'dark')
-      setTheme('dark')
-      initial = 'dark'
-    } else {
-      window.localStorage.setItem('theme', 'light')
-      setTheme('light')
-      initial = 'light'
-    }
+    theme === 'light'
+      ? !Storage.setTheme('dark') && setTheme('dark')
+      : !Storage.setTheme('light') && setTheme('light')
   }
 
   useEffect(() => {
-    const localTheme = window.localStorage.getItem('theme')
-    if (localTheme) {
-      setTheme(localTheme)
-    }
+    _theme && setTheme(_theme)
   }, [])
 
   return [theme, toggleTheme]

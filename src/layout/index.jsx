@@ -54,14 +54,6 @@ export default ({ location, title, items, children }) => (
         isMobile && setOpen(false)
       }, [location])
 
-      const categories = useMemo(
-        () =>
-          Array.from(
-            new Set(edges.map(({ node }) => node.frontmatter.category))
-          ),
-        []
-      )
-
       const structure = useMemo(
         () =>
           [
@@ -104,7 +96,7 @@ export default ({ location, title, items, children }) => (
             />
             <AuthorBox author={author} avatar={avatar} onClick={bioToggle} />
             <Bio open={bio} setBio={setBio} />
-            <Category structure={structure} categories={categories} />
+            <Category structure={structure} />
           </SideBar>
           {isMobile && (
             <>

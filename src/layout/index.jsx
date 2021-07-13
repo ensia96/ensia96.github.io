@@ -1,4 +1,4 @@
-import React, { useState, useMemo, useEffect } from 'react'
+import React, { useState, useEffect } from 'react'
 import { StaticQuery } from 'gatsby'
 
 import ThemeProvider from './theme-provider'
@@ -6,6 +6,8 @@ import * as style from '../styles/theme'
 
 import useWindowSize from '../hooks/useWindowSize'
 import useTheme from '../hooks/useTheme'
+
+import getStructure from '../utils/getStructure.js'
 
 import Bio from '../components/bio'
 
@@ -35,7 +37,7 @@ export default ({ location, title, items, children }) => (
       site: {
         siteMetadata: { author },
       },
-      allMarkdownRemark: { edges },
+      allMarkdownRemark: { edges: posts },
     }) => {
       const { width } = useWindowSize()
       const [open, setOpen] = useState()
@@ -54,34 +56,7 @@ export default ({ location, title, items, children }) => (
         isMobile && setOpen(false)
       }, [location])
 
-      const structure = useMemo(
-        () =>
-          [
-            ...new Set(
-              edges.map(({ node }) => {
-                const pathArray = node.fields.slug
-                  .split('/')
-                  .filter(data => data)
-
-                pathArray.pop()
-
-                return pathArray.join('/')
-              })
-            ),
-          ].reduce((object, path) => {
-            let hierarchy = object
-
-            path.split('/').forEach(item => {
-              !hierarchy[item] && (hierarchy[item] = {})
-              hierarchy = hierarchy[item]
-            })
-
-            hierarchy.path = path
-
-            return object
-          }, {}),
-        []
-      )
+      const structure = getStructure(posts)
 
       const childrenWithExtraProp = React.Children.map(children, child =>
         React.cloneElement(child, { theme })

@@ -10,8 +10,8 @@ const Tag = styled.code`
 
 export default ({ tags }) => (
   <>
-    {tags?.map(item => (
-      <Tag># {item}</Tag>
+    {tags?.map((item, i) => (
+      <Tag key={i}># {item}</Tag>
     ))}
   </>
 )

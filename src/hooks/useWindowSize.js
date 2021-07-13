@@ -1,13 +1,8 @@
 import { useState, useEffect } from 'react'
-
-let defaultWidth
-
-if (typeof window !== `undefined`) {
-  defaultWidth = window.innerWidth
-}
+import { innerWidth } from '../utils/storage/browser'
 
 export default () => {
-  const [windowSize, setWindowSize] = useState({ width: defaultWidth })
+  const [windowSize, setWindowSize] = useState({ width: innerWidth })
 
   const resize = () => setWindowSize({ width: window.innerWidth })
 

@@ -2,8 +2,8 @@ import { useEffect, useState } from 'react'
 import * as Storage from '../utils/storage'
 
 export default () => {
-  const _theme = Storage.getData('local', 'theme', 'light')
-  const [theme, setTheme] = useState(_theme)
+  const initialTheme = Storage.getData('local', 'theme', 'light')
+  const [theme, setTheme] = useState(initialTheme)
 
   const toggleTheme = () => {
     theme === 'light'
@@ -12,7 +12,7 @@ export default () => {
   }
 
   useEffect(() => {
-    _theme && setTheme(_theme)
+    initialTheme && setTheme(initialTheme)
   }, [])
 
   return [theme, toggleTheme]

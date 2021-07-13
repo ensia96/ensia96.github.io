@@ -1,20 +1,17 @@
+import * as browser from './browser'
+
+let storage
+
 const isEmpty = storage => !storage || storage === {}
 
-export const getValueFrom = (storage, key) => {
-  if (isEmpty(storage)) {
-    return
-  }
-  const rawData = storage.getItem(key)
+export const getValueFrom = (source, key, data = undefined) =>
+  (storage = browser[source + 'Storage']) &&
+  !isEmpty(storage) &&
+  (data = storage.getItem(key)) &&
+  data &&
+  JSON.parse(data)
 
-  if (!rawData) {
-    return
-  }
-  return JSON.parse(rawData)
-}
-
-export const setValueTo = (storage, key, data) => {
-  if (isEmpty(storage)) {
-    return
-  }
-  return storage.setItem(key, JSON.stringify(data))
-}
+export const setValueTo = (source, key, data) =>
+  (storage = browser[source + 'Storage']) &&
+  !isEmpty(storage) &&
+  storage.setItem(key, JSON.stringify(data))

@@ -1,4 +1,4 @@
-import React, { useState, useMemo, useEffect } from 'react'
+import React, { useState, useEffect } from 'react'
 import { StaticQuery } from 'gatsby'
 
 import ThemeProvider from './theme-provider'
@@ -7,23 +7,18 @@ import * as style from '../styles/theme'
 import useWindowSize from '../hooks/useWindowSize'
 import useTheme from '../hooks/useTheme'
 
-import Bio from '../components/bio'
+import getStructure from '../utils/getStructure'
 
-import ThemeSwitch from '../components/theme-switch'
-import Footer from '../components/footer'
-import Header from '../components/header'
+import Global from './global'
+import Overlay from './overlay'
 
-import Category from '../components/category'
+import SideBar from './sidebar'
+import HeadBar from './headbar'
 
-import Global from './global.js'
-import Main from './main.js'
-import Overlay from './overlay.js'
-import HeadBar from './headbar.js'
-import SideBar from './sidebar.js'
-import ToggleBox from './togglebox.js'
-import AuthorBox from './authorbox.js'
-
-import TableOfContents from '../components/toc'
+import Main from './main'
+import TableOfContents from './toc'
+import Header from './header'
+import Footer from './footer'
 
 export default ({ location, title, items, children }) => (
   <StaticQuery
@@ -33,9 +28,9 @@ export default ({ location, title, items, children }) => (
         childImageSharp: { fixed: avatar },
       },
       site: {
-        siteMetadata: { author },
+        siteMetadata: { author, social, introduction },
       },
-      allMarkdownRemark: { edges },
+      allMarkdownRemark: { edges: posts },
     }) => {
       const { width } = useWindowSize()
       const [open, setOpen] = useState()
@@ -54,36 +49,7 @@ export default ({ location, title, items, children }) => (
         isMobile && setOpen(false)
       }, [location])
 
-      const categories = useMemo(
-        () =>
-          Array.from(
-            new Set(edges.map(({ node }) => node.frontmatter.category))
-          ),
-        []
-      )
-
-      const structure = [
-        ...new Set(
-          edges.map(({ node }) => {
-            const pathArray = node.fields.slug.split('/').filter(data => data)
-
-            pathArray.pop()
-
-            return pathArray.join('/')
-          })
-        ),
-      ].reduce((object, path) => {
-        let hierarchy = object
-
-        path.split('/').forEach(item => {
-          !hierarchy[item] && (hierarchy[item] = {})
-          hierarchy = hierarchy[item]
-        })
-
-        hierarchy.path = path
-
-        return object
-      }, {})
+      const structure = getStructure(posts)
 
       const childrenWithExtraProp = React.Children.map(children, child =>
         React.cloneElement(child, { theme })
@@ -92,14 +58,19 @@ export default ({ location, title, items, children }) => (
       return (
         <ThemeProvider theme={style[theme]}>
           <Global />
-          <SideBar open={open}>
-            <ToggleBox
-              children={<ThemeSwitch theme={theme} toggleTheme={toggleTheme} />}
-            />
-            <AuthorBox author={author} avatar={avatar} onClick={bioToggle} />
-            <Bio open={bio} setBio={setBio} />
-            <Category structure={structure} categories={categories} />
-          </SideBar>
+          <SideBar
+            open={open}
+            theme={theme}
+            toggleTheme={toggleTheme}
+            author={author}
+            avatar={avatar}
+            social={social}
+            introduction={introduction}
+            bioToggle={bioToggle}
+            bio={bio}
+            setBio={setBio}
+            structure={structure}
+          />
           {isMobile && (
             <>
               <HeadBar
@@ -135,6 +106,14 @@ const layoutQuery = graphql`
     site {
       siteMetadata {
         author
+        introduction
+        social {
+          twitter
+          github
+          medium
+          facebook
+          linkedin
+        }
       }
     }
     allMarkdownRemark(

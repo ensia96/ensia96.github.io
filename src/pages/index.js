@@ -1,14 +1,14 @@
 import { graphql } from 'gatsby'
 import React from 'react'
-import { globalHistory } from '@reach/router'
 import Contents from '../components/contents'
 import Head from '../components/head'
-import { HOME_TITLE } from '../constants'
-import { useRenderedCount } from '../hooks/useRenderedCount'
-import { useScrollEvent } from '../hooks/useScrollEvent'
+import useRenderedCount from '../hooks/useRenderedCount'
+import useScrollEvent from '../hooks/useScrollEvent'
 import Layout from '../layout'
 import * as Dom from '../utils/dom'
 import * as EventManager from '../utils/event-manager'
+
+import { getUrlParameter } from '../utils/storage/browser'
 
 const BASE_LINE = 80
 
@@ -26,7 +26,7 @@ export default ({
 }) => {
   const [count, countRef, increaseCount] = useRenderedCount()
 
-  const category = globalHistory.location.search.split('=').pop()
+  const { path = undefined } = getUrlParameter()
 
   useScrollEvent(() => {
     const isTriggerPos = () =>
@@ -43,12 +43,12 @@ export default ({
 
   return (
     <Layout location={location} title={title}>
-      <Head title={HOME_TITLE} />
+      <Head title={'Home'} />
       <Contents
         posts={posts}
         countOfInitialPost={countOfInitialPost}
         count={count}
-        category={category}
+        path={path}
       />
     </Layout>
   )

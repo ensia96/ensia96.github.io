@@ -1,13 +1,12 @@
 import React from 'react'
 
-import Container from './container'
-import Title from './title'
 import Date from './date'
 
 export default ({ title, date, html }) => (
   <>
-    <Title title={title} />
-    <Date date={date} />
-    <Container html={html} />
+    <base target="_blank" />
+    <h1>{title}</h1>
+    <Date>{date}</Date>
+    <div dangerouslySetInnerHTML={{ __html: html }} />
   </>
 )

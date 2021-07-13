@@ -1,8 +1,6 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 
-import { ENGLISH } from '../constants'
-
 import Layout from '../layout'
 
 export default ({
@@ -17,16 +15,7 @@ export default ({
   <Layout location={location} title={title}>
     <div
       dangerouslySetInnerHTML={{
-        __html: resumes
-          .filter(
-            ({
-              node: {
-                frontmatter: { lang },
-              },
-            }) => lang === ENGLISH
-          )
-          .map(({ node }) => node)
-          .shift()['html'],
+        __html: resumes.map(({ node }) => node).shift()['html'],
       }}
     />
   </Layout>

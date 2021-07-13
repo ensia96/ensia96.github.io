@@ -2,20 +2,6 @@ import Typography from 'typography'
 import GitHubTheme from 'typography-theme-github'
 
 GitHubTheme.overrideThemeStyles = () => ({
-  a: {
-    boxShadow: `none`,
-    textDecoration: `none`,
-    color: `#0687f0`,
-  },
-  'a.gatsby-resp-image-link': {
-    boxShadow: `none`,
-    textDecoration: `none`,
-  },
-
-  'a:hover': {
-    textDecoration: `none`,
-  },
-
   h1: {
     fontWeight: 800,
     lineHeight: 1.2,
@@ -28,14 +14,6 @@ GitHubTheme.overrideThemeStyles = () => ({
     marginTop: '56px',
     marginBottom: '20px',
     fontFamily: 'Catamaran',
-  },
-
-  ul: {
-    marginBottom: '6px',
-  },
-
-  li: {
-    marginBottom: '2px',
   },
 })
 

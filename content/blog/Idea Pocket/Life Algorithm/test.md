@@ -6,6 +6,6 @@ thumbnail: { thumbnailSrc }
 draft: True
 tags:
   - "Algorithm"
-  - "Pseudo Code"
+  - "Pseudocode"
 ---
 

@@ -6,7 +6,7 @@ thumbnail: { thumbnailSrc }
 draft: False
 tags:
   - "Algorithm"
-  - "Pseudo Code"
+  - "Pseudocode"
 ---
 
 ```py

@@ -24,8 +24,6 @@ export default createGlobalStyle`
     }
 
     details {
-        cursor: pointer;
-
         ::-webkit-details-marker {
             display: none;
         }
@@ -64,6 +62,7 @@ export default createGlobalStyle`
         }
 
         &>summary {
+            cursor: pointer;
             font-weight: 500;
             color: ${({ theme: { main } }) => main};
             padding: 0.1em 0.5em 0.2em;

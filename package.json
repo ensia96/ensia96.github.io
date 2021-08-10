@@ -49,13 +49,6 @@
     "typography": "^0.16.17",
     "typography-theme-github": "^0.16.18"
   },
-  "devDependencies": {
-    "eslint": "^5.14.1",
-    "eslint-plugin-react": "^7.11.1",
-    "gatsby-post-gen": "^1.0.0",
-    "lighthousebot": "git+https://github.com/GoogleChromeLabs/lighthousebot.git",
-    "prettier": "^1.14.2"
-  },
   "homepage": "https://github.com/ensia96/ensia96.github.io",
   "keywords": [
     "gatsby"
@@ -67,16 +60,12 @@
     "url": "git+https://github.com/ensia96/ensia96.github.io.git"
   },
   "scripts": {
-    "clean": "rm -rf public .cache",
-    "post": "gatsby-post-gen",
-    "dep": "gatsby build && gh-pages -d public -b master",
-    "dev": "gatsby develop",
-    "lint": "eslint --ext .js,.jsx --ignore-pattern public .",
-    "format": "prettier --trailing-comma es5 --no-semi --single-quote --write 'src/**/*.js' 'src/**/*.md'",
-    "develop": "gatsby develop",
-    "start": "npm run develop",
-    "build": "gatsby build",
-    "lh": "lighthousebot",
-    "fix-semi": "eslint --quiet --ignore-pattern node_modules --ignore-pattern public --parser babel-eslint --no-eslintrc --rule '{\"semi\": [2, \"never\"], \"no-extra-semi\": [2]}' --fix gatsby-node.js"
+    "start": "gatsby clean && gatsby develop",
+    "build": "gatsby clean && gatsby build",
+    "clean": "gatsby clean",
+    "dev": "gatsby clean && gatsby develop",
+    "dep": "gatsby clean && gatsby build && gh-pages -d public -b master",
+    "develop": "gatsby clean && gatsby develop",
+    "deploy": "gatsby clean && gatsby build && gh-pages -d public -b master"
   }
 }

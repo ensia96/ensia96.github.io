@@ -15,7 +15,7 @@ export default ({
   <Layout location={location} title={title}>
     <div
       dangerouslySetInnerHTML={{
-        __html: resumes.map(({ node }) => node).shift()['html'],
+        __html: resumes.map(({ node }) => node['html']).join('<br>'),
       }}
     />
   </Layout>
@@ -28,17 +28,13 @@ export const pageQuery = graphql`
         title
       }
     }
-    allMarkdownRemark(filter: { frontmatter: { category: { eq: null } } }) {
+    allMarkdownRemark(
+      filter: { fileAbsolutePath: { regex: "/resume/" } }
+      sort: { fields: fields___slug }
+    ) {
       edges {
         node {
-          id
-          excerpt(pruneLength: 160)
           html
-          frontmatter {
-            title
-            date(formatString: "MMMM DD, YYYY")
-            lang
-          }
         }
       }
     }

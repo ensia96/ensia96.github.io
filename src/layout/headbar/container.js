@@ -11,7 +11,7 @@ export default styled.header`
 
   background-color: ${({ theme: { main } }) => main};
 
-  @media all and (min-width: 992px) {
+  @media all and (min-width: 1260) {
     display: none;
   }
 `

@@ -16,7 +16,7 @@ export default styled.div`
   background-color: ${({ theme: { main } }) => main};
   color: 'white' !important;
 
-  @media all and (min-width: 992px) {
+  @media all and (min-width: 1260px) {
     left: 0 !important;
   }
 `

@@ -41,7 +41,7 @@ export default ({ location, title, items, children }) => (
       const sideToggle = () => setOpen(!open)
       const bioToggle = () => setBio(!bio)
 
-      const isMobile = width < 992
+      const isMobile = width < 1260
 
       const isRoot = location.pathname === `${__PATH_PREFIX__}/`
 

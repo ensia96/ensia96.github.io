@@ -12,7 +12,7 @@ export default styled.div`
 
   z-index: 2;
 
-  @media all and (min-width: 992px) {
+  @media all and (min-width: 1260) {
     display: none;
   }
 `

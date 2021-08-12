@@ -31,6 +31,7 @@ export default ({
 
   return (
     <Layout location={location} title={title}>
+      <base target="_blank" />
       <Introduction html={html[0]} avatar={avatar} />
       <div
         dangerouslySetInnerHTML={{

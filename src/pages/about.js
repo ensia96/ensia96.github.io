@@ -1,8 +1,12 @@
 import React from 'react'
+
 import { graphql } from 'gatsby'
+import { renderToString } from 'react-dom/server'
 
 import Layout from '../layout'
 import Introduction from '../components/introduction'
+
+import Date from '../components/post/date'
 
 export default ({
   location,
@@ -16,7 +20,15 @@ export default ({
     allMarkdownRemark: { edges: resumes },
   },
 }) => {
-  const html = resumes.map(({ node }) => node['html'])
+  const html = resumes.map(
+    ({
+      node: {
+        html,
+        frontmatter: { date },
+      },
+    }) => html + renderToString(<Date>{`최종 수정일 : ${date}`}</Date>)
+  )
+
   return (
     <Layout location={location} title={title}>
       <Introduction html={html[0]} avatar={avatar} />
@@ -50,6 +62,9 @@ export const pageQuery = graphql`
       edges {
         node {
           html
+          frontmatter {
+            date(formatString: "MMMM DD, YYYY")
+          }
         }
       }
     }

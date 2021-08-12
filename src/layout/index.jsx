@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { StaticQuery } from 'gatsby'
+import { StaticQuery, graphql } from 'gatsby'
 
 import ThemeProvider from './theme-provider'
 import * as style from '../styles/theme'

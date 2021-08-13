@@ -23,10 +23,6 @@ export default createGlobalStyle`
         }
     }
 
-    .gatsby-highlight {
-        display: grid;
-    }
-
     details {
         ::-webkit-details-marker {
             display: none;

@@ -11,9 +11,6 @@ import Post from '../components/post'
 
 import Tags from '../components/tags'
 
-import '../styles/code.scss'
-import 'katex/dist/katex.min.css'
-
 export default ({
   data: {
     markdownRemark: post,

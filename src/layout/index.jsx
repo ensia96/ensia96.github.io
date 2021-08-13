@@ -20,6 +20,9 @@ import TableOfContents from './toc'
 import Header from './header'
 import Footer from './footer'
 
+import 'katex/dist/katex.min.css'
+import '../styles/code.scss'
+
 export default ({ location, title, items, children }) => (
   <StaticQuery
     query={layoutQuery}

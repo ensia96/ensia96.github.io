@@ -2,7 +2,6 @@
 title: life_pattern
 date: 2021-07-24 20:50:00
 category: Life Algorithm
-thumbnail: { thumbnailSrc }
 draft: False
 tags:
   - "Algorithm"

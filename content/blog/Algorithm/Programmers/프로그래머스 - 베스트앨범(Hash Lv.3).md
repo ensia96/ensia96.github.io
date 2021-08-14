@@ -2,7 +2,6 @@
 title: 프로그래머스 - 베스트앨범(Hash Lv.3)
 date: 2021-03-16 16:19:69
 category: Algorithm
-thumbnail: { thumbnailSrc }
 draft: false
 tags:
   - "Algorithm"

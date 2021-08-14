@@ -2,7 +2,6 @@
 title: 프로그래머스 - 기능개발(Stack/Queue Lv.2)
 date: 2021-03-28 17:32:29
 category: Algorithm
-thumbnail: { thumbnailSrc }
 draft: false
 tags:
   - "Algorithm"

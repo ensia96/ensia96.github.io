@@ -2,7 +2,6 @@
 title: 프로그래머스 - 다리를 지나는 트럭(Stack/Queue Lv.2)
 date: 2021-03-20 12:22:98
 category: Algorithm
-thumbnail: { thumbnailSrc }
 draft: false
 tags:
   - "Algorithm"

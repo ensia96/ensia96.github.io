@@ -2,7 +2,6 @@
 title: 프로그래머스 - 완주하지 못한 선수(Hash Lv.1)
 date: 2021-02-26 20:19:30
 category: Algorithm
-thumbnail: { thumbnailSrc }
 draft: false
 tags:
   - "Algorithm"

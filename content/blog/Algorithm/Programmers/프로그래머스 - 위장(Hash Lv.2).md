@@ -2,7 +2,6 @@
 title: 프로그래머스 - 위장(Hash Lv.2)
 date: 2021-03-12 10:03:92
 category: Algorithm
-thumbnail: { thumbnailSrc }
 draft: false
 tags:
   - "Algorithm"

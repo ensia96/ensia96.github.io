@@ -2,7 +2,6 @@
 title: 프로그래머스 - 주식가격(Stack/Queue Lv.2)
 date: 2021-03-24 22:30:61
 category: Algorithm
-thumbnail: { thumbnailSrc }
 draft: false
 tags:
   - "Algorithm"

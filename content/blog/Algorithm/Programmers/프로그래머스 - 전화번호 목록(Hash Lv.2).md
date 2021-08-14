@@ -2,7 +2,6 @@
 title: 프로그래머스 - 전화번호 목록(Hash Lv.2)
 date: 2021-03-07 22:29:88
 category: Algorithm
-thumbnail: { thumbnailSrc }
 draft: false
 tags:
   - "Algorithm"

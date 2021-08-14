@@ -2,7 +2,6 @@
 title: 프로그래머스 - 프린터(Stack/Queue Lv.2)
 date: 2021-03-31 20:18:54
 category: Algorithm
-thumbnail: { thumbnailSrc }
 draft: false
 tags:
   - "Algorithm"

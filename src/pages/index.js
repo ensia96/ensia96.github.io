@@ -26,7 +26,7 @@ export default ({
 }) => {
   const [count, countRef, increaseCount] = useRenderedCount()
 
-  const { path = undefined } = getUrlParameter()
+  const { path = undefined, tag = undefined } = getUrlParameter()
 
   useScrollEvent(() => {
     const isTriggerPos = () =>
@@ -49,6 +49,7 @@ export default ({
         countOfInitialPost={countOfInitialPost}
         count={count}
         path={path}
+        tag={tag}
       />
     </Layout>
   )

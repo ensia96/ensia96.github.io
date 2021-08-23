@@ -6,7 +6,7 @@ import List from './list'
 
 export default ({ structure }) => {
   const Recursion = ({ object, object: { path }, title }) => {
-    const titles = Object.keys(object)
+    const titles = Object.keys(object).sort()
 
     const recursion = titles.map((title, i) => (
       <Recursion key={i} object={object[title]} title={title} />

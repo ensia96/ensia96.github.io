@@ -7,13 +7,15 @@ import Tags from '../tags'
 
 export default ({ posts, countOfInitialPost, count, path, tag }) => {
   const contents = useMemo(() =>
-    posts.filter(({ node }) =>
-      path
-        ? node.fields.slug.includes(decodeURI(path))
-        : tag
-        ? node.frontmatter.tags.includes(decodeURI(tag))
-        : !node.fields.slug.includes('TIL')
-    )
+    posts
+      .filter(({ node }) =>
+        path
+          ? node.fields.slug.includes(decodeURI(path))
+          : tag
+          ? node.frontmatter.tags.includes(decodeURI(tag))
+          : !node.fields.slug.includes('TIL')
+      )
+      .slice(0, count * countOfInitialPost)
   )
 
   const tags = Array.from(

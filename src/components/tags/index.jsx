@@ -1,6 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 
+import { Link } from 'gatsby'
+
 const Tag = styled.code`
   border-radius: 1em;
   border-style: solid;
@@ -17,7 +19,9 @@ const Tag = styled.code`
 export default ({ tags }) => (
   <>
     {tags?.map((item, i) => (
-      <Tag key={i}># {item}</Tag>
+      <Link key={i} to={`/?tag=${item}`}>
+        <Tag># {item}</Tag>
+      </Link>
     ))}
   </>
 )

@@ -24,8 +24,9 @@ export default createGlobalStyle`
     }
 
     details {
-        ::-webkit-details-marker {
+        summary::-webkit-details-marker {
             display: none;
+            content: '';
         }
 
         transform-origin: center;

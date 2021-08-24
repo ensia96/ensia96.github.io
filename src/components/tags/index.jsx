@@ -8,11 +8,11 @@ const Tag = styled.code`
   border-style: solid;
   border-width: 2px;
 
-  white-space: pre;
-  word-break: normal;
-  word-wrap: normal;
+  display: inline-block;
 
-  margin: 5px;
+  line-height: normal;
+
+  margin: 0.1em 0.3em;
   padding: 0.1em 0.6em;
 `
 

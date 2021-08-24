@@ -3,6 +3,10 @@ import styled from 'styled-components'
 
 import { Link } from 'gatsby'
 
+const Container = styled(Link)`
+  padding: 0 !important;
+`
+
 const Tag = styled.code`
   border-radius: 1em;
   border-style: solid;
@@ -19,9 +23,9 @@ const Tag = styled.code`
 export default ({ tags }) => (
   <>
     {tags?.map((item, i) => (
-      <Link key={i} to={`/?tag=${item}`}>
+      <Container key={i} to={`/?tag=${item}`}>
         <Tag># {item}</Tag>
-      </Link>
+      </Container>
     ))}
   </>
 )

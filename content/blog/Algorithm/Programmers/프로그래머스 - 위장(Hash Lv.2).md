@@ -146,7 +146,7 @@ def solution(clothes):
 
 <details><summary>실제로 제출한 코드</summary>
 
-`진짜로, 이게 될까? 싶어서 변수 명도 모두 test 로 작성했다 ㅋㅋㅋ`
+`진짜로, 이게 될까? 싶어서 변수명도 모두 test 로 작성했다 ㅋㅋㅋ`
 
 ```python
 def solution(clothes):
@@ -399,3 +399,4 @@ def reduce(function, iterable, initializer=None):
 
 - 20210404 - 마크다운 구성 변경
 - 20210418 - 맞춤법 수정(한번에 -> 한 번에)
+- 20220214 - 맞춤법 수정(변수 명 -> 변수명)

@@ -99,7 +99,7 @@ def solution(phone_book):
 
 ## 검색
 
-문제를 검색 해보았고, 접근법은 맞았는데 구현 방식이 문제였다는 것을 확인했다.
+문제를 검색 해보았고, 처리 방식은 맞았는데 구현 방식이 문제였다는 것을 확인했다.
 
 > ['[프로그래머스] 해시 - 전화번호 목록 - Velog'](https://velog.io/@vvakki_/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-%ED%95%B4%EC%8B%9C-%EC%A0%84%ED%99%94%EB%B2%88%ED%98%B8-%EB%AA%A9%EB%A1%9D)
 
@@ -290,7 +290,7 @@ def solution(phone_book):
    - 해시 테이블은 Null 값을 허용하지 않고, 병렬 처리(동기화) 가 필요할 때 사용한다.
    - 반대로, 해시 맵은 NUll 값을 허용하고, 병렬 처리를 고려하지 않을 때 사용한다.
    - ['[자료구조] Hash/HashTable/HashMap - Hee\'s story'](https://hee96-story.tistory.com/48) 참고
-- 다른 사람의 풀이를 보고 zip() 함수와 startswith() 메소드의 사용법을 알게됐다.
+- 다른 사람의 풀이를 보고 zip() 함수와 startswith() 메서드의 사용법을 알게됐다.
 
 <details><summary>해시를 사용하지 않은 풀이 방법</summary>
 
@@ -324,7 +324,7 @@ def solution(phoneBook):
 
 </details>
 
-<details><summary>startswith 메소드는 문자열 정보에서만 지원되고, 진리 값을 반환한다.</summary>
+<details><summary>startswith 메서드는 문자열 정보에서만 지원되고, 진리 값을 반환한다.</summary>
 
 - 해당 문자열이 인자로 받은 문자열로 시작되는지 여부를 탐색하고, 그 결과를 반환한다.
 
@@ -377,3 +377,4 @@ True
 
 - 20210404 - 마크다운 구성 변경
 - 20210418 - 표기 수정(2번째, 3번째 -> 2, 3번째)
+- 20220418 - 표기 수정(접근법 -> 처리 방식, 메소드 -> 메서드)

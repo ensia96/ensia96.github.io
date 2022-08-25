@@ -1,4 +1,0 @@
-User-agent: *
-
-Allow: /
-sitemap: https://ensia96.github.io/sitemap.xml

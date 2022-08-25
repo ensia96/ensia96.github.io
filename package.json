@@ -16,6 +16,7 @@
     "gatsby-plugin-manifest": "latest",
     "gatsby-plugin-offline": "latest",
     "gatsby-plugin-react-helmet": "latest",
+    "gatsby-plugin-robots-txt": "latest",
     "gatsby-plugin-sass": "latest",
     "gatsby-plugin-sharp": "latest",
     "gatsby-plugin-sitemap": "latest",

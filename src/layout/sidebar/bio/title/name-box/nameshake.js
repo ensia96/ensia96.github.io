@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export default styled(a)`
+export default styled.a`
   display: inline-block;
   font-size: 95%;
   padding: 2px 6px;

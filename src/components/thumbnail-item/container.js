@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export default styled(a)`
+export default styled.a`
   display: block;
   margin-bottom: 12px;
   padding: 4px;

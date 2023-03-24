@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
-const Item = styled(a)`
+const Item = styled.a`
   margin: 0;
   height: 30.78px;
   display: block;

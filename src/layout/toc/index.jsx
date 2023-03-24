@@ -2,6 +2,8 @@ import React, { useState, useEffect, useMemo } from 'react'
 import Container from './container'
 import Button from './button'
 
+import { win } from '../../utils/storage/browser'
+
 export default ({ items }) => {
   const [currentHeaderUrl, setCurrentHeaderUrl] = useState(undefined)
 
@@ -20,8 +22,8 @@ export default ({ items }) => {
               : (aboveHeaderUrl = elem.href)) || true
       )
     }
-    window.addEventListener('scroll', handleScroll)
-    return () => window.removeEventListener('scroll', handleScroll)
+    win.addEventListener('scroll', handleScroll)
+    return () => win.removeEventListener('scroll', handleScroll)
   }, [])
 
   const targetStyle = 'font-size: 16px; font-weight: 700;'

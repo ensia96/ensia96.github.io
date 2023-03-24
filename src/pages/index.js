@@ -8,7 +8,7 @@ import Layout from '../layout'
 import * as Dom from '../utils/dom'
 import * as EventManager from '../utils/event-manager'
 
-import { getUrlParameter } from '../utils/storage/browser'
+import { win, getUrlParameter } from '../utils/storage/browser'
 
 const BASE_LINE = 80
 
@@ -30,8 +30,7 @@ export default ({
 
   useScrollEvent(() => {
     const isTriggerPos = () =>
-      Dom.getDocumentHeight() - (window.scrollY + window.innerHeight) <
-      BASE_LINE
+      Dom.getDocumentHeight() - (win.scrollY + win.innerHeight) < BASE_LINE
     const doesNeedMore = () =>
       posts.length > countRef.current * countOfInitialPost
 

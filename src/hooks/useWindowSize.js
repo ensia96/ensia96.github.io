@@ -1,14 +1,14 @@
 import { useState, useEffect } from 'react'
-import { innerWidth } from '../utils/storage/browser'
+import { win, innerWidth } from '../utils/storage/browser'
 
 export default () => {
   const [windowSize, setWindowSize] = useState({ width: innerWidth })
 
-  const resize = () => setWindowSize({ width: window.innerWidth })
+  const resize = () => setWindowSize({ width: win.innerWidth })
 
   useEffect(() => {
-    window.addEventListener('resize', resize)
-    return () => window.removeEventListener('resize', resize)
+    win.addEventListener('resize', resize)
+    return () => win.removeEventListener('resize', resize)
   }, [])
 
   return windowSize

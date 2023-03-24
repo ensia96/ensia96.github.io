@@ -1,10 +1,12 @@
 import { useEffect } from 'react'
 
-export default onScroll => {
+import { win } from '../utils/storage/browser'
+
+export default (onScroll) => {
   useEffect(() => {
-    window.addEventListener(`scroll`, onScroll, { passive: false })
+    win.addEventListener(`scroll`, onScroll, { passive: false })
     return () => {
-      window.removeEventListener(`scroll`, onScroll, { passive: false })
+      win.removeEventListener(`scroll`, onScroll, { passive: false })
     }
   }, [])
 }

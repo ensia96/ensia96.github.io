@@ -11,7 +11,7 @@ export default ({
     excerpt,
   },
 }) => (
-  <Container to={slug}>
+  <Container href={slug}>
     <h3>{title || slug}</h3>
     <p dangerouslySetInnerHTML={{ __html: excerpt }} />
     <Tags tags={tags} />

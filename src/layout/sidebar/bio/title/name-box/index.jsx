@@ -5,6 +5,6 @@ import Container from './container'
 
 export default ({ author }) => (
   <Container>
-    <NameShake to="/about"># check out my profile!</NameShake>
+    <NameShake href="/about"># check out my profile!</NameShake>
   </Container>
 )

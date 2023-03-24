@@ -1,8 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Link } from 'gatsby'
 
-const Item = styled(Link)`
+const Item = styled(a)`
   margin: 0;
   height: 30.78px;
   display: block;
@@ -21,7 +20,7 @@ const Item = styled(Link)`
 `
 
 export default ({ icon = '📒', title, to }) => (
-  <Item to={to}>
+  <Item href={to}>
     <div>{icon}</div>
     <span>{title}</span>
   </Item>

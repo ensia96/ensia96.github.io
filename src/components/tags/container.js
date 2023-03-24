@@ -1,6 +1,5 @@
-import { Link } from 'gatsby'
 import styled from 'styled-components'
 
-export default styled(Link)`
+export default styled(a)`
   padding: 0 !important;
 `

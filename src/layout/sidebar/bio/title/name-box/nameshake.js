@@ -1,7 +1,6 @@
 import styled from 'styled-components'
-import { Link } from 'gatsby'
 
-export default styled(Link)`
+export default styled(a)`
   display: inline-block;
   font-size: 95%;
   padding: 2px 6px;

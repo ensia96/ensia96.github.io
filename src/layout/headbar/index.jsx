@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'gatsby'
 
 import Burger from './burger'
 import Container from './container'
@@ -10,7 +9,7 @@ export default ({ open, isRoot, title, sideToggle }) => (
     <Burger open={open} sideToggle={sideToggle} />
     {!isRoot && (
       <Title>
-        <Link to="/">{title}</Link>
+        <a href="/">{title}</a>
       </Title>
     )}
   </Container>

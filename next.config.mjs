@@ -1,7 +1,7 @@
-import withMDX from "@next/mdx";
+import nextMDX from "@next/mdx";
 
 /** @type {import('next').NextConfig} */
-const nextConfig = {
+const NEXT_CONFIG = {
   // output, basePath, and images are required for GitHub Pages.
   // See https://github.com/gregrickaby/nextjs-github-pages
   output: "export",
@@ -13,7 +13,15 @@ const nextConfig = {
 
   // Configure `pageExtensions` to include MDX files
   // See https://nextjs.org/docs/app/building-your-application/configuring/mdx#getting-started
-  pageExtensions: ["js", "jsx", "ts", "tsx", "mdx"],
+  pageExtensions: ["js", "jsx", "ts", "tsx", "md", "mdx"],
 };
 
-export default withMDX()(nextConfig);
+/** @type {import('@next/mdx').MDXConfig} */
+const MDX_CONFIG = {
+  extension: /\.(md|mdx)$/,
+};
+
+const withMDX = nextMDX(MDX_CONFIG);
+const nextConfig = withMDX(NEXT_CONFIG);
+
+export default nextConfig;

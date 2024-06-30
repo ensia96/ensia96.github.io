@@ -1,10 +1,6 @@
 // See https://nextjs.org/docs/app/api-reference/functions/fetch
 
-type RequestInput = RequestInfo | URL;
-
-type RequestOutput<T> = Promise<T>;
-
-type Request = <Response>(input: RequestInput) => RequestOutput<Response>;
+import { Request } from "@/type";
 
 const request: Request = (input) =>
   fetch(input)

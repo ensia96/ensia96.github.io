@@ -5,6 +5,8 @@
 export interface FileTreeNode {
   name: string;
   isDirectory: boolean;
+  createdAt?: Date;
+  updatedAt?: Date;
   children?: FileTreeNode[] | null;
 }
 

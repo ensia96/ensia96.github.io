@@ -73,16 +73,20 @@ export class FileSystemController {
     return this.createFileTree(rootPath, Infinity, regex);
   }
 
-  static listAllFiles(path: string, regex?: RegExp): string[] {
+  static listAllFiles(
+    path: string,
+    regex?: RegExp,
+    rootPath?: string
+  ): string[] {
     const fileStatus = this.getFileStatus(path);
     if (fileStatus === null) return [];
 
     if (fileStatus.isFile()) {
       if (regex && !regex.test(this.getFileName(path))) return [];
-      return [path];
+      return [path.replace(rootPath ?? path, "")];
     }
     return readdirSync(path).flatMap((child) =>
-      this.listAllFiles(joinPath(path, child), regex)
+      this.listAllFiles(joinPath(path, child), regex, rootPath ?? path)
     );
   }
 }

@@ -5,11 +5,11 @@ import { FileTreeNode, JoinPath } from "./type";
 export const joinPath: JoinPath = (...args) => args.join("/");
 
 export class FileSystemController {
-  static getBaseName(path: string): string {
+  static getFileName(path: string): string {
     return path.split("/").pop() || "";
   }
 
-  static getExtension(path: string): string {
+  static getFileExtension(path: string): string {
     return path.split(".").pop() || "";
   }
 
@@ -22,30 +22,38 @@ export class FileSystemController {
     }
   }
 
-  static getChildNodes(path: string): string[] | null {
+  static listDirectoryContents(path: string): string[] | null {
     const fileStatus = this.getFileStatus(path);
     if (fileStatus === null || fileStatus.isFile()) return null;
     return readdirSync(path);
   }
 
-  static generateFileTreeNode(path: string, depth: number): FileTreeNode {
-    const children = this.getChildNodes(path);
+  static createFileTree(path: string, depth: number = 1): FileTreeNode {
+    const children = this.listDirectoryContents(path);
     const node: FileTreeNode = {
-      name: this.getBaseName(path),
+      name: this.getFileName(path),
       isDirectory: !!children,
       children: null,
     };
     if (depth > 0 && node.isDirectory)
       node.children = children!.map((child) =>
-        this.generateFileTreeNode(joinPath(path, child), depth - 1)
+        this.createFileTree(joinPath(path, child), depth - 1)
       );
     return node;
   }
 
-  static buildTree(
-    rootPath: string = process.cwd(),
-    maxDepth: number = 1
+  static createCompleteFileTree(
+    rootPath: string = process.cwd()
   ): FileTreeNode | null {
-    return this.generateFileTreeNode(rootPath, maxDepth);
+    return this.createFileTree(rootPath, Infinity);
+  }
+
+  static listAllFiles(path: string): string[] {
+    const fileStatus = this.getFileStatus(path);
+    if (fileStatus === null) return [];
+    if (fileStatus.isFile()) return [path];
+    return readdirSync(path).flatMap((child) =>
+      this.listAllFiles(joinPath(path, child))
+    );
   }
 }

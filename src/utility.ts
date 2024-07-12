@@ -1,8 +1,10 @@
 import { statSync, readdirSync, Stats } from "fs";
 
-import { FileTreeNode, JoinPath } from "./type";
+import { FileTreeNode, JoinPath, GetRootPath } from "./type";
 
 export const joinPath: JoinPath = (...args) => args.join("/");
+
+export const getRootPath: GetRootPath = () => process.cwd();
 
 export class FileSystemController {
   static getFileName(path: string): string {

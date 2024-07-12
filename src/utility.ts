@@ -1,6 +1,6 @@
-import { JoinUrl } from "./type";
+import { JoinPath } from "./type";
 
-export const joinUrl: JoinUrl = (...args: string[]): string => args.join("/");
+export const joinPath: JoinPath = (...args: string[]): string => args.join("/");
 
 // TODO: Implement the following functions
 // readFileTree

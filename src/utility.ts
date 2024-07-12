@@ -33,36 +33,49 @@ export class FileSystemController {
     return readdirSync(path);
   }
 
-  static createFileTree(path: string, depth: number = 1): FileTreeNode | null {
+  static createFileTree(
+    path: string,
+    depth: number = 1,
+    regex?: RegExp
+  ): FileTreeNode | null {
     const status = this.getFileStatus(path);
     if (status === null) return null;
-    const children = this.listDirectoryContents(path);
     const node: FileTreeNode = {
       name: this.getFileName(path),
-      isDirectory: !!children,
+      isDirectory: status.isDirectory(),
       createdAt: status.birthtime,
       updatedAt: status.mtime,
       children: null,
     };
-    if (depth > 0 && node.isDirectory)
-      node.children = children!.map(
-        (child) => this.createFileTree(joinPath(path, child), depth - 1)!
-      );
+    if (!node.isDirectory && regex && !regex.test(path)) return null;
+    if (node.isDirectory && depth > 0)
+      node.children = this.listDirectoryContents(path)!
+        .map(
+          (child) =>
+            this.createFileTree(joinPath(path, child), depth - 1, regex)!
+        )
+        .filter((child) => child !== null);
+    if (node.isDirectory && !node.children?.length) return null;
     return node;
   }
 
   static createCompleteFileTree(
-    rootPath: string = process.cwd()
+    rootPath: string = process.cwd(),
+    regex?: RegExp
   ): FileTreeNode | null {
-    return this.createFileTree(rootPath, Infinity);
+    return this.createFileTree(rootPath, Infinity, regex);
   }
 
-  static listAllFiles(path: string): string[] {
+  static listAllFiles(path: string, regex?: RegExp): string[] {
     const fileStatus = this.getFileStatus(path);
     if (fileStatus === null) return [];
-    if (fileStatus.isFile()) return [path];
+
+    if (fileStatus.isFile()) {
+      if (regex && !regex.test(this.getFileName(path))) return [];
+      return [path];
+    }
     return readdirSync(path).flatMap((child) =>
-      this.listAllFiles(joinPath(path, child))
+      this.listAllFiles(joinPath(path, child), regex)
     );
   }
 }

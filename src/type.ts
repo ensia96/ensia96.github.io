@@ -19,6 +19,8 @@ export type Request = <Response>(input: RequestInfo | URL) => Promise<Response>;
 
 export type JoinPath = (...args: string[]) => string;
 
+export type ParsePath = (path: string) => string[];
+
 export type GetRootPath = () => string;
 
 // ======================

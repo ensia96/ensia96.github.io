@@ -36,12 +36,14 @@ export class FileSystemController {
   static createFileTree(
     path: string,
     depth: number = 1,
-    regex?: RegExp
+    regex?: RegExp,
+    rootPath?: string
   ): FileTreeNode | null {
     const status = this.getFileStatus(path);
     if (status === null) return null;
     const node: FileTreeNode = {
       name: this.getFileName(path),
+      path: path.replace(rootPath ?? path, ""),
       isDirectory: status.isDirectory(),
       createdAt: status.birthtime,
       updatedAt: status.mtime,
@@ -52,7 +54,12 @@ export class FileSystemController {
       node.children = this.listDirectoryContents(path)!
         .map(
           (child) =>
-            this.createFileTree(joinPath(path, child), depth - 1, regex)!
+            this.createFileTree(
+              joinPath(path, child),
+              depth - 1,
+              regex,
+              rootPath ?? path
+            )!
         )
         .filter((child) => child !== null);
     if (node.isDirectory && !node.children?.length) return null;

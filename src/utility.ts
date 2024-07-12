@@ -4,7 +4,8 @@ import { FileTreeNode, JoinPath, ParsePath, GetRootPath } from "./type";
 
 export const joinPath: JoinPath = (...args) => args.join("/");
 
-export const parsePath: ParsePath = (path) => path.split("/");
+export const parsePath: ParsePath = (path) =>
+  path.split("/").filter((pathParams) => pathParams !== "");
 
 export const getRootPath: GetRootPath = () => process.cwd();
 
@@ -51,7 +52,7 @@ export class FileSystemController {
       updatedAt: status.mtime,
       children: null,
     };
-    // TODO: 탐색 시에는 빈 폴더 포함, 검색 시에는 빈 폴더 제외
+    // TODO: 파일 탐색 시에는 빈 폴더 포함, 검색 시에는 빈 폴더 제외
     if (!node.isDirectory && regex && !regex.test(path)) return null;
     if (node.isDirectory && depth > 0)
       node.children = this.listDirectoryContents(path)!
@@ -76,6 +77,7 @@ export class FileSystemController {
     return this.createFileTree(rootPath, Infinity, regex);
   }
 
+  // TODO: 파일 탐색 시에는 빈 폴더 포함, 검색 시에는 빈 폴더 제외
   static listAllFiles(
     path: string,
     regex?: RegExp,

@@ -2,7 +2,11 @@
 // data
 // ======================
 
-// export type SomeData = {};
+export interface FileTreeNode {
+  name: string;
+  isDirectory: boolean;
+  children?: FileTreeNode[] | null;
+}
 
 // ======================
 // function

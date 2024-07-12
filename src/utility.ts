@@ -49,6 +49,7 @@ export class FileSystemController {
       updatedAt: status.mtime,
       children: null,
     };
+    // TODO: 탐색 시에는 빈 폴더 포함, 검색 시에는 빈 폴더 제외
     if (!node.isDirectory && regex && !regex.test(path)) return null;
     if (node.isDirectory && depth > 0)
       node.children = this.listDirectoryContents(path)!

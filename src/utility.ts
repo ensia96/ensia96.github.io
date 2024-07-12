@@ -1,4 +1,4 @@
-import { statSync, readdirSync, Stats } from "fs";
+import { statSync, readdirSync } from "fs";
 
 import { FileTreeNode, JoinPath, GetRootPath } from "./type";
 
@@ -15,7 +15,10 @@ export class FileSystemController {
     return path.split(".").pop() || "";
   }
 
-  static getFileStatus(path: string): Stats | null {
+  // See https://www.typescriptlang.org/docs/handbook/utility-types.html
+  static getFileStatus(
+    path: string
+  ): Exclude<NonNullable<ReturnType<typeof statSync>>, "BigIntStats"> | null {
     try {
       return statSync(path);
     } catch (error: unknown) {

@@ -33,16 +33,20 @@ export class FileSystemController {
     return readdirSync(path);
   }
 
-  static createFileTree(path: string, depth: number = 1): FileTreeNode {
+  static createFileTree(path: string, depth: number = 1): FileTreeNode | null {
+    const status = this.getFileStatus(path);
+    if (status === null) return null;
     const children = this.listDirectoryContents(path);
     const node: FileTreeNode = {
       name: this.getFileName(path),
       isDirectory: !!children,
+      createdAt: status.birthtime,
+      updatedAt: status.mtime,
       children: null,
     };
     if (depth > 0 && node.isDirectory)
-      node.children = children!.map((child) =>
-        this.createFileTree(joinPath(path, child), depth - 1)
+      node.children = children!.map(
+        (child) => this.createFileTree(joinPath(path, child), depth - 1)!
       );
     return node;
   }

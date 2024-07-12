@@ -1,8 +1,10 @@
 import { statSync, readdirSync } from "fs";
 
-import { FileTreeNode, JoinPath, GetRootPath } from "./type";
+import { FileTreeNode, JoinPath, ParsePath, GetRootPath } from "./type";
 
 export const joinPath: JoinPath = (...args) => args.join("/");
+
+export const parsePath: ParsePath = (path) => path.split("/");
 
 export const getRootPath: GetRootPath = () => process.cwd();
 

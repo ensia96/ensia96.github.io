@@ -4,10 +4,10 @@
 
 export interface FileTreeNode {
   name: string;
-  path?: string;
+  path: string;
   isDirectory: boolean;
-  createdAt?: Date;
-  updatedAt?: Date;
+  createdAt: Date;
+  updatedAt: Date;
   children?: FileTreeNode[] | null;
 }
 

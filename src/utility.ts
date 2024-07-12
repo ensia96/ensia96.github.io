@@ -2,7 +2,7 @@ import { statSync, readdirSync, Stats } from "fs";
 
 import { FileTreeNode, JoinPath } from "./type";
 
-export const joinPath: JoinPath = (...args: string[]): string => args.join("/");
+export const joinPath: JoinPath = (...args) => args.join("/");
 
 export class FileSystemController {
   static getBaseName(path: string): string {

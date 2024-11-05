@@ -43,7 +43,7 @@
     "react-dom": "latest",
     "react-helmet": "latest",
     "react-typography": "latest",
-    "sass": "latest",
+    "sass": "^1.80.6",
     "styled-components": "latest",
     "typeface-catamaran": "latest",
     "typeface-noto-sans-kr": "latest",

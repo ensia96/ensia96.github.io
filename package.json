@@ -8,6 +8,7 @@
     "url": "https://github.com/ensia96/ensia96.github.io/issues"
   },
   "dependencies": {
+    "babel-plugin-styled-components": "^2.1.4",
     "gatsby": "latest",
     "gatsby-image": "latest",
     "gatsby-plugin-feed": "latest",

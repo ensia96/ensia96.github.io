@@ -21,14 +21,37 @@ const New = () => {
     setState((state) => ({ ...state, content: event.target.value }));
 
   return (
-    <form {...{ onSubmit: submit }}>
+    <form {...{ className: CLASS.FORM, onSubmit: submit }}>
+      <label {...{ children: "commit message", className: CLASS.LABEL }} />
+
       <input
-        {...{ onChange: updateCommitMessage, value: state.commitMessage }}
+        {...{
+          className: CLASS.INPUT,
+          name: "commitMessage",
+          onChange: updateCommitMessage,
+          value: state.commitMessage,
+        }}
       />
 
-      <textarea {...{ onChange: updateContent, value: state.content }} />
+      <label {...{ children: "content", className: CLASS.LABEL }} />
+
+      <textarea
+        {...{
+          className: CLASS.TEXTAREA,
+          name: "content",
+          onChange: updateContent,
+          value: state.content,
+        }}
+      />
     </form>
   );
+};
+
+const CLASS = {
+  FORM: "flex flex-col",
+  INPUT: "",
+  LABEL: "",
+  TEXTAREA: "resize-none",
 };
 
 interface NewState {

@@ -63,7 +63,7 @@
   "scripts": {
     "start": "gatsby clean && gatsby develop",
     "build": "gatsby clean && gatsby build",
-    "clean": "gatsby clean",
+    "clean": "yarn cache clean && gatsby clean",
     "dev": "gatsby clean && gatsby develop",
     "dep": "gatsby clean && gatsby build && gh-pages -d public -b master",
     "develop": "gatsby clean && gatsby develop",

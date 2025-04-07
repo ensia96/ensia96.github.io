@@ -1,5 +1,8 @@
 "use client";
 import { useState } from "react";
+import { Markdown } from "@/lib/markdown";
+
+const markdown = new Markdown();
 
 const New = () => {
   const [state, setState] = useState<NewState>({
@@ -10,7 +13,7 @@ const New = () => {
   const submit: React.ComponentProps<"form">["onSubmit"] = async (event) => {};
 
   const updateCommitMessage: React.ComponentProps<"input">["onChange"] = (
-    event
+    event,
   ) =>
     setState((state) => ({
       ...state,
@@ -41,6 +44,12 @@ const New = () => {
           name: "content",
           onChange: updateContent,
           value: state.content,
+        }}
+      />
+
+      <article
+        {...{
+          dangerouslySetInnerHTML: { __html: markdown.parse(state.content) },
         }}
       />
     </form>

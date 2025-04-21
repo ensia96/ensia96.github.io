@@ -1,203 +1,100 @@
 // See https://github.com/azu/git-commit-push-via-github-api/blob/master/src/git-commit-push-via-github-api.ts
-import * as GitHubApi from "@octokit/rest";
 
-const debug = require("debug")("git-commit-push-via-github-api");
-const GITHUB_API_TOKEN = process.env.GITHUB_API_TOKEN;
+// authenticate > get reference > create blob > create tree > create commit > update reference
 
-// See https://docs.github.com/en/rest/git/refs?apiVersion=2022-11-28#get-a-reference
-const getReferenceCommit = function (
-  github: GitHubApi,
-  options: GitCommitPushOptions,
-) {
-  return new Promise((resolve, reject) => {
-    github.git.getRef(
-      {
-        owner: options.owner,
-        repo: options.repo,
-        ref: options.fullyQualifiedRef,
-      },
-      (err, res) => {
-        if (err) {
-          debug("getReferenceCommit Error", JSON.stringify(err, null, "  "));
-          return reject(err);
-        }
-        debug("getReferenceCommit Response: %O", res);
-        return resolve({ referenceCommitSha: res.data.object.sha });
-      },
-    );
+const GITHUB_API_URL = "https://api.github.com";
+
+export async function createNewCommit({
+  commitMessage,
+  content,
+  owner,
+  path,
+  ref,
+  repo,
+  token,
+}: CreateNewCommitParams) {
+  const url = `${GITHUB_API_URL}/repos/${owner}/${repo}/git`;
+  const headers = {
+    "Content-Type": "application/json",
+    // See https://docs.github.com/en/rest/authentication/authenticating-to-the-rest-api?apiVersion=2022-11-28
+    Authorization: `Bearer ${token}`,
+    Accept: "application/vnd.github+json",
+  };
+
+  // 1. Reference 가져오기
+  // See https://docs.github.com/en/rest/git/refs?apiVersion=2022-11-28#get-a-reference
+  const refRes = await fetch(`${url}/ref/${ref}`, { headers });
+  if (!refRes.ok)
+    throw new Error(`Failed to get reference: ${await refRes.text()}`);
+  const refData = await refRes.json();
+  const referenceCommitSha = refData.object.sha;
+
+  // 2. Blob 생성
+  // See https://docs.github.com/en/rest/git/blobs?apiVersion=2022-11-28#create-a-blob
+  const isBuffer = Buffer.isBuffer(content);
+  const encoding = isBuffer ? "base64" : "utf-8";
+  const fileContent = isBuffer
+    ? (content as Buffer).toString("base64")
+    : content;
+  const blobRes = await fetch(`${url}/blobs`, {
+    method: "POST",
+    headers,
+    body: JSON.stringify({ content: fileContent, encoding }),
   });
-};
+  if (!blobRes.ok)
+    throw new Error(`Failed to create blob: ${await blobRes.text()}`);
+  const blobData = await blobRes.json();
+  const blobSha = blobData.sha;
 
-// See https://docs.github.com/en/rest/git/blobs?apiVersion=2022-11-28#create-a-blob
-// See https://docs.github.com/en/rest/git/trees?apiVersion=2022-11-28#create-a-tree
-const createTree = function (
-  github: GitHubApi,
-  options: GitCommitPushOptions,
-  data: any,
-) {
-  return new Promise((resolve, reject) => {
-    const promises = options.files.map((file) => {
-      if (typeof file.path === "string" && typeof file.content === "string") {
-        return github.git
-          .createBlob({
-            owner: options.owner,
-            repo: options.repo,
-            content: file.content,
-            encoding: "utf-8",
-          })
-          .then((blob: any) => {
-            return {
-              sha: blob.data.sha,
-              path: file.path,
-              mode: "100644",
-              type: "blob",
-            };
-          });
-      } else if (
-        typeof file.path === "string" &&
-        Buffer.isBuffer(file.content)
-      ) {
-        return github.git
-          .createBlob({
-            owner: options.owner,
-            repo: options.repo,
-            content: file.content.toString("base64"),
-            encoding: "base64",
-          })
-          .then((blob: any) => {
-            return {
-              sha: blob.data.sha,
-              path: file.path,
-              mode: "100644",
-              type: "blob",
-            };
-          });
-      }
-      throw new Error(`This file can not handled: ${file}`);
-    });
-    return Promise.all(promises).then((files) => {
-      debug("files: %O", files);
-      // TODO: d.ts bug?
-      github.git.createTree(
-        {
-          owner: options.owner,
-          repo: options.repo,
-          tree: files,
-          base_tree: data.referenceCommitSha,
-        } as any,
-        (err: any, res: any) => {
-          if (err) {
-            debug("createTree", JSON.stringify(err, null, "  "));
-            return reject(err);
-          }
-          debug("createTree Response: %O", res);
-          return resolve(Object.assign(data, { newTreeSha: res.data.sha }));
-        },
-      );
-    });
+  // 3. Tree 생성
+  // See https://docs.github.com/en/rest/git/trees?apiVersion=2022-11-28#create-a-tree
+  const treeRes = await fetch(`${url}/trees`, {
+    method: "POST",
+    headers,
+    body: JSON.stringify({
+      base_tree: referenceCommitSha,
+      tree: [{ path, mode: "100644", type: "blob", sha: blobSha }],
+    }),
   });
-};
+  if (!treeRes.ok)
+    throw new Error(`Failed to create tree: ${await treeRes.text()}`);
+  const treeData = await treeRes.json();
+  const newTreeSha = treeData.sha;
 
-// See https://docs.github.com/en/rest/git/commits?apiVersion=2022-11-28#create-a-commit
-const createCommit = function (
-  github: GitHubApi,
-  options: GitCommitPushOptions,
-  data: any,
-) {
-  return new Promise((resolve, reject) => {
-    github.git.createCommit(
-      {
-        owner: options.owner,
-        repo: options.repo,
-        message: options.commitMessage || "commit",
-        tree: data.newTreeSha,
-        parents: [data.referenceCommitSha],
-      },
-      (err, res) => {
-        if (err) {
-          debug("createCommit", JSON.stringify(err, null, "  "));
-          return reject(err);
-        }
-        debug("createCommit Response: %O", res);
-        return resolve(Object.assign(data, { newCommitSha: res.data.sha }));
-      },
-    );
+  // 4. Commit 생성
+  // See https://docs.github.com/en/rest/git/commits?apiVersion=2022-11-28#create-a-commit
+  const commitRes = await fetch(`${url}/commits`, {
+    method: "POST",
+    headers,
+    body: JSON.stringify({
+      message: commitMessage,
+      tree: newTreeSha,
+      parents: [referenceCommitSha],
+    }),
   });
-};
+  if (!commitRes.ok)
+    throw new Error(`Failed to create commit: ${await commitRes.text()}`);
+  const commitData = await commitRes.json();
+  const newCommitSha = commitData.sha;
 
-// See https://docs.github.com/en/rest/git/refs?apiVersion=2022-11-28#update-a-reference
-const updateReference = function (
-  github: GitHubApi,
-  options: GitCommitPushOptions,
-  data: any,
-) {
-  return new Promise((resolve, reject) => {
-    github.git.updateRef(
-      {
-        owner: options.owner,
-        repo: options.repo,
-        ref: options.fullyQualifiedRef,
-        sha: data.newCommitSha,
-        force: options.forceUpdate,
-      },
-      (err, data) => {
-        if (err) {
-          debug("updateReference", JSON.stringify(err, null, "  "));
-          return reject(err);
-        }
-        debug("updateReference Response: %O", data);
-        return resolve(data);
-      },
-    );
+  // 5. 참조 업데이트 (update ref)
+  // See https://docs.github.com/en/rest/git/refs?apiVersion=2022-11-28#update-a-reference
+  const updateRes = await fetch(`${url}/refs/${ref}`, {
+    method: "PATCH",
+    headers,
+    body: JSON.stringify({ sha: newCommitSha, force: false }),
   });
-};
-
-export interface GitCommitPushOptions {
-  owner: string;
-  repo: string;
-  files: {
-    path: string;
-    content: string | Buffer;
-  }[];
-  fullyQualifiedRef: string;
-  forceUpdate?: boolean;
-  commitMessage?: string;
-  token?: string; // or process.env.GITHUB_API_TOKEN
+  if (!updateRes.ok)
+    throw new Error(`Failed to update reference: ${await updateRes.text()}`);
+  return newCommitSha;
 }
 
-// See https://docs.github.com/en/rest/authentication/authenticating-to-the-rest-api?apiVersion=2022-11-28
-export const gitCommitPush = (options: GitCommitPushOptions) => {
-  if (
-    !options.owner ||
-    !options.repo ||
-    !options.files ||
-    !options.files.length
-  ) {
-    return "";
-  }
-  const token = options.token || GITHUB_API_TOKEN;
-  if (!token) {
-    throw new Error(`token is not defined`);
-  }
-  const gitHub = new GitHubApi();
-  if (token) {
-    gitHub.authenticate({
-      type: "oauth",
-      token: token,
-    });
-  }
-  const filledOptions = {
-    owner: options.owner,
-    repo: options.repo,
-    files: options.files,
-    fullyQualifiedRef: options.fullyQualifiedRef || "heads/dev",
-    forceUpdate: options.forceUpdate || false,
-    commitMessage:
-      options.commitMessage || "Commit - " + new Date().getTime().toString(),
-  };
-  debug("options %O", options);
-  return getReferenceCommit(gitHub, filledOptions)
-    .then((data) => createTree(gitHub, filledOptions, data))
-    .then((data) => createCommit(gitHub, filledOptions, data))
-    .then((data) => updateReference(gitHub, filledOptions, data));
-};
+export interface CreateNewCommitParams {
+  commitMessage: string;
+  content: string | Buffer;
+  owner: string;
+  path: string;
+  ref: string;
+  repo: string;
+  token: string;
+}

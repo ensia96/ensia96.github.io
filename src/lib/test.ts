@@ -3,6 +3,8 @@ import * as GitHubApi from "@octokit/rest";
 
 const debug = require("debug")("git-commit-push-via-github-api");
 const GITHUB_API_TOKEN = process.env.GITHUB_API_TOKEN;
+
+// See https://docs.github.com/en/rest/git/refs?apiVersion=2022-11-28#get-a-reference
 const getReferenceCommit = function (
   github: GitHubApi,
   options: GitCommitPushOptions,
@@ -26,6 +28,8 @@ const getReferenceCommit = function (
   });
 };
 
+// See https://docs.github.com/en/rest/git/blobs?apiVersion=2022-11-28#create-a-blob
+// See https://docs.github.com/en/rest/git/trees?apiVersion=2022-11-28#create-a-tree
 const createTree = function (
   github: GitHubApi,
   options: GitCommitPushOptions,
@@ -94,6 +98,7 @@ const createTree = function (
   });
 };
 
+// See https://docs.github.com/en/rest/git/commits?apiVersion=2022-11-28#create-a-commit
 const createCommit = function (
   github: GitHubApi,
   options: GitCommitPushOptions,
@@ -120,6 +125,7 @@ const createCommit = function (
   });
 };
 
+// See https://docs.github.com/en/rest/git/refs?apiVersion=2022-11-28#update-a-reference
 const updateReference = function (
   github: GitHubApi,
   options: GitCommitPushOptions,
@@ -159,6 +165,7 @@ export interface GitCommitPushOptions {
   token?: string; // or process.env.GITHUB_API_TOKEN
 }
 
+// See https://docs.github.com/en/rest/authentication/authenticating-to-the-rest-api?apiVersion=2022-11-28
 export const gitCommitPush = (options: GitCommitPushOptions) => {
   if (
     !options.owner ||

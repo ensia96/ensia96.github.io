@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import { createNewCommit } from "@/lib/test";
+import { createNewCommit } from "@/lib/github";
 import { Markdown } from "@/lib/markdown";
 
 const markdown = new Markdown();

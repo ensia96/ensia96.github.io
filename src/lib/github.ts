@@ -98,3 +98,27 @@ export interface CreateNewCommitParams {
   repo: string;
   token: string;
 }
+
+export async function getRepositories({ owner, token }: GetRepositoriesParams) {
+  // See https://docs.github.com/en/rest/repos/repos?apiVersion=2022-11-28#list-repositories-for-the-authenticated-user
+  let endpoint: string = "/user/repos";
+  const headers: HeadersInit = {
+    "Content-Type": "application/json",
+    Accept: "application/vnd.github+json",
+  };
+  if (token) headers["Authorization"] = `Bearer ${token}`;
+  else if (owner)
+    // See https://docs.github.com/en/rest/repos/repos?apiVersion=2022-11-28#list-repositories-for-a-user
+    endpoint = `/users/${owner}/repos`;
+  else throw new Error("owner or token is required");
+  const url = GITHUB_API_URL + endpoint;
+
+  const repositoriesRes = await fetch(url, { headers });
+  const repositoriesData = await repositoriesRes.json();
+  return repositoriesData;
+}
+
+export interface GetRepositoriesParams {
+  owner?: string;
+  token?: string;
+}

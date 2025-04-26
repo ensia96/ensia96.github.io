@@ -1,7 +1,6 @@
 "use client";
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
-import { join } from "path";
 import { useEffect, useState } from "react";
 import { getRepositoryContents } from "@/lib/github";
 
@@ -44,11 +43,7 @@ const RepositoryContents = () => {
       {state.repositoryContents.map((repositoryContent) => (
         <Link
           key={repositoryContent.sha}
-          {...{
-            href: {
-              query: { path: join(path, repositoryContent.path), repository },
-            },
-          }}
+          {...{ href: { query: { path: repositoryContent.path, repository } } }}
         >
           <article {...{ children: repositoryContent.name }} />
         </Link>

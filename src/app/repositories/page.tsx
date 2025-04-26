@@ -1,4 +1,6 @@
 "use client";
+import Link from "next/link";
+import { join } from "path";
 import { useEffect, useState } from "react";
 import { getRepositories } from "@/lib/github";
 
@@ -19,7 +21,17 @@ const Repositories = () => {
   return (
     <main>
       {state.repositories.map((repository) => (
-        <article key={repository.id} {...{ children: repository.name }} />
+        <Link
+          key={repository.id}
+          {...{
+            href: {
+              pathname: join("repositories", "contents"),
+              query: { repository: repository.name, path: "" },
+            },
+          }}
+        >
+          <article {...{ children: repository.name }} />
+        </Link>
       ))}
     </main>
   );

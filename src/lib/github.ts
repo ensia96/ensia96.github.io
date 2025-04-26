@@ -122,3 +122,34 @@ export interface GetRepositoriesParams {
   owner?: string;
   token?: string;
 }
+
+export async function getRepositoryContents({
+  owner,
+  path,
+  repository,
+  token,
+}: GetRepositoryContentsParams) {
+  if (!owner) throw new Error("owner is required");
+  if (!repository) throw new Error("repository is required");
+
+  const headers: HeadersInit = {
+    "Content-Type": "application/json",
+    Accept: "application/vnd.github+json",
+  };
+  if (token) headers["Authorization"] = `Bearer ${token}`;
+
+  // See https://docs.github.com/en/rest/repos/contents?apiVersion=2022-11-28#get-repository-content
+  const repositoryContentsRes = await fetch(
+    `${GITHUB_API_URL}/repos/${owner}/${repository}/contents/${path}`,
+    headers,
+  );
+  const repositoryContentsData = await repositoryContentsRes.json();
+  return repositoryContentsData;
+}
+
+export interface GetRepositoryContentsParams {
+  owner: string;
+  path: string;
+  repository: string;
+  token?: string;
+}

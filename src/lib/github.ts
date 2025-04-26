@@ -125,6 +125,7 @@ export interface GetRepositoriesParams {
 
 export async function getRepositoryContents({
   owner,
+  path,
   repository,
   token,
 }: GetRepositoryContentsParams) {
@@ -139,7 +140,7 @@ export async function getRepositoryContents({
 
   // See https://docs.github.com/en/rest/repos/contents?apiVersion=2022-11-28#get-repository-content
   const repositoryContentsRes = await fetch(
-    `${GITHUB_API_URL}/repos/${owner}/${repository}/contents`,
+    `${GITHUB_API_URL}/repos/${owner}/${repository}/contents/${path}`,
     headers,
   );
   const repositoryContentsData = await repositoryContentsRes.json();
@@ -148,6 +149,7 @@ export async function getRepositoryContents({
 
 export interface GetRepositoryContentsParams {
   owner: string;
+  path: string;
   repository: string;
   token?: string;
 }

@@ -22,18 +22,7 @@ const RepositoryContents = () => {
       path,
       repository,
     });
-    if (Array.isArray(repositoryContents)) {
-      setState((state) => ({ ...state, repositoryContents }));
-    } else {
-      const raw = new TextDecoder("utf-8").decode(
-        Uint8Array.from(
-          Array.from(atob(repositoryContents.content)).map((character) =>
-            character.charCodeAt(0),
-          ),
-        ),
-      );
-      console.log("raw :", raw);
-    }
+    setState((state) => ({ ...state, repositoryContents }));
   };
 
   useEffect(effectOnInitialize, [path, repository]);
@@ -43,7 +32,15 @@ const RepositoryContents = () => {
       {state.repositoryContents.map((repositoryContent) => (
         <Link
           key={repositoryContent.sha}
-          {...{ href: { query: { path: repositoryContent.path, repository } } }}
+          {...{
+            href: {
+              pathname:
+                repositoryContent.type === "file"
+                  ? "/repositories/contents/raw"
+                  : "/repositories/contents",
+              query: { path: repositoryContent.path, repository },
+            },
+          }}
         >
           <article {...{ children: repositoryContent.name }} />
         </Link>

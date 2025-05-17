@@ -1,14 +1,17 @@
 "use client";
 import { useSearchParams } from "next/navigation";
 import { useEffect, useState } from "react";
-import { getRepositoryContents } from "@/lib/github";
+import { getRepositoryContents, putRepositoryContents } from "@/lib/github";
 import { Markdown } from "@/lib/markdown";
 
 const markdown = new Markdown();
 
 const RepositoryContentsRaw = () => {
   const [state, setState] = useState<RepositoryContentsRawState>({
+    message: "",
     repositoryContentsRaw: "",
+    repositoryContentsSha: "",
+    token: "",
   });
   const searchParams = useSearchParams();
   const path = searchParams.get("path") ?? "";
@@ -36,8 +39,37 @@ const RepositoryContentsRaw = () => {
           ),
         ),
       ),
+      repositoryContentsSha: repositoryContents.sha,
     }));
   };
+
+  const updateInput: React.ComponentProps<"input">["onChange"] = (event) =>
+    setState((state) => ({
+      ...state,
+      [event.target.name]: event.target.value,
+    }));
+
+  const updateTextarea: React.ComponentProps<"textarea">["onChange"] = (
+    event,
+  ) =>
+    setState((state) => ({
+      ...state,
+      repositoryContentsRaw: event.target.value,
+    }));
+
+  const submitRepositoryContentsRaw: React.ComponentProps<"form">["onSubmit"] =
+    async (event) => {
+      event.preventDefault();
+      putRepositoryContents({
+        content: state.repositoryContentsRaw,
+        message: state.message,
+        owner: "ensia96",
+        path,
+        repository,
+        sha: state.repositoryContentsSha,
+        token: state.token,
+      });
+    };
 
   useEffect(effectOnInitialize, [path, repository]);
 
@@ -50,12 +82,41 @@ const RepositoryContentsRaw = () => {
           },
         }}
       />
+
+      <form {...{ onSubmit: submitRepositoryContentsRaw }}>
+        <input
+          {...{
+            name: "message",
+            onChange: updateInput,
+            placeholder: "message",
+            value: state.message,
+          }}
+        />
+
+        <input
+          {...{
+            name: "token",
+            onChange: updateInput,
+            placeholder: "token",
+            value: state.token,
+          }}
+        />
+
+        <textarea
+          {...{ onChange: updateTextarea, value: state.repositoryContentsRaw }}
+        />
+
+        <button {...{ children: "submit" }} />
+      </form>
     </main>
   );
 };
 
 interface RepositoryContentsRawState {
+  message: string;
   repositoryContentsRaw: string;
+  repositoryContentsSha: string;
+  token: string;
 }
 
 export default RepositoryContentsRaw;

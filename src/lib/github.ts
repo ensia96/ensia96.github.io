@@ -153,3 +153,41 @@ export interface GetRepositoryContentsParams {
   repository: string;
   token?: string;
 }
+
+export async function putRepositoryContents({
+  content,
+  message,
+  owner,
+  path,
+  repository,
+  sha,
+  token,
+}: PutRepositoryContentsParams) {
+  const headers: HeadersInit = {
+    "Content-Type": "application/json",
+    Accept: "application/vnd.github+json",
+    Authorization: `Bearer ${token}`,
+  };
+
+  const repositoryContentsRes = await fetch(
+    // See https://docs.github.com/en/rest/repos/contents?apiVersion=2022-11-28#create-or-update-file-contents
+    `${GITHUB_API_URL}/repos/${owner}/${repository}/contents/${path}`,
+    {
+      body: JSON.stringify({ content: btoa(content), message, sha }),
+      headers,
+      method: "PUT",
+    },
+  );
+  const repositoryContentsData = await repositoryContentsRes.json();
+  return repositoryContentsData;
+}
+
+export interface PutRepositoryContentsParams {
+  content: string;
+  message: string;
+  owner: string;
+  path: string;
+  repository: string;
+  sha?: string;
+  token: string;
+}

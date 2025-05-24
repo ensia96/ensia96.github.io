@@ -173,7 +173,15 @@ export async function putRepositoryContents({
     // See https://docs.github.com/en/rest/repos/contents?apiVersion=2022-11-28#create-or-update-file-contents
     `${GITHUB_API_URL}/repos/${owner}/${repository}/contents/${path}`,
     {
-      body: JSON.stringify({ content: btoa(content), message, sha }),
+      body: JSON.stringify({
+        content: btoa(
+          String.fromCharCode.apply(null, [
+            ...new TextEncoder().encode(content),
+          ]),
+        ),
+        message,
+        sha,
+      }),
       headers,
       method: "PUT",
     },

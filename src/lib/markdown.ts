@@ -8,7 +8,6 @@ export class Markdown {
     this.init();
   }
 
-  // TODO: add prettier
   format(content: string) {
     return content;
   }
@@ -34,7 +33,6 @@ export class Markdown {
   }
 }
 
-// TODO: add style details
 const CLASS = {
   H1: "font-bold text-3xl",
   H2: "font-semi-bold text-2xl",

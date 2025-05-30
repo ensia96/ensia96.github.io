@@ -144,6 +144,14 @@ export async function getRepositoryContents({
     headers,
   );
   const repositoryContentsData = await repositoryContentsRes.json();
+  if ("content" in repositoryContentsData)
+    repositoryContentsData.content = new TextDecoder("utf-8").decode(
+      Uint8Array.from(
+        [...atob(repositoryContentsData.content)].map((character) =>
+          character.charCodeAt(0),
+        ),
+      ),
+    );
   return repositoryContentsData;
 }
 

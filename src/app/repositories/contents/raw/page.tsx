@@ -42,7 +42,13 @@ const RepositoryContentsRaw = () => {
     });
     setState((state) => ({
       ...state,
-      repositoryContentsRaw: repositoryContents.content,
+      repositoryContentsRaw: new TextDecoder("utf-8").decode(
+        Uint8Array.from(
+          [...atob(repositoryContents.content)].map((character) =>
+            character.charCodeAt(0),
+          ),
+        ),
+      ),
       repositoryContentsSha: repositoryContents.sha,
     }));
   };

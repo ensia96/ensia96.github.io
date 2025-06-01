@@ -3,8 +3,10 @@ import { useSearchParams } from "next/navigation";
 import { useEffect, useState } from "react";
 import { getRepositoryContents, putRepositoryContents } from "@/lib/github";
 import { Markdown } from "@/lib/markdown";
+import { Prettier } from "@/lib/prettier";
 
 const markdown = new Markdown();
+const prettier = new Prettier();
 
 const RepositoryContentsRaw = () => {
   const [state, setState] = useState<RepositoryContentsRawState>({
@@ -22,13 +24,11 @@ const RepositoryContentsRaw = () => {
   };
 
   const format: React.ComponentProps<"button">["onClick"] = async () => {
-    /*
     const formatted = await prettier.format({
       content: state.repositoryContentsRaw,
       filepath: path,
     });
     setState((state) => ({ ...state, repositoryContentsRaw: formatted }));
-    */
   };
 
   const setupRepositoryContentsRaw = async (

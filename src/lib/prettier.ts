@@ -1,3 +1,16 @@
+import * as prettier from "prettier/standalone";
+import { parsers as acorn } from "prettier/plugins/acorn";
+import { parsers as angular } from "prettier/plugins/angular";
+import { parsers as babel } from "prettier/plugins/babel";
+import { parsers as flow } from "prettier/plugins/flow";
+import { parsers as glimmer } from "prettier/plugins/glimmer";
+import { parsers as graphql } from "prettier/plugins/graphql";
+import { parsers as html } from "prettier/plugins/html";
+import { parsers as markdown } from "prettier/plugins/markdown";
+import { parsers as meriyah } from "prettier/plugins/meriyah";
+import { parsers as postcss } from "prettier/plugins/postcss";
+import { parsers as typescript } from "prettier/plugins/typescript";
+import { parsers as yaml } from "prettier/plugins/yaml";
 import { Options, Parser } from "prettier";
 
 export class Prettier {
@@ -6,21 +19,20 @@ export class Prettier {
 
   constructor() {
     this.plugins = [
-      require("prettier/plugins/acorn"),
-      require("prettier/plugins/angular"),
-      require("prettier/plugins/babel"),
-      require("prettier/plugins/estree"),
-      require("prettier/plugins/flow"),
-      require("prettier/plugins/glimmer"),
-      require("prettier/plugins/graphql"),
-      require("prettier/plugins/html"),
-      require("prettier/plugins/markdown"),
-      require("prettier/plugins/meriyah"),
-      require("prettier/plugins/postcss"),
-      require("prettier/plugins/typescript"),
-      require("prettier/plugins/yaml"),
+      acorn,
+      angular,
+      babel,
+      flow,
+      glimmer,
+      graphql,
+      html,
+      markdown,
+      meriyah,
+      postcss,
+      typescript,
+      yaml,
     ];
-    this.worker = require("prettier/standalone");
+    this.worker = prettier;
   }
 
   async format({ content, filepath }: PrettierFormatParams) {

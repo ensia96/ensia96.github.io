@@ -80,7 +80,6 @@ const RepositoryContentsRaw = () => {
   return (
     <main>
       <article
-        suppressHydrationWarning
         {...{
           dangerouslySetInnerHTML: {
             __html: markdown.parse(state.repositoryContentsRaw),

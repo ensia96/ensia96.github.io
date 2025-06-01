@@ -4,6 +4,10 @@ const nextConfig = {
   // See https://github.com/gregrickaby/nextjs-github-pages
   output: "export",
   images: { unoptimized: true },
+  webpack: (config, { isServer }) => {
+    if (!isServer) config.resolve.fallback = { fs: false, module: false };
+    return config;
+  },
 };
 
 export default nextConfig;

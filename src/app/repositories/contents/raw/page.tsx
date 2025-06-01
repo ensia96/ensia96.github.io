@@ -2,11 +2,7 @@
 import { useSearchParams } from "next/navigation";
 import { useEffect, useState } from "react";
 import { getRepositoryContents, putRepositoryContents } from "@/lib/github";
-import { Markdown } from "@/lib/markdown";
-import { Prettier } from "@/lib/prettier";
-
-const markdown = new Markdown();
-const prettier = new Prettier();
+import { markdown, prettier } from "@/lib";
 
 const RepositoryContentsRaw = () => {
   const [state, setState] = useState<RepositoryContentsRawState>({

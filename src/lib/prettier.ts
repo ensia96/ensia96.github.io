@@ -1,7 +1,3 @@
-declare global {
-  const prettier: PretterWorker;
-  const prettierPlugins: PrettierPlugin[];
-}
 import { Options, Parser } from "prettier";
 
 export class Prettier {
@@ -18,10 +14,10 @@ interface PrettierFormatParams {
   filepath: string;
 }
 
-interface PrettierPlugin {
+export interface PrettierPlugin {
   [key: string]: Parser;
 }
 
-interface PretterWorker {
+export interface PrettierWorker {
   format(content: string, options: Options): Promise<string>;
 }

@@ -118,68 +118,88 @@
   * {
     @apply border-border outline-ring/50;
   }
+  a {
+    @apply underline;
+  }
+  article {
+    @apply flex flex-col gap-4 h-full overflow-scroll p-4;
+  }
+  blockquote {
+    @apply border-l-4 flex flex-col gap-4 italic pl-3 text-lg text-muted-foreground;
+  }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background h-full overflow-hidden text-foreground w-full;
   }
-}
-/* See https://github.com/GeoffSelby/tailwind-md-base/blob/master/src/defaultOptions.js */
-a {
-  @apply underline;
-}
-article {
-  @apply flex flex-col gap-4 p-4;
-}
-blockquote {
-  @apply border-l-4 flex flex-col gap-4 italic pl-3 text-lg text-muted-foreground;
-}
-code {
-  @apply bg-muted p-1 rounded-md text-sm;
-}
-h1 {
-  @apply border-b font-semibold pb-4 text-4xl;
-}
-h2 {
-  @apply border-b font-semibold pb-3 text-3xl;
-}
-h3 {
-  @apply font-semibold text-2xl;
-}
-h4 {
-  @apply font-semibold text-xl;
-}
-h5 {
-  @apply font-semibold text-lg;
-}
-h6 {
-  @apply font-semibold text-base;
-}
-hr {
-  @apply border-b;
-}
-ol {
-  @apply list-decimal list-outside pl-6;
-}
-p {
-}
-pre {
-  @apply bg-muted overflow-x-auto p-4 rounded-md text-sm;
-}
-table {
-  @apply border-collapse text-primary w-full;
-  tr {
-    * {
-      @apply border p-2 text-left;
-    }
-    &:nth-child(2n) {
-      @apply bg-muted;
-    }
-    th {
-      @apply font-semibold;
-    }
-    td {
+  button {
+    @apply bg-primary cursor-pointer text-primary-foreground rounded-md px-4 py-2;
+  }
+  code {
+    @apply bg-muted p-1 rounded-md text-sm;
+  }
+  form {
+    @apply flex flex-col gap-4 p-4;
+  }
+  h1 {
+    @apply border-b font-semibold pb-4 text-4xl;
+  }
+  h2 {
+    @apply border-b font-semibold pb-3 text-3xl;
+  }
+  h3 {
+    @apply font-semibold text-2xl;
+  }
+  h4 {
+    @apply font-semibold text-xl;
+  }
+  h5 {
+    @apply font-semibold text-lg;
+  }
+  h6 {
+    @apply font-semibold text-base;
+  }
+  html {
+    @apply h-full overflow-hidden w-full;
+  }
+  hr {
+    @apply border-b;
+  }
+  input {
+    @apply bg-input rounded-md p-2 text-sm;
+  }
+  main {
+    @apply flex flex-col h-full overflow-scroll;
+  }
+  ol {
+    @apply list-decimal list-outside pl-6;
+  }
+  p {
+  }
+  pre {
+    @apply bg-muted min-h-max overflow-scroll p-4 rounded-md text-sm w-full;
+    code {
+      @apply p-0;
     }
   }
-}
-ul {
-  @apply list-disc list-outside pl-6;
+  table {
+    @apply border-collapse text-primary w-full;
+    tr {
+      * {
+        @apply border p-2 text-left;
+      }
+      &:nth-child(2n) {
+        @apply bg-muted;
+      }
+      th {
+        @apply font-semibold;
+      }
+      td {
+      }
+    }
+  }
+  textarea {
+    @apply bg-input rounded-md p-2 resize-none text-sm;
+  }
+  ul {
+    @apply list-disc list-outside pl-6;
+  }
 }

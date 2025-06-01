@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   description: "컴퓨터처럼 생각하고, 말하듯 코딩하기",
 };
 
-const RootLayout = ({ children }: Readonly<RootLayoutProps>) => (
+const Layout = ({ children }: Readonly<LayoutProps>) => (
   <Suspense>
     <html {...{ lang: "ko" }}>
       <head>
@@ -43,8 +43,8 @@ const RootLayout = ({ children }: Readonly<RootLayoutProps>) => (
   </Suspense>
 );
 
-interface RootLayoutProps {
+interface LayoutProps {
   children: React.ReactNode;
 }
 
-export default RootLayout;
+export default Layout;

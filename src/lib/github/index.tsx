@@ -87,10 +87,11 @@ export class Github {
           repository: repository.name,
         });
         for (const node of tree.tree)
-          this._nodes.push({
-            ...node,
-            path: [repository.name, node.path].join("/"),
-          });
+          if (!node.path.includes(".github"))
+            this._nodes.push({
+              ...node,
+              path: [repository.name, node.path].join("/"),
+            });
         this._repositories.push({
           name: repository.name,
           defaultBranch: repository.default_branch,

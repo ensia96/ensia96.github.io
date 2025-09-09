@@ -1,5 +1,6 @@
 import { Config } from "@/app/config";
 import { GithubDTO } from "@/lib/github/dto";
+import { Markdown } from "@/lib/markdown";
 
 const GITHUB_API_URL = "https://api.github.com";
 
@@ -112,12 +113,23 @@ export class Github {
     return paths;
   }
 
-  render() {
-    return (
-      <ul>
-        <GithubRecursion {...{ name: this.owner, tree: this.tree }} />
-      </ul>
+  async render({ path }: GithubDTO.GithubRenderParams = {}) {
+    if (!path)
+      return (
+        <ul>
+          <GithubRecursion {...{ name: this.owner, tree: this.tree }} />
+        </ul>
+      );
+    if (Array.isArray(path)) path = path.join("/");
+    const markdown = new Markdown();
+    const response = await fetch(
+      ["https://raw.githubusercontent.com", path].join("/"),
     );
+    const data = await response.text();
+    const content = path.endsWith("md")
+      ? data
+      : ["```\n\n", data, "\n\n```"].join("");
+    return markdown.render({ content });
   }
 
   private get tree() {

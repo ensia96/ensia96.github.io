@@ -33,6 +33,10 @@ export namespace GithubDTO {
     truncated: boolean;
   };
 
+  export type GithubRenderParams = {
+    path?: string | string[];
+  };
+
   export type GithubRepository = {
     name: string;
     defaultBranch: string;

@@ -10,34 +10,6 @@ export const metadata: Metadata = {
 const Layout = ({ children }: Readonly<LayoutProps>) => (
   <Suspense>
     <html {...{ lang: "ko" }}>
-      <head>
-        <script
-          {...{ src: "https://unpkg.com/prettier@3.5.3/standalone.js" }}
-        />
-
-        {[
-          "acorn",
-          "angular",
-          "babel",
-          "flow",
-          "glimmer",
-          "graphql",
-          "html",
-          "markdown",
-          "meriyah",
-          "postcss",
-          "typescript",
-          "yaml",
-        ].map((plugin) => (
-          <script
-            key={plugin}
-            {...{
-              src: `https://unpkg.com/prettier@3.5.3/plugins/${plugin}.js`,
-            }}
-          />
-        ))}
-      </head>
-
       <body {...{ children }} />
     </html>
   </Suspense>

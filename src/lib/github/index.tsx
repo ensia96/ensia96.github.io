@@ -33,9 +33,6 @@ export class Github {
     try {
       const response = await fetch(
         `${GITHUB_API_URL}/repos/${this.owner}/${repository}/git/ref/${reference}`,
-        {
-          headers: { Authorization: `Bearer ${process.env.GITHUB_TOKEN}` },
-        },
       );
       return (await response.json()) as GithubDTO.GithubGetReferenceResponse;
     } catch (error) {
@@ -48,9 +45,6 @@ export class Github {
     try {
       const response = await fetch(
         `${GITHUB_API_URL}/users/${this.owner}/repos`,
-        {
-          headers: { Authorization: `Bearer ${process.env.GITHUB_TOKEN}` },
-        },
       );
       return (await response.json()) as GithubDTO.GithubGetRepositoriesResponse;
     } catch (error) {
@@ -69,9 +63,6 @@ export class Github {
     try {
       const response = await fetch(
         `${GITHUB_API_URL}/repos/${this.owner}/${repository}/git/trees/${reference}?recursive=1`,
-        {
-          headers: { Authorization: `Bearer ${process.env.GITHUB_TOKEN}` },
-        },
       );
       return (await response.json()) as GithubDTO.GithubGetTreeResponse;
     } catch (error) {

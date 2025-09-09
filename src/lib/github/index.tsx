@@ -105,11 +105,11 @@ export class Github {
   get paths() {
     const paths = [];
     for (const node of this._nodes)
-      paths.push(
-        this.getContentPathFromNode({ node })
+      paths.push({
+        path: this.getContentPathFromNode({ node })
           .split("/")
           .map((segment) => encodeURIComponent(segment)),
-      );
+      });
     return paths;
   }
 

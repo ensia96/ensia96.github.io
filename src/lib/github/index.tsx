@@ -2,13 +2,42 @@ import { Config } from "@/app/config";
 import { GithubDTO } from "@/lib/github/dto";
 import { Markdown } from "@/lib/markdown";
 
-const GITHUB_API_URL = "https://api.github.com";
-
 export class Github {
   private readonly _nodes: GithubDTO.GithubGetTreeResponse["tree"] = [];
   private readonly _repositories: GithubDTO.GithubRepository[] = [];
 
-  constructor(private readonly owner = Config.Github.OWNER) {}
+  constructor(
+    private readonly owner = Config.Github.OWNER,
+    private readonly token = process.env.GITHUB_TOKEN,
+  ) {}
+
+  async fetch<T>({ base, params, path }: GithubDTO.GithubFetchParams) {
+    try {
+      const options = { headers: {} };
+      if (!base && this.token)
+        options.headers = { Authorization: `Bearer ${this.token}` };
+      if (Array.isArray(path)) path = path.join("/");
+      const url = new URL(path, base ?? "https://api.github.com");
+      const query = new URLSearchParams();
+      for (const [key, value] of Object.entries(params ?? []))
+        if (value) query.set(key, value.toString());
+      url.search = query.toString();
+      const response = await fetch(url, options);
+      if (!response.ok) throw new Error(response.statusText);
+      return (
+        response.headers.get("Content-Type")?.includes("json")
+          ? response.json()
+          : response.text()
+      ) as T;
+    } catch (error: unknown) {
+      console.error(error);
+      const errorMessage =
+        error instanceof Error
+          ? error.message
+          : "서버 오류가 발생했습니다. 고객센터에 문의를 남겨주세요.";
+      return { error: errorMessage };
+    }
+  }
 
   private getContentPathFromNode({
     node,
@@ -31,27 +60,20 @@ export class Github {
     repository,
   }: GithubDTO.GithubGetReferenceParams) {
     if (!repository) throw new Error("repository is required");
-    try {
-      const response = await fetch(
-        `${GITHUB_API_URL}/repos/${this.owner}/${repository}/git/ref/${reference}`,
-      );
-      return (await response.json()) as GithubDTO.GithubGetReferenceResponse;
-    } catch (error) {
-      console.error(error);
-    }
+    const response = await this.fetch<GithubDTO.GithubGetReferenceResponse>({
+      path: ["repos", this.owner, repository, "git", "ref", reference],
+    });
+    if ("error" in response) return;
+    return response;
   }
 
   // See https://docs.github.com/en/rest/repos/repos?apiVersion=2022-11-28#list-repositories-for-a-user
   private async getRepositories() {
-    try {
-      const response = await fetch(
-        `${GITHUB_API_URL}/users/${this.owner}/repos`,
-      );
-      return (await response.json()) as GithubDTO.GithubGetRepositoriesResponse;
-    } catch (error) {
-      console.error(error);
-      return [];
-    }
+    const response = await this.fetch<GithubDTO.GithubGetRepositoriesResponse>({
+      path: ["users", this.owner, "repos"],
+    });
+    if ("error" in response) return [];
+    return response;
   }
 
   // See https://docs.github.com/en/rest/git/trees?apiVersion=2022-11-28#get-a-tree
@@ -61,15 +83,14 @@ export class Github {
   }: GithubDTO.GithubGetTreeParams) {
     if (!repository) throw new Error("repository is required");
     if (!reference) throw new Error("reference is required");
-    try {
-      const response = await fetch(
-        `${GITHUB_API_URL}/repos/${this.owner}/${repository}/git/trees/${reference}?recursive=1`,
-      );
-      return (await response.json()) as GithubDTO.GithubGetTreeResponse;
-    } catch (error) {
-      console.error(error);
+    const response = await this.fetch<GithubDTO.GithubGetTreeResponse>({
+      path: ["repos", this.owner, repository, "git", "trees", reference].join(
+        "/",
+      ),
+    });
+    if ("error" in response)
       return { sha: "", url: "", tree: [], truncated: false };
-    }
+    return response;
   }
 
   async initialize() {
@@ -123,13 +144,15 @@ export class Github {
       );
     if (Array.isArray(path)) path = path.join("/");
     const markdown = new Markdown();
-    const response = await fetch(
-      ["https://raw.githubusercontent.com", path].join("/"),
-    );
-    const data = await response.text();
+    const response = await this.fetch<string>({
+      base: "https://raw.githubusercontent.com",
+      path,
+    });
+    if (typeof response !== "string")
+      return <p {...{ children: response.error }} />;
     const content = path.endsWith("md")
-      ? data
-      : ["```\n\n", data, "\n\n```"].join("");
+      ? response
+      : ["```\n\n", response, "\n\n```"].join("");
     return markdown.render({ content });
   }
 

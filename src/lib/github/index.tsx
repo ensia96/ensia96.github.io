@@ -97,7 +97,9 @@ export class Github {
     if (this.initialized) return;
     const repositories = await this.getRepositories();
     for (const repository of repositories)
-      if (Config.Github.REPOSITORIES.includes(repository.name)) {
+      if (
+        [this.owner, ...Config.Github.REPOSITORIES].includes(repository.name)
+      ) {
         const reference = await this.getReference({
           repository: repository.name,
           reference: `heads/${repository.default_branch}`,

@@ -159,23 +159,20 @@ export class Github {
   }
 
   private get tree() {
-    const tree: GithubDTO.GithubDirectory = {};
-    for (const repository of Config.Github.REPOSITORIES) tree[repository] = {};
+    const directory: GithubDTO.GithubDirectory = {};
     for (const node of this._nodes) {
-      let currentRoot = tree;
+      if (node.type === "tree") continue;
+      let current = directory;
       const segments = node.path.split("/");
+      const file = segments.pop()!;
       for (const segment of segments)
-        if (typeof currentRoot === "string") continue;
-        else if (
-          segment in currentRoot &&
-          typeof currentRoot[segment] !== "string"
-        )
-          currentRoot = currentRoot[segment];
-        else currentRoot[segment] = {};
-      if (typeof currentRoot !== "string" && node.type === "blob")
-        currentRoot[segments.at(-1)!] = this.getContentPathFromNode({ node });
+        if (typeof current === "string") continue;
+        else if (segment in current && typeof current[segment] !== "string")
+          current = current[segment];
+        else current = current[segment] = {};
+      current[file] = this.getContentPathFromNode({ node });
     }
-    return tree;
+    return directory;
   }
 }
 

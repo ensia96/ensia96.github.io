@@ -139,7 +139,9 @@ export class Github {
     if (!path)
       return (
         <ul>
-          <GithubRecursion {...{ name: this.owner, tree: this.tree }} />
+          <GithubDirectoryTree
+            {...{ name: this.owner, directory: this.tree }}
+          />
         </ul>
       );
     if (Array.isArray(path)) path = path.join("/");
@@ -157,7 +159,7 @@ export class Github {
   }
 
   private get tree() {
-    const tree: GithubDTO.GithubTree = {};
+    const tree: GithubDTO.GithubDirectory = {};
     for (const repository of Config.Github.REPOSITORIES) tree[repository] = {};
     for (const node of this._nodes) {
       let currentRoot = tree;
@@ -177,27 +179,28 @@ export class Github {
   }
 }
 
-function GithubRecursion({ name, tree }: GithubRecursionProps) {
-  if (typeof tree === "string")
+function GithubDirectoryTree({ name, directory }: GithubDirectoryTreeProps) {
+  if (typeof directory === "string")
     return (
       <li>
-        <a {...{ children: name, href: tree }} />
+        <a {...{ children: name, href: directory }} />
       </li>
     );
-  return (
-    <li>
-      <span {...{ children: name }} />
+  const directories = Object.keys(directory).map((name) => (
+    <GithubDirectoryTree key={name} {...{ name, directory: directory[name] }} />
+  ));
+  if (name)
+    return (
+      <li>
+        <span {...{ children: name }} />
 
-      <ul>
-        {Object.keys(tree).map((node) => (
-          <GithubRecursion key={node} {...{ name: node, tree: tree[node] }} />
-        ))}
-      </ul>
-    </li>
-  );
+        <ul>{directories}</ul>
+      </li>
+    );
+  return directories;
 }
 
-type GithubRecursionProps = {
-  name: string;
-  tree: GithubDTO.GithubTree;
+type GithubDirectoryTreeProps = {
+  name?: string;
+  directory: GithubDTO.GithubDirectory;
 };

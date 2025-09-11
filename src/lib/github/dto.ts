@@ -48,5 +48,7 @@ export namespace GithubDTO {
     defaultBranch: string;
   };
 
-  export type GithubTree = { [key: string]: GithubTree | string } | string;
+  export type GithubDirectory =
+    | { [key: string]: GithubDirectory | string }
+    | string;
 }

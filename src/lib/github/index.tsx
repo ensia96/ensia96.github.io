@@ -2,13 +2,42 @@ import { Config } from "@/app/config";
 import { GithubDTO } from "@/lib/github/dto";
 import { Markdown } from "@/lib/markdown";
 
-const GITHUB_API_URL = "https://api.github.com";
-
 export class Github {
   private readonly _nodes: GithubDTO.GithubGetTreeResponse["tree"] = [];
   private readonly _repositories: GithubDTO.GithubRepository[] = [];
 
-  constructor(private readonly owner = Config.Github.OWNER) {}
+  constructor(
+    private readonly owner = Config.Github.OWNER,
+    private readonly token = process.env.GITHUB_TOKEN,
+  ) {}
+
+  async fetch<T>({ base, params, path }: GithubDTO.GithubFetchParams) {
+    try {
+      const options = { headers: {} };
+      if (!base && this.token)
+        options.headers = { Authorization: `Bearer ${this.token}` };
+      if (Array.isArray(path)) path = path.join("/");
+      const url = new URL(path, base ?? "https://api.github.com");
+      const query = new URLSearchParams();
+      for (const [key, value] of Object.entries(params ?? []))
+        if (value) query.set(key, value.toString());
+      url.search = query.toString();
+      const response = await fetch(url, options);
+      if (!response.ok) throw new Error(response.statusText);
+      return (
+        response.headers.get("Content-Type")?.includes("json")
+          ? response.json()
+          : response.text()
+      ) as T;
+    } catch (error: unknown) {
+      console.error(error);
+      const errorMessage =
+        error instanceof Error
+          ? error.message
+          : "서버 오류가 발생했습니다. 고객센터에 문의를 남겨주세요.";
+      return { error: errorMessage };
+    }
+  }
 
   private getContentPathFromNode({
     node,
@@ -31,27 +60,20 @@ export class Github {
     repository,
   }: GithubDTO.GithubGetReferenceParams) {
     if (!repository) throw new Error("repository is required");
-    try {
-      const response = await fetch(
-        `${GITHUB_API_URL}/repos/${this.owner}/${repository}/git/ref/${reference}`,
-      );
-      return (await response.json()) as GithubDTO.GithubGetReferenceResponse;
-    } catch (error) {
-      console.error(error);
-    }
+    const response = await this.fetch<GithubDTO.GithubGetReferenceResponse>({
+      path: ["repos", this.owner, repository, "git", "ref", reference],
+    });
+    if ("error" in response) return;
+    return response;
   }
 
   // See https://docs.github.com/en/rest/repos/repos?apiVersion=2022-11-28#list-repositories-for-a-user
   private async getRepositories() {
-    try {
-      const response = await fetch(
-        `${GITHUB_API_URL}/users/${this.owner}/repos`,
-      );
-      return (await response.json()) as GithubDTO.GithubGetRepositoriesResponse;
-    } catch (error) {
-      console.error(error);
-      return [];
-    }
+    const response = await this.fetch<GithubDTO.GithubGetRepositoriesResponse>({
+      path: ["users", this.owner, "repos"],
+    });
+    if ("error" in response) return [];
+    return response;
   }
 
   // See https://docs.github.com/en/rest/git/trees?apiVersion=2022-11-28#get-a-tree
@@ -61,22 +83,23 @@ export class Github {
   }: GithubDTO.GithubGetTreeParams) {
     if (!repository) throw new Error("repository is required");
     if (!reference) throw new Error("reference is required");
-    try {
-      const response = await fetch(
-        `${GITHUB_API_URL}/repos/${this.owner}/${repository}/git/trees/${reference}?recursive=1`,
-      );
-      return (await response.json()) as GithubDTO.GithubGetTreeResponse;
-    } catch (error) {
-      console.error(error);
+    const response = await this.fetch<GithubDTO.GithubGetTreeResponse>({
+      path: ["repos", this.owner, repository, "git", "trees", reference].join(
+        "/",
+      ),
+    });
+    if ("error" in response)
       return { sha: "", url: "", tree: [], truncated: false };
-    }
+    return response;
   }
 
   async initialize() {
     if (this.initialized) return;
     const repositories = await this.getRepositories();
     for (const repository of repositories)
-      if (Config.Github.REPOSITORIES.includes(repository.name)) {
+      if (
+        [this.owner, ...Config.Github.REPOSITORIES].includes(repository.name)
+      ) {
         const reference = await this.getReference({
           repository: repository.name,
           reference: `heads/${repository.default_branch}`,
@@ -118,63 +141,63 @@ export class Github {
     if (!path)
       return (
         <ul>
-          <GithubRecursion {...{ name: this.owner, tree: this.tree }} />
+          <GithubDirectoryTree {...{ directory: this.tree }} />
         </ul>
       );
     if (Array.isArray(path)) path = path.join("/");
     const markdown = new Markdown();
-    const response = await fetch(
-      ["https://raw.githubusercontent.com", path].join("/"),
-    );
-    const data = await response.text();
+    const response = await this.fetch<string>({
+      base: "https://raw.githubusercontent.com",
+      path,
+    });
+    if (typeof response !== "string")
+      return <p {...{ children: response.error }} />;
     const content = path.endsWith("md")
-      ? data
-      : ["```\n\n", data, "\n\n```"].join("");
+      ? response
+      : ["```\n\n", response, "\n\n```"].join("");
     return markdown.render({ content });
   }
 
   private get tree() {
-    const tree: GithubDTO.GithubTree = {};
-    for (const repository of Config.Github.REPOSITORIES) tree[repository] = {};
+    const directory: GithubDTO.GithubDirectory = {};
     for (const node of this._nodes) {
-      let currentRoot = tree;
+      if (node.type === "tree") continue;
+      let current = directory;
       const segments = node.path.split("/");
+      const file = segments.pop()!;
       for (const segment of segments)
-        if (typeof currentRoot === "string") continue;
-        else if (
-          segment in currentRoot &&
-          typeof currentRoot[segment] !== "string"
-        )
-          currentRoot = currentRoot[segment];
-        else currentRoot[segment] = {};
-      if (typeof currentRoot !== "string" && node.type === "blob")
-        currentRoot[segments.at(-1)!] = this.getContentPathFromNode({ node });
+        if (typeof current === "string") continue;
+        else if (segment in current && typeof current[segment] !== "string")
+          current = current[segment];
+        else current = current[segment] = {};
+      current[file] = this.getContentPathFromNode({ node });
     }
-    return tree;
+    return directory;
   }
 }
 
-function GithubRecursion({ name, tree }: GithubRecursionProps) {
-  if (typeof tree === "string")
+function GithubDirectoryTree({ name, directory }: GithubDirectoryTreeProps) {
+  if (typeof directory === "string")
     return (
       <li>
-        <a {...{ children: name, href: tree }} />
+        <a {...{ children: name, href: directory }} />
       </li>
     );
-  return (
-    <li>
-      <span {...{ children: name }} />
+  const directories = Object.keys(directory).map((name) => (
+    <GithubDirectoryTree key={name} {...{ name, directory: directory[name] }} />
+  ));
+  if (name)
+    return (
+      <li>
+        <span {...{ children: name }} />
 
-      <ul>
-        {Object.keys(tree).map((node) => (
-          <GithubRecursion key={node} {...{ name: node, tree: tree[node] }} />
-        ))}
-      </ul>
-    </li>
-  );
+        <ul>{directories}</ul>
+      </li>
+    );
+  return directories;
 }
 
-type GithubRecursionProps = {
-  name: string;
-  tree: GithubDTO.GithubTree;
+type GithubDirectoryTreeProps = {
+  name?: string;
+  directory: GithubDTO.GithubDirectory;
 };

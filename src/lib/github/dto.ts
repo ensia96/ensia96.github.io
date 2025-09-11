@@ -1,4 +1,10 @@
 export namespace GithubDTO {
+  export type GithubFetchParams = {
+    base?: string;
+    params?: Record<string, unknown>;
+    path: string | string[];
+  };
+
   export type GithubGetContentPathFromNode = {
     node: GithubGetTreeResponse["tree"][number];
   };
@@ -42,5 +48,7 @@ export namespace GithubDTO {
     defaultBranch: string;
   };
 
-  export type GithubTree = { [key: string]: GithubTree | string } | string;
+  export type GithubDirectory =
+    | { [key: string]: GithubDirectory | string }
+    | string;
 }

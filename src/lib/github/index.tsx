@@ -139,9 +139,7 @@ export class Github {
     if (!path)
       return (
         <ul>
-          <GithubDirectoryTree
-            {...{ name: this.owner, directory: this.tree }}
-          />
+          <GithubDirectoryTree {...{ directory: this.tree }} />
         </ul>
       );
     if (Array.isArray(path)) path = path.join("/");

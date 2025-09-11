@@ -152,10 +152,7 @@ export class Github {
     });
     if (typeof response !== "string")
       return <p {...{ children: response.error }} />;
-    const content = path.endsWith("md")
-      ? response
-      : ["```\n\n", response, "\n\n```"].join("");
-    return markdown.render({ content });
+    return markdown.render({ content: response });
   }
 
   private get tree() {

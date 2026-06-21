@@ -3,6 +3,7 @@ import { Markdown } from "@/lib/markdown";
 
 export class Github {
   private readonly _nodes: GithubDTO.GithubGetTreeResponse["tree"] = [];
+  private readonly _pages: Record<string, string> = {};
   private readonly _repositories: GithubDTO.GithubRepository[] = [];
 
   constructor(
@@ -59,6 +60,16 @@ export class Github {
     ].join("/");
   }
 
+  // See https://docs.github.com/en/rest/pages/pages?apiVersion=2022-11-28#get-a-github-pages-site
+  private async getPages({ repository }: GithubDTO.GithubGetPagesParams) {
+    if (!repository) throw new Error("repository is required");
+    const response = await this.fetch<GithubDTO.GithubGetPagesResponse>({
+      path: ["repos", this.owner, repository, "pages"],
+    });
+    if ("error" in response) return;
+    return response;
+  }
+
   // See https://docs.github.com/en/rest/git/refs?apiVersion=2022-11-28#get-a-reference
   private async getReference({
     reference = "heads/main",
@@ -113,6 +124,10 @@ export class Github {
           reference: reference.object.sha,
           repository: repository.name,
         });
+        let page;
+        if (repository.has_pages)
+          page = await this.getPages({ repository: repository.name });
+        if (page) this._pages[repository.name] = page.html_url;
         for (const node of tree.tree)
           if (!node.path.includes(".github"))
             this._nodes.push({
@@ -146,7 +161,9 @@ export class Github {
     if (!path)
       return (
         <ul>
-          <GithubDirectoryTree {...{ directory: this.tree }} />
+          <GithubDirectoryTree
+            {...{ directory: this.tree, pages: this._pages }}
+          />
         </ul>
       );
     if (Array.isArray(path)) path = path.join("/");
@@ -182,7 +199,8 @@ function GithubDirectoryTree({
   depth = 0,
   name,
   directory,
-}: GithubDirectoryTreeProps) {
+  pages = {},
+}: GithubDTO.GithubDirectoryTreeProps) {
   if (typeof directory === "string")
     return (
       <li>
@@ -198,24 +216,32 @@ function GithubDirectoryTree({
     .map((name) => (
       <GithubDirectoryTree
         key={name}
-        {...{ depth: depth + 1, directory: directory[name], name }}
+        {...{
+          depth: depth + 1,
+          directory: directory[name],
+          name,
+          pages,
+        }}
       />
     ));
   if (name)
     return (
       <li>
-        <details open={depth === 1}>
-          <summary {...{ children: name }} />
+        <details {...{ open: depth === 1 }}>
+          <summary
+            {...{
+              children:
+                depth === 1 && name in pages ? (
+                  <a {...{ children: name, href: pages[name] }} />
+                ) : (
+                  name
+                ),
+            }}
+          />
 
-          <ul>{directories}</ul>
+          <ul {...{ children: directories }} />
         </details>
       </li>
     );
   return directories;
 }
-
-type GithubDirectoryTreeProps = {
-  depth?: number;
-  name?: string;
-  directory: GithubDTO.GithubDirectory;
-};

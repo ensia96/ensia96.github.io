@@ -89,6 +89,7 @@ export class Github {
     if (!repository) throw new Error("repository is required");
     if (!reference) throw new Error("reference is required");
     const response = await this.fetch<GithubDTO.GithubGetTreeResponse>({
+      params: { recursive: 1 },
       path: ["repos", this.owner, repository, "git", "trees", reference].join(
         "/",
       ),
@@ -132,11 +133,12 @@ export class Github {
   get paths() {
     const paths = [];
     for (const node of this._nodes)
-      paths.push({
-        path: this.getContentPathFromNode({ node })
-          .split("/")
-          .map((segment) => encodeURIComponent(segment)),
-      });
+      if (node.type === "blob")
+        paths.push({
+          path: this.getContentPathFromNode({ node })
+            .split("/")
+            .map((segment) => encodeURIComponent(segment)),
+        });
     return paths;
   }
 
@@ -176,28 +178,44 @@ export class Github {
   }
 }
 
-function GithubDirectoryTree({ name, directory }: GithubDirectoryTreeProps) {
+function GithubDirectoryTree({
+  depth = 0,
+  name,
+  directory,
+}: GithubDirectoryTreeProps) {
   if (typeof directory === "string")
     return (
       <li>
         <a {...{ children: name, href: directory }} />
       </li>
     );
-  const directories = Object.keys(directory).map((name) => (
-    <GithubDirectoryTree key={name} {...{ name, directory: directory[name] }} />
-  ));
+  const directories = Object.keys(directory)
+    .sort(
+      (a, b) =>
+        Number(typeof directory[a] === "string") -
+          Number(typeof directory[b] === "string") || a.localeCompare(b),
+    )
+    .map((name) => (
+      <GithubDirectoryTree
+        key={name}
+        {...{ depth: depth + 1, directory: directory[name], name }}
+      />
+    ));
   if (name)
     return (
       <li>
-        <span {...{ children: name }} />
+        <details open={depth === 1}>
+          <summary {...{ children: name }} />
 
-        <ul>{directories}</ul>
+          <ul>{directories}</ul>
+        </details>
       </li>
     );
   return directories;
 }
 
 type GithubDirectoryTreeProps = {
+  depth?: number;
   name?: string;
   directory: GithubDTO.GithubDirectory;
 };

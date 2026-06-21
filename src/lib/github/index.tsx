@@ -9,8 +9,8 @@ export class Github {
   constructor(
     private readonly owner = process.env.GITHUB_OWNER!,
     private readonly repositories = new Set(
-      (process.env.GITHUB_REPOSITORIES ?? "")
-        .split("\n")
+      process.env
+        .REPOSITORIES!.split("\n")
         .map((repository) => repository.trim())
         .filter(Boolean),
     ),

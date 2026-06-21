@@ -67,7 +67,7 @@ jobs:
       - name: Build with Next.js
         env:
           GITHUB_OWNER: ${{ github.repository_owner }}
-          GITHUB_REPOSITORIES: ${{ vars.GITHUB_REPOSITORIES }}
+          REPOSITORIES: ${{ vars.REPOSITORIES }}
         run: ${{ steps.detect-package-manager.outputs.runner }} next build
 
       - name: Upload artifact

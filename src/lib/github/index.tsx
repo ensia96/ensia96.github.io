@@ -1,13 +1,19 @@
-import { Config } from "@/app/config";
 import { GithubDTO } from "@/lib/github/dto";
 import { Markdown } from "@/lib/markdown";
 
 export class Github {
   private readonly _nodes: GithubDTO.GithubGetTreeResponse["tree"] = [];
+  private readonly _pages: Record<string, string> = {};
   private readonly _repositories: GithubDTO.GithubRepository[] = [];
 
   constructor(
-    private readonly owner = Config.Github.OWNER,
+    private readonly owner = process.env.GITHUB_OWNER!,
+    private readonly repositories = new Set(
+      process.env
+        .REPOSITORIES!.split("\n")
+        .map((repository) => repository.trim())
+        .filter(Boolean),
+    ),
     private readonly token = process.env.GITHUB_TOKEN,
   ) {}
 
@@ -54,6 +60,16 @@ export class Github {
     ].join("/");
   }
 
+  // See https://docs.github.com/en/rest/pages/pages?apiVersion=2022-11-28#get-a-github-pages-site
+  private async getPages({ repository }: GithubDTO.GithubGetPagesParams) {
+    if (!repository) throw new Error("repository is required");
+    const response = await this.fetch<GithubDTO.GithubGetPagesResponse>({
+      path: ["repos", this.owner, repository, "pages"],
+    });
+    if ("error" in response) return;
+    return response;
+  }
+
   // See https://docs.github.com/en/rest/git/refs?apiVersion=2022-11-28#get-a-reference
   private async getReference({
     reference = "heads/main",
@@ -84,6 +100,7 @@ export class Github {
     if (!repository) throw new Error("repository is required");
     if (!reference) throw new Error("reference is required");
     const response = await this.fetch<GithubDTO.GithubGetTreeResponse>({
+      params: { recursive: 1 },
       path: ["repos", this.owner, repository, "git", "trees", reference].join(
         "/",
       ),
@@ -97,9 +114,7 @@ export class Github {
     if (this.initialized) return;
     const repositories = await this.getRepositories();
     for (const repository of repositories)
-      if (
-        [this.owner, ...Config.Github.REPOSITORIES].includes(repository.name)
-      ) {
+      if (this.repositories.has(repository.name)) {
         const reference = await this.getReference({
           repository: repository.name,
           reference: `heads/${repository.default_branch}`,
@@ -109,6 +124,10 @@ export class Github {
           reference: reference.object.sha,
           repository: repository.name,
         });
+        let page;
+        if (repository.has_pages)
+          page = await this.getPages({ repository: repository.name });
+        if (page) this._pages[repository.name] = page.html_url;
         for (const node of tree.tree)
           if (!node.path.includes(".github"))
             this._nodes.push({
@@ -129,11 +148,12 @@ export class Github {
   get paths() {
     const paths = [];
     for (const node of this._nodes)
-      paths.push({
-        path: this.getContentPathFromNode({ node })
-          .split("/")
-          .map((segment) => encodeURIComponent(segment)),
-      });
+      if (node.type === "blob")
+        paths.push({
+          path: this.getContentPathFromNode({ node })
+            .split("/")
+            .map((segment) => encodeURIComponent(segment)),
+        });
     return paths;
   }
 
@@ -141,7 +161,9 @@ export class Github {
     if (!path)
       return (
         <ul>
-          <GithubDirectoryTree {...{ directory: this.tree }} />
+          <GithubDirectoryTree
+            {...{ directory: this.tree, pages: this._pages }}
+          />
         </ul>
       );
     if (Array.isArray(path)) path = path.join("/");
@@ -173,28 +195,53 @@ export class Github {
   }
 }
 
-function GithubDirectoryTree({ name, directory }: GithubDirectoryTreeProps) {
+function GithubDirectoryTree({
+  depth = 0,
+  name,
+  directory,
+  pages = {},
+}: GithubDTO.GithubDirectoryTreeProps) {
   if (typeof directory === "string")
     return (
       <li>
         <a {...{ children: name, href: directory }} />
       </li>
     );
-  const directories = Object.keys(directory).map((name) => (
-    <GithubDirectoryTree key={name} {...{ name, directory: directory[name] }} />
-  ));
+  const directories = Object.keys(directory)
+    .sort(
+      (a, b) =>
+        Number(typeof directory[a] === "string") -
+          Number(typeof directory[b] === "string") || a.localeCompare(b),
+    )
+    .map((name) => (
+      <GithubDirectoryTree
+        key={name}
+        {...{
+          depth: depth + 1,
+          directory: directory[name],
+          name,
+          pages,
+        }}
+      />
+    ));
   if (name)
     return (
       <li>
-        <span {...{ children: name }} />
+        <details {...{ open: depth === 1 }}>
+          <summary
+            {...{
+              children:
+                depth === 1 && name in pages ? (
+                  <a {...{ children: name, href: pages[name] }} />
+                ) : (
+                  name
+                ),
+            }}
+          />
 
-        <ul>{directories}</ul>
+          <ul {...{ children: directories }} />
+        </details>
       </li>
     );
   return directories;
 }
-
-type GithubDirectoryTreeProps = {
-  name?: string;
-  directory: GithubDTO.GithubDirectory;
-};

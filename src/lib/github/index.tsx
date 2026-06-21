@@ -1,4 +1,3 @@
-import { Config } from "@/app/config";
 import { GithubDTO } from "@/lib/github/dto";
 import { Markdown } from "@/lib/markdown";
 
@@ -7,7 +6,13 @@ export class Github {
   private readonly _repositories: GithubDTO.GithubRepository[] = [];
 
   constructor(
-    private readonly owner = Config.Github.OWNER,
+    private readonly owner = process.env.GITHUB_OWNER!,
+    private readonly repositories = new Set(
+      (process.env.GITHUB_REPOSITORIES ?? "")
+        .split("\n")
+        .map((repository) => repository.trim())
+        .filter(Boolean),
+    ),
     private readonly token = process.env.GITHUB_TOKEN,
   ) {}
 
@@ -97,9 +102,7 @@ export class Github {
     if (this.initialized) return;
     const repositories = await this.getRepositories();
     for (const repository of repositories)
-      if (
-        [this.owner, ...Config.Github.REPOSITORIES].includes(repository.name)
-      ) {
+      if (this.repositories.has(repository.name)) {
         const reference = await this.getReference({
           repository: repository.name,
           reference: `heads/${repository.default_branch}`,

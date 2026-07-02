@@ -150,9 +150,7 @@ export class Github {
     for (const node of this._nodes)
       if (node.type === "blob")
         paths.push({
-          path: this.getContentPathFromNode({ node })
-            .split("/")
-            .map((segment) => encodeURIComponent(segment)),
+          path: this.getContentPathFromNode({ node }).split("/"),
         });
     return paths;
   }

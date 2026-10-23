@@ -1,0 +1,35 @@
+---
+import type { GetStaticPaths } from "astro";
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import {
+  getFileContent,
+  getRepositories,
+  type RepositoryFile,
+} from "@/lib/github";
+import { renderMarkdown } from "@/lib/markdown";
+
+export const getStaticPaths = (async () => {
+  const repositories = await getRepositories();
+  return repositories.flatMap((repository) =>
+    repository.files.map((file) => ({
+      params: { path: file.route },
+      props: { file },
+    })),
+  );
+}) satisfies GetStaticPaths;
+
+interface Props {
+  file: RepositoryFile;
+}
+
+const { file } = Astro.props;
+const html = renderMarkdown(await getFileContent(file));
+const title = `${file.path.split("/").at(-1)} · 춤추는망고의 블로그`;
+---
+
+<BaseLayout title={title} description={`${file.repository}의 ${file.path}`}>
+  <main>
+    <nav><a href="/">저장소 목록</a></nav>
+    <article set:html={html} />
+  </main>
+</BaseLayout>

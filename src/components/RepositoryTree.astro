@@ -1,0 +1,19 @@
+---
+import DirectoryTree from "@/components/DirectoryTree.astro";
+import type { Repository } from "@/lib/github";
+
+interface Props {
+  repositories: Repository[];
+}
+
+const { repositories } = Astro.props;
+---
+
+{
+  repositories.map((repository) => (
+    <details open>
+      <summary>{repository.name}</summary>
+      <DirectoryTree files={repository.files} />
+    </details>
+  ))
+}

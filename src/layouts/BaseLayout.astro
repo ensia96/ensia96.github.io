@@ -1,0 +1,29 @@
+---
+import "@/styles/global.css";
+
+interface Props {
+  description?: string;
+  title?: string;
+}
+
+const {
+  description = "컴퓨터처럼 생각하고, 말하듯 코딩하기",
+  title = "춤추는망고의 블로그",
+} = Astro.props;
+const canonical = new URL(Astro.url.pathname, Astro.site);
+---
+
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content={description} />
+    <meta name="theme-color" content="#f4f4f5" />
+    <link rel="canonical" href={canonical} />
+    <title>{title}</title>
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>

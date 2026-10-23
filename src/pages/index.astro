@@ -1,0 +1,14 @@
+---
+import RepositoryTree from "@/components/RepositoryTree.astro";
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import { getRepositories } from "@/lib/github";
+
+const repositories = await getRepositories();
+---
+
+<BaseLayout>
+  <main>
+    <h1>춤추는망고의 블로그</h1>
+    <RepositoryTree repositories={repositories} />
+  </main>
+</BaseLayout>

@@ -1,0 +1,42 @@
+---
+import type { RepositoryFile } from "@/lib/github";
+
+interface Props {
+  files: RepositoryFile[];
+  prefix?: string;
+}
+
+const { files, prefix = "" } = Astro.props;
+const entries = files.map((file) => ({
+  file,
+  rest: file.path.slice(prefix.length),
+}));
+const directories = [
+  ...new Set(
+    entries
+      .map(({ rest }) => rest.split("/")[0])
+      .filter((name) => name && entries.some(({ rest }) => rest.startsWith(`${name}/`))),
+  ),
+].sort((a, b) => a.localeCompare(b));
+const directFiles = entries
+  .filter(({ rest }) => !rest.includes("/"))
+  .sort((a, b) => a.rest.localeCompare(b.rest));
+---
+
+<ul>
+  {
+    directories.map((name) => (
+      <li>
+        <details>
+          <summary>{name}</summary>
+          <Astro.self files={files} prefix={`${prefix}${name}/`} />
+        </details>
+      </li>
+    ))
+  }
+  {
+    directFiles.map(({ file, rest }) => (
+      <li><a href={file.href}>{rest}</a></li>
+    ))
+  }
+</ul>

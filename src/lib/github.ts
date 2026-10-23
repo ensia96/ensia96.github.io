@@ -53,6 +53,13 @@ function getHomepage(homepage: string | null) {
   }
 }
 
+function isHiddenPath(path: string) {
+  return path
+    .split("/")
+    .filter(Boolean)
+    .some((segment) => segment.startsWith("."));
+}
+
 async function request<T>(path: string, optional = false): Promise<T | undefined> {
   const attempt = (authorization?: string) =>
     fetch(new URL(path, "https://api.github.com"), {
@@ -99,7 +106,8 @@ async function loadRepository(name: string): Promise<Repository | undefined> {
   }
 
   const files = tree.tree
-    .filter((node) => node.type === "blob" && !node.path.includes(".github"))
+    .filter((node) => !isHiddenPath(node.path))
+    .filter((node) => node.type === "blob")
     .map((node) => {
       const route = [owner!, metadata.name, metadata.default_branch, node.path].join(
         "/",

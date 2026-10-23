@@ -12,7 +12,13 @@ const { repositories } = Astro.props;
 {
   repositories.map((repository) => (
     <details open>
-      <summary>{repository.name}</summary>
+      <summary>
+        {repository.homepage ? (
+          <a href={repository.homepage}>{repository.name}</a>
+        ) : (
+          repository.name
+        )}
+      </summary>
       <DirectoryTree files={repository.files} />
     </details>
   ))

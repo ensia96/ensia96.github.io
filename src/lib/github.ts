@@ -1,5 +1,6 @@
 interface GitHubRepositoryResponse {
   default_branch: string;
+  homepage: string | null;
   name: string;
   private: boolean;
 }
@@ -25,6 +26,7 @@ export interface RepositoryFile {
 export interface Repository {
   defaultBranch: string;
   files: RepositoryFile[];
+  homepage: string | null;
   name: string;
 }
 
@@ -39,6 +41,16 @@ let catalogPromise: Promise<Repository[]> | undefined;
 
 function apiPath(...segments: string[]) {
   return `/${segments.map(encodeURIComponent).join("/")}`;
+}
+
+function getHomepage(homepage: string | null) {
+  if (!homepage) return null;
+  try {
+    const url = new URL(homepage);
+    return url.protocol === "http:" || url.protocol === "https:" ? url.href : null;
+  } catch {
+    return null;
+  }
 }
 
 async function request<T>(path: string, optional = false): Promise<T | undefined> {
@@ -105,6 +117,7 @@ async function loadRepository(name: string): Promise<Repository | undefined> {
   return {
     defaultBranch: metadata.default_branch,
     files,
+    homepage: getHomepage(metadata.homepage),
     name: metadata.name,
   };
 }

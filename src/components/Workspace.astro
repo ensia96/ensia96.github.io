@@ -1,5 +1,6 @@
 ---
 import Explorer from "@/components/Explorer.astro";
+import Icon from "@/components/Icon.astro";
 import type { Repository, RepositoryFile } from "@/lib/github";
 
 interface Props {
@@ -20,18 +21,20 @@ const statusPath = currentFile?.path ?? "[No Name]";
 <a class="skip-link" href="#content">본문으로 건너뛰기</a>
 <div class="workspace-shell" data-workspace>
   <header class="tabline">
-    <button
-      class="explorer-open"
-      type="button"
-      aria-label="NERDTree 열기"
-      aria-controls="explorer-dialog"
-      aria-expanded="false"
-      data-open-explorer
-    >≡</button>
-    {currentFile && <a class="buffer-back" href="/" aria-label="홈으로 돌아가기">←</a>}
     <span class="active-buffer">1:{filename}</span>
     <span class="tabline-fill" aria-hidden="true" />
   </header>
+
+  <button
+    class="explorer-handle"
+    type="button"
+    aria-label="Explorer 열기"
+    aria-controls="explorer-dialog"
+    aria-expanded="false"
+    data-open-explorer
+  >
+    <span class="handle-rail"><Icon name="menu" /></span>
+  </button>
 
   <div class="editor-grid">
     <aside class="explorer-pane" aria-label="NERDTree">
@@ -86,11 +89,13 @@ const statusPath = currentFile?.path ?? "[No Name]";
     if (!dialog || dialog.open) return;
     dialog.showModal();
     openButton.setAttribute("aria-expanded", "true");
+    openButton.hidden = true;
   });
   closeButton?.addEventListener("click", closeExplorer);
   dialog?.addEventListener("click", ({ target }) => target === dialog && closeExplorer());
   dialog?.addEventListener("close", () => {
     openButton?.setAttribute("aria-expanded", "false");
+    if (openButton) openButton.hidden = false;
     openButton?.focus();
   });
   dialog?.querySelectorAll("a").forEach((link) => link.addEventListener("click", closeExplorer));

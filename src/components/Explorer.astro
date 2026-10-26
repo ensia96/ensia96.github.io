@@ -1,5 +1,6 @@
 ---
 import DirectoryTree from "@/components/DirectoryTree.astro";
+import Icon from "@/components/Icon.astro";
 import type { Repository, RepositoryFile } from "@/lib/github";
 
 interface Props {
@@ -29,7 +30,7 @@ const ownerRoot = repositories[0]?.owner ? `~/${repositories[0].owner}/` : "~/";
       repositories.map((repository) => (
         <details class="repository" open>
           <summary>
-            <span class="tree-icon folder-icon" aria-hidden="true" />
+            <Icon name="folder" class="tree-icon folder-icon" />
             <span>{repository.name}</span>
           </summary>
           <ul class="virtual-files">
@@ -40,7 +41,7 @@ const ownerRoot = repositories[0]?.owner ? `~/${repositories[0].owner}/` : "~/";
                 rel="noreferrer"
                 aria-label={`${repository.name} GitHub (새 탭에서 열림)`}
               >
-                <span class="tree-icon external-icon" aria-hidden="true" />
+                <Icon name="external" class="tree-icon external-icon" />
                 <span>.git</span>
               </a>
             </li>
@@ -52,7 +53,7 @@ const ownerRoot = repositories[0]?.owner ? `~/${repositories[0].owner}/` : "~/";
                   rel="noreferrer"
                   aria-label={`${repository.name} 배포 사이트 (새 탭에서 열림)`}
                 >
-                  <span class="tree-icon external-icon" aria-hidden="true" />
+                  <Icon name="external" class="tree-icon external-icon" />
                   <span>.site</span>
                 </a>
               </li>

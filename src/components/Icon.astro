@@ -1,0 +1,30 @@
+---
+type IconName = "external" | "file" | "folder" | "menu";
+
+interface Props {
+  class?: string;
+  name: IconName;
+}
+
+const { class: className, name } = Astro.props;
+const paths: Record<IconName, string> = {
+  external: "M14 5h5v5M19 5l-8 8M18 13v6H5V6h6",
+  file: "M6 3h8l4 4v14H6zM14 3v5h4",
+  folder: "M3 6h6l2 2h10v11H3z",
+  menu: "M4 6h16M4 12h16M4 18h16",
+};
+---
+
+<svg
+  class:list={["ui-icon", className]}
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="1.75"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  aria-hidden="true"
+  focusable="false"
+>
+  <path d={paths[name]} />
+</svg>

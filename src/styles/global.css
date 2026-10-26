@@ -28,6 +28,13 @@
   box-sizing: border-box;
 }
 
+.ui-icon {
+  display: block;
+  width: 1em;
+  height: 1em;
+  flex: none;
+}
+
 html,
 body {
   width: 100%;

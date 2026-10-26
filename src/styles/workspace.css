@@ -26,6 +26,7 @@
 .tabline {
   display: flex;
   min-width: 0;
+  height: 1.65rem;
   min-height: 1.65rem;
   align-items: stretch;
   color: var(--text-soft);
@@ -35,16 +36,12 @@
   white-space: nowrap;
 }
 
-.explorer-open,
-.buffer-back {
+.explorer-handle {
   display: none;
-  border: 0;
-  color: var(--text);
-  background: var(--surface);
-  text-decoration: none;
 }
 
 .active-buffer {
+  min-width: 0;
   max-width: min(36rem, 60vw);
   padding: 0 1ch;
   overflow: hidden;
@@ -196,20 +193,39 @@
 }
 
 @media (max-width: 767px) {
-  .tabline {
-    min-height: calc(2.75rem + env(safe-area-inset-top));
-    padding-top: env(safe-area-inset-top);
-    line-height: 2.75rem;
-  }
-
-  .explorer-open,
-  .buffer-back {
+  .explorer-handle {
+    position: fixed;
+    z-index: 10;
+    top: 50dvh;
+    left: env(safe-area-inset-left);
     display: grid;
     width: 2.75rem;
-    min-width: 2.75rem;
-    place-items: center;
+    height: 2.75rem;
+    place-items: stretch start;
     padding: 0;
+    border: 0;
+    color: var(--aqua);
+    background: transparent;
     cursor: pointer;
+    transform: translateY(-50%);
+  }
+
+  .explorer-handle[hidden] {
+    display: none;
+  }
+
+  .handle-rail {
+    display: grid;
+    width: 1.125rem;
+    height: 2.75rem;
+    place-items: center;
+    border-right: 1px solid var(--separator);
+    background: var(--surface);
+  }
+
+  .handle-rail .ui-icon {
+    width: 0.75rem;
+    height: 0.75rem;
   }
 
   .editor-grid {
@@ -221,7 +237,7 @@
   }
 
   .active-buffer {
-    max-width: calc(100vw - 5.5rem);
+    max-width: 100%;
   }
 
   .statusline {

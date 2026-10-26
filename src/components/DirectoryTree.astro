@@ -1,5 +1,6 @@
 ---
 import type { RepositoryFile } from "@/lib/github";
+import Icon from "@/components/Icon.astro";
 
 interface Props {
   currentPath?: string;
@@ -30,7 +31,7 @@ const directFiles = entries
       <li>
         <details open={currentPath?.startsWith(`${prefix}${name}/`)}>
           <summary>
-            <span class="tree-icon folder-icon" aria-hidden="true" />
+            <Icon name="folder" class="tree-icon folder-icon" />
             <span>{name}</span>
           </summary>
           <Astro.self files={files} prefix={`${prefix}${name}/`} {currentPath} />
@@ -42,7 +43,7 @@ const directFiles = entries
     directFiles.map(({ file, rest }) => (
       <li>
         <a href={file.href} aria-current={currentPath === file.path ? "page" : undefined}>
-          <span class="tree-icon file-icon" aria-hidden="true" />
+          <Icon name="file" class="tree-icon file-icon" />
           <span>{rest}</span>
         </a>
       </li>

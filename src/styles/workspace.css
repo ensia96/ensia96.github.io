@@ -100,6 +100,12 @@
   margin: 0;
 }
 
+.empty-buffer h1 {
+  margin: 0 0 0.75rem;
+  color: var(--strong);
+  font-size: 1rem;
+}
+
 .empty-buffer .empty-command {
   margin-top: 0.5rem;
   color: var(--aqua);

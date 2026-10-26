@@ -5,6 +5,8 @@ interface Props {
 }
 
 const { content, previewHtml } = Astro.props;
+const lines = content.replace(/\r\n?/g, "\n").split("\n");
+const lineNumberWidth = Math.max(2, String(lines.length).length);
 ---
 
 <div class="content-view" data-content-view>
@@ -18,7 +20,11 @@ const { content, previewHtml } = Astro.props;
     <article class="document-content" set:html={previewHtml} />
   </section>
   <section class="content-panel" data-view-panel="source" hidden>
-    <pre class="source-code"><code>{content}</code></pre>
+    <pre class="source-code" style={`--line-number-width: ${lineNumberWidth}ch`}><code>{
+      lines.map((line, index) => (
+        <span class="source-line" data-line={index + 1}><span class="source-line-content">{line}</span></span>
+      ))
+    }</code></pre>
   </section>
 </div>
 

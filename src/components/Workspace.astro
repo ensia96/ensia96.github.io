@@ -48,7 +48,6 @@ const statusPath = currentFile?.path ?? "[No Name]";
   </div>
 
   <footer class="statusline" aria-label="현재 문서 상태">
-    <div class="explorer-status" aria-hidden="true"></div>
     <div class="editor-status">
       <a class="status-a" href="/">춤추는망고</a>
       <span class="status-b">ᚠ {branch}</span>
@@ -62,6 +61,7 @@ const statusPath = currentFile?.path ?? "[No Name]";
       >0% ㏑:1/{sourceLineCount}</span>
     </div>
   </footer>
+  <div class="commandline" aria-hidden="true">&nbsp;</div>
 
   <dialog class="explorer-dialog" id="explorer-dialog" aria-label="NERDTree">
     <div class="drawer">

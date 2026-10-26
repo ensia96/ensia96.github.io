@@ -1,6 +1,7 @@
 ---
 import type { GetStaticPaths } from "astro";
 import BaseLayout from "@/layouts/BaseLayout.astro";
+import ContentViewer from "@/components/ContentViewer.astro";
 import {
   getFileContent,
   getRepositories,
@@ -26,7 +27,14 @@ interface Props {
 
 const { file, repositories } = Astro.props;
 const content = await getFileContent(file);
-const html = renderMarkdown(content);
+const repository = repositories.find(({ name }) => name === file.repository)!;
+const isMarkdown = /\.(md|markdown)$/i.test(file.path);
+const html = renderMarkdown(content, isMarkdown ? {
+  owner: repository.owner,
+  repository: repository.name,
+  reference: repository.defaultBranch,
+  path: file.path,
+} : undefined);
 const sourceLineCount = content.split(/\r?\n/).length;
 const title = `${file.path.split("/").at(-1)} · 춤추는망고의 블로그`;
 ---
@@ -38,5 +46,9 @@ const title = `${file.path.split("/").at(-1)} · 춤추는망고의 블로그`;
   title={title}
   description={`${file.repository}의 ${file.path}`}
 >
-  <article class="document-content" set:html={html} />
+  {
+    isMarkdown
+      ? <ContentViewer {content} previewHtml={html} />
+      : <article class="document-content" set:html={html} />
+  }
 </BaseLayout>

@@ -1,3 +1,48 @@
+.view-switch {
+  position: sticky;
+  z-index: 1;
+  top: 0;
+  display: flex;
+  height: 1.65rem;
+  min-height: 1.65rem;
+  border-bottom: 1px solid var(--separator);
+  color: var(--text-soft);
+  background: var(--airline);
+  font-size: 0.75rem;
+  line-height: 1.65rem;
+}
+
+.view-switch button {
+  padding: 0 1ch;
+  border: 0;
+  color: inherit;
+  background: var(--surface);
+  cursor: pointer;
+  font: inherit;
+  line-height: inherit;
+}
+
+.view-switch button.active {
+  color: var(--bg);
+  background: var(--green);
+  font-weight: 700;
+}
+
+.content-panel {
+  padding: 1rem clamp(1rem, 3vw, 2.5rem);
+}
+
+.source-code {
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+  color: var(--text);
+  background: var(--bg);
+  font: 0.78rem/1.55 var(--font);
+  tab-size: 2;
+  white-space: pre;
+}
+
 .document-content {
   width: min(54rem, 100%);
   margin: 0 auto;
@@ -5,6 +50,10 @@
   color: var(--text);
   line-height: 1.75;
   overflow-wrap: anywhere;
+}
+
+.content-panel .document-content {
+  padding: 0;
 }
 
 .document-content > :first-child { margin-top: 0; }

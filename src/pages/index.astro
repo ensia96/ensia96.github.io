@@ -1,14 +1,14 @@
 ---
-import RepositoryTree from "@/components/RepositoryTree.astro";
 import BaseLayout from "@/layouts/BaseLayout.astro";
 import { getRepositories } from "@/lib/github";
 
 const repositories = await getRepositories();
 ---
 
-<BaseLayout>
-  <main>
-    <h1>춤추는망고의 블로그</h1>
-    <RepositoryTree repositories={repositories} />
-  </main>
+<BaseLayout {repositories}>
+  <section class="empty-buffer" aria-labelledby="empty-buffer-title">
+    <h1 class="sr-only" id="empty-buffer-title">파일 선택</h1>
+    <p>-- NERDTree에서 파일을 선택하세요.</p>
+    <p class="empty-command" aria-hidden="true">:edit &lt;file&gt;</p>
+  </section>
 </BaseLayout>

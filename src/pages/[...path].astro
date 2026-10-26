@@ -4,6 +4,7 @@ import BaseLayout from "@/layouts/BaseLayout.astro";
 import {
   getFileContent,
   getRepositories,
+  type Repository,
   type RepositoryFile,
 } from "@/lib/github";
 import { renderMarkdown } from "@/lib/markdown";
@@ -13,23 +14,29 @@ export const getStaticPaths = (async () => {
   return repositories.flatMap((repository) =>
     repository.files.map((file) => ({
       params: { path: file.route },
-      props: { file },
+      props: { file, repositories },
     })),
   );
 }) satisfies GetStaticPaths;
 
 interface Props {
   file: RepositoryFile;
+  repositories: Repository[];
 }
 
-const { file } = Astro.props;
-const html = renderMarkdown(await getFileContent(file));
+const { file, repositories } = Astro.props;
+const content = await getFileContent(file);
+const html = renderMarkdown(content);
+const sourceLineCount = content.split(/\r?\n/).length;
 const title = `${file.path.split("/").at(-1)} · 춤추는망고의 블로그`;
 ---
 
-<BaseLayout title={title} description={`${file.repository}의 ${file.path}`}>
-  <main>
-    <nav><a href="/">저장소 목록</a></nav>
-    <article set:html={html} />
-  </main>
+<BaseLayout
+  {repositories}
+  currentFile={file}
+  {sourceLineCount}
+  title={title}
+  description={`${file.repository}의 ${file.path}`}
+>
+  <article class="document-content" set:html={html} />
 </BaseLayout>

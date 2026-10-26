@@ -1,13 +1,24 @@
 ---
 import "@/styles/global.css";
+import "@/styles/workspace.css";
+import "@/styles/explorer.css";
+import "@/styles/document.css";
+import Workspace from "@/components/Workspace.astro";
+import type { Repository, RepositoryFile } from "@/lib/github";
 
 interface Props {
+  currentFile?: RepositoryFile;
   description?: string;
+  repositories: Repository[];
+  sourceLineCount?: number;
   title?: string;
 }
 
 const {
+  currentFile,
   description = "컴퓨터처럼 생각하고, 말하듯 코딩하기",
+  repositories,
+  sourceLineCount = 1,
   title = "춤추는망고의 블로그",
 } = Astro.props;
 const canonical = new URL(Astro.url.pathname, Astro.site);
@@ -19,11 +30,13 @@ const canonical = new URL(Astro.url.pathname, Astro.site);
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <meta name="description" content={description} />
-    <meta name="theme-color" content="#f4f4f5" />
+    <meta name="theme-color" content="#282828" />
     <link rel="canonical" href={canonical} />
     <title>{title}</title>
   </head>
   <body>
-    <slot />
+    <Workspace {repositories} {currentFile} {sourceLineCount}>
+      <slot />
+    </Workspace>
   </body>
 </html>

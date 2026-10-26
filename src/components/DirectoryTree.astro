@@ -2,11 +2,12 @@
 import type { RepositoryFile } from "@/lib/github";
 
 interface Props {
+  currentPath?: string;
   files: RepositoryFile[];
   prefix?: string;
 }
 
-const { files, prefix = "" } = Astro.props;
+const { currentPath, files, prefix = "" } = Astro.props;
 const entries = files.map((file) => ({
   file,
   rest: file.path.slice(prefix.length),
@@ -27,16 +28,24 @@ const directFiles = entries
   {
     directories.map((name) => (
       <li>
-        <details>
-          <summary>{name}</summary>
-          <Astro.self files={files} prefix={`${prefix}${name}/`} />
+        <details open={currentPath?.startsWith(`${prefix}${name}/`)}>
+          <summary>
+            <span class="tree-icon folder-icon" aria-hidden="true" />
+            <span>{name}</span>
+          </summary>
+          <Astro.self files={files} prefix={`${prefix}${name}/`} {currentPath} />
         </details>
       </li>
     ))
   }
   {
     directFiles.map(({ file, rest }) => (
-      <li><a href={file.href}>{rest}</a></li>
+      <li>
+        <a href={file.href} aria-current={currentPath === file.path ? "page" : undefined}>
+          <span class="tree-icon file-icon" aria-hidden="true" />
+          <span>{rest}</span>
+        </a>
+      </li>
     ))
   }
 </ul>

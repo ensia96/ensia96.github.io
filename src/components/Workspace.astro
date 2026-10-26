@@ -1,0 +1,139 @@
+---
+import Explorer from "@/components/Explorer.astro";
+import type { Repository, RepositoryFile } from "@/lib/github";
+
+interface Props {
+  currentFile?: RepositoryFile;
+  repositories: Repository[];
+  sourceLineCount?: number;
+}
+
+const { currentFile, repositories, sourceLineCount = 1 } = Astro.props;
+const repository = currentFile
+  ? repositories.find(({ name }) => name === currentFile.repository)
+  : undefined;
+const filename = currentFile?.path.split("/").at(-1) ?? "[No Name]";
+const branch = repository?.defaultBranch ?? "main";
+const statusPath = currentFile?.path ?? "[No Name]";
+---
+
+<a class="skip-link" href="#content">본문으로 건너뛰기</a>
+<div class="workspace-shell" data-workspace>
+  <header class="tabline">
+    <button
+      class="explorer-open"
+      type="button"
+      aria-label="NERDTree 열기"
+      aria-controls="explorer-dialog"
+      aria-expanded="false"
+      data-open-explorer
+    >≡</button>
+    {currentFile && <a class="buffer-back" href="/" aria-label="홈으로 돌아가기">←</a>}
+    <span class="active-buffer">1:{filename}</span>
+    <span class="tabline-fill" aria-hidden="true" />
+  </header>
+
+  <div class="editor-grid">
+    <aside class="explorer-pane" aria-label="NERDTree">
+      <Explorer {repositories} {currentFile} />
+    </aside>
+    <main id="content" class="viewer" tabindex="-1">
+      <div class="document-scroll">
+        <slot />
+      </div>
+    </main>
+  </div>
+
+  <footer class="statusline" aria-label="현재 문서 상태">
+    <div class="explorer-status" aria-hidden="true"></div>
+    <div class="editor-status">
+      <a class="status-a" href="/">춤추는망고</a>
+      <span class="status-b">ᚠ {branch}</span>
+      <span class="status-c" title={statusPath}>{statusPath}</span>
+      <span class="status-fill" aria-hidden="true" />
+      <span
+        class="status-z"
+        title="문서 스크롤 위치와 원본 줄 수"
+        data-position
+        data-total-lines={sourceLineCount}
+      >0% ㏑:1/{sourceLineCount}</span>
+    </div>
+  </footer>
+
+  <dialog class="explorer-dialog" id="explorer-dialog" aria-label="NERDTree">
+    <div class="drawer">
+      <header class="drawer-header">
+        <span>NERDTree</span>
+        <button type="button" aria-label="NERDTree 닫기" data-close-explorer>×</button>
+      </header>
+      <Explorer {repositories} {currentFile} />
+    </div>
+  </dialog>
+</div>
+
+<script>
+  const shell = document.querySelector<HTMLElement>("[data-workspace]");
+  const dialog = shell?.querySelector<HTMLDialogElement>("#explorer-dialog");
+  const openButton = shell?.querySelector<HTMLButtonElement>("[data-open-explorer]");
+  const closeButton = dialog?.querySelector<HTMLButtonElement>("[data-close-explorer]");
+  const desktop = window.matchMedia("(min-width: 768px)");
+  const scroll = shell?.querySelector<HTMLElement>(".document-scroll");
+  const position = shell?.querySelector<HTMLElement>("[data-position]");
+  const helpRows = shell?.querySelectorAll<HTMLDetailsElement>("[data-nerdtree-help]");
+
+  const closeExplorer = () => dialog?.open && dialog.close();
+  openButton?.addEventListener("click", () => {
+    if (!dialog || dialog.open) return;
+    dialog.showModal();
+    openButton.setAttribute("aria-expanded", "true");
+  });
+  closeButton?.addEventListener("click", closeExplorer);
+  dialog?.addEventListener("click", ({ target }) => target === dialog && closeExplorer());
+  dialog?.addEventListener("close", () => {
+    openButton?.setAttribute("aria-expanded", "false");
+    openButton?.focus();
+  });
+  dialog?.querySelectorAll("a").forEach((link) => link.addEventListener("click", closeExplorer));
+  desktop.addEventListener("change", ({ matches }) => matches && closeExplorer());
+  document.addEventListener("keydown", (event) => {
+    const target = event.target;
+    if (
+      event.key !== "?" ||
+      event.altKey ||
+      event.ctrlKey ||
+      event.metaKey ||
+      target instanceof HTMLInputElement ||
+      target instanceof HTMLTextAreaElement ||
+      target instanceof HTMLSelectElement ||
+      (target instanceof HTMLElement && target.isContentEditable)
+    ) return;
+    const help = [...(helpRows ?? [])].find((row) => {
+      const parentDialog = row.closest("dialog");
+      return row.offsetParent !== null && (!parentDialog || parentDialog.open);
+    });
+    if (!help) return;
+    event.preventDefault();
+    help.open = !help.open;
+    help.querySelector("summary")?.focus();
+  });
+
+  if (scroll && position) {
+    const totalLines = Number(position.dataset.totalLines) || 1;
+    let frame: number | undefined;
+    const updatePosition = () => {
+      const maximum = scroll.scrollHeight - scroll.clientHeight;
+      const ratio = maximum > 0 ? scroll.scrollTop / maximum : 1;
+      const progress = Math.round(ratio * 100);
+      const currentLine = maximum > 0 ? 1 + Math.round(ratio * (totalLines - 1)) : totalLines;
+      position.textContent = `${progress}% ㏑:${currentLine}/${totalLines}`;
+    };
+    scroll.addEventListener("scroll", () => {
+      if (frame) return;
+      frame = requestAnimationFrame(() => {
+        updatePosition();
+        frame = undefined;
+      });
+    }, { passive: true });
+    updatePosition();
+  }
+</script>

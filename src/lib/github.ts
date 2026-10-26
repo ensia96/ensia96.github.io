@@ -26,8 +26,10 @@ export interface RepositoryFile {
 export interface Repository {
   defaultBranch: string;
   files: RepositoryFile[];
+  githubUrl: string;
   homepage: string | null;
   name: string;
+  owner: string;
 }
 
 const owner = import.meta.env.GITHUB_OWNER?.trim();
@@ -125,8 +127,10 @@ async function loadRepository(name: string): Promise<Repository | undefined> {
   return {
     defaultBranch: metadata.default_branch,
     files,
+    githubUrl: `https://github.com/${encodeURIComponent(owner!)}/${encodeURIComponent(metadata.name)}`,
     homepage: getHomepage(metadata.homepage),
     name: metadata.name,
+    owner: owner!,
   };
 }
 

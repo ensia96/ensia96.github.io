@@ -161,14 +161,3 @@
 .virtual-files a {
   color: var(--subtle);
 }
-
-@media (max-width: 767px) {
-  .explorer details > summary,
-  .explorer li > a,
-  .nerdtree-up,
-  .nerdtree-root,
-  .nerdtree-help-rows li {
-    min-height: 2.5rem;
-    line-height: 2.5rem;
-  }
-}

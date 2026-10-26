@@ -21,20 +21,20 @@ const statusPath = currentFile?.path ?? "[No Name]";
 <a class="skip-link" href="#content">본문으로 건너뛰기</a>
 <div class="workspace-shell" data-workspace>
   <header class="tabline">
+    <button
+      class="explorer-open"
+      type="button"
+      aria-label="Explorer 열기"
+      aria-controls="explorer-dialog"
+      aria-expanded="false"
+      data-open-explorer
+    >
+      <Icon name="menu" />
+      <span>NERDTree</span>
+    </button>
     <span class="active-buffer">1:{filename}</span>
     <span class="tabline-fill" aria-hidden="true" />
   </header>
-
-  <button
-    class="explorer-handle"
-    type="button"
-    aria-label="Explorer 열기"
-    aria-controls="explorer-dialog"
-    aria-expanded="false"
-    data-open-explorer
-  >
-    <span class="handle-rail"><Icon name="menu" /></span>
-  </button>
 
   <div class="editor-grid">
     <aside class="explorer-pane" aria-label="NERDTree">
@@ -65,10 +65,6 @@ const statusPath = currentFile?.path ?? "[No Name]";
 
   <dialog class="explorer-dialog" id="explorer-dialog" aria-label="NERDTree">
     <div class="drawer">
-      <header class="drawer-header">
-        <span>NERDTree</span>
-        <button type="button" aria-label="NERDTree 닫기" data-close-explorer>×</button>
-      </header>
       <Explorer {repositories} {currentFile} />
     </div>
   </dialog>
@@ -78,7 +74,6 @@ const statusPath = currentFile?.path ?? "[No Name]";
   const shell = document.querySelector<HTMLElement>("[data-workspace]");
   const dialog = shell?.querySelector<HTMLDialogElement>("#explorer-dialog");
   const openButton = shell?.querySelector<HTMLButtonElement>("[data-open-explorer]");
-  const closeButton = dialog?.querySelector<HTMLButtonElement>("[data-close-explorer]");
   const desktop = window.matchMedia("(min-width: 768px)");
   const scroll = shell?.querySelector<HTMLElement>(".document-scroll");
   const position = shell?.querySelector<HTMLElement>("[data-position]");
@@ -89,13 +84,10 @@ const statusPath = currentFile?.path ?? "[No Name]";
     if (!dialog || dialog.open) return;
     dialog.showModal();
     openButton.setAttribute("aria-expanded", "true");
-    openButton.hidden = true;
   });
-  closeButton?.addEventListener("click", closeExplorer);
   dialog?.addEventListener("click", ({ target }) => target === dialog && closeExplorer());
   dialog?.addEventListener("close", () => {
     openButton?.setAttribute("aria-expanded", "false");
-    if (openButton) openButton.hidden = false;
     openButton?.focus();
   });
   dialog?.querySelectorAll("a").forEach((link) => link.addEventListener("click", closeExplorer));

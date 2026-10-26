@@ -17,8 +17,8 @@
   --aqua: #8ec07c;
   --orange: #fe8019;
   --airline: #1d2021;
-  --font: "MesloLGS NF", "MesloLGS Nerd Font", "Apple SD Gothic Neo", monospace;
-  font-family: var(--font);
+  --font: ui-monospace, monospace;
+  font-family: ui-monospace, monospace;
   color: var(--text);
   background: var(--bg);
   font-synthesis: none;

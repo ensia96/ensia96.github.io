@@ -29,7 +29,7 @@
 }
 
 .content-panel {
-  padding: 0 0 0 1rem;
+  padding: 0 1rem;
 }
 
 @media (min-width: 768px) {

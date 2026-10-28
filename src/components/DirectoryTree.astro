@@ -9,10 +9,12 @@ interface Props {
 }
 
 const { currentPath, files, prefix = "" } = Astro.props;
-const entries = files.map((file) => ({
-  file,
-  rest: file.path.slice(prefix.length),
-}));
+const entries = files
+  .filter((file) => file.path.startsWith(prefix))
+  .map((file) => ({
+    file,
+    rest: file.path.slice(prefix.length),
+  }));
 const directories = [
   ...new Set(
     entries

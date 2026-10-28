@@ -1,19 +1,17 @@
 ---
 interface Props {
   content: string;
-  softWrap?: boolean;
 }
 
-const { content, softWrap = false } = Astro.props;
+const { content } = Astro.props;
 const lines = content.replace(/\r\n?/g, "\n").split("\n");
 const lineNumberWidth = Math.max(2, String(lines.length).length);
 ---
 
-<pre
-  class:list={["source-code", { "source-code--soft-wrap": softWrap }]}
-  style={`--line-number-width: ${lineNumberWidth}ch`}
-><code>{
-  lines.map((line, index) => (
-    <span class="source-line" data-line={index + 1}><span class="source-line-content">{line}</span></span>
-  ))
-}</code></pre>
+<section class="content-panel">
+  <pre class="source-code" style={`--line-number-width: ${lineNumberWidth}ch`}><code>{
+    lines.map((line, index) => (
+      <span class="source-line" data-line={index + 1}><span class="source-line-content">{line}</span></span>
+    ))
+  }</code></pre>
+</section>

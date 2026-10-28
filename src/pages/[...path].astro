@@ -26,7 +26,6 @@ interface Props {
 
 const { file, repositories } = Astro.props;
 const content = await getFileContent(file);
-const isMarkdown = /\.(md|markdown)$/i.test(file.path);
 const sourceLineCount = content.replace(/\r\n?/g, "\n").split("\n").length;
 const title = `${file.path.split("/").at(-1)} · 춤추는망고의 블로그`;
 ---
@@ -38,5 +37,5 @@ const title = `${file.path.split("/").at(-1)} · 춤추는망고의 블로그`;
   title={title}
   description={`${file.repository}의 ${file.path}`}
 >
-  <ContentViewer {content} softWrap={isMarkdown} />
+  <ContentViewer {content} />
 </BaseLayout>

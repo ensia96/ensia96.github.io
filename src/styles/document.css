@@ -1,12 +1,17 @@
+.content-panel {
+  padding: 0 1rem;
+}
+
 .source-code {
-  width: max-content;
-  min-width: 100%;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
+  overflow-y: visible;
   color: var(--text);
   background: var(--bg);
   font: 0.78rem/1.55 var(--font);
   tab-size: 2;
+  white-space: normal;
 }
 
 .source-code code {
@@ -15,14 +20,12 @@
 }
 
 .source-line {
-  display: flex;
-  min-width: 100%;
+  display: grid;
   min-height: 1.55em;
+  grid-template-columns: calc(var(--line-number-width) + 1ch) minmax(0, 1fr);
 }
 
 .source-line::before {
-  width: calc(var(--line-number-width) + 1ch);
-  flex: 0 0 calc(var(--line-number-width) + 1ch);
   padding-right: 1ch;
   color: var(--muted);
   content: attr(data-line);
@@ -32,17 +35,8 @@
 }
 
 .source-line-content {
-  padding-left: 1ch;
-  white-space: pre;
-}
-
-.source-code--soft-wrap {
-  width: 100%;
-}
-
-.source-code--soft-wrap .source-line-content {
   min-width: 0;
-  flex: 1;
+  padding-left: 1ch;
   overflow-wrap: anywhere;
   white-space: pre-wrap;
   word-break: break-word;

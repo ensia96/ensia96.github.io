@@ -17,18 +17,20 @@
 .source-code code {
   display: block;
   font: inherit;
+  counter-reset: source-line;
 }
 
-.source-line {
+.source-code .line {
   display: grid;
   min-height: 1.55em;
   grid-template-columns: calc(var(--line-number-width) + 1ch) minmax(0, 1fr);
+  counter-increment: source-line;
 }
 
-.source-line::before {
+.source-code .line::before {
   padding-right: 1ch;
   color: var(--muted);
-  content: attr(data-line);
+  content: counter(source-line);
   text-align: right;
   -webkit-user-select: none;
   user-select: none;

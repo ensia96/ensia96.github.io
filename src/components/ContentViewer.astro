@@ -1,17 +1,79 @@
 ---
+import { Code } from "astro:components";
+import type { ComponentProps } from "astro/types";
+
 interface Props {
   content: string;
+  path: string;
 }
 
-const { content } = Astro.props;
-const lines = content.replace(/\r\n?/g, "\n").split("\n");
+const languages = {
+  c: "c",
+  cc: "cpp",
+  cpp: "cpp",
+  css: "css",
+  go: "go",
+  h: "c",
+  hpp: "cpp",
+  html: "html",
+  java: "java",
+  js: "javascript",
+  json: "json",
+  jsonc: "jsonc",
+  jsx: "jsx",
+  kt: "kotlin",
+  kts: "kotlin",
+  markdown: "markdown",
+  md: "markdown",
+  mjs: "javascript",
+  php: "php",
+  py: "python",
+  rb: "ruby",
+  rs: "rust",
+  sh: "bash",
+  sql: "sql",
+  toml: "toml",
+  ts: "typescript",
+  tsx: "tsx",
+  vue: "vue",
+  xml: "xml",
+  yaml: "yaml",
+  yml: "yaml",
+} as const;
+const filenameLanguages = {
+  dockerfile: "dockerfile",
+  makefile: "makefile",
+} as const;
+const transformers = [{
+  name: "source-line-content",
+  line(node) {
+    node.children = [{
+      type: "element",
+      tagName: "span",
+      properties: { className: ["source-line-content"] },
+      children: node.children,
+    }];
+  },
+}] satisfies NonNullable<ComponentProps<typeof Code>["transformers"]>;
+
+const { content, path } = Astro.props;
+const normalizedContent = content.replace(/\r\n?/g, "\n");
+const lines = normalizedContent.split("\n");
 const lineNumberWidth = Math.max(2, String(lines.length).length);
+const filename = path.split("/").at(-1)?.toLowerCase() ?? "";
+const extension = filename.includes(".") ? filename.split(".").at(-1) ?? "" : "";
+const language = filenameLanguages[filename as keyof typeof filenameLanguages]
+  ?? languages[extension as keyof typeof languages]
+  ?? "plaintext";
 ---
 
-<section class="content-panel">
-  <pre class="source-code" style={`--line-number-width: ${lineNumberWidth}ch`}><code>{
-    lines.map((line, index) => (
-      <span class="source-line" data-line={index + 1}><span class="source-line-content">{line}</span></span>
-    ))
-  }</code></pre>
+<section class="content-panel" style={`--line-number-width: ${lineNumberWidth}ch`}>
+  <Code
+    code={`${normalizedContent}\n`}
+    lang={language}
+    theme="gruvbox-dark-medium"
+    wrap={null}
+    {transformers}
+    class="source-code"
+  />
 </section>

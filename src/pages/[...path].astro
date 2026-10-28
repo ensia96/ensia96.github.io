@@ -37,5 +37,5 @@ const title = `${file.path.split("/").at(-1)} · 춤추는망고의 블로그`;
   title={title}
   description={`${file.repository}의 ${file.path}`}
 >
-  <ContentViewer {content} />
+  <ContentViewer {content} path={file.path} />
 </BaseLayout>

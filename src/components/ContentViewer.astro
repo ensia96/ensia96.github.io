@@ -1,46 +1,19 @@
 ---
 interface Props {
   content: string;
-  previewHtml: string;
+  softWrap?: boolean;
 }
 
-const { content, previewHtml } = Astro.props;
+const { content, softWrap = false } = Astro.props;
 const lines = content.replace(/\r\n?/g, "\n").split("\n");
 const lineNumberWidth = Math.max(2, String(lines.length).length);
 ---
 
-<div class="content-view" data-content-view>
-  <div class="view-switch">
-    <button class="active" type="button" aria-pressed="true" data-view-button="preview">
-      Preview
-    </button>
-    <button type="button" aria-pressed="false" data-view-button="source">Source</button>
-  </div>
-  <section class="content-panel" data-view-panel="preview">
-    <article class="document-content" set:html={previewHtml} />
-  </section>
-  <section class="content-panel" data-view-panel="source" hidden>
-    <pre class="source-code" style={`--line-number-width: ${lineNumberWidth}ch`}><code>{
-      lines.map((line, index) => (
-        <span class="source-line" data-line={index + 1}><span class="source-line-content">{line}</span></span>
-      ))
-    }</code></pre>
-  </section>
-</div>
-
-<script is:inline>
-  const viewer = document.querySelector("[data-content-view]");
-  if (viewer) {
-    const buttons = viewer.querySelectorAll("[data-view-button]");
-    const panels = viewer.querySelectorAll("[data-view-panel]");
-    buttons.forEach((button) => button.addEventListener("click", () => {
-      const view = button.dataset.viewButton;
-      buttons.forEach((item) => {
-        const active = item === button;
-        item.classList.toggle("active", active);
-        item.setAttribute("aria-pressed", String(active));
-      });
-      panels.forEach((panel) => panel.hidden = panel.dataset.viewPanel !== view);
-    }));
-  }
-</script>
+<pre
+  class:list={["source-code", { "source-code--soft-wrap": softWrap }]}
+  style={`--line-number-width: ${lineNumberWidth}ch`}
+><code>{
+  lines.map((line, index) => (
+    <span class="source-line" data-line={index + 1}><span class="source-line-content">{line}</span></span>
+  ))
+}</code></pre>

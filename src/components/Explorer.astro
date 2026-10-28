@@ -9,7 +9,7 @@ interface Props {
 }
 
 const { currentFile, repositories } = Astro.props;
-const ownerRoot = repositories[0]?.owner ? `~/${repositories[0].owner}/` : "~/";
+const rootLabel = "~/projects/";
 ---
 
 <div class="explorer">
@@ -25,7 +25,7 @@ const ownerRoot = repositories[0]?.owner ? `~/${repositories[0].owner}/` : "~/";
     </details>
     <a class="nerdtree-up"> </a>
     <a class="nerdtree-up" href="/">.. (up a dir)</a>
-    <a class="nerdtree-root" href="/" title="GitHub 저장소 루트">{ownerRoot}</a>
+    <a class="nerdtree-root" href="/" title="GitHub 저장소 루트">{rootLabel}</a>
     {
       repositories.map((repository) => (
         <details class="repository" open>
